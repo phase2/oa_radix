@@ -12,6 +12,7 @@ regions[navigation]   = Navigation
 regions[menu]         = Menu
 regions[content]      = Content
 regions[footer]       = Footer
+regions[primarytabs]  = Primary tabs
 
 ; CSS - General
 stylesheets[all][]     = assets/stylesheets/screen.css
