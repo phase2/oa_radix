@@ -19693,11 +19693,11 @@ form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .caret, .pan
 }
 /* line 66, ../sass/_navbar.scss */
 #oa_visibility_toolbar .oa-visibility-list {
-  padding: 0;
+  padding: 0 10px;
 }
 /* line 68, ../sass/_navbar.scss */
 #oa_visibility_toolbar .oa-visibility-list a {
-  padding: 0 10px;
+  padding: 0 0;
 }
 
 /* line 75, ../sass/_navbar.scss */
