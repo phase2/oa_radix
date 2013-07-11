@@ -2,6 +2,14 @@
 // Layout
 // Styles for main layout
 // --------------------------------------------------
+
+// fix for selby-flipped panopoly layout
+  .selby-flipped-column-inner {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+
 .clear-both {
   clear: both;
 }
