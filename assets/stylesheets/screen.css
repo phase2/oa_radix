@@ -11430,6 +11430,12 @@ div.tabs.main-tabs .tabs.secondary li:first-child {
   margin-left: 20px;
 }
 
+/* line 6, ../sass/_structure.scss */
+ul.tabs > li > a, ul.action-links > li > a {
+  background: none;
+  border: 1px solid transparent;
+}
+
 /* line 4, ../sass/_menu.scss */
 #main-menu {
   clear: left;
