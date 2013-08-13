@@ -8052,7 +8052,7 @@ select[size] {
 }
 
 html.js input.form-autocomplete {
-  background: url('../images/throbber.gif?1375463893') no-repeat right 8px white !important;
+  background: url('../images/throbber.gif?1376329773') no-repeat right 8px white !important;
 }
 
 html.js input.throbbing {
@@ -10415,7 +10415,7 @@ ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel:hover,
 
 #main-wrapper {
   min-height: 600px;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 body.oa-login div.region-content {
