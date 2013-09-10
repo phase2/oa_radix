@@ -35,7 +35,7 @@ function oa_radix_preprocess_page(&$vars) {
 
 // grab the Bootstrap JS since we can't currently add Bootstrap to our
 // make file because Drupal is GPLv2 instead of GPLv3
-  drupal_add_js('http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js', 'external');
+  drupal_add_js('netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js', 'external');
 
   // Rework search_form to our liking.
   $vars['search_form'] = '';
