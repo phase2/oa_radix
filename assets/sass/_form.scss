@@ -16,6 +16,9 @@ form .btn {
   width: auto;
   height: inherit;
 }
+form .form-actions .btn {
+  margin-bottom: 10px
+}
 form .button.fake-ok,
 form .button.fake-cancel {
   @extend .btn;

@@ -8052,7 +8052,7 @@ select[size] {
 }
 
 html.js input.form-autocomplete {
-  background: url('../images/throbber.gif?1376329773') no-repeat right 8px white !important;
+  background: url('../images/throbber.gif?1378819792') no-repeat right 8px white !important;
 }
 
 html.js input.throbbing {
@@ -10656,6 +10656,14 @@ form #modal-content #edit-cancel,
 #modal-content form #edit-cancel {
   width: auto;
   height: inherit;
+}
+
+form .form-actions .btn, form .form-actions .button.fake-ok,
+form .form-actions .button.fake-cancel, form .form-actions #media-browser-tabset a.button,
+form .form-actions #media-browser-tabset input.form-submit, form .form-actions #modal-content .form-submit, #modal-content form .form-actions .form-submit,
+form .form-actions #modal-content #edit-cancel,
+#modal-content form .form-actions #edit-cancel {
+  margin-bottom: 10px;
 }
 
 form .button.fake-ok,
