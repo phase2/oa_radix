@@ -24,9 +24,6 @@
   padding-right: 20px;
   border: 1px solid $navbarBorder;
   color: black;
-  @include gradient-vertical($navbarBackgroundHighlight, $navbarBackground);
-  @include border-radius(4px);
-  @include box-shadow(0 1px 4px rgba(0,0,0,.065));
   display: block;
 }
 
@@ -58,7 +55,7 @@
     padding-bottom: 0;
   }
   .pane-title {
-    @include gradient-vertical($navbarBackgroundHighlight, darken($navbarBackground, 5%));
+    @include ctb-gradient-vertical($navbarBackgroundHighlight, darken($navbarBackground, 5%));
     font-size: 20px;
     line-height: 32px;
     margin: 0;
@@ -132,7 +129,7 @@ ul.group-content {
 
 .oa-list {
   &.well {
-    @include gradient-vertical($navbarBackgroundHighlight, lighten($navbarBackground, 2%));
+    @include ctb-gradient-vertical($navbarBackgroundHighlight, lighten($navbarBackground, 2%));
     @include border-radius(0);
     @include box-shadow(none);
     padding: 5px;
@@ -254,3 +251,28 @@ div.tabs.main-tabs {
     }
   }
 }
+
+// Layout
+// --------------------------------------------------
+html, body {
+  height: 100%;
+}
+body {
+  #main-wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px;
+  }
+  #push {
+    height: 100px;
+  }
+  #footer {
+    > .container {
+      height: 100px;
+      padding: 18px 0;
+      @include box-sizing("border-box");
+    }
+  }
+}
+

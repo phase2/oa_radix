@@ -32,7 +32,7 @@
               color: $dropdownLinkColorHover;
               text-decoration: none;
               background-color: $dropdownLinkBackgroundActive;
-              @include gradient-vertical($dropdownLinkBackgroundActive, darken($dropdownLinkBackgroundActive, 5%));
+              @include ctb-gradient-vertical($dropdownLinkBackgroundActive, darken($dropdownLinkBackgroundActive, 5%));
             }
           }
         }

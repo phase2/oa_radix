@@ -1,0 +1,10 @@
+// // Mixin
+// // SASS Mixins
+// // --------------------------------------------------
+
+@mixin clear-shadow() {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+         text-shadow: none;
+          box-shadow: none;
+}

@@ -10,7 +10,7 @@
 .pane-oa-widgets-visibility-toolbar #oa_visibility_toolbar,
 #oa_favorites,
 .pane-add-space-content {
-  @include navbarVerticalAlign(35px);
+  @include ctb-navbarVerticalAlign(35px);
 }
 .pane-add-space-content,
 .pane-oa-favorites-favorites-button,
