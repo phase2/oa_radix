@@ -2736,11 +2736,7 @@ table th[class*="span"],
 .nav-list > .active > a > [class^="icon-"],
 .nav-list > .active > a > [class*=" icon-"],
 .navbar-inverse .nav > .active > a > [class^="icon-"],
-.navbar-inverse div.tabs ul.tabs > .active > a > [class^="icon-"],
-div.tabs .navbar-inverse ul.tabs > .active > a > [class^="icon-"],
 .navbar-inverse .nav > .active > a > [class*=" icon-"],
-.navbar-inverse div.tabs ul.tabs > .active > a > [class*=" icon-"],
-div.tabs .navbar-inverse ul.tabs > .active > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
 .dropdown-menu > li > a:focus > [class^="icon-"],
 .dropdown-menu > li > a:hover > [class*=" icon-"],
@@ -4851,32 +4847,31 @@ form .btn-group-vertical > .button.fake-cancel:last-child, #media-browser-tabset
 }
 
 /* line 9, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav, div.tabs ul.tabs {
+.nav {
   margin-left: 0;
   margin-bottom: 20px;
   list-style: none;
 }
 
 /* line 16, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav > li > a, div.tabs ul.tabs > li > a {
+.nav > li > a {
   display: block;
 }
 
 /* line 20, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav > li > a:hover, div.tabs ul.tabs > li > a:hover,
-.nav > li > a:focus,
-div.tabs ul.tabs > li > a:focus {
+.nav > li > a:hover,
+.nav > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
 
 /* line 27, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav > li > a > img, div.tabs ul.tabs > li > a > img {
+.nav > li > a > img {
   max-width: none;
 }
 
 /* line 32, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav > .pull-right, div.tabs ul.tabs > .pull-right {
+.nav > .pull-right {
   float: right;
 }
 
@@ -4893,7 +4888,7 @@ div.tabs ul.tabs > li > a:focus {
 }
 
 /* line 48, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav li + .nav-header, div.tabs ul.tabs li + .nav-header {
+.nav li + .nav-header {
   margin-top: 9px;
 }
 
@@ -5107,16 +5102,15 @@ div.tabs ul.tabs > li > a:focus {
 }
 
 /* line 220, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav .dropdown-toggle .caret, div.tabs ul.tabs .dropdown-toggle .caret {
+.nav .dropdown-toggle .caret {
   border-top-color: #0088cc;
   border-bottom-color: #0088cc;
   margin-top: 6px;
 }
 
 /* line 226, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav .dropdown-toggle:hover .caret, div.tabs ul.tabs .dropdown-toggle:hover .caret,
-.nav .dropdown-toggle:focus .caret,
-div.tabs ul.tabs .dropdown-toggle:focus .caret {
+.nav .dropdown-toggle:hover .caret,
+.nav .dropdown-toggle:focus .caret {
   border-top-color: #005580;
   border-bottom-color: #005580;
 }
@@ -5128,7 +5122,7 @@ div.tabs ul.tabs .dropdown-toggle:focus .caret {
 }
 
 /* line 237, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav .active .dropdown-toggle .caret, div.tabs ul.tabs .active .dropdown-toggle .caret {
+.nav .active .dropdown-toggle .caret {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
@@ -5140,9 +5134,8 @@ div.tabs ul.tabs .dropdown-toggle:focus .caret {
 }
 
 /* line 249, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav > .dropdown.active > a:hover, div.tabs ul.tabs > .dropdown.active > a:hover,
-.nav > .dropdown.active > a:focus,
-div.tabs ul.tabs > .dropdown.active > a:focus {
+.nav > .dropdown.active > a:hover,
+.nav > .dropdown.active > a:focus {
   cursor: pointer;
 }
 
@@ -5150,22 +5143,17 @@ div.tabs ul.tabs > .dropdown.active > a:focus {
 .nav-tabs .open .dropdown-toggle,
 .nav-pills .open .dropdown-toggle,
 .nav > li.dropdown.open.active > a:hover,
-div.tabs ul.tabs > li.dropdown.open.active > a:hover,
-.nav > li.dropdown.open.active > a:focus,
-div.tabs ul.tabs > li.dropdown.open.active > a:focus {
+.nav > li.dropdown.open.active > a:focus {
   color: white;
   background-color: #999999;
   border-color: #999999;
 }
 
 /* line 266, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav li.dropdown.open .caret, div.tabs ul.tabs li.dropdown.open .caret,
+.nav li.dropdown.open .caret,
 .nav li.dropdown.open.active .caret,
-div.tabs ul.tabs li.dropdown.open.active .caret,
 .nav li.dropdown.open a:hover .caret,
-div.tabs ul.tabs li.dropdown.open a:hover .caret,
-.nav li.dropdown.open a:focus .caret,
-div.tabs ul.tabs li.dropdown.open a:focus .caret {
+.nav li.dropdown.open a:focus .caret {
   border-top-color: white;
   border-bottom-color: white;
   opacity: 0.01;
@@ -5320,21 +5308,20 @@ div.tabs ul.tabs li.dropdown.open a:focus .caret {
 }
 
 /* line 400, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav > .disabled > a, div.tabs ul.tabs > .disabled > a {
+.nav > .disabled > a {
   color: #999999;
 }
 
 /* line 405, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navs.scss */
-.nav > .disabled > a:hover, div.tabs ul.tabs > .disabled > a:hover,
-.nav > .disabled > a:focus,
-div.tabs ul.tabs > .disabled > a:focus {
+.nav > .disabled > a:hover,
+.nav > .disabled > a:focus {
   text-decoration: none;
   background-color: transparent;
   cursor: default;
 }
 
 /* line 10, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar, div.tabs {
+.navbar {
   overflow: visible;
   margin-bottom: 20px;
   *position: relative;
@@ -5342,7 +5329,7 @@ div.tabs ul.tabs > .disabled > a:focus {
 }
 
 /* line 21, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inner, div.tabs {
+.navbar-inner {
   min-height: 40px;
   padding-left: 20px;
   padding-right: 20px;
@@ -5364,18 +5351,18 @@ div.tabs ul.tabs > .disabled > a:focus {
   *zoom: 1;
 }
 /* line 15, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_mixins.scss */
-.navbar-inner:before, div.tabs:before, .navbar-inner:after, div.tabs:after {
+.navbar-inner:before, .navbar-inner:after {
   display: table;
   content: "";
   line-height: 0;
 }
 /* line 22, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_mixins.scss */
-.navbar-inner:after, div.tabs:after {
+.navbar-inner:after {
   clear: both;
 }
 
 /* line 36, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .container, div.tabs .container {
+.navbar .container {
   width: auto;
 }
 
@@ -5386,7 +5373,7 @@ div.tabs ul.tabs > .disabled > a:focus {
 }
 
 /* line 49, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .brand, div.tabs .brand {
+.navbar .brand {
   float: left;
   display: block;
   padding: 10px 20px 10px;
@@ -5397,7 +5384,7 @@ div.tabs ul.tabs > .disabled > a:focus {
   text-shadow: 0 1px 0 white;
 }
 /* line 60, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .brand:hover, div.tabs .brand:hover, .navbar .brand:focus, div.tabs .brand:focus {
+.navbar .brand:hover, .navbar .brand:focus {
   text-decoration: none;
 }
 
@@ -5418,7 +5405,7 @@ div.tabs ul.tabs > .disabled > a:focus {
 }
 
 /* line 85, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .divider-vertical, div.tabs .divider-vertical {
+.navbar .divider-vertical {
   height: 40px;
   margin: 0 9px;
   border-left: 1px solid #f2f2f2;
@@ -5426,94 +5413,53 @@ div.tabs ul.tabs > .disabled > a:focus {
 }
 
 /* line 95, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .btn, div.tabs .btn, .navbar form .button.fake-ok, form .navbar .button.fake-ok, div.tabs form .button.fake-ok, form div.tabs .button.fake-ok,
+.navbar .btn, .navbar form .button.fake-ok, form .navbar .button.fake-ok,
 .navbar form .button.fake-cancel,
-form .navbar .button.fake-cancel,
-div.tabs form .button.fake-cancel,
-form div.tabs .button.fake-cancel, .navbar #media-browser-tabset a.button, #media-browser-tabset .navbar a.button, div.tabs #media-browser-tabset a.button, #media-browser-tabset div.tabs a.button,
+form .navbar .button.fake-cancel, .navbar #media-browser-tabset a.button, #media-browser-tabset .navbar a.button,
 .navbar #media-browser-tabset input.form-submit,
-#media-browser-tabset .navbar input.form-submit,
-div.tabs #media-browser-tabset input.form-submit,
-#media-browser-tabset div.tabs input.form-submit, .navbar #modal-content .form-submit, #modal-content .navbar .form-submit, div.tabs #modal-content .form-submit, #modal-content div.tabs .form-submit,
+#media-browser-tabset .navbar input.form-submit, .navbar #modal-content .form-submit, #modal-content .navbar .form-submit,
 .navbar #modal-content #edit-cancel,
 #modal-content .navbar #edit-cancel,
-div.tabs #modal-content #edit-cancel,
-#modal-content div.tabs #edit-cancel,
-.navbar .btn-group,
-div.tabs .btn-group {
+.navbar .btn-group {
   margin-top: 5px;
 }
 
 /* line 102, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .btn-group .btn, div.tabs .btn-group .btn, .navbar .btn-group form .button.fake-ok, form .navbar .btn-group .button.fake-ok, div.tabs .btn-group form .button.fake-ok, form div.tabs .btn-group .button.fake-ok,
+.navbar .btn-group .btn, .navbar .btn-group form .button.fake-ok, form .navbar .btn-group .button.fake-ok,
 .navbar .btn-group form .button.fake-cancel,
-form .navbar .btn-group .button.fake-cancel,
-div.tabs .btn-group form .button.fake-cancel,
-form div.tabs .btn-group .button.fake-cancel, .navbar .btn-group #media-browser-tabset a.button, #media-browser-tabset .navbar .btn-group a.button, div.tabs .btn-group #media-browser-tabset a.button, #media-browser-tabset div.tabs .btn-group a.button,
+form .navbar .btn-group .button.fake-cancel, .navbar .btn-group #media-browser-tabset a.button, #media-browser-tabset .navbar .btn-group a.button,
 .navbar .btn-group #media-browser-tabset input.form-submit,
-#media-browser-tabset .navbar .btn-group input.form-submit,
-div.tabs .btn-group #media-browser-tabset input.form-submit,
-#media-browser-tabset div.tabs .btn-group input.form-submit, .navbar .btn-group #modal-content .form-submit, #modal-content .navbar .btn-group .form-submit, div.tabs .btn-group #modal-content .form-submit, #modal-content div.tabs .btn-group .form-submit,
+#media-browser-tabset .navbar .btn-group input.form-submit, .navbar .btn-group #modal-content .form-submit, #modal-content .navbar .btn-group .form-submit,
 .navbar .btn-group #modal-content #edit-cancel,
 #modal-content .navbar .btn-group #edit-cancel,
-div.tabs .btn-group #modal-content #edit-cancel,
-#modal-content div.tabs .btn-group #edit-cancel,
 .navbar .input-prepend .btn,
-div.tabs .input-prepend .btn,
 .navbar .input-prepend form .button.fake-ok,
 form .navbar .input-prepend .button.fake-ok,
-div.tabs .input-prepend form .button.fake-ok,
-form div.tabs .input-prepend .button.fake-ok,
 .navbar .input-prepend form .button.fake-cancel,
 form .navbar .input-prepend .button.fake-cancel,
-div.tabs .input-prepend form .button.fake-cancel,
-form div.tabs .input-prepend .button.fake-cancel,
 .navbar .input-prepend #media-browser-tabset a.button,
 #media-browser-tabset .navbar .input-prepend a.button,
-div.tabs .input-prepend #media-browser-tabset a.button,
-#media-browser-tabset div.tabs .input-prepend a.button,
 .navbar .input-prepend #media-browser-tabset input.form-submit,
 #media-browser-tabset .navbar .input-prepend input.form-submit,
-div.tabs .input-prepend #media-browser-tabset input.form-submit,
-#media-browser-tabset div.tabs .input-prepend input.form-submit,
 .navbar .input-prepend #modal-content .form-submit,
 #modal-content .navbar .input-prepend .form-submit,
-div.tabs .input-prepend #modal-content .form-submit,
-#modal-content div.tabs .input-prepend .form-submit,
 .navbar .input-prepend #modal-content #edit-cancel,
 #modal-content .navbar .input-prepend #edit-cancel,
-div.tabs .input-prepend #modal-content #edit-cancel,
-#modal-content div.tabs .input-prepend #edit-cancel,
 .navbar .input-append .btn,
-div.tabs .input-append .btn,
 .navbar .input-append form .button.fake-ok,
 form .navbar .input-append .button.fake-ok,
-div.tabs .input-append form .button.fake-ok,
-form div.tabs .input-append .button.fake-ok,
 .navbar .input-append form .button.fake-cancel,
 form .navbar .input-append .button.fake-cancel,
-div.tabs .input-append form .button.fake-cancel,
-form div.tabs .input-append .button.fake-cancel,
 .navbar .input-append #media-browser-tabset a.button,
 #media-browser-tabset .navbar .input-append a.button,
-div.tabs .input-append #media-browser-tabset a.button,
-#media-browser-tabset div.tabs .input-append a.button,
 .navbar .input-append #media-browser-tabset input.form-submit,
 #media-browser-tabset .navbar .input-append input.form-submit,
-div.tabs .input-append #media-browser-tabset input.form-submit,
-#media-browser-tabset div.tabs .input-append input.form-submit,
 .navbar .input-append #modal-content .form-submit,
 #modal-content .navbar .input-append .form-submit,
-div.tabs .input-append #modal-content .form-submit,
-#modal-content div.tabs .input-append .form-submit,
 .navbar .input-append #modal-content #edit-cancel,
 #modal-content .navbar .input-append #edit-cancel,
-div.tabs .input-append #modal-content #edit-cancel,
-#modal-content div.tabs .input-append #edit-cancel,
 .navbar .input-prepend .btn-group,
-div.tabs .input-prepend .btn-group,
-.navbar .input-append .btn-group,
-div.tabs .input-append .btn-group {
+.navbar .input-append .btn-group {
   margin-top: 0;
 }
 
@@ -5602,7 +5548,7 @@ form .navbar-form .button.fake-cancel,
   margin-bottom: 0;
 }
 /* line 161, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-static-top .navbar-inner, .navbar-static-top div.tabs {
+.navbar-static-top .navbar-inner {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -5619,21 +5565,19 @@ form .navbar-form .button.fake-cancel,
 }
 
 /* line 181, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-fixed-top .navbar-inner, .navbar-fixed-top div.tabs,
-.navbar-static-top .navbar-inner,
-.navbar-static-top div.tabs {
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
   border-width: 0 0 1px;
 }
 
 /* line 184, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-fixed-bottom .navbar-inner, .navbar-fixed-bottom div.tabs {
+.navbar-fixed-bottom .navbar-inner {
   border-width: 1px 0 0;
 }
 
 /* line 188, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-fixed-top .navbar-inner, .navbar-fixed-top div.tabs,
-.navbar-fixed-bottom .navbar-inner,
-.navbar-fixed-bottom div.tabs {
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner {
   padding-left: 0;
   padding-right: 0;
   -webkit-border-radius: 0;
@@ -5654,9 +5598,8 @@ form .navbar-form .button.fake-cancel,
 }
 
 /* line 208, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-fixed-top .navbar-inner, .navbar-fixed-top div.tabs,
-.navbar-static-top .navbar-inner,
-.navbar-static-top div.tabs {
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -5667,14 +5610,14 @@ form .navbar-form .button.fake-cancel,
   bottom: 0;
 }
 /* line 216, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-fixed-bottom .navbar-inner, .navbar-fixed-bottom div.tabs {
+.navbar-fixed-bottom .navbar-inner {
   -webkit-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* line 226, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav, div.tabs .nav, div.tabs ul.tabs {
+.navbar .nav {
   position: relative;
   left: 0;
   display: block;
@@ -5683,18 +5626,18 @@ form .navbar-form .button.fake-cancel,
 }
 
 /* line 233, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav.pull-right, div.tabs .nav.pull-right, div.tabs ul.pull-right.tabs {
+.navbar .nav.pull-right {
   float: right;
   margin-right: 0;
 }
 
 /* line 237, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > li, div.tabs .nav > li, div.tabs ul.tabs > li {
+.navbar .nav > li {
   float: left;
 }
 
 /* line 242, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > li > a, div.tabs .nav > li > a, div.tabs ul.tabs > li > a {
+.navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
   color: #777777;
@@ -5703,28 +5646,22 @@ form .navbar-form .button.fake-cancel,
 }
 
 /* line 250, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav .dropdown-toggle .caret, div.tabs .nav .dropdown-toggle .caret, div.tabs ul.tabs .dropdown-toggle .caret {
+.navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
 }
 
 /* line 256, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > li > a:focus, div.tabs .nav > li > a:focus, div.tabs ul.tabs > li > a:focus,
-.navbar .nav > li > a:hover,
-div.tabs .nav > li > a:hover,
-div.tabs ul.tabs > li > a:hover {
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
   background-color: transparent;
   color: #333333;
   text-decoration: none;
 }
 
 /* line 265, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > .active > a, div.tabs .nav > .active > a, div.tabs ul.tabs > .active > a,
+.navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
-div.tabs .nav > .active > a:hover,
-div.tabs ul.tabs > .active > a:hover,
-.navbar .nav > .active > a:focus,
-div.tabs .nav > .active > a:focus,
-div.tabs ul.tabs > .active > a:focus {
+.navbar .nav > .active > a:focus {
   color: #555555;
   text-decoration: none;
   background-color: #e6e6e6;
@@ -5734,7 +5671,7 @@ div.tabs ul.tabs > .active > a:focus {
 }
 
 /* line 274, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .btn-navbar, div.tabs .btn-navbar {
+.navbar .btn-navbar {
   display: none;
   float: right;
   padding: 7px 10px;
@@ -5760,18 +5697,18 @@ div.tabs ul.tabs > .active > a:focus {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
 }
 /* line 515, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_mixins.scss */
-.navbar .btn-navbar:hover, div.tabs .btn-navbar:hover, .navbar .btn-navbar:focus, div.tabs .btn-navbar:focus, .navbar .btn-navbar:active, div.tabs .btn-navbar:active, .navbar .btn-navbar.active, div.tabs .btn-navbar.active, .navbar .btn-navbar.disabled, div.tabs .btn-navbar.disabled, .navbar .btn-navbar[disabled], div.tabs .btn-navbar[disabled] {
+.navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
   color: white;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
 /* line 523, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_mixins.scss */
-.navbar .btn-navbar:active, div.tabs .btn-navbar:active, .navbar .btn-navbar.active, div.tabs .btn-navbar.active {
+.navbar .btn-navbar:active, .navbar .btn-navbar.active {
   background-color: #cccccc \9;
 }
 
 /* line 283, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .btn-navbar .icon-bar, div.tabs .btn-navbar .icon-bar {
+.navbar .btn-navbar .icon-bar {
   display: block;
   width: 18px;
   height: 2px;
@@ -5790,7 +5727,7 @@ div.tabs ul.tabs > .active > a:focus {
 }
 
 /* line 302, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > li > .dropdown-menu:before, div.tabs .nav > li > .dropdown-menu:before, div.tabs ul.tabs > li > .dropdown-menu:before {
+.navbar .nav > li > .dropdown-menu:before {
   content: '';
   display: inline-block;
   border-left: 7px solid transparent;
@@ -5802,7 +5739,7 @@ div.tabs ul.tabs > .active > a:focus {
   left: 9px;
 }
 /* line 313, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > li > .dropdown-menu:after, div.tabs .nav > li > .dropdown-menu:after, div.tabs ul.tabs > li > .dropdown-menu:after {
+.navbar .nav > li > .dropdown-menu:after {
   content: '';
   display: inline-block;
   border-left: 6px solid transparent;
@@ -5814,7 +5751,7 @@ div.tabs ul.tabs > .active > a:focus {
 }
 
 /* line 326, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-fixed-bottom .nav > li > .dropdown-menu:before, .navbar-fixed-bottom div.tabs ul.tabs > li > .dropdown-menu:before, div.tabs .navbar-fixed-bottom ul.tabs > li > .dropdown-menu:before {
+.navbar-fixed-bottom .nav > li > .dropdown-menu:before {
   border-top: 7px solid #ccc;
   border-top-color: rgba(0, 0, 0, 0.2);
   border-bottom: 0;
@@ -5822,7 +5759,7 @@ div.tabs ul.tabs > .active > a:focus {
   top: auto;
 }
 /* line 333, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-fixed-bottom .nav > li > .dropdown-menu:after, .navbar-fixed-bottom div.tabs ul.tabs > li > .dropdown-menu:after, div.tabs .navbar-fixed-bottom ul.tabs > li > .dropdown-menu:after {
+.navbar-fixed-bottom .nav > li > .dropdown-menu:after {
   border-top: 6px solid white;
   border-bottom: 0;
   bottom: -6px;
@@ -5830,73 +5767,55 @@ div.tabs ul.tabs > .active > a:focus {
 }
 
 /* line 343, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav li.dropdown > a:hover .caret, div.tabs .nav li.dropdown > a:hover .caret, div.tabs ul.tabs li.dropdown > a:hover .caret,
-.navbar .nav li.dropdown > a:focus .caret,
-div.tabs .nav li.dropdown > a:focus .caret,
-div.tabs ul.tabs li.dropdown > a:focus .caret {
+.navbar .nav li.dropdown > a:hover .caret,
+.navbar .nav li.dropdown > a:focus .caret {
   border-top-color: #333333;
   border-bottom-color: #333333;
 }
 
 /* line 351, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav li.dropdown.open > .dropdown-toggle, div.tabs .nav li.dropdown.open > .dropdown-toggle, div.tabs ul.tabs li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
-div.tabs .nav li.dropdown.active > .dropdown-toggle,
-div.tabs ul.tabs li.dropdown.active > .dropdown-toggle,
-.navbar .nav li.dropdown.open.active > .dropdown-toggle,
-div.tabs .nav li.dropdown.open.active > .dropdown-toggle,
-div.tabs ul.tabs li.dropdown.open.active > .dropdown-toggle {
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #e6e6e6;
   color: #555555;
 }
 
 /* line 355, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav li.dropdown > .dropdown-toggle .caret, div.tabs .nav li.dropdown > .dropdown-toggle .caret, div.tabs ul.tabs li.dropdown > .dropdown-toggle .caret {
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #777777;
   border-bottom-color: #777777;
 }
 
 /* line 361, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav li.dropdown.open > .dropdown-toggle .caret, div.tabs .nav li.dropdown.open > .dropdown-toggle .caret, div.tabs ul.tabs li.dropdown.open > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
-div.tabs .nav li.dropdown.active > .dropdown-toggle .caret,
-div.tabs ul.tabs li.dropdown.active > .dropdown-toggle .caret,
-.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret,
-div.tabs .nav li.dropdown.open.active > .dropdown-toggle .caret,
-div.tabs ul.tabs li.dropdown.open.active > .dropdown-toggle .caret {
+.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
   border-top-color: #555555;
   border-bottom-color: #555555;
 }
 
 /* line 368, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu, div.tabs .pull-right > li > .dropdown-menu,
-.navbar .nav > li > .dropdown-menu.pull-right,
-div.tabs .nav > li > .dropdown-menu.pull-right,
-div.tabs ul.tabs > li > .dropdown-menu.pull-right {
+.navbar .pull-right > li > .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.pull-right {
   left: auto;
   right: 0;
 }
 /* line 371, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu:before, div.tabs .pull-right > li > .dropdown-menu:before,
-.navbar .nav > li > .dropdown-menu.pull-right:before,
-div.tabs .nav > li > .dropdown-menu.pull-right:before,
-div.tabs ul.tabs > li > .dropdown-menu.pull-right:before {
+.navbar .pull-right > li > .dropdown-menu:before,
+.navbar .nav > li > .dropdown-menu.pull-right:before {
   left: auto;
   right: 12px;
 }
 /* line 375, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu:after, div.tabs .pull-right > li > .dropdown-menu:after,
-.navbar .nav > li > .dropdown-menu.pull-right:after,
-div.tabs .nav > li > .dropdown-menu.pull-right:after,
-div.tabs ul.tabs > li > .dropdown-menu.pull-right:after {
+.navbar .pull-right > li > .dropdown-menu:after,
+.navbar .nav > li > .dropdown-menu.pull-right:after {
   left: auto;
   right: 13px;
 }
 /* line 379, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu .dropdown-menu, div.tabs .pull-right > li > .dropdown-menu .dropdown-menu,
-.navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu,
-div.tabs .nav > li > .dropdown-menu.pull-right .dropdown-menu,
-div.tabs ul.tabs > li > .dropdown-menu.pull-right .dropdown-menu {
+.navbar .pull-right > li > .dropdown-menu .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
   left: auto;
   right: 100%;
   margin-left: 0;
@@ -5907,7 +5826,7 @@ div.tabs ul.tabs > li > .dropdown-menu.pull-right .dropdown-menu {
 }
 
 /* line 394, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .navbar-inner, .navbar-inverse div.tabs {
+.navbar-inverse .navbar-inner {
   background-color: #1b1b1b;
   background-image: -moz-linear-gradient(top, #222222, #111111);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
@@ -5920,20 +5839,14 @@ div.tabs ul.tabs > li > .dropdown-menu.pull-right .dropdown-menu {
 }
 /* line 400, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .brand,
-.navbar-inverse .nav > li > a,
-.navbar-inverse div.tabs ul.tabs > li > a,
-div.tabs .navbar-inverse ul.tabs > li > a {
+.navbar-inverse .nav > li > a {
   color: #999999;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 404, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .brand:hover, .navbar-inverse .brand:focus,
 .navbar-inverse .nav > li > a:hover,
-.navbar-inverse div.tabs ul.tabs > li > a:hover,
-div.tabs .navbar-inverse ul.tabs > li > a:hover,
-.navbar-inverse .nav > li > a:focus,
-.navbar-inverse div.tabs ul.tabs > li > a:focus,
-div.tabs .navbar-inverse ul.tabs > li > a:focus {
+.navbar-inverse .nav > li > a:focus {
   color: white;
 }
 /* line 409, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
@@ -5945,21 +5858,15 @@ div.tabs .navbar-inverse ul.tabs > li > a:focus {
   color: #999999;
 }
 /* line 418, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav > li > a:focus, .navbar-inverse div.tabs ul.tabs > li > a:focus, div.tabs .navbar-inverse ul.tabs > li > a:focus,
-.navbar-inverse .nav > li > a:hover,
-.navbar-inverse div.tabs ul.tabs > li > a:hover,
-div.tabs .navbar-inverse ul.tabs > li > a:hover {
+.navbar-inverse .nav > li > a:focus,
+.navbar-inverse .nav > li > a:hover {
   background-color: transparent;
   color: white;
 }
 /* line 425, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav .active > a, .navbar-inverse div.tabs ul.tabs .active > a, div.tabs .navbar-inverse ul.tabs .active > a,
+.navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
-.navbar-inverse div.tabs ul.tabs .active > a:hover,
-div.tabs .navbar-inverse ul.tabs .active > a:hover,
-.navbar-inverse .nav .active > a:focus,
-.navbar-inverse div.tabs ul.tabs .active > a:focus,
-div.tabs .navbar-inverse ul.tabs .active > a:focus {
+.navbar-inverse .nav .active > a:focus {
   color: white;
   background-color: #111111;
 }
@@ -5977,37 +5884,27 @@ div.tabs .navbar-inverse ul.tabs .active > a:focus {
   border-right-color: #222222;
 }
 /* line 448, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse div.tabs ul.tabs li.dropdown.open > .dropdown-toggle, div.tabs .navbar-inverse ul.tabs li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
-.navbar-inverse div.tabs ul.tabs li.dropdown.active > .dropdown-toggle,
-div.tabs .navbar-inverse ul.tabs li.dropdown.active > .dropdown-toggle,
-.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
-.navbar-inverse div.tabs ul.tabs li.dropdown.open.active > .dropdown-toggle,
-div.tabs .navbar-inverse ul.tabs li.dropdown.open.active > .dropdown-toggle {
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #111111;
   color: white;
 }
 /* line 453, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav li.dropdown > a:hover .caret, .navbar-inverse div.tabs ul.tabs li.dropdown > a:hover .caret, div.tabs .navbar-inverse ul.tabs li.dropdown > a:hover .caret,
-.navbar-inverse .nav li.dropdown > a:focus .caret,
-.navbar-inverse div.tabs ul.tabs li.dropdown > a:focus .caret,
-div.tabs .navbar-inverse ul.tabs li.dropdown > a:focus .caret {
+.navbar-inverse .nav li.dropdown > a:hover .caret,
+.navbar-inverse .nav li.dropdown > a:focus .caret {
   border-top-color: white;
   border-bottom-color: white;
 }
 /* line 457, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret, .navbar-inverse div.tabs ul.tabs li.dropdown > .dropdown-toggle .caret, div.tabs .navbar-inverse ul.tabs li.dropdown > .dropdown-toggle .caret {
+.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #999999;
   border-bottom-color: #999999;
 }
 /* line 463, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret, .navbar-inverse div.tabs ul.tabs li.dropdown.open > .dropdown-toggle .caret, div.tabs .navbar-inverse ul.tabs li.dropdown.open > .dropdown-toggle .caret,
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
-.navbar-inverse div.tabs ul.tabs li.dropdown.active > .dropdown-toggle .caret,
-div.tabs .navbar-inverse ul.tabs li.dropdown.active > .dropdown-toggle .caret,
-.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret,
-.navbar-inverse div.tabs ul.tabs li.dropdown.open.active > .dropdown-toggle .caret,
-div.tabs .navbar-inverse ul.tabs li.dropdown.open.active > .dropdown-toggle .caret {
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
   border-top-color: white;
   border-bottom-color: white;
 }
@@ -7808,11 +7705,7 @@ a [class*=" icon-"] {
 .nav-list > .active > a > [class^="icon-"],
 .nav-list > .active > a > [class*=" icon-"],
 .navbar-inverse .nav > .active > a > [class^="icon-"],
-.navbar-inverse div.tabs ul.tabs > .active > a > [class^="icon-"],
-div.tabs .navbar-inverse ul.tabs > .active > a > [class^="icon-"],
 .navbar-inverse .nav > .active > a > [class*=" icon-"],
-.navbar-inverse div.tabs ul.tabs > .active > a > [class*=" icon-"],
-div.tabs .navbar-inverse ul.tabs > .active > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
@@ -7834,9 +7727,8 @@ form .button.fake-cancel [class*=" icon-"].icon-large,
 #media-browser-tabset a.button [class*=" icon-"].icon-large,
 #media-browser-tabset input.form-submit [class*=" icon-"].icon-large,
 #modal-content .form-submit [class*=" icon-"].icon-large,
-#modal-content #edit-cancel [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large, div.tabs ul.tabs [class^="icon-"].icon-large,
-.nav [class*=" icon-"].icon-large,
-div.tabs ul.tabs [class*=" icon-"].icon-large {
+#modal-content #edit-cancel [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large,
+.nav [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 /* line 42, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/fontawesome/_bootstrap.scss */
@@ -7850,9 +7742,8 @@ form .button.fake-cancel [class*=" icon-"].icon-spin,
 #media-browser-tabset a.button [class*=" icon-"].icon-spin,
 #media-browser-tabset input.form-submit [class*=" icon-"].icon-spin,
 #modal-content .form-submit [class*=" icon-"].icon-spin,
-#modal-content #edit-cancel [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin, div.tabs ul.tabs [class^="icon-"].icon-spin,
-.nav [class*=" icon-"].icon-spin,
-div.tabs ul.tabs [class*=" icon-"].icon-spin {
+#modal-content #edit-cancel [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin,
+.nav [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
@@ -10376,7 +10267,7 @@ ul.links.inline li {
 }
 
 /* line 304, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_structure.scss */
-ul.nav, div.tabs ul.tabs,
+ul.nav,
 ul.navl li,
 ul.dropdown-menu,
 ul.dropdown-menu li {
@@ -10384,16 +10275,16 @@ ul.dropdown-menu li {
 }
 
 /* line 8, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_menu.scss */
-.navbar .btn-navbar-search, div.tabs .btn-navbar-search {
+.navbar .btn-navbar-search {
   padding: 4px 11px 3px;
 }
 /* line 10, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_menu.scss */
-.navbar .btn-navbar-search span, div.tabs .btn-navbar-search span {
+.navbar .btn-navbar-search span {
   line-height: 1.1em;
 }
 
 /* line 21, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_menu.scss */
-ul.nav > li.dropdown:after, div.tabs ul.tabs > li.dropdown:after {
+ul.nav > li.dropdown:after {
   width: 100%;
   height: 2px;
   background: none;
@@ -10697,11 +10588,11 @@ html.js input.throbbing {
 }
 
 /* line 134, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_form.scss */
-.navbar .search-form .container-inline, div.tabs .search-form .container-inline {
+.navbar .search-form .container-inline {
   padding-top: 0;
 }
 /* line 138, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_form.scss */
-.navbar .search-form input.form-submit, div.tabs .search-form input.form-submit {
+.navbar .search-form input.form-submit {
   display: none;
 }
 
@@ -12173,20 +12064,19 @@ html.js input.throbbing {
   }
 
   /* line 28, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .navbar-fixed-top .navbar-inner, .navbar-fixed-top div.tabs,
-  .navbar-fixed-bottom .navbar-inner,
-  .navbar-fixed-bottom div.tabs {
+  .navbar-fixed-top .navbar-inner,
+  .navbar-fixed-bottom .navbar-inner {
     padding: 5px;
   }
 
   /* line 31, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .navbar .container, div.tabs .container {
+  .navbar .container {
     width: auto;
     padding: 0;
   }
 
   /* line 36, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .navbar .brand, div.tabs .brand {
+  .navbar .brand {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 0 0 -5px;
@@ -12198,34 +12088,34 @@ html.js input.throbbing {
   }
 
   /* line 49, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .nav, .nav-collapse div.tabs ul.tabs, div.tabs .nav-collapse ul.tabs {
+  .nav-collapse .nav {
     float: none;
     margin: 0 0 10px;
   }
 
   /* line 53, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .nav > li, .nav-collapse div.tabs ul.tabs > li, div.tabs .nav-collapse ul.tabs > li {
+  .nav-collapse .nav > li {
     float: none;
   }
 
   /* line 56, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .nav > li > a, .nav-collapse div.tabs ul.tabs > li > a, div.tabs .nav-collapse ul.tabs > li > a {
+  .nav-collapse .nav > li > a {
     margin-bottom: 2px;
   }
 
   /* line 59, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .nav > .divider-vertical, .nav-collapse div.tabs ul.tabs > .divider-vertical, div.tabs .nav-collapse ul.tabs > .divider-vertical {
+  .nav-collapse .nav > .divider-vertical {
     display: none;
   }
 
   /* line 62, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .nav .nav-header, .nav-collapse div.tabs ul.tabs .nav-header, div.tabs .nav-collapse ul.tabs .nav-header {
+  .nav-collapse .nav .nav-header {
     color: #777777;
     text-shadow: none;
   }
 
   /* line 68, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .nav > li > a, .nav-collapse div.tabs ul.tabs > li > a, div.tabs .nav-collapse ul.tabs > li > a,
+  .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
     font-weight: bold;
@@ -12256,26 +12146,22 @@ html.js input.throbbing {
   }
 
   /* line 86, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .nav > li > a:hover, .nav-collapse div.tabs ul.tabs > li > a:hover, div.tabs .nav-collapse ul.tabs > li > a:hover,
+  .nav-collapse .nav > li > a:hover,
   .nav-collapse .nav > li > a:focus,
-  .nav-collapse div.tabs ul.tabs > li > a:focus,
-  div.tabs .nav-collapse ul.tabs > li > a:focus,
   .nav-collapse .dropdown-menu a:hover,
   .nav-collapse .dropdown-menu a:focus {
     background-color: #f2f2f2;
   }
 
   /* line 90, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse div.tabs ul.tabs > li > a, div.tabs .navbar-inverse .nav-collapse ul.tabs > li > a,
+  .navbar-inverse .nav-collapse .nav > li > a,
   .navbar-inverse .nav-collapse .dropdown-menu a {
     color: #999999;
   }
 
   /* line 96, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse div.tabs ul.tabs > li > a:hover, div.tabs .navbar-inverse .nav-collapse ul.tabs > li > a:hover,
+  .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .nav > li > a:focus,
-  .navbar-inverse .nav-collapse div.tabs ul.tabs > li > a:focus,
-  div.tabs .navbar-inverse .nav-collapse ul.tabs > li > a:focus,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:focus {
     background-color: #111111;
@@ -12324,7 +12210,7 @@ html.js input.throbbing {
   }
 
   /* line 132, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .nav > li > .dropdown-menu:before, .nav-collapse div.tabs ul.tabs > li > .dropdown-menu:before, div.tabs .nav-collapse ul.tabs > li > .dropdown-menu:before, .nav-collapse .nav > li > .dropdown-menu:after, .nav-collapse div.tabs ul.tabs > li > .dropdown-menu:after, div.tabs .nav-collapse ul.tabs > li > .dropdown-menu:after {
+  .nav-collapse .nav > li > .dropdown-menu:before, .nav-collapse .nav > li > .dropdown-menu:after {
     display: none;
   }
 
@@ -12349,7 +12235,7 @@ html.js input.throbbing {
   }
 
   /* line 152, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .navbar .nav-collapse .nav.pull-right, div.tabs .nav-collapse .nav.pull-right, .navbar .nav-collapse div.tabs ul.pull-right.tabs, div.tabs .nav-collapse ul.pull-right.tabs {
+  .navbar .nav-collapse .nav.pull-right {
     float: none;
     margin-left: 0;
   }
@@ -12362,12 +12248,12 @@ html.js input.throbbing {
   }
 
   /* line 163, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .navbar .btn-navbar, div.tabs .btn-navbar {
+  .navbar .btn-navbar {
     display: block;
   }
 
   /* line 169, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .navbar-static .navbar-inner, .navbar-static div.tabs {
+  .navbar-static .navbar-inner {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -12496,7 +12382,7 @@ html.js input.throbbing {
 }
 @media (max-width: 979px) {
   /* line 58, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_responsive_form.scss */
-  .navbar .search-form, div.tabs .search-form {
+  .navbar .search-form {
     border: 0 !important;
     padding: 5px 0 10px;
     margin: 0;
@@ -12505,19 +12391,19 @@ html.js input.throbbing {
     box-shadow: none;
   }
   /* line 63, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_responsive_form.scss */
-  .navbar .search-form .container-inline, div.tabs .search-form .container-inline {
+  .navbar .search-form .container-inline {
     padding-top: 0;
     margin: 0;
     display: block;
     width: 100%;
   }
   /* line 68, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_responsive_form.scss */
-  .navbar .search-form .container-inline .form-item, div.tabs .search-form .container-inline .form-item {
+  .navbar .search-form .container-inline .form-item {
     width: 100%;
     display: block;
   }
   /* line 73, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_responsive_form.scss */
-  .navbar .search-form input, div.tabs .search-form input {
+  .navbar .search-form input {
     margin: 0 auto;
     display: block;
     width: 85%;
@@ -12545,7 +12431,7 @@ html.js input.throbbing {
 }
 
 /* line 22, ../sass/partials/_layout.scss */
-.navbar-inner, div.tabs {
+.navbar-inner {
   padding-left: 20px;
   padding-right: 20px;
   border: 1px solid #d4d4d4;
@@ -13954,14 +13840,14 @@ form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .caret, .pan
 }
 
 /* line 75, ../sass/partials/_navbar.scss */
-.navbar .navbar-inner, div.tabs .navbar-inner, .navbar div.tabs, div.tabs div.tabs {
+.navbar .navbar-inner {
   padding: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
 /* line 81, ../sass/partials/_navbar.scss */
-.navbar .brand, div.tabs .brand {
+.navbar .brand {
   margin-left: 0;
   padding-left: 5px;
   font-weight: bold;
@@ -13973,47 +13859,46 @@ form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .caret, .pan
   transition: all 0.2s linear;
 }
 /* line 89, ../sass/partials/_navbar.scss */
-.navbar .icon-home, div.tabs .icon-home {
+.navbar .icon-home {
   color: white;
 }
 /* line 92, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search, div.tabs .toolbar-search {
+.navbar .toolbar-search {
   margin: 10px 10px 0 0;
 }
 /* line 95, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search form, div.tabs .toolbar-search form,
-.navbar .toolbar-search .btn-group,
-div.tabs .toolbar-search .btn-group {
+.navbar .toolbar-search form,
+.navbar .toolbar-search .btn-group {
   margin: 0;
 }
 /* line 98, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .input-append, div.tabs .toolbar-search .input-append {
+.navbar .toolbar-search .input-append {
   margin: 0;
 }
 /* line 102, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .dropdown-menu, div.tabs .toolbar-search .dropdown-menu {
+.navbar .toolbar-search .dropdown-menu {
   margin: 5px;
 }
 /* line 104, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .dropdown-menu .radio, div.tabs .toolbar-search .dropdown-menu .radio {
+.navbar .toolbar-search .dropdown-menu .radio {
   margin: 0;
 }
 /* line 106, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .dropdown-menu .radio input[type="radio"], div.tabs .toolbar-search .dropdown-menu .radio input[type="radio"] {
+.navbar .toolbar-search .dropdown-menu .radio input[type="radio"] {
   margin-top: 3px;
   margin-left: -17px;
 }
 /* line 111, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .dropdown-menu li, div.tabs .toolbar-search .dropdown-menu li {
+.navbar .toolbar-search .dropdown-menu li {
   padding: 2px;
 }
 /* line 114, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .dropdown-menu li:hover, div.tabs .toolbar-search .dropdown-menu li:hover {
+.navbar .toolbar-search .dropdown-menu li:hover {
   background: #0081C2;
   color: #FFF;
 }
 /* line 120, ../sass/partials/_navbar.scss */
-.navbar .pane-page-site-name, div.tabs .pane-page-site-name {
+.navbar .pane-page-site-name {
   margin-top: 12px;
   margin-left: 10px;
   font-size: 18px;
@@ -14021,7 +13906,7 @@ div.tabs .toolbar-search .btn-group {
 }
 
 /* line 128, ../sass/partials/_navbar.scss */
-.navbar.navbar-inverse .pane-page-site-name, div.navbar-inverse.tabs .pane-page-site-name {
+.navbar.navbar-inverse .pane-page-site-name {
   color: #EEE;
 }
 
@@ -14068,18 +13953,6 @@ div#panels-ipe-control-container a {
 /* line 166, ../sass/partials/_navbar.scss */
 body.panels-ipe {
   margin-bottom: 0px !important;
-}
-
-/* line 173, ../sass/partials/_navbar.scss */
-div.tabs ul.tabs {
-  border-bottom: 0;
-}
-/* line 177, ../sass/partials/_navbar.scss */
-div.tabs li.active a {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  border-bottom: 0;
 }
 
 /* line 183, ../sass/partials/_navbar.scss */
