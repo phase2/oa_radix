@@ -47,9 +47,11 @@ function oa_radix_module_implements_alter(&$implementations, $hook) {
  * Implements template_preprocess_page().
  */
 function oa_radix_preprocess_page(&$vars) {
+  global $base_url;
   // grab the Bootstrap JS since we can't currently add Bootstrap to our
   // make file because Drupal is GPLv2 instead of GPLv3
-  drupal_add_js('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js', 'external');
+  $base = parse_url($base_url);
+  drupal_add_js($base['scheme'] . '://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js', 'external');
 
   // Rework search_form to our liking.
   $vars['search_form'] = '';
