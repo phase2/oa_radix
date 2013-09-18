@@ -20,7 +20,7 @@ function oa_radix_css_alter(&$css) {
   $radix_path = drupal_get_path('theme', 'radix');
 
   // Radix now includes compiled stylesheets for demo purposes.
-  // We remove these from our subtheme since they are already included 
+  // We remove these from our subtheme since they are already included
   // in compass_radix.
   unset($css[$radix_path . '/assets/stylesheets/radix-style.css']);
   unset($css[$radix_path . '/assets/stylesheets/radix-print.css']);
@@ -49,7 +49,7 @@ function oa_radix_module_implements_alter(&$implementations, $hook) {
 function oa_radix_preprocess_page(&$vars) {
   // grab the Bootstrap JS since we can't currently add Bootstrap to our
   // make file because Drupal is GPLv2 instead of GPLv3
-  drupal_add_js('netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js', 'external');
+  drupal_add_js('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js', 'external');
 
   // Rework search_form to our liking.
   $vars['search_form'] = '';
