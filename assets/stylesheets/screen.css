@@ -1,3 +1,18 @@
+/* line 10, ../sass/global/_helper.scss */
+.clear-left {
+  clear: left;
+}
+
+/* line 10, ../sass/global/_helper.scss */
+.clear-right {
+  clear: right;
+}
+
+/* line 10, ../sass/global/_helper.scss */
+.clear-both {
+  clear: both;
+}
+
 /* line 17, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -2062,9 +2077,7 @@ form .input-prepend .button.fake-cancel:first-child,
   border-radius: 4px 0 0 4px;
 }
 /* line 496, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_forms.scss */
-.input-append input + .btn-group .btn:last-child, .input-append input + .btn-group form .button.fake-ok:last-child, form .input-append input + .btn-group .button.fake-ok:last-child,
-.input-append input + .btn-group form .button.fake-cancel:last-child,
-form .input-append input + .btn-group .button.fake-cancel:last-child, .input-append input + .btn-group #media-browser-tabset a.button:last-child, #media-browser-tabset .input-append input + .btn-group a.button:last-child,
+.input-append input + .btn-group .btn:last-child, .input-append input + .btn-group form .button.fake-ok:last-child, form .input-append input + .btn-group .button.fake-ok:last-child, .input-append input + .btn-group form .button.fake-cancel:last-child, form .input-append input + .btn-group .button.fake-cancel:last-child, .input-append input + .btn-group #media-browser-tabset a.button:last-child, #media-browser-tabset .input-append input + .btn-group a.button:last-child,
 .input-append input + .btn-group #media-browser-tabset input.form-submit:last-child,
 #media-browser-tabset .input-append input + .btn-group input.form-submit:last-child, .input-append input + .btn-group #modal-content .form-submit:last-child, #modal-content .input-append input + .btn-group .form-submit:last-child,
 .input-append input + .btn-group #modal-content #edit-cancel:last-child,
@@ -2147,9 +2160,7 @@ form .input-append .button.fake-cancel:last-child,
   border-radius: 0;
 }
 /* line 518, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_forms.scss */
-.input-prepend.input-append input + .btn-group .btn, .input-prepend.input-append input + .btn-group form .button.fake-ok, form .input-prepend.input-append input + .btn-group .button.fake-ok,
-.input-prepend.input-append input + .btn-group form .button.fake-cancel,
-form .input-prepend.input-append input + .btn-group .button.fake-cancel, .input-prepend.input-append input + .btn-group #media-browser-tabset a.button, #media-browser-tabset .input-prepend.input-append input + .btn-group a.button,
+.input-prepend.input-append input + .btn-group .btn, .input-prepend.input-append input + .btn-group form .button.fake-ok, form .input-prepend.input-append input + .btn-group .button.fake-ok, .input-prepend.input-append input + .btn-group form .button.fake-cancel, form .input-prepend.input-append input + .btn-group .button.fake-cancel, .input-prepend.input-append input + .btn-group #media-browser-tabset a.button, #media-browser-tabset .input-prepend.input-append input + .btn-group a.button,
 .input-prepend.input-append input + .btn-group #media-browser-tabset input.form-submit,
 #media-browser-tabset .input-prepend.input-append input + .btn-group input.form-submit, .input-prepend.input-append input + .btn-group #modal-content .form-submit, #modal-content .input-prepend.input-append input + .btn-group .form-submit,
 .input-prepend.input-append input + .btn-group #modal-content #edit-cancel,
@@ -2259,9 +2270,7 @@ input.search-query {
 }
 
 /* line 560, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_forms.scss */
-.form-search .input-append .btn, .form-search .input-append form .button.fake-ok, form .form-search .input-append .button.fake-ok,
-.form-search .input-append form .button.fake-cancel,
-form .form-search .input-append .button.fake-cancel, .form-search .input-append #media-browser-tabset a.button, #media-browser-tabset .form-search .input-append a.button,
+.form-search .input-append .btn, .form-search .input-append form .button.fake-ok, form .form-search .input-append .button.fake-ok, .form-search .input-append form .button.fake-cancel, form .form-search .input-append .button.fake-cancel, .form-search .input-append #media-browser-tabset a.button, #media-browser-tabset .form-search .input-append a.button,
 .form-search .input-append #media-browser-tabset input.form-submit,
 #media-browser-tabset .form-search .input-append input.form-submit, .form-search .input-append #modal-content .form-submit, #modal-content .form-search .input-append .form-submit,
 .form-search .input-append #modal-content #edit-cancel,
@@ -2279,9 +2288,7 @@ form .form-search .input-append .button.fake-cancel, .form-search .input-append 
 }
 
 /* line 566, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_forms.scss */
-.form-search .input-prepend .btn, .form-search .input-prepend form .button.fake-ok, form .form-search .input-prepend .button.fake-ok,
-.form-search .input-prepend form .button.fake-cancel,
-form .form-search .input-prepend .button.fake-cancel, .form-search .input-prepend #media-browser-tabset a.button, #media-browser-tabset .form-search .input-prepend a.button,
+.form-search .input-prepend .btn, .form-search .input-prepend form .button.fake-ok, form .form-search .input-prepend .button.fake-ok, .form-search .input-prepend form .button.fake-cancel, form .form-search .input-prepend .button.fake-cancel, .form-search .input-prepend #media-browser-tabset a.button, #media-browser-tabset .form-search .input-prepend a.button,
 .form-search .input-prepend #media-browser-tabset input.form-submit,
 #media-browser-tabset .form-search .input-prepend input.form-submit, .form-search .input-prepend #modal-content .form-submit, #modal-content .form-search .input-prepend .form-submit,
 .form-search .input-prepend #modal-content #edit-cancel,
@@ -2722,7 +2729,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('../images/glyphicons-halflings.png?1379156779');
+  background-image: url('../images/glyphicons-halflings.png?1379701995');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2747,7 +2754,7 @@ table th[class*="span"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url('../images/glyphicons-halflings-white.png?1379156779');
+  background-image: url('../images/glyphicons-halflings-white.png?1379701995');
 }
 
 /* line 52, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_sprites.scss */
@@ -3796,8 +3803,7 @@ button.close {
 }
 
 /* line 13, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-.btn, form .button.fake-ok,
-form .button.fake-cancel, #media-browser-tabset a.button,
+.btn, form .button.fake-ok, form .button.fake-cancel, #media-browser-tabset a.button,
 #media-browser-tabset input.form-submit, #modal-content .form-submit,
 #media-browser-tabset form a.button,
 #media-browser-tabset form input.form-submit,
@@ -3839,23 +3845,17 @@ form .button.fake-cancel, #media-browser-tabset a.button,
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 515, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_mixins.scss */
-.btn:hover, form .button.fake-ok:hover,
-form .button.fake-cancel:hover, #media-browser-tabset a.button:hover,
+.btn:hover, form .button.fake-ok:hover, form .button.fake-cancel:hover, #media-browser-tabset a.button:hover,
 #media-browser-tabset input.form-submit:hover, #modal-content .form-submit:hover,
-#modal-content #edit-cancel:hover, .btn:focus, form .button.fake-ok:focus,
-form .button.fake-cancel:focus, #media-browser-tabset a.button:focus,
+#modal-content #edit-cancel:hover, .btn:focus, form .button.fake-ok:focus, form .button.fake-cancel:focus, #media-browser-tabset a.button:focus,
 #media-browser-tabset input.form-submit:focus, #modal-content .form-submit:focus,
-#modal-content #edit-cancel:focus, .btn:active, form .button.fake-ok:active,
-form .button.fake-cancel:active, #media-browser-tabset a.button:active,
+#modal-content #edit-cancel:focus, .btn:active, form .button.fake-ok:active, form .button.fake-cancel:active, #media-browser-tabset a.button:active,
 #media-browser-tabset input.form-submit:active, #modal-content .form-submit:active,
-#modal-content #edit-cancel:active, .btn.active, form .active.button.fake-ok,
-form .active.button.fake-cancel, #media-browser-tabset a.active.button,
+#modal-content #edit-cancel:active, .btn.active, form .active.button.fake-ok, form .active.button.fake-cancel, #media-browser-tabset a.active.button,
 #media-browser-tabset input.active.form-submit, #modal-content .active.form-submit,
-#modal-content .active#edit-cancel, .btn.disabled, form .disabled.button.fake-ok,
-form .disabled.button.fake-cancel, #media-browser-tabset a.disabled.button,
+#modal-content .active#edit-cancel, .btn.disabled, form .disabled.button.fake-ok, form .disabled.button.fake-cancel, #media-browser-tabset a.disabled.button,
 #media-browser-tabset input.disabled.form-submit, #modal-content .disabled.form-submit,
-#modal-content .disabled#edit-cancel, .btn[disabled], form [disabled].button.fake-ok,
-form [disabled].button.fake-cancel, #media-browser-tabset a[disabled].button,
+#modal-content .disabled#edit-cancel, .btn[disabled], form [disabled].button.fake-ok, form [disabled].button.fake-cancel, #media-browser-tabset a[disabled].button,
 #media-browser-tabset input[disabled].form-submit, #modal-content [disabled].form-submit,
 #modal-content [disabled]#edit-cancel {
   color: #333333;
@@ -3863,28 +3863,23 @@ form [disabled].button.fake-cancel, #media-browser-tabset a[disabled].button,
   *background-color: #d9d9d9;
 }
 /* line 523, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_mixins.scss */
-.btn:active, form .button.fake-ok:active,
-form .button.fake-cancel:active, #media-browser-tabset a.button:active,
+.btn:active, form .button.fake-ok:active, form .button.fake-cancel:active, #media-browser-tabset a.button:active,
 #media-browser-tabset input.form-submit:active, #modal-content .form-submit:active,
-#modal-content #edit-cancel:active, .btn.active, form .active.button.fake-ok,
-form .active.button.fake-cancel, #media-browser-tabset a.active.button,
+#modal-content #edit-cancel:active, .btn.active, form .active.button.fake-ok, form .active.button.fake-cancel, #media-browser-tabset a.active.button,
 #media-browser-tabset input.active.form-submit, #modal-content .active.form-submit,
 #modal-content .active#edit-cancel {
   background-color: #cccccc \9;
 }
 /* line 61, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_mixins.scss */
-.btn:first-child, form .button.fake-ok:first-child,
-form .button.fake-cancel:first-child, #media-browser-tabset a.button:first-child,
+.btn:first-child, form .button.fake-ok:first-child, form .button.fake-cancel:first-child, #media-browser-tabset a.button:first-child,
 #media-browser-tabset input.form-submit:first-child, #modal-content .form-submit:first-child,
 #modal-content #edit-cancel:first-child {
   *margin-left: 0;
 }
 /* line 33, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-.btn:hover, form .button.fake-ok:hover,
-form .button.fake-cancel:hover, #media-browser-tabset a.button:hover,
+.btn:hover, form .button.fake-ok:hover, form .button.fake-cancel:hover, #media-browser-tabset a.button:hover,
 #media-browser-tabset input.form-submit:hover, #modal-content .form-submit:hover,
-#modal-content #edit-cancel:hover, .btn:focus, form .button.fake-ok:focus,
-form .button.fake-cancel:focus, #media-browser-tabset a.button:focus,
+#modal-content #edit-cancel:hover, .btn:focus, form .button.fake-ok:focus, form .button.fake-cancel:focus, #media-browser-tabset a.button:focus,
 #media-browser-tabset input.form-submit:focus, #modal-content .form-submit:focus,
 #modal-content #edit-cancel:focus {
   color: #333333;
@@ -3896,8 +3891,7 @@ form .button.fake-cancel:focus, #media-browser-tabset a.button:focus,
   transition: background-position 0.1s linear;
 }
 /* line 44, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-.btn:focus, form .button.fake-ok:focus,
-form .button.fake-cancel:focus, #media-browser-tabset a.button:focus,
+.btn:focus, form .button.fake-ok:focus, form .button.fake-cancel:focus, #media-browser-tabset a.button:focus,
 #media-browser-tabset input.form-submit:focus, #modal-content .form-submit:focus,
 #modal-content #edit-cancel:focus {
   outline: thin dotted #333;
@@ -3905,11 +3899,9 @@ form .button.fake-cancel:focus, #media-browser-tabset a.button:focus,
   outline-offset: -2px;
 }
 /* line 50, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-.btn.active, form .active.button.fake-ok,
-form .active.button.fake-cancel, #media-browser-tabset a.active.button,
+.btn.active, form .active.button.fake-ok, form .active.button.fake-cancel, #media-browser-tabset a.active.button,
 #media-browser-tabset input.active.form-submit, #modal-content .active.form-submit,
-#modal-content .active#edit-cancel, .btn:active, form .button.fake-ok:active,
-form .button.fake-cancel:active, #media-browser-tabset a.button:active,
+#modal-content .active#edit-cancel, .btn:active, form .button.fake-ok:active, form .button.fake-cancel:active, #media-browser-tabset a.button:active,
 #media-browser-tabset input.form-submit:active, #modal-content .form-submit:active,
 #modal-content #edit-cancel:active {
   background-image: none;
@@ -3919,11 +3911,9 @@ form .button.fake-cancel:active, #media-browser-tabset a.button:active,
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 58, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-.btn.disabled, form .disabled.button.fake-ok,
-form .disabled.button.fake-cancel, #media-browser-tabset a.disabled.button,
+.btn.disabled, form .disabled.button.fake-ok, form .disabled.button.fake-cancel, #media-browser-tabset a.disabled.button,
 #media-browser-tabset input.disabled.form-submit, #modal-content .disabled.form-submit,
-#modal-content .disabled#edit-cancel, .btn[disabled], form [disabled].button.fake-ok,
-form [disabled].button.fake-cancel, #media-browser-tabset a[disabled].button,
+#modal-content .disabled#edit-cancel, .btn[disabled], form [disabled].button.fake-ok, form [disabled].button.fake-cancel, #media-browser-tabset a[disabled].button,
 #media-browser-tabset input[disabled].form-submit, #modal-content [disabled].form-submit,
 #modal-content [disabled]#edit-cancel {
   cursor: default;
@@ -4004,7 +3994,8 @@ input[type="button"].btn-block {
 }
 
 /* line 142, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-.btn-primary.active, form .active.button.fake-ok, #media-browser-tabset input.active.form-submit, #modal-content .active.form-submit, #node-edit .form-actions input.active,
+.btn-primary.active, form .active.button.fake-ok, #media-browser-tabset a.active.button,
+#media-browser-tabset input.active.form-submit, #modal-content .active.form-submit, #node-edit .form-actions input.active,
 .btn-warning.active,
 .btn-danger.active,
 .btn-success.active,
@@ -4014,7 +4005,8 @@ input[type="button"].btn-block {
 }
 
 /* line 148, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-.btn-primary, form .button.fake-ok, #media-browser-tabset input.form-submit, #modal-content .form-submit,
+.btn-primary, form .button.fake-ok, #media-browser-tabset a.button,
+#media-browser-tabset input.form-submit, #modal-content .form-submit,
 #media-browser-tabset form input.form-submit, #node-edit .form-actions input {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -4033,13 +4025,21 @@ input[type="button"].btn-block {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 515, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_mixins.scss */
-.btn-primary:hover, form .button.fake-ok:hover, #media-browser-tabset input.form-submit:hover, #modal-content .form-submit:hover, #node-edit .form-actions input:hover, .btn-primary:focus, form .button.fake-ok:focus, #media-browser-tabset input.form-submit:focus, #modal-content .form-submit:focus, #node-edit .form-actions input:focus, .btn-primary:active, form .button.fake-ok:active, #media-browser-tabset input.form-submit:active, #modal-content .form-submit:active, #node-edit .form-actions input:active, .btn-primary.active, form .active.button.fake-ok, #media-browser-tabset input.active.form-submit, #modal-content .active.form-submit, #node-edit .form-actions input.active, .btn-primary.disabled, form .disabled.button.fake-ok, #media-browser-tabset input.disabled.form-submit, #modal-content .disabled.form-submit, #node-edit .form-actions input.disabled, .btn-primary[disabled], form [disabled].button.fake-ok, #media-browser-tabset input[disabled].form-submit, #modal-content [disabled].form-submit, #node-edit .form-actions input[disabled] {
+.btn-primary:hover, form .button.fake-ok:hover, #media-browser-tabset a.button:hover,
+#media-browser-tabset input.form-submit:hover, #modal-content .form-submit:hover, #node-edit .form-actions input:hover, .btn-primary:focus, form .button.fake-ok:focus, #media-browser-tabset a.button:focus,
+#media-browser-tabset input.form-submit:focus, #modal-content .form-submit:focus, #node-edit .form-actions input:focus, .btn-primary:active, form .button.fake-ok:active, #media-browser-tabset a.button:active,
+#media-browser-tabset input.form-submit:active, #modal-content .form-submit:active, #node-edit .form-actions input:active, .btn-primary.active, form .active.button.fake-ok, #media-browser-tabset a.active.button,
+#media-browser-tabset input.active.form-submit, #modal-content .active.form-submit, #node-edit .form-actions input.active, .btn-primary.disabled, form .disabled.button.fake-ok, #media-browser-tabset a.disabled.button,
+#media-browser-tabset input.disabled.form-submit, #modal-content .disabled.form-submit, #node-edit .form-actions input.disabled, .btn-primary[disabled], form [disabled].button.fake-ok, #media-browser-tabset a[disabled].button,
+#media-browser-tabset input[disabled].form-submit, #modal-content [disabled].form-submit, #node-edit .form-actions input[disabled] {
   color: white;
   background-color: #0044cc;
   *background-color: #003bb3;
 }
 /* line 523, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_mixins.scss */
-.btn-primary:active, form .button.fake-ok:active, #media-browser-tabset input.form-submit:active, #modal-content .form-submit:active, #node-edit .form-actions input:active, .btn-primary.active, form .active.button.fake-ok, #media-browser-tabset input.active.form-submit, #modal-content .active.form-submit, #node-edit .form-actions input.active {
+.btn-primary:active, form .button.fake-ok:active, #media-browser-tabset a.button:active,
+#media-browser-tabset input.form-submit:active, #modal-content .form-submit:active, #node-edit .form-actions input:active, .btn-primary.active, form .active.button.fake-ok, #media-browser-tabset a.active.button,
+#media-browser-tabset input.active.form-submit, #modal-content .active.form-submit, #node-edit .form-actions input.active {
   background-color: #003399 \9;
 }
 
@@ -4189,8 +4189,7 @@ input[type="button"].btn-block {
 }
 
 /* line 177, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-button.btn, form button.button.fake-ok,
-form button.button.fake-cancel, #modal-content button.form-submit,
+button.btn, form button.button.fake-ok, form button.button.fake-cancel, #modal-content button.form-submit,
 #modal-content button#edit-cancel,
 input[type="submit"].btn,
 form input[type="submit"].button.fake-ok,
@@ -4202,8 +4201,7 @@ form input[type="submit"].button.fake-cancel,
   *padding-bottom: 3px;
 }
 /* line 180, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-button.btn::-moz-focus-inner, form button.button.fake-ok::-moz-focus-inner,
-form button.button.fake-cancel::-moz-focus-inner, #modal-content button.form-submit::-moz-focus-inner,
+button.btn::-moz-focus-inner, form button.button.fake-ok::-moz-focus-inner, form button.button.fake-cancel::-moz-focus-inner, #modal-content button.form-submit::-moz-focus-inner,
 #modal-content button#edit-cancel::-moz-focus-inner,
 input[type="submit"].btn::-moz-focus-inner,
 form input[type="submit"].button.fake-ok::-moz-focus-inner,
@@ -4215,8 +4213,7 @@ form input[type="submit"].button.fake-cancel::-moz-focus-inner,
   border: 0;
 }
 /* line 189, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-button.btn.btn-large, form button.btn-large.button.fake-ok,
-form button.btn-large.button.fake-cancel, #modal-content button.btn-large.form-submit,
+button.btn.btn-large, form button.btn-large.button.fake-ok, form button.btn-large.button.fake-cancel, #modal-content button.btn-large.form-submit,
 #modal-content button.btn-large#edit-cancel,
 input[type="submit"].btn.btn-large,
 form input[type="submit"].btn-large.button.fake-ok,
@@ -4228,8 +4225,7 @@ form input[type="submit"].btn-large.button.fake-cancel,
   *padding-bottom: 7px;
 }
 /* line 193, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-button.btn.btn-small, form button.btn-small.button.fake-ok,
-form button.btn-small.button.fake-cancel, #modal-content button.btn-small.form-submit,
+button.btn.btn-small, form button.btn-small.button.fake-ok, form button.btn-small.button.fake-cancel, #modal-content button.btn-small.form-submit,
 #modal-content button.btn-small#edit-cancel,
 input[type="submit"].btn.btn-small,
 form input[type="submit"].btn-small.button.fake-ok,
@@ -4241,8 +4237,7 @@ form input[type="submit"].btn-small.button.fake-cancel,
   *padding-bottom: 3px;
 }
 /* line 197, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_buttons.scss */
-button.btn.btn-mini, form button.btn-mini.button.fake-ok,
-form button.btn-mini.button.fake-cancel, #modal-content button.btn-mini.form-submit,
+button.btn.btn-mini, form button.btn-mini.button.fake-ok, form button.btn-mini.button.fake-cancel, #modal-content button.btn-mini.form-submit,
 #modal-content button.btn-mini#edit-cancel,
 input[type="submit"].btn.btn-mini,
 form input[type="submit"].btn-mini.button.fake-ok,
@@ -4318,24 +4313,15 @@ form input[type="submit"].btn-mini.button.fake-cancel,
   margin-bottom: 10px;
 }
 /* line 29, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-toolbar > .btn + .btn, form .btn-toolbar > .button.fake-ok + .btn,
-form .btn-toolbar > .button.fake-cancel + .btn, #media-browser-tabset .btn-toolbar > a.button + .btn,
+.btn-toolbar > .btn + .btn, form .btn-toolbar > .button.fake-ok + .btn, form .btn-toolbar > .button.fake-cancel + .btn, #media-browser-tabset .btn-toolbar > a.button + .btn,
 #media-browser-tabset .btn-toolbar > input.form-submit + .btn, #modal-content .btn-toolbar > .form-submit + .btn,
-#modal-content .btn-toolbar > #edit-cancel + .btn, form .btn-toolbar > .btn + .button.fake-ok, form .btn-toolbar > .button.fake-ok + .button.fake-ok,
-form .btn-toolbar > .button.fake-cancel + .button.fake-ok, form #media-browser-tabset .btn-toolbar > a.button + .button.fake-ok,
+#modal-content .btn-toolbar > #edit-cancel + .btn, form .btn-toolbar > .btn + .button.fake-ok, form .btn-toolbar > .button.fake-ok + .button.fake-ok, form .btn-toolbar > .button.fake-cancel + .button.fake-ok, form #media-browser-tabset .btn-toolbar > a.button + .button.fake-ok,
 form #media-browser-tabset .btn-toolbar > input.form-submit + .button.fake-ok, #modal-content form .btn-toolbar > .form-submit + .button.fake-ok, form #modal-content .btn-toolbar > .form-submit + .button.fake-ok,
 #modal-content form .btn-toolbar > #edit-cancel + .button.fake-ok,
-form #modal-content .btn-toolbar > #edit-cancel + .button.fake-ok,
-form .btn-toolbar > .btn + .button.fake-cancel,
-form .btn-toolbar > .button.fake-ok + .button.fake-cancel,
-form .btn-toolbar > .button.fake-cancel + .button.fake-cancel,
-form #media-browser-tabset .btn-toolbar > a.button + .button.fake-cancel,
-form #media-browser-tabset .btn-toolbar > input.form-submit + .button.fake-cancel,
-#modal-content form .btn-toolbar > .form-submit + .button.fake-cancel,
-form #modal-content .btn-toolbar > .form-submit + .button.fake-cancel,
+form #modal-content .btn-toolbar > #edit-cancel + .button.fake-ok, form .btn-toolbar > .btn + .button.fake-cancel, form .btn-toolbar > .button.fake-ok + .button.fake-cancel, form .btn-toolbar > .button.fake-cancel + .button.fake-cancel, form #media-browser-tabset .btn-toolbar > a.button + .button.fake-cancel,
+form #media-browser-tabset .btn-toolbar > input.form-submit + .button.fake-cancel, #modal-content form .btn-toolbar > .form-submit + .button.fake-cancel, form #modal-content .btn-toolbar > .form-submit + .button.fake-cancel,
 #modal-content form .btn-toolbar > #edit-cancel + .button.fake-cancel,
-form #modal-content .btn-toolbar > #edit-cancel + .button.fake-cancel, #media-browser-tabset .btn-toolbar > .btn + a.button, form #media-browser-tabset .btn-toolbar > .button.fake-ok + a.button,
-form #media-browser-tabset .btn-toolbar > .button.fake-cancel + a.button, #media-browser-tabset .btn-toolbar > a.button + a.button,
+form #modal-content .btn-toolbar > #edit-cancel + .button.fake-cancel, #media-browser-tabset .btn-toolbar > .btn + a.button, form #media-browser-tabset .btn-toolbar > .button.fake-ok + a.button, form #media-browser-tabset .btn-toolbar > .button.fake-cancel + a.button, #media-browser-tabset .btn-toolbar > a.button + a.button,
 #media-browser-tabset .btn-toolbar > input.form-submit + a.button, #modal-content #media-browser-tabset .btn-toolbar > .form-submit + a.button, #media-browser-tabset #modal-content .btn-toolbar > .form-submit + a.button,
 #modal-content #media-browser-tabset .btn-toolbar > #edit-cancel + a.button,
 #media-browser-tabset #modal-content .btn-toolbar > #edit-cancel + a.button,
@@ -4343,9 +4329,7 @@ form #media-browser-tabset .btn-toolbar > .button.fake-cancel + a.button, #media
 form #media-browser-tabset .btn-toolbar > .button.fake-ok + input.form-submit,
 form #media-browser-tabset .btn-toolbar > .button.fake-cancel + input.form-submit,
 #media-browser-tabset .btn-toolbar > a.button + input.form-submit,
-#media-browser-tabset .btn-toolbar > input.form-submit + input.form-submit, #modal-content .btn-toolbar > .btn + .form-submit, form #modal-content .btn-toolbar > .button.fake-ok + .form-submit, #modal-content form .btn-toolbar > .button.fake-ok + .form-submit,
-form #modal-content .btn-toolbar > .button.fake-cancel + .form-submit,
-#modal-content form .btn-toolbar > .button.fake-cancel + .form-submit, #media-browser-tabset #modal-content .btn-toolbar > a.button + .form-submit, #modal-content #media-browser-tabset .btn-toolbar > a.button + .form-submit, #modal-content .btn-toolbar > .form-submit + .form-submit,
+#media-browser-tabset .btn-toolbar > input.form-submit + input.form-submit, #modal-content .btn-toolbar > .btn + .form-submit, form #modal-content .btn-toolbar > .button.fake-ok + .form-submit, #modal-content form .btn-toolbar > .button.fake-ok + .form-submit, form #modal-content .btn-toolbar > .button.fake-cancel + .form-submit, #modal-content form .btn-toolbar > .button.fake-cancel + .form-submit, #media-browser-tabset #modal-content .btn-toolbar > a.button + .form-submit, #modal-content #media-browser-tabset .btn-toolbar > a.button + .form-submit, #modal-content .btn-toolbar > .form-submit + .form-submit,
 #modal-content .btn-toolbar > #edit-cancel + .form-submit,
 #modal-content .btn-toolbar > .btn + #edit-cancel,
 form #modal-content .btn-toolbar > .button.fake-ok + #edit-cancel,
@@ -4374,8 +4358,7 @@ form .btn-toolbar > .button.fake-cancel + .btn-group,
 }
 
 /* line 35, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn, form .btn-group > .button.fake-ok,
-form .btn-group > .button.fake-cancel, #media-browser-tabset .btn-group > a.button,
+.btn-group > .btn, form .btn-group > .button.fake-ok, form .btn-group > .button.fake-cancel, #media-browser-tabset .btn-group > a.button,
 #media-browser-tabset .btn-group > input.form-submit, #modal-content .btn-group > .form-submit,
 #modal-content .btn-group > #edit-cancel {
   position: relative;
@@ -4385,24 +4368,15 @@ form .btn-group > .button.fake-cancel, #media-browser-tabset .btn-group > a.butt
 }
 
 /* line 39, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn + .btn, form .btn-group > .button.fake-ok + .btn,
-form .btn-group > .button.fake-cancel + .btn, #media-browser-tabset .btn-group > a.button + .btn,
+.btn-group > .btn + .btn, form .btn-group > .button.fake-ok + .btn, form .btn-group > .button.fake-cancel + .btn, #media-browser-tabset .btn-group > a.button + .btn,
 #media-browser-tabset .btn-group > input.form-submit + .btn, #modal-content .btn-group > .form-submit + .btn,
-#modal-content .btn-group > #edit-cancel + .btn, form .btn-group > .btn + .button.fake-ok, form .btn-group > .button.fake-ok + .button.fake-ok,
-form .btn-group > .button.fake-cancel + .button.fake-ok, form #media-browser-tabset .btn-group > a.button + .button.fake-ok,
+#modal-content .btn-group > #edit-cancel + .btn, form .btn-group > .btn + .button.fake-ok, form .btn-group > .button.fake-ok + .button.fake-ok, form .btn-group > .button.fake-cancel + .button.fake-ok, form #media-browser-tabset .btn-group > a.button + .button.fake-ok,
 form #media-browser-tabset .btn-group > input.form-submit + .button.fake-ok, #modal-content form .btn-group > .form-submit + .button.fake-ok, form #modal-content .btn-group > .form-submit + .button.fake-ok,
 #modal-content form .btn-group > #edit-cancel + .button.fake-ok,
-form #modal-content .btn-group > #edit-cancel + .button.fake-ok,
-form .btn-group > .btn + .button.fake-cancel,
-form .btn-group > .button.fake-ok + .button.fake-cancel,
-form .btn-group > .button.fake-cancel + .button.fake-cancel,
-form #media-browser-tabset .btn-group > a.button + .button.fake-cancel,
-form #media-browser-tabset .btn-group > input.form-submit + .button.fake-cancel,
-#modal-content form .btn-group > .form-submit + .button.fake-cancel,
-form #modal-content .btn-group > .form-submit + .button.fake-cancel,
+form #modal-content .btn-group > #edit-cancel + .button.fake-ok, form .btn-group > .btn + .button.fake-cancel, form .btn-group > .button.fake-ok + .button.fake-cancel, form .btn-group > .button.fake-cancel + .button.fake-cancel, form #media-browser-tabset .btn-group > a.button + .button.fake-cancel,
+form #media-browser-tabset .btn-group > input.form-submit + .button.fake-cancel, #modal-content form .btn-group > .form-submit + .button.fake-cancel, form #modal-content .btn-group > .form-submit + .button.fake-cancel,
 #modal-content form .btn-group > #edit-cancel + .button.fake-cancel,
-form #modal-content .btn-group > #edit-cancel + .button.fake-cancel, #media-browser-tabset .btn-group > .btn + a.button, form #media-browser-tabset .btn-group > .button.fake-ok + a.button,
-form #media-browser-tabset .btn-group > .button.fake-cancel + a.button, #media-browser-tabset .btn-group > a.button + a.button,
+form #modal-content .btn-group > #edit-cancel + .button.fake-cancel, #media-browser-tabset .btn-group > .btn + a.button, form #media-browser-tabset .btn-group > .button.fake-ok + a.button, form #media-browser-tabset .btn-group > .button.fake-cancel + a.button, #media-browser-tabset .btn-group > a.button + a.button,
 #media-browser-tabset .btn-group > input.form-submit + a.button, #modal-content #media-browser-tabset .btn-group > .form-submit + a.button, #media-browser-tabset #modal-content .btn-group > .form-submit + a.button,
 #modal-content #media-browser-tabset .btn-group > #edit-cancel + a.button,
 #media-browser-tabset #modal-content .btn-group > #edit-cancel + a.button,
@@ -4410,9 +4384,7 @@ form #media-browser-tabset .btn-group > .button.fake-cancel + a.button, #media-b
 form #media-browser-tabset .btn-group > .button.fake-ok + input.form-submit,
 form #media-browser-tabset .btn-group > .button.fake-cancel + input.form-submit,
 #media-browser-tabset .btn-group > a.button + input.form-submit,
-#media-browser-tabset .btn-group > input.form-submit + input.form-submit, #modal-content .btn-group > .btn + .form-submit, form #modal-content .btn-group > .button.fake-ok + .form-submit, #modal-content form .btn-group > .button.fake-ok + .form-submit,
-form #modal-content .btn-group > .button.fake-cancel + .form-submit,
-#modal-content form .btn-group > .button.fake-cancel + .form-submit, #media-browser-tabset #modal-content .btn-group > a.button + .form-submit, #modal-content #media-browser-tabset .btn-group > a.button + .form-submit, #modal-content .btn-group > .form-submit + .form-submit,
+#media-browser-tabset .btn-group > input.form-submit + input.form-submit, #modal-content .btn-group > .btn + .form-submit, form #modal-content .btn-group > .button.fake-ok + .form-submit, #modal-content form .btn-group > .button.fake-ok + .form-submit, form #modal-content .btn-group > .button.fake-cancel + .form-submit, #modal-content form .btn-group > .button.fake-cancel + .form-submit, #media-browser-tabset #modal-content .btn-group > a.button + .form-submit, #modal-content #media-browser-tabset .btn-group > a.button + .form-submit, #modal-content .btn-group > .form-submit + .form-submit,
 #modal-content .btn-group > #edit-cancel + .form-submit,
 #modal-content .btn-group > .btn + #edit-cancel,
 form #modal-content .btn-group > .button.fake-ok + #edit-cancel,
@@ -4427,8 +4399,7 @@ form #modal-content .btn-group > .button.fake-cancel + #edit-cancel,
 }
 
 /* line 44, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn, form .btn-group > .button.fake-ok,
-form .btn-group > .button.fake-cancel, #media-browser-tabset .btn-group > a.button,
+.btn-group > .btn, form .btn-group > .button.fake-ok, form .btn-group > .button.fake-cancel, #media-browser-tabset .btn-group > a.button,
 #media-browser-tabset .btn-group > input.form-submit, #modal-content .btn-group > .form-submit,
 #modal-content .btn-group > #edit-cancel,
 .btn-group > .dropdown-menu,
@@ -4452,8 +4423,7 @@ form .btn-group > .button.fake-cancel, #media-browser-tabset .btn-group > a.butt
 }
 
 /* line 60, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child, form .btn-group > .button.fake-ok:first-child,
-form .btn-group > .button.fake-cancel:first-child, #media-browser-tabset .btn-group > a.button:first-child,
+.btn-group > .btn:first-child, form .btn-group > .button.fake-ok:first-child, form .btn-group > .button.fake-cancel:first-child, #media-browser-tabset .btn-group > a.button:first-child,
 #media-browser-tabset .btn-group > input.form-submit:first-child, #modal-content .btn-group > .form-submit:first-child,
 #modal-content .btn-group > #edit-cancel:first-child {
   margin-left: 0;
@@ -4466,8 +4436,7 @@ form .btn-group > .button.fake-cancel:first-child, #media-browser-tabset .btn-gr
 }
 
 /* line 67, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child, form .btn-group > .button.fake-ok:last-child,
-form .btn-group > .button.fake-cancel:last-child, #media-browser-tabset .btn-group > a.button:last-child,
+.btn-group > .btn:last-child, form .btn-group > .button.fake-ok:last-child, form .btn-group > .button.fake-cancel:last-child, #media-browser-tabset .btn-group > a.button:last-child,
 #media-browser-tabset .btn-group > input.form-submit:last-child, #modal-content .btn-group > .form-submit:last-child,
 #modal-content .btn-group > #edit-cancel:last-child,
 .btn-group > .dropdown-toggle {
@@ -4480,8 +4449,7 @@ form .btn-group > .button.fake-cancel:last-child, #media-browser-tabset .btn-gro
 }
 
 /* line 72, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn.large:first-child, form .btn-group > .large.button.fake-ok:first-child,
-form .btn-group > .large.button.fake-cancel:first-child, #media-browser-tabset .btn-group > a.large.button:first-child,
+.btn-group > .btn.large:first-child, form .btn-group > .large.button.fake-ok:first-child, form .btn-group > .large.button.fake-cancel:first-child, #media-browser-tabset .btn-group > a.large.button:first-child,
 #media-browser-tabset .btn-group > input.large.form-submit:first-child, #modal-content .btn-group > .large.form-submit:first-child,
 #modal-content .btn-group > .large#edit-cancel:first-child {
   margin-left: 0;
@@ -4494,8 +4462,7 @@ form .btn-group > .large.button.fake-cancel:first-child, #media-browser-tabset .
 }
 
 /* line 78, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn.large:last-child, form .btn-group > .large.button.fake-ok:last-child,
-form .btn-group > .large.button.fake-cancel:last-child, #media-browser-tabset .btn-group > a.large.button:last-child,
+.btn-group > .btn.large:last-child, form .btn-group > .large.button.fake-ok:last-child, form .btn-group > .large.button.fake-cancel:last-child, #media-browser-tabset .btn-group > a.large.button:last-child,
 #media-browser-tabset .btn-group > input.large.form-submit:last-child, #modal-content .btn-group > .large.form-submit:last-child,
 #modal-content .btn-group > .large#edit-cancel:last-child,
 .btn-group > .large.dropdown-toggle {
@@ -4508,8 +4475,7 @@ form .btn-group > .large.button.fake-cancel:last-child, #media-browser-tabset .b
 }
 
 /* line 87, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn:hover, form .btn-group > .button.fake-ok:hover,
-form .btn-group > .button.fake-cancel:hover, #media-browser-tabset .btn-group > a.button:hover,
+.btn-group > .btn:hover, form .btn-group > .button.fake-ok:hover, form .btn-group > .button.fake-cancel:hover, #media-browser-tabset .btn-group > a.button:hover,
 #media-browser-tabset .btn-group > input.form-submit:hover, #modal-content .btn-group > .form-submit:hover,
 #modal-content .btn-group > #edit-cancel:hover,
 .btn-group > .btn:focus,
@@ -4543,8 +4509,7 @@ form .btn-group > .active.button.fake-cancel,
 }
 
 /* line 103, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn + .dropdown-toggle, form .btn-group > .button.fake-ok + .dropdown-toggle,
-form .btn-group > .button.fake-cancel + .dropdown-toggle, #media-browser-tabset .btn-group > a.button + .dropdown-toggle,
+.btn-group > .btn + .dropdown-toggle, form .btn-group > .button.fake-ok + .dropdown-toggle, form .btn-group > .button.fake-cancel + .dropdown-toggle, #media-browser-tabset .btn-group > a.button + .dropdown-toggle,
 #media-browser-tabset .btn-group > input.form-submit + .dropdown-toggle, #modal-content .btn-group > .form-submit + .dropdown-toggle,
 #modal-content .btn-group > #edit-cancel + .dropdown-toggle {
   padding-left: 8px;
@@ -4586,9 +4551,7 @@ form .btn-group > .button.fake-cancel + .dropdown-toggle, #media-browser-tabset 
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 137, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group.open .btn.dropdown-toggle, .btn-group.open form .dropdown-toggle.button.fake-ok, form .btn-group.open .dropdown-toggle.button.fake-ok,
-.btn-group.open form .dropdown-toggle.button.fake-cancel,
-form .btn-group.open .dropdown-toggle.button.fake-cancel, .btn-group.open #media-browser-tabset a.dropdown-toggle.button, #media-browser-tabset .btn-group.open a.dropdown-toggle.button,
+.btn-group.open .btn.dropdown-toggle, .btn-group.open form .dropdown-toggle.button.fake-ok, form .btn-group.open .dropdown-toggle.button.fake-ok, .btn-group.open form .dropdown-toggle.button.fake-cancel, form .btn-group.open .dropdown-toggle.button.fake-cancel, .btn-group.open #media-browser-tabset a.dropdown-toggle.button, #media-browser-tabset .btn-group.open a.dropdown-toggle.button,
 .btn-group.open #media-browser-tabset input.dropdown-toggle.form-submit,
 #media-browser-tabset .btn-group.open input.dropdown-toggle.form-submit, .btn-group.open #modal-content .dropdown-toggle.form-submit, #modal-content .btn-group.open .dropdown-toggle.form-submit,
 .btn-group.open #modal-content .dropdown-toggle#edit-cancel,
@@ -4596,7 +4559,9 @@ form .btn-group.open .dropdown-toggle.button.fake-cancel, .btn-group.open #media
   background-color: #e6e6e6;
 }
 /* line 140, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group.open .btn-primary.dropdown-toggle, .btn-group.open form .dropdown-toggle.button.fake-ok, form .btn-group.open .dropdown-toggle.button.fake-ok, .btn-group.open #media-browser-tabset input.dropdown-toggle.form-submit, #media-browser-tabset .btn-group.open input.dropdown-toggle.form-submit, .btn-group.open #modal-content .dropdown-toggle.form-submit, #modal-content .btn-group.open .dropdown-toggle.form-submit, .btn-group.open #node-edit .form-actions input.dropdown-toggle, #node-edit .form-actions .btn-group.open input.dropdown-toggle {
+.btn-group.open .btn-primary.dropdown-toggle, .btn-group.open form .dropdown-toggle.button.fake-ok, form .btn-group.open .dropdown-toggle.button.fake-ok, .btn-group.open #media-browser-tabset a.dropdown-toggle.button, #media-browser-tabset .btn-group.open a.dropdown-toggle.button,
+.btn-group.open #media-browser-tabset input.dropdown-toggle.form-submit,
+#media-browser-tabset .btn-group.open input.dropdown-toggle.form-submit, .btn-group.open #modal-content .dropdown-toggle.form-submit, #modal-content .btn-group.open .dropdown-toggle.form-submit, .btn-group.open #node-edit .form-actions input.dropdown-toggle, #node-edit .form-actions .btn-group.open input.dropdown-toggle {
   background-color: #0044cc;
 }
 /* line 143, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
@@ -4621,8 +4586,7 @@ form .btn-group.open .dropdown-toggle.button.fake-cancel, .btn-group.open #media
 }
 
 /* line 162, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn .caret, form .button.fake-ok .caret,
-form .button.fake-cancel .caret, #media-browser-tabset a.button .caret,
+.btn .caret, form .button.fake-ok .caret, form .button.fake-cancel .caret, #media-browser-tabset a.button .caret,
 #media-browser-tabset input.form-submit .caret, #modal-content .form-submit .caret,
 #modal-content #edit-cancel .caret {
   margin-top: 8px;
@@ -4653,7 +4617,8 @@ form .button.fake-cancel .caret, #media-browser-tabset a.button .caret,
 }
 
 /* line 193, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-primary .caret, form .button.fake-ok .caret, #media-browser-tabset input.form-submit .caret, #modal-content .form-submit .caret, #node-edit .form-actions input .caret,
+.btn-primary .caret, form .button.fake-ok .caret, #media-browser-tabset a.button .caret,
+#media-browser-tabset input.form-submit .caret, #modal-content .form-submit .caret, #node-edit .form-actions input .caret,
 .btn-warning .caret,
 .btn-danger .caret,
 .btn-info .caret,
@@ -4671,8 +4636,7 @@ form .button.fake-cancel .caret, #media-browser-tabset a.button .caret,
 }
 
 /* line 208, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn, form .btn-group-vertical > .button.fake-ok,
-form .btn-group-vertical > .button.fake-cancel, #media-browser-tabset .btn-group-vertical > a.button,
+.btn-group-vertical > .btn, form .btn-group-vertical > .button.fake-ok, form .btn-group-vertical > .button.fake-cancel, #media-browser-tabset .btn-group-vertical > a.button,
 #media-browser-tabset .btn-group-vertical > input.form-submit, #modal-content .btn-group-vertical > .form-submit,
 #modal-content .btn-group-vertical > #edit-cancel {
   display: block;
@@ -4684,24 +4648,15 @@ form .btn-group-vertical > .button.fake-cancel, #media-browser-tabset .btn-group
 }
 
 /* line 214, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn + .btn, form .btn-group-vertical > .button.fake-ok + .btn,
-form .btn-group-vertical > .button.fake-cancel + .btn, #media-browser-tabset .btn-group-vertical > a.button + .btn,
+.btn-group-vertical > .btn + .btn, form .btn-group-vertical > .button.fake-ok + .btn, form .btn-group-vertical > .button.fake-cancel + .btn, #media-browser-tabset .btn-group-vertical > a.button + .btn,
 #media-browser-tabset .btn-group-vertical > input.form-submit + .btn, #modal-content .btn-group-vertical > .form-submit + .btn,
-#modal-content .btn-group-vertical > #edit-cancel + .btn, form .btn-group-vertical > .btn + .button.fake-ok, form .btn-group-vertical > .button.fake-ok + .button.fake-ok,
-form .btn-group-vertical > .button.fake-cancel + .button.fake-ok, form #media-browser-tabset .btn-group-vertical > a.button + .button.fake-ok,
+#modal-content .btn-group-vertical > #edit-cancel + .btn, form .btn-group-vertical > .btn + .button.fake-ok, form .btn-group-vertical > .button.fake-ok + .button.fake-ok, form .btn-group-vertical > .button.fake-cancel + .button.fake-ok, form #media-browser-tabset .btn-group-vertical > a.button + .button.fake-ok,
 form #media-browser-tabset .btn-group-vertical > input.form-submit + .button.fake-ok, #modal-content form .btn-group-vertical > .form-submit + .button.fake-ok, form #modal-content .btn-group-vertical > .form-submit + .button.fake-ok,
 #modal-content form .btn-group-vertical > #edit-cancel + .button.fake-ok,
-form #modal-content .btn-group-vertical > #edit-cancel + .button.fake-ok,
-form .btn-group-vertical > .btn + .button.fake-cancel,
-form .btn-group-vertical > .button.fake-ok + .button.fake-cancel,
-form .btn-group-vertical > .button.fake-cancel + .button.fake-cancel,
-form #media-browser-tabset .btn-group-vertical > a.button + .button.fake-cancel,
-form #media-browser-tabset .btn-group-vertical > input.form-submit + .button.fake-cancel,
-#modal-content form .btn-group-vertical > .form-submit + .button.fake-cancel,
-form #modal-content .btn-group-vertical > .form-submit + .button.fake-cancel,
+form #modal-content .btn-group-vertical > #edit-cancel + .button.fake-ok, form .btn-group-vertical > .btn + .button.fake-cancel, form .btn-group-vertical > .button.fake-ok + .button.fake-cancel, form .btn-group-vertical > .button.fake-cancel + .button.fake-cancel, form #media-browser-tabset .btn-group-vertical > a.button + .button.fake-cancel,
+form #media-browser-tabset .btn-group-vertical > input.form-submit + .button.fake-cancel, #modal-content form .btn-group-vertical > .form-submit + .button.fake-cancel, form #modal-content .btn-group-vertical > .form-submit + .button.fake-cancel,
 #modal-content form .btn-group-vertical > #edit-cancel + .button.fake-cancel,
-form #modal-content .btn-group-vertical > #edit-cancel + .button.fake-cancel, #media-browser-tabset .btn-group-vertical > .btn + a.button, form #media-browser-tabset .btn-group-vertical > .button.fake-ok + a.button,
-form #media-browser-tabset .btn-group-vertical > .button.fake-cancel + a.button, #media-browser-tabset .btn-group-vertical > a.button + a.button,
+form #modal-content .btn-group-vertical > #edit-cancel + .button.fake-cancel, #media-browser-tabset .btn-group-vertical > .btn + a.button, form #media-browser-tabset .btn-group-vertical > .button.fake-ok + a.button, form #media-browser-tabset .btn-group-vertical > .button.fake-cancel + a.button, #media-browser-tabset .btn-group-vertical > a.button + a.button,
 #media-browser-tabset .btn-group-vertical > input.form-submit + a.button, #modal-content #media-browser-tabset .btn-group-vertical > .form-submit + a.button, #media-browser-tabset #modal-content .btn-group-vertical > .form-submit + a.button,
 #modal-content #media-browser-tabset .btn-group-vertical > #edit-cancel + a.button,
 #media-browser-tabset #modal-content .btn-group-vertical > #edit-cancel + a.button,
@@ -4709,9 +4664,7 @@ form #media-browser-tabset .btn-group-vertical > .button.fake-cancel + a.button,
 form #media-browser-tabset .btn-group-vertical > .button.fake-ok + input.form-submit,
 form #media-browser-tabset .btn-group-vertical > .button.fake-cancel + input.form-submit,
 #media-browser-tabset .btn-group-vertical > a.button + input.form-submit,
-#media-browser-tabset .btn-group-vertical > input.form-submit + input.form-submit, #modal-content .btn-group-vertical > .btn + .form-submit, form #modal-content .btn-group-vertical > .button.fake-ok + .form-submit, #modal-content form .btn-group-vertical > .button.fake-ok + .form-submit,
-form #modal-content .btn-group-vertical > .button.fake-cancel + .form-submit,
-#modal-content form .btn-group-vertical > .button.fake-cancel + .form-submit, #media-browser-tabset #modal-content .btn-group-vertical > a.button + .form-submit, #modal-content #media-browser-tabset .btn-group-vertical > a.button + .form-submit, #modal-content .btn-group-vertical > .form-submit + .form-submit,
+#media-browser-tabset .btn-group-vertical > input.form-submit + input.form-submit, #modal-content .btn-group-vertical > .btn + .form-submit, form #modal-content .btn-group-vertical > .button.fake-ok + .form-submit, #modal-content form .btn-group-vertical > .button.fake-ok + .form-submit, form #modal-content .btn-group-vertical > .button.fake-cancel + .form-submit, #modal-content form .btn-group-vertical > .button.fake-cancel + .form-submit, #media-browser-tabset #modal-content .btn-group-vertical > a.button + .form-submit, #modal-content #media-browser-tabset .btn-group-vertical > a.button + .form-submit, #modal-content .btn-group-vertical > .form-submit + .form-submit,
 #modal-content .btn-group-vertical > #edit-cancel + .form-submit,
 #modal-content .btn-group-vertical > .btn + #edit-cancel,
 form #modal-content .btn-group-vertical > .button.fake-ok + #edit-cancel,
@@ -4727,8 +4680,7 @@ form #modal-content .btn-group-vertical > .button.fake-cancel + #edit-cancel,
 }
 
 /* line 218, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:first-child, form .btn-group-vertical > .button.fake-ok:first-child,
-form .btn-group-vertical > .button.fake-cancel:first-child, #media-browser-tabset .btn-group-vertical > a.button:first-child,
+.btn-group-vertical > .btn:first-child, form .btn-group-vertical > .button.fake-ok:first-child, form .btn-group-vertical > .button.fake-cancel:first-child, #media-browser-tabset .btn-group-vertical > a.button:first-child,
 #media-browser-tabset .btn-group-vertical > input.form-submit:first-child, #modal-content .btn-group-vertical > .form-submit:first-child,
 #modal-content .btn-group-vertical > #edit-cancel:first-child {
   -webkit-border-radius: 4px 4px 0 0;
@@ -4737,8 +4689,7 @@ form .btn-group-vertical > .button.fake-cancel:first-child, #media-browser-tabse
 }
 
 /* line 221, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:last-child, form .btn-group-vertical > .button.fake-ok:last-child,
-form .btn-group-vertical > .button.fake-cancel:last-child, #media-browser-tabset .btn-group-vertical > a.button:last-child,
+.btn-group-vertical > .btn:last-child, form .btn-group-vertical > .button.fake-ok:last-child, form .btn-group-vertical > .button.fake-cancel:last-child, #media-browser-tabset .btn-group-vertical > a.button:last-child,
 #media-browser-tabset .btn-group-vertical > input.form-submit:last-child, #modal-content .btn-group-vertical > .form-submit:last-child,
 #modal-content .btn-group-vertical > #edit-cancel:last-child {
   -webkit-border-radius: 0 0 4px 4px;
@@ -5413,9 +5364,7 @@ form .btn-group-vertical > .button.fake-cancel:last-child, #media-browser-tabset
 }
 
 /* line 95, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .btn, .navbar form .button.fake-ok, form .navbar .button.fake-ok,
-.navbar form .button.fake-cancel,
-form .navbar .button.fake-cancel, .navbar #media-browser-tabset a.button, #media-browser-tabset .navbar a.button,
+.navbar .btn, .navbar form .button.fake-ok, form .navbar .button.fake-ok, .navbar form .button.fake-cancel, form .navbar .button.fake-cancel, .navbar #media-browser-tabset a.button, #media-browser-tabset .navbar a.button,
 .navbar #media-browser-tabset input.form-submit,
 #media-browser-tabset .navbar input.form-submit, .navbar #modal-content .form-submit, #modal-content .navbar .form-submit,
 .navbar #modal-content #edit-cancel,
@@ -5425,9 +5374,7 @@ form .navbar .button.fake-cancel, .navbar #media-browser-tabset a.button, #media
 }
 
 /* line 102, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_navbar.scss */
-.navbar .btn-group .btn, .navbar .btn-group form .button.fake-ok, form .navbar .btn-group .button.fake-ok,
-.navbar .btn-group form .button.fake-cancel,
-form .navbar .btn-group .button.fake-cancel, .navbar .btn-group #media-browser-tabset a.button, #media-browser-tabset .navbar .btn-group a.button,
+.navbar .btn-group .btn, .navbar .btn-group form .button.fake-ok, form .navbar .btn-group .button.fake-ok, .navbar .btn-group form .button.fake-cancel, form .navbar .btn-group .button.fake-cancel, .navbar .btn-group #media-browser-tabset a.button, #media-browser-tabset .navbar .btn-group a.button,
 .navbar .btn-group #media-browser-tabset input.form-submit,
 #media-browser-tabset .navbar .btn-group input.form-submit, .navbar .btn-group #modal-content .form-submit, #modal-content .navbar .btn-group .form-submit,
 .navbar .btn-group #modal-content #edit-cancel,
@@ -6339,15 +6286,11 @@ form .navbar-form .button.fake-cancel,
   clear: both;
 }
 /* line 83, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_modals.scss */
-.modal-footer .btn + .btn, .modal-footer form .button.fake-ok + .btn, form .modal-footer .button.fake-ok + .btn,
-.modal-footer form .button.fake-cancel + .btn,
-form .modal-footer .button.fake-cancel + .btn, .modal-footer #media-browser-tabset a.button + .btn, #media-browser-tabset .modal-footer a.button + .btn,
+.modal-footer .btn + .btn, .modal-footer form .button.fake-ok + .btn, form .modal-footer .button.fake-ok + .btn, .modal-footer form .button.fake-cancel + .btn, form .modal-footer .button.fake-cancel + .btn, .modal-footer #media-browser-tabset a.button + .btn, #media-browser-tabset .modal-footer a.button + .btn,
 .modal-footer #media-browser-tabset input.form-submit + .btn,
 #media-browser-tabset .modal-footer input.form-submit + .btn, .modal-footer #modal-content .form-submit + .btn, #modal-content .modal-footer .form-submit + .btn,
 .modal-footer #modal-content #edit-cancel + .btn,
-#modal-content .modal-footer #edit-cancel + .btn, .modal-footer form .btn + .button.fake-ok, form .modal-footer .btn + .button.fake-ok, .modal-footer form .button.fake-ok + .button.fake-ok, form .modal-footer .button.fake-ok + .button.fake-ok,
-.modal-footer form .button.fake-cancel + .button.fake-ok,
-form .modal-footer .button.fake-cancel + .button.fake-ok, form .modal-footer #media-browser-tabset a.button + .button.fake-ok, #media-browser-tabset .modal-footer form a.button + .button.fake-ok, form #media-browser-tabset .modal-footer a.button + .button.fake-ok,
+#modal-content .modal-footer #edit-cancel + .btn, .modal-footer form .btn + .button.fake-ok, form .modal-footer .btn + .button.fake-ok, .modal-footer form .button.fake-ok + .button.fake-ok, form .modal-footer .button.fake-ok + .button.fake-ok, .modal-footer form .button.fake-cancel + .button.fake-ok, form .modal-footer .button.fake-cancel + .button.fake-ok, form .modal-footer #media-browser-tabset a.button + .button.fake-ok, #media-browser-tabset .modal-footer form a.button + .button.fake-ok, form #media-browser-tabset .modal-footer a.button + .button.fake-ok,
 form .modal-footer #media-browser-tabset input.form-submit + .button.fake-ok,
 #media-browser-tabset .modal-footer form input.form-submit + .button.fake-ok,
 form #media-browser-tabset .modal-footer input.form-submit + .button.fake-ok, .modal-footer #modal-content form .form-submit + .button.fake-ok, form .modal-footer #modal-content .form-submit + .button.fake-ok, #modal-content .modal-footer form .form-submit + .button.fake-ok, form #modal-content .modal-footer .form-submit + .button.fake-ok,
@@ -6356,31 +6299,16 @@ form #media-browser-tabset .modal-footer input.form-submit + .button.fake-ok, .m
 .modal-footer #modal-content form #edit-cancel + .button.fake-ok,
 form .modal-footer #modal-content #edit-cancel + .button.fake-ok,
 #modal-content .modal-footer form #edit-cancel + .button.fake-ok,
-form #modal-content .modal-footer #edit-cancel + .button.fake-ok,
-.modal-footer form .btn + .button.fake-cancel,
-form .modal-footer .btn + .button.fake-cancel,
-.modal-footer form .button.fake-ok + .button.fake-cancel,
-form .modal-footer .button.fake-ok + .button.fake-cancel,
-.modal-footer form .button.fake-cancel + .button.fake-cancel,
-form .modal-footer .button.fake-cancel + .button.fake-cancel,
-form .modal-footer #media-browser-tabset a.button + .button.fake-cancel,
-#media-browser-tabset .modal-footer form a.button + .button.fake-cancel,
-form #media-browser-tabset .modal-footer a.button + .button.fake-cancel,
+form #modal-content .modal-footer #edit-cancel + .button.fake-ok, .modal-footer form .btn + .button.fake-cancel, form .modal-footer .btn + .button.fake-cancel, .modal-footer form .button.fake-ok + .button.fake-cancel, form .modal-footer .button.fake-ok + .button.fake-cancel, .modal-footer form .button.fake-cancel + .button.fake-cancel, form .modal-footer .button.fake-cancel + .button.fake-cancel, form .modal-footer #media-browser-tabset a.button + .button.fake-cancel, #media-browser-tabset .modal-footer form a.button + .button.fake-cancel, form #media-browser-tabset .modal-footer a.button + .button.fake-cancel,
 form .modal-footer #media-browser-tabset input.form-submit + .button.fake-cancel,
 #media-browser-tabset .modal-footer form input.form-submit + .button.fake-cancel,
-form #media-browser-tabset .modal-footer input.form-submit + .button.fake-cancel,
-.modal-footer #modal-content form .form-submit + .button.fake-cancel,
-form .modal-footer #modal-content .form-submit + .button.fake-cancel,
-#modal-content .modal-footer form .form-submit + .button.fake-cancel,
-form #modal-content .modal-footer .form-submit + .button.fake-cancel,
+form #media-browser-tabset .modal-footer input.form-submit + .button.fake-cancel, .modal-footer #modal-content form .form-submit + .button.fake-cancel, form .modal-footer #modal-content .form-submit + .button.fake-cancel, #modal-content .modal-footer form .form-submit + .button.fake-cancel, form #modal-content .modal-footer .form-submit + .button.fake-cancel,
 #media-browser-tabset form .modal-footer a.button + .button.fake-cancel,
 #media-browser-tabset form .modal-footer input.form-submit + .button.fake-cancel,
 .modal-footer #modal-content form #edit-cancel + .button.fake-cancel,
 form .modal-footer #modal-content #edit-cancel + .button.fake-cancel,
 #modal-content .modal-footer form #edit-cancel + .button.fake-cancel,
-form #modal-content .modal-footer #edit-cancel + .button.fake-cancel, .modal-footer #media-browser-tabset .btn + a.button, #media-browser-tabset .modal-footer .btn + a.button, .modal-footer form #media-browser-tabset .button.fake-ok + a.button, form .modal-footer #media-browser-tabset .button.fake-ok + a.button,
-.modal-footer form #media-browser-tabset .button.fake-cancel + a.button,
-form .modal-footer #media-browser-tabset .button.fake-cancel + a.button, .modal-footer #media-browser-tabset a.button + a.button, #media-browser-tabset .modal-footer a.button + a.button,
+form #modal-content .modal-footer #edit-cancel + .button.fake-cancel, .modal-footer #media-browser-tabset .btn + a.button, #media-browser-tabset .modal-footer .btn + a.button, .modal-footer form #media-browser-tabset .button.fake-ok + a.button, form .modal-footer #media-browser-tabset .button.fake-ok + a.button, .modal-footer form #media-browser-tabset .button.fake-cancel + a.button, form .modal-footer #media-browser-tabset .button.fake-cancel + a.button, .modal-footer #media-browser-tabset a.button + a.button, #media-browser-tabset .modal-footer a.button + a.button,
 .modal-footer #media-browser-tabset input.form-submit + a.button,
 #media-browser-tabset .modal-footer input.form-submit + a.button, .modal-footer #modal-content #media-browser-tabset .form-submit + a.button, #media-browser-tabset .modal-footer #modal-content .form-submit + a.button, #modal-content .modal-footer #media-browser-tabset .form-submit + a.button, #media-browser-tabset #modal-content .modal-footer .form-submit + a.button,
 .modal-footer #modal-content #media-browser-tabset #edit-cancel + a.button,
@@ -6396,11 +6324,7 @@ form .modal-footer #media-browser-tabset .button.fake-cancel + input.form-submit
 .modal-footer #media-browser-tabset a.button + input.form-submit,
 #media-browser-tabset .modal-footer a.button + input.form-submit,
 .modal-footer #media-browser-tabset input.form-submit + input.form-submit,
-#media-browser-tabset .modal-footer input.form-submit + input.form-submit, .modal-footer #modal-content .btn + .form-submit, #modal-content .modal-footer .btn + .form-submit, .modal-footer form #modal-content .button.fake-ok + .form-submit, #modal-content .modal-footer form .button.fake-ok + .form-submit, form .modal-footer #modal-content .button.fake-ok + .form-submit, #modal-content form .modal-footer .button.fake-ok + .form-submit,
-.modal-footer form #modal-content .button.fake-cancel + .form-submit,
-#modal-content .modal-footer form .button.fake-cancel + .form-submit,
-form .modal-footer #modal-content .button.fake-cancel + .form-submit,
-#modal-content form .modal-footer .button.fake-cancel + .form-submit, .modal-footer #media-browser-tabset #modal-content a.button + .form-submit, #modal-content .modal-footer #media-browser-tabset a.button + .form-submit, #media-browser-tabset .modal-footer #modal-content a.button + .form-submit, #modal-content #media-browser-tabset .modal-footer a.button + .form-submit, .modal-footer #modal-content .form-submit + .form-submit, #modal-content .modal-footer .form-submit + .form-submit,
+#media-browser-tabset .modal-footer input.form-submit + input.form-submit, .modal-footer #modal-content .btn + .form-submit, #modal-content .modal-footer .btn + .form-submit, .modal-footer form #modal-content .button.fake-ok + .form-submit, #modal-content .modal-footer form .button.fake-ok + .form-submit, form .modal-footer #modal-content .button.fake-ok + .form-submit, #modal-content form .modal-footer .button.fake-ok + .form-submit, .modal-footer form #modal-content .button.fake-cancel + .form-submit, #modal-content .modal-footer form .button.fake-cancel + .form-submit, form .modal-footer #modal-content .button.fake-cancel + .form-submit, #modal-content form .modal-footer .button.fake-cancel + .form-submit, .modal-footer #media-browser-tabset #modal-content a.button + .form-submit, #modal-content .modal-footer #media-browser-tabset a.button + .form-submit, #media-browser-tabset .modal-footer #modal-content a.button + .form-submit, #modal-content #media-browser-tabset .modal-footer a.button + .form-submit, .modal-footer #modal-content .form-submit + .form-submit, #modal-content .modal-footer .form-submit + .form-submit,
 .modal-footer #modal-content #edit-cancel + .form-submit,
 #modal-content .modal-footer #edit-cancel + .form-submit,
 .modal-footer #media-browser-tabset form .button.fake-ok + a.button,
@@ -6429,15 +6353,11 @@ form .modal-footer #modal-content .button.fake-cancel + #edit-cancel,
   margin-bottom: 0;
 }
 /* line 88, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group form .button.fake-ok + .btn, form .modal-footer .btn-group .button.fake-ok + .btn,
-.modal-footer .btn-group form .button.fake-cancel + .btn,
-form .modal-footer .btn-group .button.fake-cancel + .btn, .modal-footer .btn-group #media-browser-tabset a.button + .btn, #media-browser-tabset .modal-footer .btn-group a.button + .btn,
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group form .button.fake-ok + .btn, form .modal-footer .btn-group .button.fake-ok + .btn, .modal-footer .btn-group form .button.fake-cancel + .btn, form .modal-footer .btn-group .button.fake-cancel + .btn, .modal-footer .btn-group #media-browser-tabset a.button + .btn, #media-browser-tabset .modal-footer .btn-group a.button + .btn,
 .modal-footer .btn-group #media-browser-tabset input.form-submit + .btn,
 #media-browser-tabset .modal-footer .btn-group input.form-submit + .btn, .modal-footer .btn-group #modal-content .form-submit + .btn, #modal-content .modal-footer .btn-group .form-submit + .btn,
 .modal-footer .btn-group #modal-content #edit-cancel + .btn,
-#modal-content .modal-footer .btn-group #edit-cancel + .btn, .modal-footer .btn-group form .btn + .button.fake-ok, form .modal-footer .btn-group .btn + .button.fake-ok, .modal-footer .btn-group form .button.fake-ok + .button.fake-ok, form .modal-footer .btn-group .button.fake-ok + .button.fake-ok,
-.modal-footer .btn-group form .button.fake-cancel + .button.fake-ok,
-form .modal-footer .btn-group .button.fake-cancel + .button.fake-ok, form .modal-footer .btn-group #media-browser-tabset a.button + .button.fake-ok, #media-browser-tabset .modal-footer .btn-group form a.button + .button.fake-ok, form #media-browser-tabset .modal-footer .btn-group a.button + .button.fake-ok,
+#modal-content .modal-footer .btn-group #edit-cancel + .btn, .modal-footer .btn-group form .btn + .button.fake-ok, form .modal-footer .btn-group .btn + .button.fake-ok, .modal-footer .btn-group form .button.fake-ok + .button.fake-ok, form .modal-footer .btn-group .button.fake-ok + .button.fake-ok, .modal-footer .btn-group form .button.fake-cancel + .button.fake-ok, form .modal-footer .btn-group .button.fake-cancel + .button.fake-ok, form .modal-footer .btn-group #media-browser-tabset a.button + .button.fake-ok, #media-browser-tabset .modal-footer .btn-group form a.button + .button.fake-ok, form #media-browser-tabset .modal-footer .btn-group a.button + .button.fake-ok,
 form .modal-footer .btn-group #media-browser-tabset input.form-submit + .button.fake-ok,
 #media-browser-tabset .modal-footer .btn-group form input.form-submit + .button.fake-ok,
 form #media-browser-tabset .modal-footer .btn-group input.form-submit + .button.fake-ok, .modal-footer .btn-group #modal-content form .form-submit + .button.fake-ok, form .modal-footer .btn-group #modal-content .form-submit + .button.fake-ok, #modal-content .modal-footer .btn-group form .form-submit + .button.fake-ok, form #modal-content .modal-footer .btn-group .form-submit + .button.fake-ok,
@@ -6446,31 +6366,16 @@ form #media-browser-tabset .modal-footer .btn-group input.form-submit + .button.
 .modal-footer .btn-group #modal-content form #edit-cancel + .button.fake-ok,
 form .modal-footer .btn-group #modal-content #edit-cancel + .button.fake-ok,
 #modal-content .modal-footer .btn-group form #edit-cancel + .button.fake-ok,
-form #modal-content .modal-footer .btn-group #edit-cancel + .button.fake-ok,
-.modal-footer .btn-group form .btn + .button.fake-cancel,
-form .modal-footer .btn-group .btn + .button.fake-cancel,
-.modal-footer .btn-group form .button.fake-ok + .button.fake-cancel,
-form .modal-footer .btn-group .button.fake-ok + .button.fake-cancel,
-.modal-footer .btn-group form .button.fake-cancel + .button.fake-cancel,
-form .modal-footer .btn-group .button.fake-cancel + .button.fake-cancel,
-form .modal-footer .btn-group #media-browser-tabset a.button + .button.fake-cancel,
-#media-browser-tabset .modal-footer .btn-group form a.button + .button.fake-cancel,
-form #media-browser-tabset .modal-footer .btn-group a.button + .button.fake-cancel,
+form #modal-content .modal-footer .btn-group #edit-cancel + .button.fake-ok, .modal-footer .btn-group form .btn + .button.fake-cancel, form .modal-footer .btn-group .btn + .button.fake-cancel, .modal-footer .btn-group form .button.fake-ok + .button.fake-cancel, form .modal-footer .btn-group .button.fake-ok + .button.fake-cancel, .modal-footer .btn-group form .button.fake-cancel + .button.fake-cancel, form .modal-footer .btn-group .button.fake-cancel + .button.fake-cancel, form .modal-footer .btn-group #media-browser-tabset a.button + .button.fake-cancel, #media-browser-tabset .modal-footer .btn-group form a.button + .button.fake-cancel, form #media-browser-tabset .modal-footer .btn-group a.button + .button.fake-cancel,
 form .modal-footer .btn-group #media-browser-tabset input.form-submit + .button.fake-cancel,
 #media-browser-tabset .modal-footer .btn-group form input.form-submit + .button.fake-cancel,
-form #media-browser-tabset .modal-footer .btn-group input.form-submit + .button.fake-cancel,
-.modal-footer .btn-group #modal-content form .form-submit + .button.fake-cancel,
-form .modal-footer .btn-group #modal-content .form-submit + .button.fake-cancel,
-#modal-content .modal-footer .btn-group form .form-submit + .button.fake-cancel,
-form #modal-content .modal-footer .btn-group .form-submit + .button.fake-cancel,
+form #media-browser-tabset .modal-footer .btn-group input.form-submit + .button.fake-cancel, .modal-footer .btn-group #modal-content form .form-submit + .button.fake-cancel, form .modal-footer .btn-group #modal-content .form-submit + .button.fake-cancel, #modal-content .modal-footer .btn-group form .form-submit + .button.fake-cancel, form #modal-content .modal-footer .btn-group .form-submit + .button.fake-cancel,
 #media-browser-tabset form .modal-footer .btn-group a.button + .button.fake-cancel,
 #media-browser-tabset form .modal-footer .btn-group input.form-submit + .button.fake-cancel,
 .modal-footer .btn-group #modal-content form #edit-cancel + .button.fake-cancel,
 form .modal-footer .btn-group #modal-content #edit-cancel + .button.fake-cancel,
 #modal-content .modal-footer .btn-group form #edit-cancel + .button.fake-cancel,
-form #modal-content .modal-footer .btn-group #edit-cancel + .button.fake-cancel, .modal-footer .btn-group #media-browser-tabset .btn + a.button, #media-browser-tabset .modal-footer .btn-group .btn + a.button, .modal-footer .btn-group form #media-browser-tabset .button.fake-ok + a.button, form .modal-footer .btn-group #media-browser-tabset .button.fake-ok + a.button,
-.modal-footer .btn-group form #media-browser-tabset .button.fake-cancel + a.button,
-form .modal-footer .btn-group #media-browser-tabset .button.fake-cancel + a.button, .modal-footer .btn-group #media-browser-tabset a.button + a.button, #media-browser-tabset .modal-footer .btn-group a.button + a.button,
+form #modal-content .modal-footer .btn-group #edit-cancel + .button.fake-cancel, .modal-footer .btn-group #media-browser-tabset .btn + a.button, #media-browser-tabset .modal-footer .btn-group .btn + a.button, .modal-footer .btn-group form #media-browser-tabset .button.fake-ok + a.button, form .modal-footer .btn-group #media-browser-tabset .button.fake-ok + a.button, .modal-footer .btn-group form #media-browser-tabset .button.fake-cancel + a.button, form .modal-footer .btn-group #media-browser-tabset .button.fake-cancel + a.button, .modal-footer .btn-group #media-browser-tabset a.button + a.button, #media-browser-tabset .modal-footer .btn-group a.button + a.button,
 .modal-footer .btn-group #media-browser-tabset input.form-submit + a.button,
 #media-browser-tabset .modal-footer .btn-group input.form-submit + a.button, .modal-footer .btn-group #modal-content #media-browser-tabset .form-submit + a.button, #media-browser-tabset .modal-footer .btn-group #modal-content .form-submit + a.button, #modal-content .modal-footer .btn-group #media-browser-tabset .form-submit + a.button, #media-browser-tabset #modal-content .modal-footer .btn-group .form-submit + a.button,
 .modal-footer .btn-group #modal-content #media-browser-tabset #edit-cancel + a.button,
@@ -6486,11 +6391,7 @@ form .modal-footer .btn-group #media-browser-tabset .button.fake-cancel + input.
 .modal-footer .btn-group #media-browser-tabset a.button + input.form-submit,
 #media-browser-tabset .modal-footer .btn-group a.button + input.form-submit,
 .modal-footer .btn-group #media-browser-tabset input.form-submit + input.form-submit,
-#media-browser-tabset .modal-footer .btn-group input.form-submit + input.form-submit, .modal-footer .btn-group #modal-content .btn + .form-submit, #modal-content .modal-footer .btn-group .btn + .form-submit, .modal-footer .btn-group form #modal-content .button.fake-ok + .form-submit, #modal-content .modal-footer .btn-group form .button.fake-ok + .form-submit, form .modal-footer .btn-group #modal-content .button.fake-ok + .form-submit, #modal-content form .modal-footer .btn-group .button.fake-ok + .form-submit,
-.modal-footer .btn-group form #modal-content .button.fake-cancel + .form-submit,
-#modal-content .modal-footer .btn-group form .button.fake-cancel + .form-submit,
-form .modal-footer .btn-group #modal-content .button.fake-cancel + .form-submit,
-#modal-content form .modal-footer .btn-group .button.fake-cancel + .form-submit, .modal-footer .btn-group #media-browser-tabset #modal-content a.button + .form-submit, #modal-content .modal-footer .btn-group #media-browser-tabset a.button + .form-submit, #media-browser-tabset .modal-footer .btn-group #modal-content a.button + .form-submit, #modal-content #media-browser-tabset .modal-footer .btn-group a.button + .form-submit, .modal-footer .btn-group #modal-content .form-submit + .form-submit, #modal-content .modal-footer .btn-group .form-submit + .form-submit,
+#media-browser-tabset .modal-footer .btn-group input.form-submit + input.form-submit, .modal-footer .btn-group #modal-content .btn + .form-submit, #modal-content .modal-footer .btn-group .btn + .form-submit, .modal-footer .btn-group form #modal-content .button.fake-ok + .form-submit, #modal-content .modal-footer .btn-group form .button.fake-ok + .form-submit, form .modal-footer .btn-group #modal-content .button.fake-ok + .form-submit, #modal-content form .modal-footer .btn-group .button.fake-ok + .form-submit, .modal-footer .btn-group form #modal-content .button.fake-cancel + .form-submit, #modal-content .modal-footer .btn-group form .button.fake-cancel + .form-submit, form .modal-footer .btn-group #modal-content .button.fake-cancel + .form-submit, #modal-content form .modal-footer .btn-group .button.fake-cancel + .form-submit, .modal-footer .btn-group #media-browser-tabset #modal-content a.button + .form-submit, #modal-content .modal-footer .btn-group #media-browser-tabset a.button + .form-submit, #media-browser-tabset .modal-footer .btn-group #modal-content a.button + .form-submit, #modal-content #media-browser-tabset .modal-footer .btn-group a.button + .form-submit, .modal-footer .btn-group #modal-content .form-submit + .form-submit, #modal-content .modal-footer .btn-group .form-submit + .form-submit,
 .modal-footer .btn-group #modal-content #edit-cancel + .form-submit,
 #modal-content .modal-footer .btn-group #edit-cancel + .form-submit,
 .modal-footer .btn-group #media-browser-tabset form .button.fake-ok + a.button,
@@ -6975,12 +6876,9 @@ a.label:hover, .oa-news .oa-news-tags a:hover, a.label:focus, .oa-news .oa-news-
 }
 
 /* line 71, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_labels-badges.scss */
-.btn .label, form .button.fake-ok .label,
-form .button.fake-cancel .label, #media-browser-tabset a.button .label,
+.btn .label, form .button.fake-ok .label, form .button.fake-cancel .label, #media-browser-tabset a.button .label,
 #media-browser-tabset input.form-submit .label, #modal-content .form-submit .label,
-#modal-content #edit-cancel .label, .btn .oa-news .oa-news-tags a, .oa-news .oa-news-tags .btn a, form .button.fake-ok .oa-news .oa-news-tags a, .oa-news .oa-news-tags form .button.fake-ok a,
-form .button.fake-cancel .oa-news .oa-news-tags a,
-.oa-news .oa-news-tags form .button.fake-cancel a, #media-browser-tabset a.button .oa-news .oa-news-tags a, .oa-news .oa-news-tags #media-browser-tabset a.button a,
+#modal-content #edit-cancel .label, .btn .oa-news .oa-news-tags a, .oa-news .oa-news-tags .btn a, form .button.fake-ok .oa-news .oa-news-tags a, .oa-news .oa-news-tags form .button.fake-ok a, form .button.fake-cancel .oa-news .oa-news-tags a, .oa-news .oa-news-tags form .button.fake-cancel a, #media-browser-tabset a.button .oa-news .oa-news-tags a, .oa-news .oa-news-tags #media-browser-tabset a.button a,
 #media-browser-tabset input.form-submit .oa-news .oa-news-tags a,
 .oa-news .oa-news-tags #media-browser-tabset input.form-submit a, #modal-content .form-submit .oa-news .oa-news-tags a, .oa-news .oa-news-tags #modal-content .form-submit a,
 #modal-content #edit-cancel .oa-news .oa-news-tags a,
@@ -7717,8 +7615,7 @@ a [class*=" icon-"] {
 
 /* keeps Bootstrap styles with and without icons the same */
 /* line 41, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].icon-large, form .button.fake-ok [class^="icon-"].icon-large,
-form .button.fake-cancel [class^="icon-"].icon-large, #media-browser-tabset a.button [class^="icon-"].icon-large,
+.btn [class^="icon-"].icon-large, form .button.fake-ok [class^="icon-"].icon-large, form .button.fake-cancel [class^="icon-"].icon-large, #media-browser-tabset a.button [class^="icon-"].icon-large,
 #media-browser-tabset input.form-submit [class^="icon-"].icon-large, #modal-content .form-submit [class^="icon-"].icon-large,
 #modal-content #edit-cancel [class^="icon-"].icon-large,
 .btn [class*=" icon-"].icon-large,
@@ -7732,8 +7629,7 @@ form .button.fake-cancel [class*=" icon-"].icon-large,
   line-height: .9em;
 }
 /* line 42, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].icon-spin, form .button.fake-ok [class^="icon-"].icon-spin,
-form .button.fake-cancel [class^="icon-"].icon-spin, #media-browser-tabset a.button [class^="icon-"].icon-spin,
+.btn [class^="icon-"].icon-spin, form .button.fake-ok [class^="icon-"].icon-spin, form .button.fake-cancel [class^="icon-"].icon-spin, #media-browser-tabset a.button [class^="icon-"].icon-spin,
 #media-browser-tabset input.form-submit [class^="icon-"].icon-spin, #modal-content .form-submit [class^="icon-"].icon-spin,
 #modal-content #edit-cancel [class^="icon-"].icon-spin,
 .btn [class*=" icon-"].icon-spin,
@@ -7757,11 +7653,9 @@ form .button.fake-cancel [class*=" icon-"].icon-spin,
 }
 
 /* line 55, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].pull-left.icon-2x, form .button.fake-ok [class^="icon-"].pull-left.icon-2x,
-form .button.fake-cancel [class^="icon-"].pull-left.icon-2x, #media-browser-tabset a.button [class^="icon-"].pull-left.icon-2x,
+.btn [class^="icon-"].pull-left.icon-2x, form .button.fake-ok [class^="icon-"].pull-left.icon-2x, form .button.fake-cancel [class^="icon-"].pull-left.icon-2x, #media-browser-tabset a.button [class^="icon-"].pull-left.icon-2x,
 #media-browser-tabset input.form-submit [class^="icon-"].pull-left.icon-2x, #modal-content .form-submit [class^="icon-"].pull-left.icon-2x,
-#modal-content #edit-cancel [class^="icon-"].pull-left.icon-2x, .btn [class^="icon-"].pull-right.icon-2x, form .button.fake-ok [class^="icon-"].pull-right.icon-2x,
-form .button.fake-cancel [class^="icon-"].pull-right.icon-2x, #media-browser-tabset a.button [class^="icon-"].pull-right.icon-2x,
+#modal-content #edit-cancel [class^="icon-"].pull-left.icon-2x, .btn [class^="icon-"].pull-right.icon-2x, form .button.fake-ok [class^="icon-"].pull-right.icon-2x, form .button.fake-cancel [class^="icon-"].pull-right.icon-2x, #media-browser-tabset a.button [class^="icon-"].pull-right.icon-2x,
 #media-browser-tabset input.form-submit [class^="icon-"].pull-right.icon-2x, #modal-content .form-submit [class^="icon-"].pull-right.icon-2x,
 #modal-content #edit-cancel [class^="icon-"].pull-right.icon-2x,
 .btn [class*=" icon-"].pull-left.icon-2x,
@@ -7781,8 +7675,7 @@ form .button.fake-cancel [class*=" icon-"].pull-right.icon-2x,
   margin-top: .18em;
 }
 /* line 57, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].icon-spin.icon-large, form .button.fake-ok [class^="icon-"].icon-spin.icon-large,
-form .button.fake-cancel [class^="icon-"].icon-spin.icon-large, #media-browser-tabset a.button [class^="icon-"].icon-spin.icon-large,
+.btn [class^="icon-"].icon-spin.icon-large, form .button.fake-ok [class^="icon-"].icon-spin.icon-large, form .button.fake-cancel [class^="icon-"].icon-spin.icon-large, #media-browser-tabset a.button [class^="icon-"].icon-spin.icon-large,
 #media-browser-tabset input.form-submit [class^="icon-"].icon-spin.icon-large, #modal-content .form-submit [class^="icon-"].icon-spin.icon-large,
 #modal-content #edit-cancel [class^="icon-"].icon-spin.icon-large,
 .btn [class*=" icon-"].icon-spin.icon-large,
@@ -7796,11 +7689,9 @@ form .button.fake-cancel [class*=" icon-"].icon-spin.icon-large,
 }
 
 /* line 64, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/fontawesome/_bootstrap.scss */
-.btn.btn-small [class^="icon-"].pull-left.icon-2x, form .btn-small.button.fake-ok [class^="icon-"].pull-left.icon-2x,
-form .btn-small.button.fake-cancel [class^="icon-"].pull-left.icon-2x, #media-browser-tabset a.btn-small.button [class^="icon-"].pull-left.icon-2x,
+.btn.btn-small [class^="icon-"].pull-left.icon-2x, form .btn-small.button.fake-ok [class^="icon-"].pull-left.icon-2x, form .btn-small.button.fake-cancel [class^="icon-"].pull-left.icon-2x, #media-browser-tabset a.btn-small.button [class^="icon-"].pull-left.icon-2x,
 #media-browser-tabset input.btn-small.form-submit [class^="icon-"].pull-left.icon-2x, #modal-content .btn-small.form-submit [class^="icon-"].pull-left.icon-2x,
-#modal-content .btn-small#edit-cancel [class^="icon-"].pull-left.icon-2x, .btn.btn-small [class^="icon-"].pull-right.icon-2x, form .btn-small.button.fake-ok [class^="icon-"].pull-right.icon-2x,
-form .btn-small.button.fake-cancel [class^="icon-"].pull-right.icon-2x, #media-browser-tabset a.btn-small.button [class^="icon-"].pull-right.icon-2x,
+#modal-content .btn-small#edit-cancel [class^="icon-"].pull-left.icon-2x, .btn.btn-small [class^="icon-"].pull-right.icon-2x, form .btn-small.button.fake-ok [class^="icon-"].pull-right.icon-2x, form .btn-small.button.fake-cancel [class^="icon-"].pull-right.icon-2x, #media-browser-tabset a.btn-small.button [class^="icon-"].pull-right.icon-2x,
 #media-browser-tabset input.btn-small.form-submit [class^="icon-"].pull-right.icon-2x, #modal-content .btn-small.form-submit [class^="icon-"].pull-right.icon-2x,
 #modal-content .btn-small#edit-cancel [class^="icon-"].pull-right.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-left.icon-2x,
@@ -7821,8 +7712,7 @@ form .btn-small.button.fake-cancel [class*=" icon-"].pull-right.icon-2x,
 }
 
 /* line 70, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"], form .btn-large.button.fake-ok [class^="icon-"],
-form .btn-large.button.fake-cancel [class^="icon-"], #media-browser-tabset a.btn-large.button [class^="icon-"],
+.btn.btn-large [class^="icon-"], form .btn-large.button.fake-ok [class^="icon-"], form .btn-large.button.fake-cancel [class^="icon-"], #media-browser-tabset a.btn-large.button [class^="icon-"],
 #media-browser-tabset input.btn-large.form-submit [class^="icon-"], #modal-content .btn-large.form-submit [class^="icon-"],
 #modal-content .btn-large#edit-cancel [class^="icon-"],
 .btn.btn-large [class*=" icon-"],
@@ -7835,11 +7725,9 @@ form .btn-large.button.fake-cancel [class*=" icon-"],
   margin-top: 0;
 }
 /* line 73, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, form .btn-large.button.fake-ok [class^="icon-"].pull-left.icon-2x,
-form .btn-large.button.fake-cancel [class^="icon-"].pull-left.icon-2x, #media-browser-tabset a.btn-large.button [class^="icon-"].pull-left.icon-2x,
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, form .btn-large.button.fake-ok [class^="icon-"].pull-left.icon-2x, form .btn-large.button.fake-cancel [class^="icon-"].pull-left.icon-2x, #media-browser-tabset a.btn-large.button [class^="icon-"].pull-left.icon-2x,
 #media-browser-tabset input.btn-large.form-submit [class^="icon-"].pull-left.icon-2x, #modal-content .btn-large.form-submit [class^="icon-"].pull-left.icon-2x,
-#modal-content .btn-large#edit-cancel [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].pull-right.icon-2x, form .btn-large.button.fake-ok [class^="icon-"].pull-right.icon-2x,
-form .btn-large.button.fake-cancel [class^="icon-"].pull-right.icon-2x, #media-browser-tabset a.btn-large.button [class^="icon-"].pull-right.icon-2x,
+#modal-content .btn-large#edit-cancel [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].pull-right.icon-2x, form .btn-large.button.fake-ok [class^="icon-"].pull-right.icon-2x, form .btn-large.button.fake-cancel [class^="icon-"].pull-right.icon-2x, #media-browser-tabset a.btn-large.button [class^="icon-"].pull-right.icon-2x,
 #media-browser-tabset input.btn-large.form-submit [class^="icon-"].pull-right.icon-2x, #modal-content .btn-large.form-submit [class^="icon-"].pull-right.icon-2x,
 #modal-content .btn-large#edit-cancel [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
@@ -7859,8 +7747,7 @@ form .btn-large.button.fake-cancel [class*=" icon-"].pull-right.icon-2x,
   margin-top: .05em;
 }
 /* line 75, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, form .btn-large.button.fake-ok [class^="icon-"].pull-left.icon-2x,
-form .btn-large.button.fake-cancel [class^="icon-"].pull-left.icon-2x, #media-browser-tabset a.btn-large.button [class^="icon-"].pull-left.icon-2x,
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, form .btn-large.button.fake-ok [class^="icon-"].pull-left.icon-2x, form .btn-large.button.fake-cancel [class^="icon-"].pull-left.icon-2x, #media-browser-tabset a.btn-large.button [class^="icon-"].pull-left.icon-2x,
 #media-browser-tabset input.btn-large.form-submit [class^="icon-"].pull-left.icon-2x, #modal-content .btn-large.form-submit [class^="icon-"].pull-left.icon-2x,
 #modal-content .btn-large#edit-cancel [class^="icon-"].pull-left.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
@@ -7873,8 +7760,7 @@ form .btn-large.button.fake-cancel [class*=" icon-"].pull-left.icon-2x,
   margin-right: .2em;
 }
 /* line 76, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"].pull-right.icon-2x, form .btn-large.button.fake-ok [class^="icon-"].pull-right.icon-2x,
-form .btn-large.button.fake-cancel [class^="icon-"].pull-right.icon-2x, #media-browser-tabset a.btn-large.button [class^="icon-"].pull-right.icon-2x,
+.btn.btn-large [class^="icon-"].pull-right.icon-2x, form .btn-large.button.fake-ok [class^="icon-"].pull-right.icon-2x, form .btn-large.button.fake-cancel [class^="icon-"].pull-right.icon-2x, #media-browser-tabset a.btn-large.button [class^="icon-"].pull-right.icon-2x,
 #media-browser-tabset input.btn-large.form-submit [class^="icon-"].pull-right.icon-2x, #modal-content .btn-large.form-submit [class^="icon-"].pull-right.icon-2x,
 #modal-content .btn-large#edit-cancel [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x,
@@ -10350,8 +10236,7 @@ form fieldset legend {
   font-size: 18px;
 }
 /* line 16, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_form.scss */
-form .form-actions .btn, form .form-actions .button.fake-ok,
-form .form-actions .button.fake-cancel, form .form-actions #media-browser-tabset a.button,
+form .form-actions .btn, form .form-actions .button.fake-ok, form .form-actions .button.fake-cancel, form .form-actions #media-browser-tabset a.button,
 form .form-actions #media-browser-tabset input.form-submit, form .form-actions #modal-content .form-submit, #modal-content form .form-actions .form-submit,
 form .form-actions #modal-content #edit-cancel,
 #modal-content form .form-actions #edit-cancel {
@@ -10489,7 +10374,7 @@ select[size] {
 
 /* line 70, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_form.scss */
 html.js input.form-autocomplete {
-  background: url('../images/throbber.gif?1379156779') no-repeat right 8px white !important;
+  background: url('../images/throbber.gif?1379701995') no-repeat right 8px white !important;
 }
 
 /* line 73, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_form.scss */
@@ -12126,9 +12011,7 @@ html.js input.throbbing {
   }
 
   /* line 75, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .btn, .nav-collapse form .button.fake-ok, form .nav-collapse .button.fake-ok,
-  .nav-collapse form .button.fake-cancel,
-  form .nav-collapse .button.fake-cancel, .nav-collapse #media-browser-tabset a.button, #media-browser-tabset .nav-collapse a.button,
+  .nav-collapse .btn, .nav-collapse form .button.fake-ok, form .nav-collapse .button.fake-ok, .nav-collapse form .button.fake-cancel, form .nav-collapse .button.fake-cancel, .nav-collapse #media-browser-tabset a.button, #media-browser-tabset .nav-collapse a.button,
   .nav-collapse #media-browser-tabset input.form-submit,
   #media-browser-tabset .nav-collapse input.form-submit, .nav-collapse #modal-content .form-submit, #modal-content .nav-collapse .form-submit,
   .nav-collapse #modal-content #edit-cancel,
@@ -12332,8 +12215,7 @@ html.js input.throbbing {
 }
 @media (max-width: 767px) {
   /* line 7, ../../../../../../../../../../usr/local/.rvm/gems/ruby-2.0.0-p0/gems/compass_radix-0.0.23/stylesheets/compass_radix/_responsive_form.scss */
-  form .btn, form .button.fake-ok,
-  form .button.fake-cancel, form #media-browser-tabset a.button,
+  form .btn, form .button.fake-ok, form .button.fake-cancel, form #media-browser-tabset a.button,
   form #media-browser-tabset input.form-submit, form #modal-content .form-submit, #modal-content form .form-submit,
   form #modal-content #edit-cancel,
   #modal-content form #edit-cancel {
@@ -12409,168 +12291,102 @@ html.js input.throbbing {
     width: 85%;
   }
 }
-/* line 7, ../sass/partials/_layout.scss */
-.selby-flipped-column-inner {
-  margin-right: 0;
-  margin-left: 20px;
+/* line 5, ../sass/partials/_layout.scss */
+html, body {
+  height: 100%;
 }
 
-/* line 13, ../sass/partials/_layout.scss */
-.clear-both {
-  clear: both;
+/* line 9, ../sass/partials/_layout.scss */
+body #main-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  padding-top: 25px;
+  margin: 0 auto -100px;
 }
-
 /* line 16, ../sass/partials/_layout.scss */
-.clear-left {
-  clear: left;
+body #push {
+  height: 100px;
 }
-
 /* line 19, ../sass/partials/_layout.scss */
-.clear-right {
-  clear: right;
-}
-
-/* line 22, ../sass/partials/_layout.scss */
-.navbar-inner {
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid #d4d4d4;
-  color: black;
-  display: block;
-}
-
-/* line 30, ../sass/partials/_layout.scss */
-.label, .oa-news .oa-news-tags a {
-  font-weight: normal;
-  background-color: #ddd;
-  color: #333;
-}
-/* line 34, ../sass/partials/_layout.scss */
-.label a, .oa-news .oa-news-tags a a {
-  font-weight: normal;
-}
-
-/* line 39, ../sass/partials/_layout.scss */
-.content .panel-pane {
-  padding-bottom: 15px;
-}
-
-/* line 42, ../sass/partials/_layout.scss */
-.oa-pane {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #e3e3e3;
-  border-bottom: 0;
-}
-/* line 46, ../sass/partials/_layout.scss */
-.oa-pane .panel-pane {
-  padding: 0;
-  border: 0;
-  border-bottom: 1px solid #e3e3e3;
-  margin-bottom: 0;
-  padding-bottom: 15px;
-}
-/* line 53, ../sass/partials/_layout.scss */
-.oa-pane.inner-pane .panel-pane {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-/* line 57, ../sass/partials/_layout.scss */
-.oa-pane .pane-title {
-  background-color: whitesmoke;
-  background-image: -moz-linear-gradient(top, white, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
-  background-image: -o-linear-gradient(top, white, #e6e6e6);
-  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e3e3e3', GradientType=0);
-  font-size: 20px;
-  line-height: 32px;
-  margin: 0;
-  padding: 10px 15px;
-  color: #333;
-}
-/* line 67, ../sass/partials/_layout.scss */
-.oa-pane .pane-content {
-  padding: 15px 15px 0 15px;
-}
-/* line 69, ../sass/partials/_layout.scss */
-.oa-pane .pane-content .oa-list {
-  margin-left: -16px;
-  margin-right: -16px;
-}
-/* line 74, ../sass/partials/_layout.scss */
-.oa-pane .oa-list {
-  margin-left: -1px;
-  margin-right: -1px;
-}
-/* line 78, ../sass/partials/_layout.scss */
-.oa-pane .pager {
-  margin-top: 15px;
-}
-
-/* line 84, ../sass/partials/_layout.scss */
-.content .bryant-flipped-sidebar-inner,
-.content .burr-flipped-sidebar-inner {
-  padding-top: 0;
-}
-
-/* line 88, ../sass/partials/_layout.scss */
-.group-header {
-  margin-top: 20px;
-}
-/* line 90, ../sass/partials/_layout.scss */
-.group-header h3 {
-  font-size: 20px;
-  line-height: 32px;
-  color: #777;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-/* line 98, ../sass/partials/_layout.scss */
-ul.group-content {
-  margin: 0;
-}
-
-/* line 102, ../sass/partials/_layout.scss */
-#logo img {
-  vertical-align: middle;
-}
-
-/* line 105, ../sass/partials/_layout.scss */
-#site-name {
-  display: inline-block;
-  padding: 10px 0.5em;
-  margin: 0;
-}
-
-/* line 111, ../sass/partials/_layout.scss */
-#main-wrapper {
-  min-height: 360px;
-}
-
-/* line 115, ../sass/partials/_layout.scss */
-.oa-bottom-right {
-  position: absolute;
-  right: 3px;
-  bottom: 3px;
-  text-align: right;
-}
-
-/* line 122, ../sass/partials/_layout.scss */
-#footer {
+body #footer {
   font-size: 12px;
   line-height: 1.5;
   color: #CCC;
   background-color: #555;
   border-top: 1px solid #e5e5e5;
 }
+/* line 25, ../sass/partials/_layout.scss */
+body #footer > .container {
+  height: 100px;
+  padding: 18px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-/* line 131, ../sass/partials/_layout.scss */
+/* line 8, ../sass/partials/_structure.scss */
+#logo img {
+  vertical-align: middle;
+}
+
+/* line 11, ../sass/partials/_structure.scss */
+#site-name {
+  display: inline-block;
+  padding: 10px 0.5em;
+  margin: 0;
+}
+
+/* line 20, ../sass/partials/_structure.scss */
+ul.tabs > li > a,
+ul.action-links > li > a {
+  background: none;
+  border: 1px solid transparent;
+}
+
+/* line 24, ../sass/partials/_structure.scss */
+div.tabs.main-tabs {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 27, ../sass/partials/_structure.scss */
+div.tabs.main-tabs .tabs.primary {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 31, ../sass/partials/_structure.scss */
+div.tabs.main-tabs .tabs.secondary {
+  color: #555;
+  text-decoration: none;
+  background-color: #E6E6E6;
+  border-top: 1px solid #BBB;
+}
+/* line 36, ../sass/partials/_structure.scss */
+div.tabs.main-tabs .tabs.secondary li a {
+  padding: 13px 15px;
+  margin: 0;
+}
+/* line 40, ../sass/partials/_structure.scss */
+div.tabs.main-tabs .tabs.secondary li.active {
+  border-bottom: 1px solid #D4D4D4;
+}
+/* line 42, ../sass/partials/_structure.scss */
+div.tabs.main-tabs .tabs.secondary li.active a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #222;
+}
+/* line 47, ../sass/partials/_structure.scss */
+div.tabs.main-tabs .tabs.secondary li:first-child {
+  margin-left: 20px;
+}
+
+/* line 56, ../sass/partials/_structure.scss */
 .oa-list.well {
+  padding: 5px;
+  margin-bottom: -1px;
+  position: relative;
   background-color: #fcfcfc;
   background-image: -moz-linear-gradient(top, white, #f7f7f7);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f7f7f7));
@@ -12585,61 +12401,58 @@ ul.group-content {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  padding: 5px;
-  margin-bottom: -1px;
-  position: relative;
 }
-/* line 143, ../sass/partials/_layout.scss */
+/* line 64, ../sass/partials/_structure.scss */
 .oa-list .links {
   float: right;
   margin-right: 5px;
 }
-/* line 146, ../sass/partials/_layout.scss */
+/* line 67, ../sass/partials/_structure.scss */
 .oa-list .links a {
   padding: 0 5px;
   color: #777;
   font-size: 0.9em;
 }
-/* line 152, ../sass/partials/_layout.scss */
+/* line 73, ../sass/partials/_structure.scss */
 .oa-list h5 {
   display: inline;
 }
-/* line 155, ../sass/partials/_layout.scss */
+/* line 76, ../sass/partials/_structure.scss */
 .oa-list .pull-left img {
   padding-right: 10px;
 }
-/* line 158, ../sass/partials/_layout.scss */
+/* line 79, ../sass/partials/_structure.scss */
 .oa-list .pull-right img {
   padding-left: 5px;
 }
-/* line 161, ../sass/partials/_layout.scss */
+/* line 82, ../sass/partials/_structure.scss */
 .oa-list .accordion {
   margin-bottom: 0;
   position: relative;
 }
-/* line 164, ../sass/partials/_layout.scss */
+/* line 85, ../sass/partials/_structure.scss */
 .oa-list .accordion h5 {
   padding: 0 5px;
   margin: 0;
 }
-/* line 169, ../sass/partials/_layout.scss */
+/* line 90, ../sass/partials/_structure.scss */
 .oa-list .accordion-heading .accordion-toggle {
   padding: 3px 5px;
 }
-/* line 171, ../sass/partials/_layout.scss */
+/* line 92, ../sass/partials/_structure.scss */
 .oa-list .accordion-heading .accordion-toggle:hover {
   background-color: #E0EEFF;
 }
-/* line 175, ../sass/partials/_layout.scss */
+/* line 96, ../sass/partials/_structure.scss */
 .oa-list.unpublished {
   background-color: #FFF1F1;
 }
-/* line 178, ../sass/partials/_layout.scss */
+/* line 98, ../sass/partials/_structure.scss */
 .oa-list.unpublished .status {
   color: red;
   font-weight: bold;
 }
-/* line 182, ../sass/partials/_layout.scss */
+/* line 103, ../sass/partials/_structure.scss */
 .oa-list .oa-pullout-left {
   position: absolute;
   width: 20px;
@@ -12658,129 +12471,86 @@ ul.group-content {
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
 }
-/* line 195, ../sass/partials/_layout.scss */
+/* line 116, ../sass/partials/_structure.scss */
 .oa-list .oa-pullout-left:hover {
   background-color: #E0EEFF;
 }
 
-/* line 200, ../sass/partials/_layout.scss */
+/* line 121, ../sass/partials/_structure.scss */
 .oa-list-metadata {
   float: right;
   text-align: right;
 }
 
-/* line 204, ../sass/partials/_layout.scss */
+/* line 125, ../sass/partials/_structure.scss */
 .oa-list-header {
   padding: 6px 5px 0 5px;
 }
-/* line 206, ../sass/partials/_layout.scss */
+/* line 127, ../sass/partials/_structure.scss */
 .oa-list-header.oa-description {
   line-height: 20px;
 }
 
-/* line 210, ../sass/partials/_layout.scss */
+/* line 131, ../sass/partials/_structure.scss */
 .oa-list-category {
   text-align: right;
 }
 
-/* line 215, ../sass/partials/_layout.scss */
+/* line 138, ../sass/partials/_structure.scss */
 dl.admin-list dt {
   margin-top: 5px;
   padding-top: 5px;
   border-top: 1px solid #e3e3e3;
   padding-left: 10px;
 }
-/* line 221, ../sass/partials/_layout.scss */
+/* line 144, ../sass/partials/_structure.scss */
 dl.admin-list dd {
   padding-left: 20px;
 }
 
-/* Tabs */
-/* line 226, ../sass/partials/_layout.scss */
-div.tabs.main-tabs {
-  padding-left: 0;
-  padding-right: 0;
+/* line 151, ../sass/partials/_structure.scss */
+.group-header {
+  margin-top: 20px;
 }
-/* line 229, ../sass/partials/_layout.scss */
-div.tabs.main-tabs .tabs.primary {
-  padding-left: 20px;
-  padding-right: 20px;
+/* line 153, ../sass/partials/_structure.scss */
+.group-header h3 {
+  font-size: 20px;
+  line-height: 32px;
+  color: #777;
+  font-weight: normal;
+  text-transform: uppercase;
 }
-/* line 233, ../sass/partials/_layout.scss */
-div.tabs.main-tabs .tabs.secondary {
-  color: #555;
-  text-decoration: none;
-  background-color: #E6E6E6;
-  border-top: 1px solid #BBB;
-}
-/* line 238, ../sass/partials/_layout.scss */
-div.tabs.main-tabs .tabs.secondary li a {
-  padding: 13px 15px;
+
+/* line 161, ../sass/partials/_structure.scss */
+ul.group-content {
   margin: 0;
 }
-/* line 242, ../sass/partials/_layout.scss */
-div.tabs.main-tabs .tabs.secondary li.active {
-  border-bottom: 1px solid #D4D4D4;
-}
-/* line 244, ../sass/partials/_layout.scss */
-div.tabs.main-tabs .tabs.secondary li.active a {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  color: #222;
-}
-/* line 249, ../sass/partials/_layout.scss */
-div.tabs.main-tabs .tabs.secondary li:first-child {
-  margin-left: 20px;
+
+/* line 8, ../sass/partials/_menu.scss */
+.navbar .navbar-inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #d4d4d4;
+  color: black;
+  display: block;
 }
 
-/* line 257, ../sass/partials/_layout.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 261, ../sass/partials/_layout.scss */
-body #main-wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -100px;
-}
-/* line 267, ../sass/partials/_layout.scss */
-body #push {
-  height: 100px;
-}
-/* line 271, ../sass/partials/_layout.scss */
-body #footer > .container {
-  height: 100px;
-  padding: 18px 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 6, ../sass/partials/_structure.scss */
-ul.tabs > li > a, ul.action-links > li > a {
-  background: none;
-  border: 1px solid transparent;
-}
-
-/* line 4, ../sass/partials/_menu.scss */
+/* line 19, ../sass/partials/_menu.scss */
 #main-menu {
   clear: left;
 }
-/* line 8, ../sass/partials/_menu.scss */
+/* line 23, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > a {
   color: white;
   text-decoration: none;
   text-shadow: 0 1px 0 gray;
 }
-/* line 12, ../sass/partials/_menu.scss */
+/* line 27, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > a:hover {
   text-decoration: none;
   background-color: transparent;
 }
-/* line 16, ../sass/partials/_menu.scss */
+/* line 31, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > a:focus, #main-menu > ul.menu > li > a.active {
   text-decoration: none;
   background-color: transparent;
@@ -12788,7 +12558,7 @@ ul.tabs > li > a, ul.action-links > li > a {
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
-/* line 22, ../sass/partials/_menu.scss */
+/* line 37, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > ul.menu {
   background-color: white;
   border: 1px solid #CCC;
@@ -12800,11 +12570,11 @@ ul.tabs > li > a, ul.action-links > li > a {
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 29, ../sass/partials/_menu.scss */
+/* line 44, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > ul.menu li a {
   color: #333;
 }
-/* line 31, ../sass/partials/_menu.scss */
+/* line 46, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > ul.menu li a:focus, #main-menu > ul.menu > li > ul.menu li a:hover {
   color: white;
   text-decoration: none;
@@ -12818,44 +12588,110 @@ ul.tabs > li > a, ul.action-links > li > a {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
 }
-/* line 41, ../sass/partials/_menu.scss */
+/* line 56, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li.open > a {
   color: #555;
   background-color: #E5E5E5;
 }
 
-/* line 55, ../sass/partials/_menu.scss */
+/* line 71, ../sass/partials/_menu.scss */
+#oa-navbar ul.dropdown-menu .item-list h3,
+ul.dropdown-menu .item-list h3,
+.dropdown-menu .item-list h3 {
+  color: black;
+  text-shadow: none;
+  background: none;
+  padding: 3px 20px;
+  line-height: 20px;
+}
+/* line 79, ../sass/partials/_menu.scss */
+#oa-navbar ul.dropdown-menu ul,
+ul.dropdown-menu ul,
+.dropdown-menu ul {
+  margin: 0;
+}
+/* line 81, ../sass/partials/_menu.scss */
+#oa-navbar ul.dropdown-menu ul li,
+ul.dropdown-menu ul li,
+.dropdown-menu ul li {
+  padding: 0;
+  margin: 0;
+}
+/* line 84, ../sass/partials/_menu.scss */
+#oa-navbar ul.dropdown-menu ul li a,
+ul.dropdown-menu ul li a,
+.dropdown-menu ul li a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 20px;
+  color: #333333;
+  white-space: nowrap;
+}
+/* line 92, ../sass/partials/_menu.scss */
+#oa-navbar ul.dropdown-menu ul li a:hover, #oa-navbar ul.dropdown-menu ul li a:focus, #oa-navbar ul.dropdown-menu ul li a.active,
+ul.dropdown-menu ul li a:hover,
+ul.dropdown-menu ul li a:focus,
+ul.dropdown-menu ul li a.active,
+.dropdown-menu ul li a:hover,
+.dropdown-menu ul li a:focus,
+.dropdown-menu ul li a.active {
+  text-decoration: none;
+  color: white;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
+}
+/* line 97, ../sass/partials/_menu.scss */
+#oa-navbar ul.dropdown-menu ul li a.more-link,
+ul.dropdown-menu ul li a.more-link,
+.dropdown-menu ul li a.more-link {
+  text-align: left;
+}
+/* line 101, ../sass/partials/_menu.scss */
+#oa-navbar ul.dropdown-menu ul li .flag-wrapper,
+ul.dropdown-menu ul li .flag-wrapper,
+.dropdown-menu ul li .flag-wrapper {
+  padding: 0;
+}
+/* line 103, ../sass/partials/_menu.scss */
+#oa-navbar ul.dropdown-menu ul li .flag-wrapper .flag,
+ul.dropdown-menu ul li .flag-wrapper .flag,
+.dropdown-menu ul li .flag-wrapper .flag {
+  width: auto;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* line 115, ../sass/partials/_menu.scss */
 .region-footer {
   background-image: url("../../logo.png");
   background-repeat: no-repeat;
   background-position: 1% center;
 }
-
-/* line 61, ../sass/partials/_menu.scss */
+/* line 119, ../sass/partials/_menu.scss */
 .region-footer .menu {
   float: right;
 }
-
-/* line 65, ../sass/partials/_menu.scss */
+/* line 121, ../sass/partials/_menu.scss */
 .region-footer .menu li {
   list-style: none !important;
   float: left;
 }
-
-/* line 70, ../sass/partials/_menu.scss */
+/* line 124, ../sass/partials/_menu.scss */
 .region-footer .menu li a {
   line-height: 52px;
   color: white;
   display: block;
 }
 
-/* line 4, ../sass/partials/_page.scss */
-#main-wrapper {
-  min-height: 600px;
-  padding-top: 25px;
-}
-
-/* line 9, ../sass/partials/_page.scss */
+/* line 7, ../sass/partials/_page.scss */
 body.oa-login div.region-content {
   margin-top: 20px;
   background-image: url("../images/bg-splash.png");
@@ -12863,22 +12699,22 @@ body.oa-login div.region-content {
   background-repeat: no-repeat;
   min-height: 376px;
 }
-/* line 16, ../sass/partials/_page.scss */
+/* line 13, ../sass/partials/_page.scss */
 body.oa-login div.region-content .pane-bundle-text {
   width: 75%;
 }
-/* line 18, ../sass/partials/_page.scss */
+/* line 15, ../sass/partials/_page.scss */
 body.oa-login div.region-content .pane-bundle-text h3 {
   font-size: 60px;
   font-weight: normal;
   margin-bottom: 20px;
 }
-/* line 23, ../sass/partials/_page.scss */
+/* line 20, ../sass/partials/_page.scss */
 body.oa-login div.region-content .pane-bundle-text p {
   font-size: 120%;
   line-height: 125%;
 }
-/* line 28, ../sass/partials/_page.scss */
+/* line 25, ../sass/partials/_page.scss */
 body.oa-login div.region-content .pane-bundle-text:first-child {
   width: 40%;
   max-width: 481px;
@@ -12887,7 +12723,7 @@ body.oa-login div.region-content .pane-bundle-text:first-child {
   text-align: center;
 }
 
-/* line 37, ../sass/partials/_page.scss */
+/* line 33, ../sass/partials/_page.scss */
 body.oa-login div.content {
   margin-top: 20px;
   background-image: url("../images/tree-right.png");
@@ -12897,278 +12733,332 @@ body.oa-login div.content {
   min-height: 466px;
   position: relative;
 }
-/* line 45, ../sass/partials/_page.scss */
+/* line 41, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane {
   position: absolute;
   left: 501px;
   top: 173px;
   width: 40%;
 }
-/* line 50, ../sass/partials/_page.scss */
+/* line 46, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane {
   background-color: white;
 }
-/* line 52, ../sass/partials/_page.scss */
+/* line 48, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane h3 {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 26px;
 }
-/* line 57, ../sass/partials/_page.scss */
+/* line 53, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane input.form-text {
   width: 95%;
 }
-/* line 60, ../sass/partials/_page.scss */
+/* line 56, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane .form-type-password {
   margin-bottom: 0;
 }
-/* line 62, ../sass/partials/_page.scss */
+/* line 58, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane .form-type-password input {
   margin-bottom: 0;
 }
-/* line 66, ../sass/partials/_page.scss */
+/* line 62, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane .password-reset {
   font-size: 90%;
   color: #777;
 }
 
-/* line 74, ../sass/partials/_page.scss */
+/* line 69, ../sass/partials/_page.scss */
 body.oa-login #user-login-panel .oa-pane {
   top: 115px;
 }
 
-/* line 6, ../sass/partials/_panel.scss */
-#node-edit .panel-pane.pane-node-field-oa-group-ref,
-#node-edit .panel-pane.pane-node-field-oa-team-ref,
-#node-edit .panel-pane.pane-node-field-oa-user-ref {
-  padding: 1px 10px;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+/* line 7, ../sass/partials/_panel.scss */
+.panel-pane {
+  position: relative;
+}
+/* line 9, ../sass/partials/_panel.scss */
+.content .panel-pane {
+  padding-bottom: 15px;
 }
 
-/* line 15, ../sass/partials/_panel.scss */
-#node-edit .panel-pane.pane-node-field-oa-group-ref {
-  padding-top: 10px;
-  margin-bottom: 0;
+/* line 14, ../sass/partials/_panel.scss */
+.content .bryant-flipped-sidebar-inner,
+.content .burr-flipped-sidebar-inner {
+  padding-top: 0;
+}
+
+/* line 20, ../sass/partials/_panel.scss */
+.oa-pane {
+  border: 1px solid #e3e3e3;
   border-bottom: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
-
-/* line 21, ../sass/partials/_panel.scss */
-#node-edit .panel-pane.pane-node-field-oa-team-ref {
+/* line 24, ../sass/partials/_panel.scss */
+.oa-pane .panel-pane {
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #e3e3e3;
   margin-bottom: 0;
-  margin-top: 0;
-  border-bottom: 0;
-  border-top: 0;
+  padding-bottom: 15px;
+}
+/* line 31, ../sass/partials/_panel.scss */
+.oa-pane.inner-pane .panel-pane {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 35, ../sass/partials/_panel.scss */
+.oa-pane .pane-title {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  padding: 10px 15px;
+  color: #333;
+  background-color: whitesmoke;
+  background-image: -moz-linear-gradient(top, white, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+  background-image: -o-linear-gradient(top, white, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e3e3e3', GradientType=0);
+}
+/* line 43, ../sass/partials/_panel.scss */
+.oa-pane .pane-content {
+  padding: 15px 15px 0 15px;
+}
+/* line 45, ../sass/partials/_panel.scss */
+.oa-pane .pane-content .oa-list {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+/* line 50, ../sass/partials/_panel.scss */
+.oa-pane .oa-list {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+/* line 54, ../sass/partials/_panel.scss */
+.oa-pane .pager {
+  margin-top: 15px;
 }
 
-/* line 28, ../sass/partials/_panel.scss */
-#node-edit .panel-pane.pane-node-field-oa-user-ref {
-  border-top: 0;
-  margin-top: 0;
+/* line 58, ../sass/partials/_panel.scss */
+.oa-bottom-right {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  text-align: right;
 }
 
-/* line 37, ../sass/partials/_panel.scss */
+/* line 67, ../sass/partials/_panel.scss */
+.selby-flipped-column-inner {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/* line 76, ../sass/partials/_panel.scss */
 .attachments .user-badge .user-picture img {
   margin: 0 8px 0 0;
 }
-/* line 40, ../sass/partials/_panel.scss */
+/* line 79, ../sass/partials/_panel.scss */
 .attachments .user-badge .created {
   font-size: 10.5px;
   line-height: 13px;
   color: #555555;
 }
-/* line 46, ../sass/partials/_panel.scss */
+/* line 85, ../sass/partials/_panel.scss */
 .attachments .oa-body {
   padding: 10px;
 }
-/* line 48, ../sass/partials/_panel.scss */
+/* line 87, ../sass/partials/_panel.scss */
 .attachments .oa-body ul {
   margin: 0;
 }
-/* line 50, ../sass/partials/_panel.scss */
+/* line 89, ../sass/partials/_panel.scss */
 .attachments .oa-body ul li {
   margin: 0 0 5px;
 }
 
-/* line 59, ../sass/partials/_panel.scss */
+/* line 99, ../sass/partials/_panel.scss */
 .pane-oa-widgets-content-visibility .visibility {
   text-transform: uppercase;
 }
 
-/* line 65, ../sass/partials/_panel.scss */
+/* line 107, ../sass/partials/_panel.scss */
 .pane-oa-widgets-add-content ul {
   margin-left: 0;
 }
-/* line 69, ../sass/partials/_panel.scss */
-.pane-oa-widgets-add-content li a.btn, .pane-oa-widgets-add-content li form a.button.fake-ok, form .pane-oa-widgets-add-content li a.button.fake-ok,
-.pane-oa-widgets-add-content li form a.button.fake-cancel,
-form .pane-oa-widgets-add-content li a.button.fake-cancel, .pane-oa-widgets-add-content li #media-browser-tabset a.button, #media-browser-tabset .pane-oa-widgets-add-content li a.button, .pane-oa-widgets-add-content li #modal-content a.form-submit, #modal-content .pane-oa-widgets-add-content li a.form-submit,
+/* line 111, ../sass/partials/_panel.scss */
+.pane-oa-widgets-add-content li a.btn, .pane-oa-widgets-add-content li form a.button.fake-ok, form .pane-oa-widgets-add-content li a.button.fake-ok, .pane-oa-widgets-add-content li form a.button.fake-cancel, form .pane-oa-widgets-add-content li a.button.fake-cancel, .pane-oa-widgets-add-content li #media-browser-tabset a.button, #media-browser-tabset .pane-oa-widgets-add-content li a.button, .pane-oa-widgets-add-content li #modal-content a.form-submit, #modal-content .pane-oa-widgets-add-content li a.form-submit,
 .pane-oa-widgets-add-content li #modal-content a#edit-cancel,
 #modal-content .pane-oa-widgets-add-content li a#edit-cancel {
   margin-bottom: 5px;
 }
 
-/* line 77, ../sass/partials/_panel.scss */
+/* line 120, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-picture {
   width: 20%;
   margin-right: 5%;
 }
-/* line 81, ../sass/partials/_panel.scss */
+/* line 124, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-info {
   text-align: center;
   width: 75%;
 }
-/* line 88, ../sass/partials/_panel.scss */
+/* line 131, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-info .user-name,
 .pane-oa-widgets-user-profile .user-info .user-role {
   font-size: 11.9px;
 }
-/* line 92, ../sass/partials/_panel.scss */
+/* line 135, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links {
   text-align: right;
 }
-/* line 94, ../sass/partials/_panel.scss */
+/* line 137, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links a {
   font-size: 10.5px;
   border-right: 1px solid #555;
   padding-right: 5px;
 }
-/* line 99, ../sass/partials/_panel.scss */
+/* line 142, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links a:last-child {
   border: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 111, ../sass/partials/_panel.scss */
+/* line 154, ../sass/partials/_panel.scss */
 .pane-oa-core-summary .space-links .favorite {
   float: left;
 }
-/* line 114, ../sass/partials/_panel.scss */
+/* line 157, ../sass/partials/_panel.scss */
 .pane-oa-core-summary .space-links .edit {
   float: right;
 }
 
-/* line 122, ../sass/partials/_panel.scss */
+/* line 166, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .pane-content {
   position: relative;
 }
-/* line 125, ../sass/partials/_panel.scss */
+/* line 169, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .spaces-container {
   float: left;
   margin-right: 20px;
 }
-/* line 129, ../sass/partials/_panel.scss */
+/* line 173, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space-switcher {
   position: absolute;
   top: 0;
   right: 0;
   margin: 10px;
 }
-/* line 135, ../sass/partials/_panel.scss */
+/* line 179, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space {
   border-bottom: 1px solid #D4D4D4;
   padding-bottom: 15px;
   margin-bottom: 5px;
 }
-/* line 139, ../sass/partials/_panel.scss */
+/* line 183, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space .pull-left img {
   margin-right: 15px;
 }
-/* line 143, ../sass/partials/_panel.scss */
+/* line 187, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .member-sidebar {
   margin-bottom: 15px;
 }
-/* line 145, ../sass/partials/_panel.scss */
+/* line 189, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .member-sidebar .space {
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: 0;
 }
 
-/* line 156, ../sass/partials/_panel.scss */
+/* line 200, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search form {
   margin: 0;
 }
-/* line 159, ../sass/partials/_panel.scss */
+/* line 203, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .input-append {
   box-sizing: border-box;
 }
-/* line 162, ../sass/partials/_panel.scss */
+/* line 206, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .search-text {
   height: 32px;
   width: 80%;
   box-sizing: border-box;
 }
-/* line 167, ../sass/partials/_panel.scss */
+/* line 211, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .submit {
   padding: 5px 0;
   width: 20%;
   box-sizing: border-box;
 }
-/* line 172, ../sass/partials/_panel.scss */
+/* line 216, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .options {
   margin: 10px 0 0;
 }
 
-/* line 178, ../sass/partials/_panel.scss */
+/* line 222, ../sass/partials/_panel.scss */
 .oa-command-buttons li {
   margin-bottom: 3px;
 }
 
-/* line 5, ../sass/partials/_view.scss */
+/* line 4, ../sass/partials/_view.scss */
 table thead th {
   background-color: #eee;
 }
 
-/* line 6, ../sass/partials/_form.scss */
-.form-actions {
-  border: 0;
-  padding: 0;
-}
-
-/* line 11, ../sass/partials/_form.scss */
-.form-item {
+/* line 9, ../sass/partials/_form.scss */
+form .form-item {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-
-/* line 15, ../sass/partials/_form.scss */
-form .btn, form .button.fake-ok,
-form .button.fake-cancel, form #media-browser-tabset a.button,
+/* line 13, ../sass/partials/_form.scss */
+form .btn, form .button.fake-ok, form .button.fake-cancel, form #media-browser-tabset a.button,
 form #media-browser-tabset input.form-submit, form #modal-content .form-submit, #modal-content form .form-submit,
 form #modal-content #edit-cancel,
 #modal-content form #edit-cancel {
   width: auto;
   height: inherit;
 }
-
 /* line 19, ../sass/partials/_form.scss */
-form .form-actions .btn, form .form-actions .button.fake-ok,
-form .form-actions .button.fake-cancel, form .form-actions #media-browser-tabset a.button,
+form .button.fake-ok, form .button.fake-cancel {
+  display: inline-block;
+  max-width: 60px;
+  margin-right: 5px;
+}
+/* line 29, ../sass/partials/_form.scss */
+form .form-actions {
+  border: 0;
+  padding: 0;
+}
+/* line 32, ../sass/partials/_form.scss */
+form .form-actions .btn, form .form-actions .button.fake-ok, form .form-actions .button.fake-cancel, form .form-actions #media-browser-tabset a.button,
 form .form-actions #media-browser-tabset input.form-submit, form .form-actions #modal-content .form-submit, #modal-content form .form-actions .form-submit,
 form .form-actions #modal-content #edit-cancel,
 #modal-content form .form-actions #edit-cancel {
   margin-bottom: 10px;
 }
 
-/* line 23, ../sass/partials/_form.scss */
-form .button.fake-ok,
-form .button.fake-cancel {
-  display: inline-block;
-  max-width: 60px;
-  margin-right: 5px;
+/* line 37, ../sass/partials/_form.scss */
+.label, .oa-news .oa-news-tags a {
+  font-weight: normal;
+  background-color: #ddd;
+  color: #333;
+}
+/* line 41, ../sass/partials/_form.scss */
+.label a, .oa-news .oa-news-tags a a {
+  font-weight: normal;
 }
 
-/* line 39, ../sass/partials/_form.scss */
+/* line 49, ../sass/partials/_form.scss */
 #media-browser-tabset h1 {
   font-size: 16px;
 }
 
-/* line 49, ../sass/partials/_form.scss */
+/* line 66, ../sass/partials/_form.scss */
 #modal-content .form-submit,
 #media-browser-tabset a.button,
 #media-browser-tabset form a.button,
@@ -13179,7 +13069,7 @@ form .button.fake-cancel {
   font-weight: normal;
   display: inline-block;
 }
-/* line 54, ../sass/partials/_form.scss */
+/* line 71, ../sass/partials/_form.scss */
 #modal-content .form-submit:hover,
 #media-browser-tabset a.button:hover,
 #media-browser-tabset form a.button:hover,
@@ -13191,11 +13081,11 @@ form .button.fake-cancel {
   background-image: none;
 }
 
-/* line 68, ../sass/partials/_form.scss */
+/* line 83, ../sass/partials/_form.scss */
 #modal-content .form-item {
   clear: both;
 }
-/* line 71, ../sass/partials/_form.scss */
+/* line 86, ../sass/partials/_form.scss */
 #modal-content .form-submit {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -13203,43 +13093,39 @@ form .button.fake-cancel {
   margin-bottom: 0;
 }
 
-/* line 78, ../sass/partials/_form.scss */
+/* line 93, ../sass/partials/_form.scss */
 #media-tabs-wrapper ul.ui-tabs-nav {
   margin-bottom: 0;
 }
 
-/* line 87, ../sass/partials/_form.scss */
+/* line 98, ../sass/partials/_form.scss */
 #media-browser-tabset .views-exposed-form .views-submit-button {
   margin-top: 30px;
 }
-
-/* line 90, ../sass/partials/_form.scss */
+/* line 101, ../sass/partials/_form.scss */
 #media-browser-tabset .views-exposed-form .views-exposed-widget {
   margin-right: 0;
 }
-
-/* line 93, ../sass/partials/_form.scss */
+/* line 105, ../sass/partials/_form.scss */
 #media-browser-tabset #edit-filename-wrapper {
   width: 200px;
 }
-
-/* line 96, ../sass/partials/_form.scss */
+/* line 108, ../sass/partials/_form.scss */
 #media-browser-tabset form select {
   width: 100%;
 }
-
-/* line 101, ../sass/partials/_form.scss */
+/* line 112, ../sass/partials/_form.scss */
 #media-browser-tabset input.form-file,
 #media-browser-tabset span.file {
   margin-right: 10px;
 }
 
-/* line 105, ../sass/partials/_form.scss */
+/* line 120, ../sass/partials/_form.scss */
 #node-edit .burr-flipped-sidebar .panel-pane {
   border: 0;
   border-bottom: 1px solid #e3e3e3;
   margin-bottom: 0;
-  padding: 0;
+  padding: 15px;
   background: transparent;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -13248,178 +13134,164 @@ form .button.fake-cancel {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-
-/* line 115, ../sass/partials/_form.scss */
-#node-edit .container-inline-date .form-item-date-time, #node-edit .container-inline-date .form-item-date-date {
+/* line 128, ../sass/partials/_form.scss */
+#node-edit .burr-flipped-sidebar .panel-pane h3.pane-title {
+  margin: -15px -15px 10px;
+}
+/* line 131, ../sass/partials/_form.scss */
+#node-edit .burr-flipped-sidebar .panel-pane .pane-content {
+  padding: 0;
+}
+/* line 138, ../sass/partials/_form.scss */
+#node-edit .panel-pane.pane-node-field-oa-group-ref, #node-edit .panel-pane.pane-node-field-oa-team-ref, #node-edit .panel-pane.pane-node-field-oa-user-ref {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 142, ../sass/partials/_form.scss */
+#node-edit .panel-pane.pane-node-field-oa-group-ref {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+/* line 146, ../sass/partials/_form.scss */
+#node-edit .panel-pane.pane-node-field-oa-team-ref {
+  margin-bottom: 0;
+  margin-top: 0;
+  border-bottom: 0;
+  border-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 154, ../sass/partials/_form.scss */
+#node-edit .panel-pane.pane-node-field-oa-user-ref {
+  border-top: 0;
+  margin-top: 0;
+}
+/* line 160, ../sass/partials/_form.scss */
+#node-edit .container-inline-date .date-padding {
+  padding: 0;
+}
+/* line 164, ../sass/partials/_form.scss */
+#node-edit .container-inline-date .form-item-date-time,
+#node-edit .container-inline-date .form-item-date-date {
   padding-bottom: 0.5em;
 }
-
-/* line 119, ../sass/partials/_form.scss */
+/* line 168, ../sass/partials/_form.scss */
 #node-edit .form-actions {
   background: transparent;
 }
-/* line 121, ../sass/partials/_form.scss */
+/* line 170, ../sass/partials/_form.scss */
 #node-edit .form-actions input {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 126, ../sass/partials/_form.scss */
+/* line 175, ../sass/partials/_form.scss */
 #node-edit .form-actions input:hover {
   color: white;
   background-color: #0044cc;
   background-image: none;
 }
 
-/* line 134, ../sass/partials/_form.scss */
-.panel-pane {
-  position: relative;
-}
-
-/* line 138, ../sass/partials/_form.scss */
+/* line 187, ../sass/partials/_form.scss */
 .views-exposed-form .well {
   padding: 0 1em;
 }
-
-/* line 142, ../sass/partials/_form.scss */
+/* line 190, ../sass/partials/_form.scss */
 .views-exposed-form .filter-btn {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-/* line 148, ../sass/partials/_form.scss */
+/* line 196, ../sass/partials/_form.scss */
 .view-filters form {
   margin: 0;
 }
 
-/* line 152, ../sass/partials/_form.scss */
+/* line 199, ../sass/partials/_form.scss */
 .views-exposed-widget.views-submit-button {
   padding-right: 5px;
 }
 
-/* line 157, ../sass/partials/_form.scss */
+/* line 205, ../sass/partials/_form.scss */
 #oa-discussion-reply-form {
   position: relative;
 }
-/* line 159, ../sass/partials/_form.scss */
+/* line 207, ../sass/partials/_form.scss */
 #oa-discussion-reply-form .form-item {
   margin: 0;
 }
-/* line 162, ../sass/partials/_form.scss */
+/* line 210, ../sass/partials/_form.scss */
 #oa-discussion-reply-form input#edit-subject {
   width: 75%;
 }
-/* line 165, ../sass/partials/_form.scss */
+/* line 213, ../sass/partials/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media {
   position: relative;
 }
-/* line 167, ../sass/partials/_form.scss */
+/* line 215, ../sass/partials/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .tabledrag-toggle-weight-wrapper {
   position: absolute;
   top: 0;
   right: 0;
   margin: 10px;
 }
-/* line 174, ../sass/partials/_form.scss */
+/* line 222, ../sass/partials/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .media-item img {
   display: block;
   margin: auto;
   width: auto;
 }
-/* line 179, ../sass/partials/_form.scss */
+/* line 227, ../sass/partials/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .media-item .file a {
   display: none;
 }
-/* line 184, ../sass/partials/_form.scss */
+/* line 232, ../sass/partials/_form.scss */
 #oa-discussion-reply-form #edit-submit {
   position: absolute;
   bottom: 2px;
   right: 0;
 }
 
-/* line 192, ../sass/partials/_form.scss */
+/* line 239, ../sass/partials/_form.scss */
 .checkbox-table .center {
   text-align: center;
 }
-/* line 196, ../sass/partials/_form.scss */
+/* line 243, ../sass/partials/_form.scss */
 .checkbox-table .form-type-checkbox,
 .checkbox-table .space-label {
   margin: 0.4em 0;
 }
 
-/* line 5, ../sass/partials/_node.scss */
+/* line 7, ../sass/partials/_node.scss */
 .oa-body {
   padding: 0 10px;
   clear: both;
 }
 
-/* line 9, ../sass/partials/_node.scss */
+/* line 11, ../sass/partials/_node.scss */
 .oa-media {
   padding: 5px 10px;
 }
 
-/* line 12, ../sass/partials/_node.scss */
+/* line 14, ../sass/partials/_node.scss */
 .oa-description {
   font-size: 12px;
   color: #555;
   line-height: 16px;
 }
 
-/* line 18, ../sass/partials/_node.scss */
+/* line 19, ../sass/partials/_node.scss */
 .well.current-node {
   border-left: 6px solid #B0EBA3;
   margin-left: -6px;
 }
 
-/* line 24, ../sass/partials/_node.scss */
-.oa-list ul, .field .field-item ul, .field-content ul, .mceContentBody ul {
-  list-style-type: disc;
-  margin: 0 0 10px 25px;
-}
-/* line 28, ../sass/partials/_node.scss */
-.oa-list ol, .field .field-item ol, .field-content ol, .mceContentBody ol {
-  list-style-type: decimal;
-  margin: 0 0 10px 25px;
-}
-
-/* line 34, ../sass/partials/_node.scss */
-.oa-list.oa-news {
-  border-bottom: 1px solid #E2E2E2;
-  padding: 0 15px 15px 15px;
-  margin-bottom: 15px;
-}
-
-/* line 39, ../sass/partials/_node.scss */
-.views-row-last .oa-list.oa-news {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-/* line 45, ../sass/partials/_node.scss */
-.oa-news .oa-news-header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* line 50, ../sass/partials/_node.scss */
-.oa-news .oa-news-posted {
-  color: #A6A6A6;
-}
-/* line 52, ../sass/partials/_node.scss */
-.oa-news .oa-news-posted a {
-  color: #333;
-}
-/* line 56, ../sass/partials/_node.scss */
-.oa-news .oa-news-body {
-  margin-top: 10px;
-}
-/* line 59, ../sass/partials/_node.scss */
-.oa-news .oa-news-image {
-  margin-right: 10px;
-  margin-bottom: 5px;
-}
-
-/* line 68, ../sass/partials/_node.scss */
+/* line 23, ../sass/partials/_node.scss */
 .field.field-type-image .field-item {
   border: 0;
   -webkit-box-shadow: none;
@@ -13428,7 +13300,60 @@ form .button.fake-cancel {
   margin-bottom: 0;
 }
 
-/* line 5, ../sass/partials/_user.scss */
+/* line 32, ../sass/partials/_node.scss */
+.oa-list ul,
+.field .field-item ul,
+.field-content ul,
+.mceContentBody ul {
+  list-style-type: disc;
+  margin: 0 0 10px 25px;
+}
+/* line 36, ../sass/partials/_node.scss */
+.oa-list ol,
+.field .field-item ol,
+.field-content ol,
+.mceContentBody ol {
+  list-style-type: decimal;
+  margin: 0 0 10px 25px;
+}
+
+/* line 41, ../sass/partials/_node.scss */
+.oa-list.oa-news {
+  border-bottom: 1px solid #E2E2E2;
+  padding: 0 15px 15px 15px;
+  margin-bottom: 15px;
+}
+
+/* line 46, ../sass/partials/_node.scss */
+.views-row-last .oa-list.oa-news {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 55, ../sass/partials/_node.scss */
+.oa-news .oa-news-header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 60, ../sass/partials/_node.scss */
+.oa-news .oa-news-posted {
+  color: #A6A6A6;
+}
+/* line 62, ../sass/partials/_node.scss */
+.oa-news .oa-news-posted a {
+  color: #333;
+}
+/* line 66, ../sass/partials/_node.scss */
+.oa-news .oa-news-body {
+  margin-top: 10px;
+}
+/* line 69, ../sass/partials/_node.scss */
+.oa-news .oa-news-image {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+/* line 8, ../sass/partials/_user.scss */
 .user-badge {
   border: 1px solid #CCC;
   padding: 3px 3px 3px 5px;
@@ -13439,30 +13364,30 @@ form .button.fake-cancel {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 12, ../sass/partials/_user.scss */
+/* line 15, ../sass/partials/_user.scss */
 .user-badge img {
   vertical-align: middle;
 }
-/* line 15, ../sass/partials/_user.scss */
+/* line 18, ../sass/partials/_user.scss */
 .user-badge.pull-right, .user-badge.badge-right {
   text-align: right;
   margin-left: 10px;
 }
-/* line 18, ../sass/partials/_user.scss */
+/* line 21, ../sass/partials/_user.scss */
 .user-badge.pull-right img, .user-badge.badge-right img {
   margin-left: 5px;
 }
-/* line 22, ../sass/partials/_user.scss */
+/* line 25, ../sass/partials/_user.scss */
 .user-badge.pull-left {
   text-align: left;
   margin-right: 10px;
   padding-left: 3px;
 }
-/* line 26, ../sass/partials/_user.scss */
+/* line 29, ../sass/partials/_user.scss */
 .user-badge.pull-left img {
   margin-right: 5px;
 }
-/* line 30, ../sass/partials/_user.scss */
+/* line 33, ../sass/partials/_user.scss */
 .user-badge.no-border {
   padding: 4px 3px 4px 8px;
   border: 0;
@@ -13470,7 +13395,7 @@ form .button.fake-cancel {
   background: transparent;
 }
 
-/* line 37, ../sass/partials/_user.scss */
+/* line 40, ../sass/partials/_user.scss */
 .content .user-badge {
   background-color: #fafafa;
   background-image: -moz-linear-gradient(top, white, #f2f2f2);
@@ -13482,22 +13407,22 @@ form .button.fake-cancel {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f0f0f0', GradientType=0);
 }
 
-/* line 41, ../sass/partials/_user.scss */
+/* line 43, ../sass/partials/_user.scss */
 .oa-river .user-badge {
   border-top: 0;
   border-right: 0;
 }
 
-/* line 49, ../sass/partials/_user.scss */
+/* line 51, ../sass/partials/_user.scss */
 .pane-oa-user-spaces-full .views-row {
   border: 1px solid #DDD;
   border-bottom: none;
 }
-/* line 53, ../sass/partials/_user.scss */
+/* line 55, ../sass/partials/_user.scss */
 .pane-oa-user-spaces-full .views-row-odd {
   background: #f9f9f9;
 }
-/* line 56, ../sass/partials/_user.scss */
+/* line 58, ../sass/partials/_user.scss */
 .pane-oa-user-spaces-full .views-row-first {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -13506,7 +13431,7 @@ form .button.fake-cancel {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 59, ../sass/partials/_user.scss */
+/* line 61, ../sass/partials/_user.scss */
 .pane-oa-user-spaces-full .views-row-last {
   border-bottom: 1px solid #DDD;
   -moz-border-radius-bottomleft: 5px;
@@ -13516,64 +13441,74 @@ form .button.fake-cancel {
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 64, ../sass/partials/_user.scss */
+/* line 66, ../sass/partials/_user.scss */
 .pane-oa-user-spaces-full .space-container {
   padding: 5px;
 }
-/* line 68, ../sass/partials/_user.scss */
+/* line 70, ../sass/partials/_user.scss */
 .pane-oa-user-spaces-full .space-details .picture {
   margin-right: 20px;
   height: 120px;
   width: 120px;
 }
-/* line 72, ../sass/partials/_user.scss */
+/* line 74, ../sass/partials/_user.scss */
 .pane-oa-user-spaces-full .space-details .picture img {
   width: 100%;
 }
-/* line 78, ../sass/partials/_user.scss */
+/* line 79, ../sass/partials/_user.scss */
 .pane-oa-user-spaces-full .accordion {
   padding: 10px;
   margin: 0;
 }
 
-/* line 85, ../sass/partials/_user.scss */
-.pane-oa-core-members-widget h5, .pane-oa-teams-members h5 {
+/* line 89, ../sass/partials/_user.scss */
+.pane-oa-core-members-widget h5,
+.pane-oa-teams-members h5 {
   margin-top: 0;
 }
-/* line 88, ../sass/partials/_user.scss */
-.pane-oa-core-members-widget .btn-group, .pane-oa-teams-members .btn-group {
+/* line 92, ../sass/partials/_user.scss */
+.pane-oa-core-members-widget .btn-group,
+.pane-oa-teams-members .btn-group {
   margin: 0 5px 10px 0;
   min-width: 160px;
 }
-/* line 93, ../sass/partials/_user.scss */
+/* line 97, ../sass/partials/_user.scss */
 .pane-oa-core-members-widget .label, .pane-oa-core-members-widget .oa-news .oa-news-tags a, .oa-news .oa-news-tags .pane-oa-core-members-widget a,
-.pane-oa-core-members-widget .user-badge, .pane-oa-teams-members .label, .pane-oa-teams-members .oa-news .oa-news-tags a, .oa-news .oa-news-tags .pane-oa-teams-members a,
+.pane-oa-core-members-widget .user-badge,
+.pane-oa-teams-members .label,
+.pane-oa-teams-members .oa-news .oa-news-tags a,
+.oa-news .oa-news-tags .pane-oa-teams-members a,
 .pane-oa-teams-members .user-badge {
   margin: 0 5px 10px 0;
   border: 1px solid transparent;
 }
-/* line 97, ../sass/partials/_user.scss */
-.pane-oa-core-members-widget .dropdown-toggle.user-badge, .pane-oa-teams-members .dropdown-toggle.user-badge {
+/* line 101, ../sass/partials/_user.scss */
+.pane-oa-core-members-widget .dropdown-toggle.user-badge,
+.pane-oa-teams-members .dropdown-toggle.user-badge {
   margin: 0;
   border: 1px solid transparent;
 }
-/* line 100, ../sass/partials/_user.scss */
-.pane-oa-core-members-widget .dropdown-toggle.user-badge i, .pane-oa-teams-members .dropdown-toggle.user-badge i {
+/* line 104, ../sass/partials/_user.scss */
+.pane-oa-core-members-widget .dropdown-toggle.user-badge i,
+.pane-oa-teams-members .dropdown-toggle.user-badge i {
   position: absolute;
   top: 10px;
   right: 10px;
   display: none;
 }
-/* line 106, ../sass/partials/_user.scss */
-.pane-oa-core-members-widget .dropdown-toggle.user-badge:hover, .pane-oa-teams-members .dropdown-toggle.user-badge:hover {
+/* line 110, ../sass/partials/_user.scss */
+.pane-oa-core-members-widget .dropdown-toggle.user-badge:hover,
+.pane-oa-teams-members .dropdown-toggle.user-badge:hover {
   border: 1px solid #777;
 }
-/* line 108, ../sass/partials/_user.scss */
-.pane-oa-core-members-widget .dropdown-toggle.user-badge:hover i, .pane-oa-teams-members .dropdown-toggle.user-badge:hover i {
+/* line 112, ../sass/partials/_user.scss */
+.pane-oa-core-members-widget .dropdown-toggle.user-badge:hover i,
+.pane-oa-teams-members .dropdown-toggle.user-badge:hover i {
   display: block;
 }
-/* line 113, ../sass/partials/_user.scss */
-.pane-oa-core-members-widget .member-dropdown, .pane-oa-teams-members .member-dropdown {
+/* line 117, ../sass/partials/_user.scss */
+.pane-oa-core-members-widget .member-dropdown,
+.pane-oa-teams-members .member-dropdown {
   position: relative;
 }
 
@@ -13597,9 +13532,7 @@ form .button.fake-cancel {
   right: -15px;
 }
 /* line 22, ../sass/partials/_navbar.scss */
-.pane-add-space-content a.dropdown-toggle.btn, .pane-add-space-content form a.dropdown-toggle.button.fake-ok, form .pane-add-space-content a.dropdown-toggle.button.fake-ok,
-.pane-add-space-content form a.dropdown-toggle.button.fake-cancel,
-form .pane-add-space-content a.dropdown-toggle.button.fake-cancel, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit,
+.pane-add-space-content a.dropdown-toggle.btn, .pane-add-space-content form a.dropdown-toggle.button.fake-ok, form .pane-add-space-content a.dropdown-toggle.button.fake-ok, .pane-add-space-content form a.dropdown-toggle.button.fake-cancel, form .pane-add-space-content a.dropdown-toggle.button.fake-cancel, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit,
 .pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel,
 #modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel,
 .pane-oa-favorites-favorites-button a.dropdown-toggle.btn,
@@ -13635,9 +13568,7 @@ form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-cancel,
   margin-top: 3px;
 }
 /* line 32, ../sass/partials/_navbar.scss */
-.pane-add-space-content a.dropdown-toggle.btn > .caret, .pane-add-space-content form a.dropdown-toggle.button.fake-ok > .caret, form .pane-add-space-content a.dropdown-toggle.button.fake-ok > .caret,
-.pane-add-space-content form a.dropdown-toggle.button.fake-cancel > .caret,
-form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .caret, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button > .caret, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button > .caret, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit > .caret, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit > .caret,
+.pane-add-space-content a.dropdown-toggle.btn > .caret, .pane-add-space-content form a.dropdown-toggle.button.fake-ok > .caret, form .pane-add-space-content a.dropdown-toggle.button.fake-ok > .caret, .pane-add-space-content form a.dropdown-toggle.button.fake-cancel > .caret, form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .caret, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button > .caret, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button > .caret, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit > .caret, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit > .caret,
 .pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel > .caret,
 #modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel > .caret,
 .pane-add-space-content a.dropdown-toggle.btn > .icon-star,
@@ -13768,9 +13699,7 @@ form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-cancel > 
   display: block;
 }
 /* line 39, ../sass/partials/_navbar.scss */
-.pane-add-space-content a.dropdown-toggle.btn:hover, .pane-add-space-content form a.dropdown-toggle.button.fake-ok:hover, form .pane-add-space-content a.dropdown-toggle.button.fake-ok:hover,
-.pane-add-space-content form a.dropdown-toggle.button.fake-cancel:hover,
-form .pane-add-space-content a.dropdown-toggle.button.fake-cancel:hover, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button:hover, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button:hover, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit:hover, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit:hover,
+.pane-add-space-content a.dropdown-toggle.btn:hover, .pane-add-space-content form a.dropdown-toggle.button.fake-ok:hover, form .pane-add-space-content a.dropdown-toggle.button.fake-ok:hover, .pane-add-space-content form a.dropdown-toggle.button.fake-cancel:hover, form .pane-add-space-content a.dropdown-toggle.button.fake-cancel:hover, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button:hover, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button:hover, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit:hover, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit:hover,
 .pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel:hover,
 #modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel:hover,
 .pane-oa-favorites-favorites-button a.dropdown-toggle.btn:hover,
@@ -13803,18 +13732,14 @@ form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-cancel:ho
   margin-right: 5px;
 }
 /* line 47, ../sass/partials/_navbar.scss */
-.pane-add-space-content a.dropdown-toggle.btn, .pane-add-space-content form a.dropdown-toggle.button.fake-ok, form .pane-add-space-content a.dropdown-toggle.button.fake-ok,
-.pane-add-space-content form a.dropdown-toggle.button.fake-cancel,
-form .pane-add-space-content a.dropdown-toggle.button.fake-cancel, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit,
+.pane-add-space-content a.dropdown-toggle.btn, .pane-add-space-content form a.dropdown-toggle.button.fake-ok, form .pane-add-space-content a.dropdown-toggle.button.fake-ok, .pane-add-space-content form a.dropdown-toggle.button.fake-cancel, form .pane-add-space-content a.dropdown-toggle.button.fake-cancel, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit,
 .pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel,
 #modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel {
   position: relative;
   text-indent: -9999em;
 }
 /* line 50, ../sass/partials/_navbar.scss */
-.pane-add-space-content a.dropdown-toggle.btn > .caret, .pane-add-space-content form a.dropdown-toggle.button.fake-ok > .caret, form .pane-add-space-content a.dropdown-toggle.button.fake-ok > .caret,
-.pane-add-space-content form a.dropdown-toggle.button.fake-cancel > .caret,
-form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .caret, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button > .caret, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button > .caret, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit > .caret, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit > .caret,
+.pane-add-space-content a.dropdown-toggle.btn > .caret, .pane-add-space-content form a.dropdown-toggle.button.fake-ok > .caret, form .pane-add-space-content a.dropdown-toggle.button.fake-ok > .caret, .pane-add-space-content form a.dropdown-toggle.button.fake-cancel > .caret, form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .caret, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button > .caret, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button > .caret, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit > .caret, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit > .caret,
 .pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel > .caret,
 #modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel > .caret {
   margin-top: 8px;
@@ -14006,9 +13931,7 @@ ul#oa_breadcrumb .btn-inverse {
 }
 
 /* line 225, ../sass/partials/_navbar.scss */
-.navbar-inverse ul#oa_breadcrumb .btn.btn-inverse, .navbar-inverse ul#oa_breadcrumb form .btn-inverse.button.fake-ok, form .navbar-inverse ul#oa_breadcrumb .btn-inverse.button.fake-ok,
-.navbar-inverse ul#oa_breadcrumb form .btn-inverse.button.fake-cancel,
-form .navbar-inverse ul#oa_breadcrumb .btn-inverse.button.fake-cancel, .navbar-inverse ul#oa_breadcrumb #media-browser-tabset a.btn-inverse.button, #media-browser-tabset .navbar-inverse ul#oa_breadcrumb a.btn-inverse.button,
+.navbar-inverse ul#oa_breadcrumb .btn.btn-inverse, .navbar-inverse ul#oa_breadcrumb form .btn-inverse.button.fake-ok, form .navbar-inverse ul#oa_breadcrumb .btn-inverse.button.fake-ok, .navbar-inverse ul#oa_breadcrumb form .btn-inverse.button.fake-cancel, form .navbar-inverse ul#oa_breadcrumb .btn-inverse.button.fake-cancel, .navbar-inverse ul#oa_breadcrumb #media-browser-tabset a.btn-inverse.button, #media-browser-tabset .navbar-inverse ul#oa_breadcrumb a.btn-inverse.button,
 .navbar-inverse ul#oa_breadcrumb #media-browser-tabset input.btn-inverse.form-submit,
 #media-browser-tabset .navbar-inverse ul#oa_breadcrumb input.btn-inverse.form-submit, .navbar-inverse ul#oa_breadcrumb #modal-content .btn-inverse.form-submit, #modal-content .navbar-inverse ul#oa_breadcrumb .btn-inverse.form-submit,
 .navbar-inverse ul#oa_breadcrumb #modal-content .btn-inverse#edit-cancel,
@@ -14046,17 +13969,13 @@ ul#oa_breadcrumb li:first-child a {
   padding-right: 10px;
 }
 /* line 250, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb a.btn.btn-inverse, ul#oa_breadcrumb form a.btn-inverse.button.fake-ok, form ul#oa_breadcrumb a.btn-inverse.button.fake-ok,
-ul#oa_breadcrumb form a.btn-inverse.button.fake-cancel,
-form ul#oa_breadcrumb a.btn-inverse.button.fake-cancel, ul#oa_breadcrumb #media-browser-tabset a.btn-inverse.button, #media-browser-tabset ul#oa_breadcrumb a.btn-inverse.button, ul#oa_breadcrumb #modal-content a.btn-inverse.form-submit, #modal-content ul#oa_breadcrumb a.btn-inverse.form-submit,
+ul#oa_breadcrumb a.btn.btn-inverse, ul#oa_breadcrumb form a.btn-inverse.button.fake-ok, form ul#oa_breadcrumb a.btn-inverse.button.fake-ok, ul#oa_breadcrumb form a.btn-inverse.button.fake-cancel, form ul#oa_breadcrumb a.btn-inverse.button.fake-cancel, ul#oa_breadcrumb #media-browser-tabset a.btn-inverse.button, #media-browser-tabset ul#oa_breadcrumb a.btn-inverse.button, ul#oa_breadcrumb #modal-content a.btn-inverse.form-submit, #modal-content ul#oa_breadcrumb a.btn-inverse.form-submit,
 ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel,
 #modal-content ul#oa_breadcrumb a.btn-inverse#edit-cancel {
   margin-bottom: 3px;
 }
 /* line 253, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse, ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-ok, form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-ok,
-ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-cancel,
-form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-cancel, ul#oa_breadcrumb #media-browser-tabset a.dropdown-toggle.btn-inverse.button, #media-browser-tabset ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button, ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse.form-submit, #modal-content ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.form-submit,
+ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse, ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-ok, form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-ok, ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-cancel, form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-cancel, ul#oa_breadcrumb #media-browser-tabset a.dropdown-toggle.btn-inverse.button, #media-browser-tabset ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button, ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse.form-submit, #modal-content ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.form-submit,
 ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse#edit-cancel,
 #modal-content ul#oa_breadcrumb a.dropdown-toggle.btn-inverse#edit-cancel {
   background: #333333 !important;
@@ -14070,9 +13989,7 @@ ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse#edit-cancel,
   height: 29px;
 }
 /* line 261, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse .caret, ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-ok .caret, form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-ok .caret,
-ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-cancel .caret,
-form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-cancel .caret, ul#oa_breadcrumb #media-browser-tabset a.dropdown-toggle.btn-inverse.button .caret, #media-browser-tabset ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button .caret, ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse.form-submit .caret, #modal-content ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.form-submit .caret,
+ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse .caret, ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-ok .caret, form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-ok .caret, ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-cancel .caret, form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-cancel .caret, ul#oa_breadcrumb #media-browser-tabset a.dropdown-toggle.btn-inverse.button .caret, #media-browser-tabset ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button .caret, ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse.form-submit .caret, #modal-content ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.form-submit .caret,
 ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse#edit-cancel .caret,
 #modal-content ul#oa_breadcrumb a.dropdown-toggle.btn-inverse#edit-cancel .caret {
   border-top: 6px solid #fff;
@@ -14081,9 +13998,7 @@ ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse#edit-cancel .caret
   margin-top: 10px;
 }
 /* line 268, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb a.btn.btn-inverse:hover, ul#oa_breadcrumb form a.btn-inverse.button.fake-ok:hover, form ul#oa_breadcrumb a.btn-inverse.button.fake-ok:hover,
-ul#oa_breadcrumb form a.btn-inverse.button.fake-cancel:hover,
-form ul#oa_breadcrumb a.btn-inverse.button.fake-cancel:hover, ul#oa_breadcrumb #media-browser-tabset a.btn-inverse.button:hover, #media-browser-tabset ul#oa_breadcrumb a.btn-inverse.button:hover, ul#oa_breadcrumb #modal-content a.btn-inverse.form-submit:hover, #modal-content ul#oa_breadcrumb a.btn-inverse.form-submit:hover,
+ul#oa_breadcrumb a.btn.btn-inverse:hover, ul#oa_breadcrumb form a.btn-inverse.button.fake-ok:hover, form ul#oa_breadcrumb a.btn-inverse.button.fake-ok:hover, ul#oa_breadcrumb form a.btn-inverse.button.fake-cancel:hover, form ul#oa_breadcrumb a.btn-inverse.button.fake-cancel:hover, ul#oa_breadcrumb #media-browser-tabset a.btn-inverse.button:hover, #media-browser-tabset ul#oa_breadcrumb a.btn-inverse.button:hover, ul#oa_breadcrumb #modal-content a.btn-inverse.form-submit:hover, #modal-content ul#oa_breadcrumb a.btn-inverse.form-submit:hover,
 ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel:hover,
 #modal-content ul#oa_breadcrumb a.btn-inverse#edit-cancel:hover {
   color: #d8d8d8;

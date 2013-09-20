@@ -2,6 +2,8 @@
 // Styles for Nodes
 // --------------------------------------------------
 
+// General node styles
+// --------------------------------------------------
 .oa-body {
   padding: 0 10px;
   clear: both;
@@ -14,13 +16,19 @@
   color: #555;
   line-height: 16px;
 }
-
 .well.current-node {
   border-left: 6px solid #B0EBA3;
   margin-left: -6px;
 }
-
-.oa-list, .field .field-item, .field-content, .mceContentBody {
+.field.field-type-image .field-item {
+  border: 0;
+  @include box-shadow(none);
+  margin-bottom: 0;
+}
+.oa-list, 
+.field .field-item, 
+.field-content, 
+.mceContentBody {
   ul {
     list-style-type: disc;
     margin: 0 0 10px 25px;
@@ -30,7 +38,6 @@
     margin: 0 0 10px 25px;
   }
 }
-
 .oa-list.oa-news {
   border-bottom: 1px solid #E2E2E2;
   padding: 0 15px 15px 15px;
@@ -40,6 +47,9 @@
   border-bottom: 0;
   padding-bottom: 0;
 }
+
+// News
+// --------------------------------------------------
 .oa-news {
   .oa-news-header {
     h3 {
@@ -63,11 +73,5 @@
   .oa-news-tags a {
     @extend .label;
   }
-}
-
-.field.field-type-image .field-item {
-  border: 0;
-  @include box-shadow(none);
-  margin-bottom: 0;
 }
 

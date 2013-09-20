@@ -1,18 +1,15 @@
 // Page
 // Styles for individual pages
 // --------------------------------------------------
-#main-wrapper {
-  min-height: 600px;
-  padding-top: 25px;
-}
 
+// Login page
+// --------------------------------------------------
 body.oa-login div.region-content {
   margin-top: 20px;
   background-image: url('../images/bg-splash.png');
   background-position: 0 90px;
   background-repeat: no-repeat;
   min-height: 376px;
-
   .pane-bundle-text {
     width: 75%;
     h3 {
@@ -33,7 +30,6 @@ body.oa-login div.region-content {
     text-align: center;
   }
 }
-
 body.oa-login div.content {
   margin-top: 20px;
   background-image: url('../images/tree-right.png');
@@ -70,7 +66,6 @@ body.oa-login div.content {
     }
   }
 }
-
 body.oa-login #user-login-panel .oa-pane {
   top: 115px;
 }

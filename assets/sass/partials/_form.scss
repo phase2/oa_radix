@@ -3,44 +3,61 @@
 // Styles for Forms
 // --------------------------------------------------
 
-.form-actions {
-  border: 0;
-  padding: 0;
+// General form styles
+// --------------------------------------------------
+form {
+  .form-item {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .btn {
+    width: auto;
+    height: inherit;
+  }
+  .button {
+    &.fake-ok,
+    &.fake-cancel {
+      @extend .btn;
+      display: inline-block;
+      max-width: 60px;
+      margin-right: 5px;
+    }
+    &.fake-ok {
+      @extend .btn-primary;
+    }
+  }
+  .form-actions {
+    border: 0;
+    padding: 0;
+    .btn {
+      margin-bottom: 10px;
+    }
+  }
+}
+.label {
+  font-weight: normal;
+  background-color: #ddd;
+  color: #333;
+  a {
+    font-weight: normal;
+  }
 }
 
-.form-item {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-form .btn {
-  width: auto;
-  height: inherit;
-}
-form .form-actions .btn {
-  margin-bottom: 10px
-}
-form .button.fake-ok,
-form .button.fake-cancel {
-  @extend .btn;
-  display: inline-block;
-  max-width: 60px;
-  margin-right: 5px;
-}
-form .button.fake-ok {
-  @extend .btn-primary;
-}
-#media-browser-tabset a.button,
-#media-browser-tabset input.form-submit {
-  @extend .btn;
-}
-#media-browser-tabset input.form-submit {
-  @extend .btn-primary;
-}
-#media-browser-tabset h1 {
-  font-size: 16px;
+// Media Browser
+// --------------------------------------------------
+#media-browser-tabset {
+  h1 {
+    font-size: 16px;
+  }
+  a.button,
+  input.form-submit {
+    @extend .btn;
+    @extend .btn-primary;
+  }
 }
 
-// undo media browser button styles from panopoly admin
+// Undo media browser button styles from panopoly admin
+// --------------------------------------------------
 #modal-content .form-submit,
 #media-browser-tabset a.button,
 #media-browser-tabset form a.button,
@@ -57,13 +74,11 @@ form .button.fake-ok {
     background-image: none;
   }
 }
-
 #modal-content .form-submit,
 #media-browser-tabset input.form-submit,
 #media-browser-tabset form input.form-submit {
   @extend .btn-primary;
 }
-
 #modal-content {
   .form-item {
     clear: both;
@@ -78,82 +93,115 @@ form .button.fake-ok {
 #media-tabs-wrapper ul.ui-tabs-nav {
   margin-bottom: 0;
 }
-#media-tabs-wrapper .ui-tabs .ui-tabs-nav li.ui-state-default {
-
-}
-#media-tabs-wrapper .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
-
-}
-#media-browser-tabset .views-exposed-form .views-submit-button {
-  margin-top: 30px;
-}
-#media-browser-tabset .views-exposed-form .views-exposed-widget {
-  margin-right: 0;
-}
-#media-browser-tabset #edit-filename-wrapper {
-  width: 200px;
-}
-#media-browser-tabset form select {
-  width: 100%;
-}
-
-#media-browser-tabset input.form-file,
-#media-browser-tabset span.file {
-  margin-right: 10px;
+#media-browser-tabset {
+  .views-exposed-form {
+    .views-submit-button {
+      margin-top: 30px;
+    }
+    .views-exposed-widget {
+      margin-right: 0;
+    }
+  }
+  #edit-filename-wrapper {
+    width: 200px;
+  }
+  form select {
+    width: 100%;
+  }
+  input.form-file,
+  span.file {
+    margin-right: 10px;
+  }
 }
 
-#node-edit .burr-flipped-sidebar .panel-pane {
-  border: 0;
-  border-bottom: 1px solid #e3e3e3;
-  margin-bottom: 0;
-  padding: 0;
-  background: transparent;
-  @include box-shadow(none);
-  @include border-radius(0);
-}
-
-#node-edit .container-inline-date .form-item-date-time, #node-edit .container-inline-date .form-item-date-date {
-  padding-bottom: 0.5em;
-}
-
-#node-edit .form-actions {
-  background: transparent;
-  input {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    @extend .btn-primary;
-    &:hover {
-      color: white;
-      background-color: #0044cc;
-      background-image: none;
+// Node edit form
+// --------------------------------------------------
+#node-edit {
+  .burr-flipped-sidebar .panel-pane {
+    border: 0;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 0;
+    padding: 15px;
+    background: transparent;
+    @include box-shadow(none);
+    @include border-radius(0);
+    h3.pane-title {
+      margin: -15px -15px 10px;
+    }
+    .pane-content {
+      padding: 0;
+    }
+  }
+  .panel-pane {
+    &.pane-node-field-oa-group-ref,
+    &.pane-node-field-oa-team-ref,
+    &.pane-node-field-oa-user-ref {
+      @include border-radius(0);
+      @include box-shadow(none);
+    }
+    &.pane-node-field-oa-group-ref {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+    &.pane-node-field-oa-team-ref {
+      margin-bottom: 0;
+      margin-top: 0;
+      border-bottom: 0;
+      border-top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    &.pane-node-field-oa-user-ref {
+      border-top: 0;
+      margin-top: 0;
+    }
+  }
+  .container-inline-date {
+    .date-padding {
+      padding: 0;
+    }  
+    .form-item-date-time,
+    .form-item-date-date {
+      padding-bottom: 0.5em;
+    }
+  }
+  .form-actions {
+    background: transparent;
+    input {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      @extend .btn-primary;
+      &:hover {
+        color: white;
+        background-color: #0044cc;
+        background-image: none;
+      }
     }
   }
 }
 
-.panel-pane {
-  position: relative;
+// Views exposed form
+// --------------------------------------------------
+.views-exposed-form {
+  .well {
+    padding: 0 1em;
+  }
+  .filter-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
-
-.views-exposed-form .well {
-  padding: 0 1em;
-}
-
-.views-exposed-form .filter-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
 .view-filters form {
   margin: 0;
 }
-
 .views-exposed-widget.views-submit-button {
   padding-right: 5px;
 }
 
 // Discussion quick reply
+// --------------------------------------------------
 #oa-discussion-reply-form {
   position: relative;
   .form-item {
@@ -187,7 +235,6 @@ form .button.fake-ok {
     right: 0;
   }
 }
-
 .checkbox-table {
   .center {
     text-align: center;

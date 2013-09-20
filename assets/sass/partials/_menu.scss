@@ -1,6 +1,21 @@
 // Menu
 // Styles for Menus and Navs
 // --------------------------------------------------
+
+// Navbar
+// --------------------------------------------------
+.navbar {
+  .navbar-inner {
+    padding-left:  20px;
+    padding-right: 20px;
+    border: 1px solid $navbarBorder;
+    color: black;
+    display: block;
+  }
+}
+
+// Main menu
+// --------------------------------------------------
 #main-menu {
   clear: left;
   > ul.menu {
@@ -47,28 +62,70 @@
   }
 }
 
-//
+// Dropdown menu
+// --------------------------------------------------
+#oa-navbar ul.dropdown-menu,
+ul.dropdown-menu,
+.dropdown-menu {
+  .item-list {
+    h3 {
+      color: $black;
+      text-shadow: none;
+      background: none;
+      padding: 3px 20px;
+      line-height: 20px;
+    }
+  }
+  ul {
+    margin: 0;
+    li {
+      padding: 0;
+      margin: 0;
+      a {
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: normal;
+        line-height: $baseLineHeight;
+        color: $dropdownLinkColor;
+        white-space: nowrap;
+        &:hover, &:focus, &.active {
+          text-decoration: none;
+          color: $dropdownLinkColorHover;
+          @include ctb-gradient-vertical($dropdownLinkBackgroundHover, darken($dropdownLinkBackgroundHover, 5%));
+        }
+        &.more-link {
+          text-align: left;
+        }
+      }
+      .flag-wrapper {
+        padding: 0;
+        .flag {
+          width: auto;
+          font-size: 12px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
 // Footer styles
-//
-// Applies formatting to drupal menu blocks that appear within the footer region
-//
+// --------------------------------------------------
 .region-footer {
   background-image: url('../../logo.png');
   background-repeat: no-repeat;
   background-position: 1% center;
-}
-
-.region-footer .menu {
-  float: right;
-}
-
-.region-footer .menu li {
-  list-style: none !important;
-  float: left;
-}
-
-.region-footer .menu li a {
-  line-height: 52px;
-  color: white;
-  display: block;
+  .menu {
+    float: right;
+    li {
+      list-style: none !important;
+      float: left;
+      a {
+        line-height: 52px;
+        color: white;
+        display: block;
+      }
+    }
+  }
 }

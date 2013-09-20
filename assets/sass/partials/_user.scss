@@ -2,6 +2,9 @@
 // User
 // Styles for User pages
 // --------------------------------------------------
+
+// User badge
+// --------------------------------------------------
 .user-badge {
   border: 1px solid #CCC;
   padding: 3px 3px 3px 5px;
@@ -37,14 +40,13 @@
 .content .user-badge {
   @include ctb-gradient-vertical($navbarBackgroundHighlight, $navbarBackground);
 }
-
 .oa-river .user-badge {
   border-top: 0;
   border-right: 0;
 }
 
-
 // User spaces page
+// --------------------------------------------------
 .pane-oa-user-spaces-full {
   .views-row {
     border: 1px solid #DDD;
@@ -74,14 +76,16 @@
       }
     }
   }
-
   .accordion {
     padding: 10px;
     margin: 0;
   }
 }
 
-.pane-oa-core-members-widget, .pane-oa-teams-members {
+// User panes
+// --------------------------------------------------
+.pane-oa-core-members-widget, 
+.pane-oa-teams-members {
   h5 {
     margin-top: 0;
   }
