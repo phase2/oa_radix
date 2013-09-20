@@ -28,7 +28,7 @@ function oa_radix_css_alter(&$css) {
   // Add a custom jQuery UI theme.
   if (isset($css['misc/ui/jquery.ui.theme.css'])) {
     $css['misc/ui/jquery.ui.theme.css']['data'] =
-      drupal_get_path('theme', 'oa_radix') . '/jquery-ui-1.10.0.custom.css';
+      drupal_get_path('theme', 'oa_radix') . '/assets/vendor/jqueryui/jquery-ui-1.10.0.custom.css';
   }
 }
 
