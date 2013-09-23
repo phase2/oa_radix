@@ -269,3 +269,205 @@ ul#oa_breadcrumb {
     color: darken(#fefefe, 15%);
   }
 }
+
+// Open Atrium Navbar
+// --------------------------------------------------
+#oa-navbar {
+  @include breakpoint('mini-tablet') {
+    position: fixed;
+    #mini-panel-oa_toolbar_panel {
+      padding: 0 $gridGutterWidth;
+    }
+    .pane-oa-dashboard-oa-breadcrumb {
+      float: none;
+      border-bottom: 1px solid #676767;
+    }
+    .pane-oa-toolbar-search {
+      float: left;
+      margin: 10px 0;
+      .input-append {
+        display: block;
+      }
+      .toolbar-search {
+        margin: 0;
+        padding: 0;
+        .submit {
+          margin: 0;
+          float: left;
+        }
+        .dropdown-toggle {
+          clear: none;
+          margin: 0;
+        }
+      }
+    }
+    .pane-oa-dashboard-oa-user-badge {
+      margin: 10px 0;
+      .btn {
+        margin: 0;
+      }
+      #oa-user-badge {
+        padding: 0;
+      }
+    }
+    .pane-oa-favorites-favorites-button {
+      margin: 10px 0;
+      ul {
+        margin: 0;
+        li {
+          margin: 0 10px 0 0;
+          a {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .pane-add-space-content {
+      margin: 10px 10px 10px 0;
+      .btn-group {
+        a {
+          margin: 0;
+        }
+      }
+    }
+  }
+  @include breakpoint('phone') {
+    position: static;
+    margin: 0;
+    #mini-panel-oa_toolbar_panel {
+      padding: 0;
+      .boxton-container {
+        padding: 50px 0 0;
+        position: relative;
+      }
+    }
+    .navbar-inner {
+      border: 0;
+    }
+    .panel-pane {
+      float: none;
+    }
+    .pane-oa-dashboard-oa-breadcrumb {
+      ul#oa_breadcrumb {
+        > li.oa-breadcrumb {
+          display: block;
+          float: none;
+          padding: 0;
+          margin: 0;
+          height: auto;
+          &:after {
+            content: '';
+            display: none;
+          }
+          > a {
+            display: inline-block;
+            padding: 15px 0;
+            text-align: center;
+            width: 100%;
+            position: static;
+            margin: 0;
+            border-bottom: 1px solid lighten($black, 15);
+            text-decoration: none;
+            @include border-radius(0 !important);
+          }
+          a.dropdown-toggle {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 0;
+            background: none !important;
+            padding: 15px 16px;
+            border: 0;
+            height: auto;
+            text-align: right;
+            outline: none;
+            @include border-radius(none);
+          }
+          ul.dropdown-menu {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            h3 {
+              padding: 5px 15px;
+            }
+            ul {
+              li {
+                a {
+                  padding: 5px 15px;
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .pane-oa-toolbar-search {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      .toolbar-search {
+        margin: 0;
+        padding: 0;
+        input.search-text {
+          width: 100px;
+        }
+        .btn-group {
+          width: 63px;
+        }
+        .submit {
+          margin: 0;
+          float: left;
+        }
+        .dropdown-toggle {
+          clear: none;
+          margin: 0;
+        }
+      }
+    }
+    .pane-oa-dashboard-oa-user-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      .btn {
+        margin: 0;
+      }
+      #oa-user-badge {
+        padding: 0;
+      }
+    }
+    .pane-oa-favorites-favorites-button {
+      position: absolute;
+      top: 10px;
+      left: 195px;
+      ul#oa_favorites {
+        margin: 0;
+        padding: 0;
+        li {
+          a {
+            margin: 0;
+            height: 22px;
+            line-height: 22px;
+            display: block;
+            i {
+              margin: 5px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Navbar
+// --------------------------------------------------
+#responsive-panels-regions-navbar {
+  .navbar-inner {
+    .btn-top {
+      float: left;
+      &.btn-active {
+        @include transform(none);
+      }
+    }
+  }
+}
