@@ -14104,30 +14104,109 @@ ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel:hover,
     margin: 0;
   }
 }
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 275, ../sass/partials/_navbar.scss */
+  #oa-navbar {
+    position: fixed;
+  }
+  /* line 336, ../sass/partials/_navbar.scss */
+  #oa-navbar #mini-panel-oa_toolbar_panel {
+    padding: 0 20px;
+  }
+  /* line 339, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-dashboard-oa-breadcrumb {
+    float: none;
+    border-bottom: 1px solid #676767;
+  }
+  /* line 343, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-toolbar-search {
+    float: left;
+    margin: 10px 0;
+  }
+  /* line 346, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-toolbar-search .input-append {
+    display: block;
+  }
+  /* line 349, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-toolbar-search .toolbar-search {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 352, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-toolbar-search .toolbar-search .submit {
+    margin: 0;
+    float: left;
+  }
+  /* line 356, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-toolbar-search .toolbar-search .dropdown-toggle {
+    clear: none;
+    margin: 0;
+  }
+  /* line 362, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-dashboard-oa-user-badge {
+    margin: 10px 0;
+  }
+  /* line 364, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-dashboard-oa-user-badge .btn, #oa-navbar .pane-oa-dashboard-oa-user-badge form .button.fake-ok, form #oa-navbar .pane-oa-dashboard-oa-user-badge .button.fake-ok, #oa-navbar .pane-oa-dashboard-oa-user-badge form .button.fake-cancel, form #oa-navbar .pane-oa-dashboard-oa-user-badge .button.fake-cancel, #oa-navbar .pane-oa-dashboard-oa-user-badge #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .pane-oa-dashboard-oa-user-badge a.button,
+  #oa-navbar .pane-oa-dashboard-oa-user-badge #media-browser-tabset input.form-submit,
+  #media-browser-tabset #oa-navbar .pane-oa-dashboard-oa-user-badge input.form-submit, #oa-navbar .pane-oa-dashboard-oa-user-badge #modal-content .form-submit, #modal-content #oa-navbar .pane-oa-dashboard-oa-user-badge .form-submit,
+  #oa-navbar .pane-oa-dashboard-oa-user-badge #modal-content #edit-cancel,
+  #modal-content #oa-navbar .pane-oa-dashboard-oa-user-badge #edit-cancel {
+    margin: 0;
+  }
+  /* line 367, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-dashboard-oa-user-badge #oa-user-badge {
+    padding: 0;
+  }
+  /* line 371, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-favorites-favorites-button {
+    margin: 10px 0;
+  }
+  /* line 373, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-favorites-favorites-button ul {
+    margin: 0;
+  }
+  /* line 375, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-favorites-favorites-button ul li {
+    margin: 0 10px 0 0;
+  }
+  /* line 377, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-favorites-favorites-button ul li a {
+    margin: 0;
+  }
+  /* line 383, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-add-space-content {
+    margin: 10px 10px 10px 0;
+  }
+  /* line 386, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-add-space-content .btn-group a {
+    margin: 0;
+  }
+}
 @media (max-width: 480px) {
   /* line 275, ../sass/partials/_navbar.scss */
   #oa-navbar {
     position: static;
     margin: 0;
   }
-  /* line 337, ../sass/partials/_navbar.scss */
+  /* line 395, ../sass/partials/_navbar.scss */
   #oa-navbar #mini-panel-oa_toolbar_panel {
     padding: 0;
   }
-  /* line 339, ../sass/partials/_navbar.scss */
+  /* line 397, ../sass/partials/_navbar.scss */
   #oa-navbar #mini-panel-oa_toolbar_panel .boxton-container {
     padding: 50px 0 0;
     position: relative;
   }
-  /* line 344, ../sass/partials/_navbar.scss */
+  /* line 402, ../sass/partials/_navbar.scss */
   #oa-navbar .navbar-inner {
     border: 0;
   }
-  /* line 347, ../sass/partials/_navbar.scss */
+  /* line 405, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-pane {
     float: none;
   }
-  /* line 352, ../sass/partials/_navbar.scss */
+  /* line 410, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb {
     display: block;
     float: none;
@@ -14135,12 +14214,12 @@ ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel:hover,
     margin: 0;
     height: auto;
   }
-  /* line 358, ../sass/partials/_navbar.scss */
+  /* line 416, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb:after {
     content: '';
     display: none;
   }
-  /* line 362, ../sass/partials/_navbar.scss */
+  /* line 420, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb > a {
     display: inline-block;
     padding: 15px 0;
@@ -14154,7 +14233,7 @@ ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel:hover,
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
   }
-  /* line 373, ../sass/partials/_navbar.scss */
+  /* line 431, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb a.dropdown-toggle {
     position: absolute;
     right: 0;
@@ -14170,57 +14249,57 @@ ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel:hover,
     -moz-border-radius: none;
     border-radius: none;
   }
-  /* line 386, ../sass/partials/_navbar.scss */
+  /* line 444, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb ul.dropdown-menu {
     padding: 0;
     margin: 0;
     width: 100%;
   }
-  /* line 390, ../sass/partials/_navbar.scss */
+  /* line 448, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb ul.dropdown-menu h3 {
     padding: 5px 15px;
   }
-  /* line 395, ../sass/partials/_navbar.scss */
+  /* line 453, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb ul.dropdown-menu ul li a {
     padding: 5px 15px;
     display: block;
   }
-  /* line 405, ../sass/partials/_navbar.scss */
+  /* line 463, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-toolbar-search {
     position: absolute;
     top: 10px;
     left: 10px;
   }
-  /* line 409, ../sass/partials/_navbar.scss */
+  /* line 467, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-toolbar-search .toolbar-search {
     margin: 0;
     padding: 0;
   }
-  /* line 412, ../sass/partials/_navbar.scss */
+  /* line 470, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-toolbar-search .toolbar-search input.search-text {
     width: 100px;
   }
-  /* line 415, ../sass/partials/_navbar.scss */
+  /* line 473, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-toolbar-search .toolbar-search .btn-group {
     width: 63px;
   }
-  /* line 418, ../sass/partials/_navbar.scss */
+  /* line 476, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-toolbar-search .toolbar-search .submit {
     margin: 0;
     float: left;
   }
-  /* line 422, ../sass/partials/_navbar.scss */
+  /* line 480, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-toolbar-search .toolbar-search .dropdown-toggle {
     clear: none;
     margin: 0;
   }
-  /* line 428, ../sass/partials/_navbar.scss */
+  /* line 486, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-user-badge {
     position: absolute;
     top: 10px;
     right: 10px;
   }
-  /* line 432, ../sass/partials/_navbar.scss */
+  /* line 490, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-user-badge .btn, #oa-navbar .pane-oa-dashboard-oa-user-badge form .button.fake-ok, form #oa-navbar .pane-oa-dashboard-oa-user-badge .button.fake-ok, #oa-navbar .pane-oa-dashboard-oa-user-badge form .button.fake-cancel, form #oa-navbar .pane-oa-dashboard-oa-user-badge .button.fake-cancel, #oa-navbar .pane-oa-dashboard-oa-user-badge #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .pane-oa-dashboard-oa-user-badge a.button,
   #oa-navbar .pane-oa-dashboard-oa-user-badge #media-browser-tabset input.form-submit,
   #media-browser-tabset #oa-navbar .pane-oa-dashboard-oa-user-badge input.form-submit, #oa-navbar .pane-oa-dashboard-oa-user-badge #modal-content .form-submit, #modal-content #oa-navbar .pane-oa-dashboard-oa-user-badge .form-submit,
@@ -14228,22 +14307,22 @@ ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel:hover,
   #modal-content #oa-navbar .pane-oa-dashboard-oa-user-badge #edit-cancel {
     margin: 0;
   }
-  /* line 435, ../sass/partials/_navbar.scss */
+  /* line 493, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-user-badge #oa-user-badge {
     padding: 0;
   }
-  /* line 440, ../sass/partials/_navbar.scss */
+  /* line 498, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-favorites-favorites-button,
   #oa-navbar .pane-add-space-content {
     text-align: center;
   }
-  /* line 445, ../sass/partials/_navbar.scss */
+  /* line 503, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites,
   #oa-navbar .pane-add-space-content ul#oa_favorites {
     margin: 0;
     padding: 0;
   }
-  /* line 449, ../sass/partials/_navbar.scss */
+  /* line 507, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites li a,
   #oa-navbar .pane-add-space-content ul#oa_favorites li a {
     margin: 0;
@@ -14251,22 +14330,22 @@ ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel:hover,
     line-height: 22px;
     display: block;
   }
-  /* line 454, ../sass/partials/_navbar.scss */
+  /* line 512, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites li a i,
   #oa-navbar .pane-add-space-content ul#oa_favorites li a i {
     margin: 5px 0 0;
   }
-  /* line 461, ../sass/partials/_navbar.scss */
+  /* line 519, ../sass/partials/_navbar.scss */
   #oa-navbar .pane-oa-dashboard-oa-toolbar-menu-button {
     display: none;
   }
 }
 
-/* line 471, ../sass/partials/_navbar.scss */
+/* line 529, ../sass/partials/_navbar.scss */
 #oa-responsive-regions-navbar .navbar-inner .btn-top {
   float: left;
 }
-/* line 473, ../sass/partials/_navbar.scss */
+/* line 531, ../sass/partials/_navbar.scss */
 #oa-responsive-regions-navbar .navbar-inner .btn-top.btn-active {
   -webkit-transform: none;
   -moz-transform: none;
