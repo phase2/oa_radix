@@ -14232,36 +14232,42 @@ ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel:hover,
   #oa-navbar .pane-oa-dashboard-oa-user-badge #oa-user-badge {
     padding: 0;
   }
-  /* line 439, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button {
-    position: absolute;
-    top: 10px;
-    left: 195px;
+  /* line 440, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-favorites-favorites-button,
+  #oa-navbar .pane-add-space-content {
+    text-align: center;
   }
-  /* line 443, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites {
+  /* line 445, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites,
+  #oa-navbar .pane-add-space-content ul#oa_favorites {
     margin: 0;
     padding: 0;
   }
-  /* line 447, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites li a {
+  /* line 449, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites li a,
+  #oa-navbar .pane-add-space-content ul#oa_favorites li a {
     margin: 0;
     height: 22px;
     line-height: 22px;
     display: block;
   }
-  /* line 452, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites li a i {
+  /* line 454, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites li a i,
+  #oa-navbar .pane-add-space-content ul#oa_favorites li a i {
     margin: 5px 0 0;
+  }
+  /* line 461, ../sass/partials/_navbar.scss */
+  #oa-navbar .pane-oa-dashboard-oa-toolbar-menu-button {
+    display: none;
   }
 }
 
-/* line 466, ../sass/partials/_navbar.scss */
-#responsive-panels-regions-navbar .navbar-inner .btn-top {
+/* line 471, ../sass/partials/_navbar.scss */
+#oa-responsive-regions-navbar .navbar-inner .btn-top {
   float: left;
 }
-/* line 468, ../sass/partials/_navbar.scss */
-#responsive-panels-regions-navbar .navbar-inner .btn-top.btn-active {
+/* line 473, ../sass/partials/_navbar.scss */
+#oa-responsive-regions-navbar .navbar-inner .btn-top.btn-active {
   -webkit-transform: none;
   -moz-transform: none;
   -ms-transform: none;

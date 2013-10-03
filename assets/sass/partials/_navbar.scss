@@ -436,10 +436,12 @@ ul#oa_breadcrumb {
         padding: 0;
       }
     }
-    .pane-oa-favorites-favorites-button {
-      position: absolute;
-      top: 10px;
-      left: 195px;
+    .pane-oa-favorites-favorites-button,
+    .pane-add-space-content {
+      // position: absolute;
+      // top: 10px;
+      // left: 195px;
+      text-align: center;
       ul#oa_favorites {
         margin: 0;
         padding: 0;
@@ -456,12 +458,15 @@ ul#oa_breadcrumb {
         }
       }
     }
+    .pane-oa-dashboard-oa-toolbar-menu-button {
+      display: none;
+    }
   }
 }
 
-// Responsive Navbar
+// OA Responsive Navbar
 // --------------------------------------------------
-#responsive-panels-regions-navbar {
+#oa-responsive-regions-navbar {
   .navbar-inner {
     .btn-top {
       float: left;
