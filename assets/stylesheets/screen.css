@@ -13724,16 +13724,18 @@ form .form-actions #modal-content #edit-cancel,
 }
 /* line 131, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge .oa-dropdown #user-badge-dropdown img {
-  display: none;
+  width: auto;
+  height: 29px;
+  margin: -5px -12px -5px 5px;
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 144, ../sass/partials/_navbar.scss */
+  /* line 146, ../sass/partials/_navbar.scss */
   #oa-navbar .navbar-inner {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 149, ../sass/partials/_navbar.scss */
+  /* line 151, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
     float: none;
     border-bottom: 1px solid #676767;
@@ -13742,23 +13744,23 @@ form .form-actions #modal-content #edit-cancel,
     margin-right: -20px;
     padding: 0 20px;
   }
-  /* line 157, ../sass/partials/_navbar.scss */
+  /* line 159, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-toolbar-search {
     float: left;
   }
 }
 @media (max-width: 767px) {
-  /* line 142, ../sass/partials/_navbar.scss */
+  /* line 144, ../sass/partials/_navbar.scss */
   #oa-navbar {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 165, ../sass/partials/_navbar.scss */
+  /* line 167, ../sass/partials/_navbar.scss */
   #oa-navbar .navbar-inner {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 170, ../sass/partials/_navbar.scss */
+  /* line 172, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
     float: none;
     border-bottom: 1px solid #676767;
@@ -13767,48 +13769,48 @@ form .form-actions #modal-content #edit-cancel,
     margin-right: -20px;
     padding: 0 20px;
   }
-  /* line 178, ../sass/partials/_navbar.scss */
+  /* line 180, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-toolbar-search {
     float: left;
   }
 }
 @media (max-width: 480px) {
-  /* line 142, ../sass/partials/_navbar.scss */
+  /* line 144, ../sass/partials/_navbar.scss */
   #oa-navbar {
     position: static;
     margin: 0 -20px;
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 188, ../sass/partials/_navbar.scss */
+  /* line 190, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel {
     margin: 0;
   }
-  /* line 190, ../sass/partials/_navbar.scss */
+  /* line 192, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .panel-pane {
     margin-left: 5px;
   }
-  /* line 193, ../sass/partials/_navbar.scss */
+  /* line 195, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-toolbar-menu-button {
     display: none;
   }
-  /* line 196, ../sass/partials/_navbar.scss */
+  /* line 198, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
     margin-left: -20px;
     margin-right: -20px;
   }
-  /* line 200, ../sass/partials/_navbar.scss */
+  /* line 202, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group {
     float: none;
     display: block;
     margin: 0 0 1px;
     position: relative;
   }
-  /* line 205, ../sass/partials/_navbar.scss */
+  /* line 207, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group:after {
     display: none;
   }
-  /* line 208, ../sass/partials/_navbar.scss */
+  /* line 210, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button,
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit,
   #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit,
@@ -13817,7 +13819,7 @@ form .form-actions #modal-content #edit-cancel,
     display: block;
     float: none;
   }
-  /* line 212, ../sass/partials/_navbar.scss */
+  /* line 214, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle {
     position: absolute;
     right: 0;
@@ -13825,31 +13827,31 @@ form .form-actions #modal-content #edit-cancel,
     margin: 0;
     z-index: 100;
   }
-  /* line 219, ../sass/partials/_navbar.scss */
+  /* line 221, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group .dropdown-menu {
     width: 100%;
   }
-  /* line 225, ../sass/partials/_navbar.scss */
+  /* line 227, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge {
     position: absolute;
     top: 10px;
     left: 10px;
   }
-  /* line 230, ../sass/partials/_navbar.scss */
+  /* line 232, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-toolbar-search {
     margin-left: 0;
   }
-  /* line 233, ../sass/partials/_navbar.scss */
+  /* line 235, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-toolbar-search form .search-text {
     width: 80px;
   }
 }
 
-/* line 246, ../sass/partials/_navbar.scss */
+/* line 248, ../sass/partials/_navbar.scss */
 #oa-responsive-regions-navbar .navbar-inner .btn-top {
   float: left;
 }
-/* line 248, ../sass/partials/_navbar.scss */
+/* line 250, ../sass/partials/_navbar.scss */
 #oa-responsive-regions-navbar .navbar-inner .btn-top.btn-active {
   -webkit-transform: none;
   -moz-transform: none;
