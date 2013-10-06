@@ -12300,18 +12300,24 @@ html, body {
 body {
   padding-top: 60px;
 }
-/* line 10, ../sass/partials/_layout.scss */
+@media (max-width: 480px) {
+  /* line 8, ../sass/partials/_layout.scss */
+  body {
+    padding-top: 0 !important;
+  }
+}
+/* line 13, ../sass/partials/_layout.scss */
 body #main-wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -100px;
 }
-/* line 16, ../sass/partials/_layout.scss */
+/* line 19, ../sass/partials/_layout.scss */
 body #push {
   height: 100px;
 }
-/* line 19, ../sass/partials/_layout.scss */
+/* line 22, ../sass/partials/_layout.scss */
 body #footer {
   font-size: 12px;
   line-height: 1.5;
@@ -12320,7 +12326,7 @@ body #footer {
   border-top: 1px solid #e5e5e5;
 }
 @media (max-width: 767px) {
-  /* line 19, ../sass/partials/_layout.scss */
+  /* line 22, ../sass/partials/_layout.scss */
   body #footer {
     margin-left: -20px;
     margin-right: -20px;
@@ -12329,7 +12335,7 @@ body #footer {
   }
 }
 @media (max-width: 480px) {
-  /* line 19, ../sass/partials/_layout.scss */
+  /* line 22, ../sass/partials/_layout.scss */
   body #footer {
     margin-left: -20px;
     margin-right: -20px;
@@ -12337,7 +12343,7 @@ body #footer {
     padding-right: 20px;
   }
 }
-/* line 37, ../sass/partials/_layout.scss */
+/* line 40, ../sass/partials/_layout.scss */
 body #footer > .container {
   height: 100px;
   padding: 18px 0;
@@ -12556,22 +12562,48 @@ ul.group-content {
   display: block;
 }
 
-/* line 19, ../sass/partials/_menu.scss */
+/* line 21, ../sass/partials/_menu.scss */
+ul.dropdown-menu > li > .radio {
+  padding: 3px 20px;
+  clear: both;
+}
+/* line 24, ../sass/partials/_menu.scss */
+ul.dropdown-menu > li > .radio input {
+  margin: 2px 8px 0 0;
+  vertical-align: middle;
+}
+
+/* line 31, ../sass/partials/_menu.scss */
+.oa-dropdown {
+  display: inline-block;
+  margin: 0 0.25em 0 0.25em;
+  vertical-align: middle;
+}
+/* line 35, ../sass/partials/_menu.scss */
+.oa-dropdown ul {
+  margin: 0.5em 0;
+}
+/* line 37, ../sass/partials/_menu.scss */
+.oa-dropdown ul li {
+  margin: 0;
+}
+
+/* line 45, ../sass/partials/_menu.scss */
 #main-menu {
   clear: left;
 }
-/* line 23, ../sass/partials/_menu.scss */
+/* line 49, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > a {
   color: white;
   text-decoration: none;
   text-shadow: 0 1px 0 gray;
 }
-/* line 27, ../sass/partials/_menu.scss */
+/* line 53, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > a:hover {
   text-decoration: none;
   background-color: transparent;
 }
-/* line 31, ../sass/partials/_menu.scss */
+/* line 57, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > a:focus, #main-menu > ul.menu > li > a.active {
   text-decoration: none;
   background-color: transparent;
@@ -12579,7 +12611,7 @@ ul.group-content {
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
-/* line 37, ../sass/partials/_menu.scss */
+/* line 63, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > ul.menu {
   background-color: white;
   border: 1px solid #CCC;
@@ -12591,11 +12623,11 @@ ul.group-content {
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 44, ../sass/partials/_menu.scss */
+/* line 70, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > ul.menu li a {
   color: #333;
 }
-/* line 46, ../sass/partials/_menu.scss */
+/* line 72, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li > ul.menu li a:focus, #main-menu > ul.menu > li > ul.menu li a:hover {
   color: white;
   text-decoration: none;
@@ -12609,13 +12641,13 @@ ul.group-content {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
 }
-/* line 56, ../sass/partials/_menu.scss */
+/* line 82, ../sass/partials/_menu.scss */
 #main-menu > ul.menu > li.open > a {
   color: #555;
   background-color: #E5E5E5;
 }
 
-/* line 71, ../sass/partials/_menu.scss */
+/* line 97, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu .item-list h3,
 ul.dropdown-menu .item-list h3,
 .dropdown-menu .item-list h3 {
@@ -12625,20 +12657,20 @@ ul.dropdown-menu .item-list h3,
   padding: 3px 20px;
   line-height: 20px;
 }
-/* line 79, ../sass/partials/_menu.scss */
+/* line 105, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul,
 ul.dropdown-menu ul,
 .dropdown-menu ul {
   margin: 0;
 }
-/* line 81, ../sass/partials/_menu.scss */
+/* line 107, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li,
 ul.dropdown-menu ul li,
 .dropdown-menu ul li {
   padding: 0;
   margin: 0;
 }
-/* line 84, ../sass/partials/_menu.scss */
+/* line 110, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li a,
 ul.dropdown-menu ul li a,
 .dropdown-menu ul li a {
@@ -12650,7 +12682,7 @@ ul.dropdown-menu ul li a,
   color: #333333;
   white-space: nowrap;
 }
-/* line 92, ../sass/partials/_menu.scss */
+/* line 118, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li a:hover, #oa-navbar ul.dropdown-menu ul li a:focus, #oa-navbar ul.dropdown-menu ul li a.active,
 ul.dropdown-menu ul li a:hover,
 ul.dropdown-menu ul li a:focus,
@@ -12669,19 +12701,19 @@ ul.dropdown-menu ul li a.active,
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
 }
-/* line 97, ../sass/partials/_menu.scss */
+/* line 123, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li a.more-link,
 ul.dropdown-menu ul li a.more-link,
 .dropdown-menu ul li a.more-link {
   text-align: left;
 }
-/* line 101, ../sass/partials/_menu.scss */
+/* line 127, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li .flag-wrapper,
 ul.dropdown-menu ul li .flag-wrapper,
 .dropdown-menu ul li .flag-wrapper {
   padding: 0;
 }
-/* line 103, ../sass/partials/_menu.scss */
+/* line 129, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li .flag-wrapper .flag,
 ul.dropdown-menu ul li .flag-wrapper .flag,
 .dropdown-menu ul li .flag-wrapper .flag {
@@ -12690,22 +12722,22 @@ ul.dropdown-menu ul li .flag-wrapper .flag,
   font-style: italic;
 }
 
-/* line 115, ../sass/partials/_menu.scss */
+/* line 141, ../sass/partials/_menu.scss */
 .region-footer {
   background-image: url("../../logo.png");
   background-repeat: no-repeat;
   background-position: 1% center;
 }
-/* line 119, ../sass/partials/_menu.scss */
+/* line 145, ../sass/partials/_menu.scss */
 .region-footer .menu {
   float: right;
 }
-/* line 121, ../sass/partials/_menu.scss */
+/* line 147, ../sass/partials/_menu.scss */
 .region-footer .menu li {
   list-style: none !important;
   float: left;
 }
-/* line 124, ../sass/partials/_menu.scss */
+/* line 150, ../sass/partials/_menu.scss */
 .region-footer .menu li a {
   line-height: 52px;
   color: white;
@@ -12810,6 +12842,47 @@ body.oa-login #user-login-panel .oa-pane {
 }
 
 /* line 20, ../sass/partials/_panel.scss */
+body.panels-ipe {
+  margin-bottom: 0px !important;
+}
+
+/* line 25, ../sass/partials/_panel.scss */
+div#panels-ipe-control-container {
+  background-color: transparent;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  bottom: auto;
+  width: auto;
+  z-index: 999;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 34, ../sass/partials/_panel.scss */
+div#panels-ipe-control-container a {
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  /* line 25, ../sass/partials/_panel.scss */
+  div#panels-ipe-control-container {
+    top: 100px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 25, ../sass/partials/_panel.scss */
+  div#panels-ipe-control-container {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  /* line 46, ../sass/partials/_panel.scss */
+  div#panels-ipe-control-container {
+    position: absolute;
+  }
+}
+/* line 53, ../sass/partials/_panel.scss */
 .oa-pane {
   border: 1px solid #e3e3e3;
   border-bottom: 0;
@@ -12817,7 +12890,7 @@ body.oa-login #user-login-panel .oa-pane {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 24, ../sass/partials/_panel.scss */
+/* line 57, ../sass/partials/_panel.scss */
 .oa-pane .panel-pane {
   padding: 0;
   border: 0;
@@ -12825,12 +12898,12 @@ body.oa-login #user-login-panel .oa-pane {
   margin-bottom: 0;
   padding-bottom: 15px;
 }
-/* line 31, ../sass/partials/_panel.scss */
+/* line 64, ../sass/partials/_panel.scss */
 .oa-pane.inner-pane .panel-pane {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 35, ../sass/partials/_panel.scss */
+/* line 68, ../sass/partials/_panel.scss */
 .oa-pane .pane-title {
   font-size: 20px;
   line-height: 32px;
@@ -12846,26 +12919,26 @@ body.oa-login #user-login-panel .oa-pane {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e3e3e3', GradientType=0);
 }
-/* line 43, ../sass/partials/_panel.scss */
+/* line 76, ../sass/partials/_panel.scss */
 .oa-pane .pane-content {
   padding: 15px 15px 0 15px;
 }
-/* line 45, ../sass/partials/_panel.scss */
+/* line 78, ../sass/partials/_panel.scss */
 .oa-pane .pane-content .oa-list {
   margin-left: -16px;
   margin-right: -16px;
 }
-/* line 50, ../sass/partials/_panel.scss */
+/* line 83, ../sass/partials/_panel.scss */
 .oa-pane .oa-list {
   margin-left: -1px;
   margin-right: -1px;
 }
-/* line 54, ../sass/partials/_panel.scss */
+/* line 87, ../sass/partials/_panel.scss */
 .oa-pane .pager {
   margin-top: 15px;
 }
 
-/* line 58, ../sass/partials/_panel.scss */
+/* line 91, ../sass/partials/_panel.scss */
 .oa-bottom-right {
   position: absolute;
   right: 3px;
@@ -12873,155 +12946,155 @@ body.oa-login #user-login-panel .oa-pane {
   text-align: right;
 }
 
-/* line 67, ../sass/partials/_panel.scss */
+/* line 100, ../sass/partials/_panel.scss */
 .selby-flipped-column-inner {
   margin-right: 0;
   margin-left: 20px;
 }
 
-/* line 76, ../sass/partials/_panel.scss */
+/* line 109, ../sass/partials/_panel.scss */
 .attachments .user-badge .user-picture img {
   margin: 0 8px 0 0;
 }
-/* line 79, ../sass/partials/_panel.scss */
+/* line 112, ../sass/partials/_panel.scss */
 .attachments .user-badge .created {
   font-size: 10.5px;
   line-height: 13px;
   color: #555555;
 }
-/* line 85, ../sass/partials/_panel.scss */
+/* line 118, ../sass/partials/_panel.scss */
 .attachments .oa-body {
   padding: 10px;
 }
-/* line 87, ../sass/partials/_panel.scss */
+/* line 120, ../sass/partials/_panel.scss */
 .attachments .oa-body ul {
   margin: 0;
 }
-/* line 89, ../sass/partials/_panel.scss */
+/* line 122, ../sass/partials/_panel.scss */
 .attachments .oa-body ul li {
   margin: 0 0 5px;
 }
 
-/* line 99, ../sass/partials/_panel.scss */
+/* line 132, ../sass/partials/_panel.scss */
 .pane-oa-widgets-content-visibility .visibility {
   text-transform: uppercase;
 }
 
-/* line 107, ../sass/partials/_panel.scss */
+/* line 140, ../sass/partials/_panel.scss */
 .pane-oa-widgets-add-content ul {
   margin-left: 0;
 }
-/* line 111, ../sass/partials/_panel.scss */
+/* line 144, ../sass/partials/_panel.scss */
 .pane-oa-widgets-add-content li a.btn, .pane-oa-widgets-add-content li form a.button.fake-ok, form .pane-oa-widgets-add-content li a.button.fake-ok, .pane-oa-widgets-add-content li form a.button.fake-cancel, form .pane-oa-widgets-add-content li a.button.fake-cancel, .pane-oa-widgets-add-content li #media-browser-tabset a.button, #media-browser-tabset .pane-oa-widgets-add-content li a.button, .pane-oa-widgets-add-content li #modal-content a.form-submit, #modal-content .pane-oa-widgets-add-content li a.form-submit,
 .pane-oa-widgets-add-content li #modal-content a#edit-cancel,
 #modal-content .pane-oa-widgets-add-content li a#edit-cancel {
   margin-bottom: 5px;
 }
 
-/* line 120, ../sass/partials/_panel.scss */
+/* line 153, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-picture {
   width: 20%;
   margin-right: 5%;
 }
-/* line 124, ../sass/partials/_panel.scss */
+/* line 157, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-info {
   text-align: center;
   width: 75%;
 }
-/* line 131, ../sass/partials/_panel.scss */
+/* line 164, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-info .user-name,
 .pane-oa-widgets-user-profile .user-info .user-role {
   font-size: 11.9px;
 }
-/* line 135, ../sass/partials/_panel.scss */
+/* line 168, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links {
   text-align: right;
 }
-/* line 137, ../sass/partials/_panel.scss */
+/* line 170, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links a {
   font-size: 10.5px;
   border-right: 1px solid #555;
   padding-right: 5px;
 }
-/* line 142, ../sass/partials/_panel.scss */
+/* line 175, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links a:last-child {
   border: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 154, ../sass/partials/_panel.scss */
+/* line 187, ../sass/partials/_panel.scss */
 .pane-oa-core-summary .space-links .favorite {
   float: left;
 }
-/* line 157, ../sass/partials/_panel.scss */
+/* line 190, ../sass/partials/_panel.scss */
 .pane-oa-core-summary .space-links .edit {
   float: right;
 }
 
-/* line 166, ../sass/partials/_panel.scss */
+/* line 199, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .pane-content {
   position: relative;
 }
-/* line 169, ../sass/partials/_panel.scss */
+/* line 202, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .spaces-container {
   float: left;
   margin-right: 20px;
 }
-/* line 173, ../sass/partials/_panel.scss */
+/* line 206, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space-switcher {
   position: absolute;
   top: 0;
   right: 0;
   margin: 10px;
 }
-/* line 179, ../sass/partials/_panel.scss */
+/* line 212, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space {
   border-bottom: 1px solid #D4D4D4;
   padding-bottom: 15px;
   margin-bottom: 5px;
 }
-/* line 183, ../sass/partials/_panel.scss */
+/* line 216, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space .pull-left img {
   margin-right: 15px;
 }
-/* line 187, ../sass/partials/_panel.scss */
+/* line 220, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .member-sidebar {
   margin-bottom: 15px;
 }
-/* line 189, ../sass/partials/_panel.scss */
+/* line 222, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .member-sidebar .space {
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: 0;
 }
 
-/* line 200, ../sass/partials/_panel.scss */
+/* line 233, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search form {
   margin: 0;
 }
-/* line 203, ../sass/partials/_panel.scss */
+/* line 236, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .input-append {
   box-sizing: border-box;
 }
-/* line 206, ../sass/partials/_panel.scss */
+/* line 239, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .search-text {
   height: 32px;
   width: 80%;
   box-sizing: border-box;
 }
-/* line 211, ../sass/partials/_panel.scss */
+/* line 244, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .submit {
   padding: 5px 0;
   width: 20%;
   box-sizing: border-box;
 }
-/* line 216, ../sass/partials/_panel.scss */
+/* line 249, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .options {
   margin: 10px 0 0;
 }
 
-/* line 222, ../sass/partials/_panel.scss */
+/* line 255, ../sass/partials/_panel.scss */
 .oa-command-buttons li {
   margin-bottom: 3px;
 }
@@ -13374,66 +13447,6 @@ form .form-actions #modal-content #edit-cancel,
   margin-bottom: 5px;
 }
 
-/* line 8, ../sass/partials/_user.scss */
-.user-badge {
-  border: 1px solid #CCC;
-  padding: 3px 3px 3px 5px;
-  min-width: 160px;
-  z-index: 99;
-  position: relative;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-/* line 15, ../sass/partials/_user.scss */
-.user-badge img {
-  vertical-align: middle;
-}
-/* line 18, ../sass/partials/_user.scss */
-.user-badge.pull-right, .user-badge.badge-right {
-  text-align: right;
-  margin-left: 10px;
-}
-/* line 21, ../sass/partials/_user.scss */
-.user-badge.pull-right img, .user-badge.badge-right img {
-  margin-left: 5px;
-}
-/* line 25, ../sass/partials/_user.scss */
-.user-badge.pull-left {
-  text-align: left;
-  margin-right: 10px;
-  padding-left: 3px;
-}
-/* line 29, ../sass/partials/_user.scss */
-.user-badge.pull-left img {
-  margin-right: 5px;
-}
-/* line 33, ../sass/partials/_user.scss */
-.user-badge.no-border {
-  padding: 4px 3px 4px 8px;
-  border: 0;
-  min-width: inherit;
-  background: transparent;
-}
-
-/* line 40, ../sass/partials/_user.scss */
-.content .user-badge {
-  background-color: #fafafa;
-  background-image: -moz-linear-gradient(top, white, #f2f2f2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f2f2f2));
-  background-image: -webkit-linear-gradient(top, white, #f2f2f2);
-  background-image: -o-linear-gradient(top, white, #f2f2f2);
-  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f0f0f0', GradientType=0);
-}
-
-/* line 43, ../sass/partials/_user.scss */
-.oa-river .user-badge {
-  border-top: 0;
-  border-right: 0;
-}
-
 /* line 51, ../sass/partials/_user.scss */
 .pane-oa-user-spaces-full .views-row {
   border: 1px solid #DDD;
@@ -13533,819 +13546,310 @@ form .form-actions #modal-content #edit-cancel,
   position: relative;
 }
 
-/* line 5, ../sass/partials/_navbar.scss */
-#mini-panel-oa_toolbar_panel {
-  padding: 0 10px;
+/* line 4, ../sass/partials/_navbar.scss */
+#oa-navbar {
+  position: fixed;
+  top: 0;
 }
-
-/* line 12, ../sass/partials/_navbar.scss */
-.pane-oa-widgets-visibility-toolbar #oa_visibility_toolbar,
-#oa_favorites,
-.pane-add-space-content {
-  margin-top: 2.5px;
+/* line 7, ../sass/partials/_navbar.scss */
+#oa-navbar .navbar-inner {
+  border: 0;
 }
-
-/* line 18, ../sass/partials/_navbar.scss */
-.pane-add-space-content .dropdown-menu,
-.pane-oa-favorites-favorites-button .dropdown-menu,
-.pane-oa-widgets-visibility-toolbar .dropdown-menu {
-  left: auto;
-  right: -15px;
+/* line 9, ../sass/partials/_navbar.scss */
+#oa-navbar .navbar-inner .btn, #oa-navbar .navbar-inner form .button.fake-ok, form #oa-navbar .navbar-inner .button.fake-ok, #oa-navbar .navbar-inner form .button.fake-cancel, form #oa-navbar .navbar-inner .button.fake-cancel, #oa-navbar .navbar-inner #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .navbar-inner a.button,
+#oa-navbar .navbar-inner #media-browser-tabset input.form-submit,
+#media-browser-tabset #oa-navbar .navbar-inner input.form-submit, #oa-navbar .navbar-inner #modal-content .form-submit, #modal-content #oa-navbar .navbar-inner .form-submit,
+#oa-navbar .navbar-inner #modal-content #edit-cancel,
+#modal-content #oa-navbar .navbar-inner #edit-cancel {
+  margin: 0;
 }
-/* line 22, ../sass/partials/_navbar.scss */
-.pane-add-space-content a.dropdown-toggle.btn, .pane-add-space-content form a.dropdown-toggle.button.fake-ok, form .pane-add-space-content a.dropdown-toggle.button.fake-ok, .pane-add-space-content form a.dropdown-toggle.button.fake-cancel, form .pane-add-space-content a.dropdown-toggle.button.fake-cancel, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit,
-.pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel,
-#modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel,
-.pane-oa-favorites-favorites-button a.dropdown-toggle.btn,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-ok,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-ok,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-cancel,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-cancel,
-.pane-oa-favorites-favorites-button #media-browser-tabset a.dropdown-toggle.button,
-#media-browser-tabset .pane-oa-favorites-favorites-button a.dropdown-toggle.button,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle.form-submit,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle.form-submit,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle#edit-cancel,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle#edit-cancel,
-.pane-oa-widgets-visibility-toolbar a.dropdown-toggle.btn,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-ok,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-ok,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-cancel,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-cancel,
-.pane-oa-widgets-visibility-toolbar #media-browser-tabset a.dropdown-toggle.button,
-#media-browser-tabset .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle.form-submit,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.form-submit,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle#edit-cancel,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle#edit-cancel {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  text-shadow: none;
-  box-shadow: none;
-  background: #333333 !important;
-  border: none;
-  padding: 5px;
-  height: 29px;
-  margin-top: 3px;
+/* line 13, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel {
+  padding: 10px 0;
+  margin: 0 0 0 -10px;
 }
-/* line 32, ../sass/partials/_navbar.scss */
-.pane-add-space-content a.dropdown-toggle.btn > .caret, .pane-add-space-content form a.dropdown-toggle.button.fake-ok > .caret, form .pane-add-space-content a.dropdown-toggle.button.fake-ok > .caret, .pane-add-space-content form a.dropdown-toggle.button.fake-cancel > .caret, form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .caret, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button > .caret, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button > .caret, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit > .caret, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit > .caret,
-.pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel > .caret,
-#modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel > .caret,
-.pane-add-space-content a.dropdown-toggle.btn > .icon-star,
-.pane-add-space-content form a.dropdown-toggle.button.fake-ok > .icon-star,
-form .pane-add-space-content a.dropdown-toggle.button.fake-ok > .icon-star,
-.pane-add-space-content form a.dropdown-toggle.button.fake-cancel > .icon-star,
-form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .icon-star,
-.pane-add-space-content #media-browser-tabset a.dropdown-toggle.button > .icon-star,
-#media-browser-tabset .pane-add-space-content a.dropdown-toggle.button > .icon-star,
-.pane-add-space-content #modal-content a.dropdown-toggle.form-submit > .icon-star,
-#modal-content .pane-add-space-content a.dropdown-toggle.form-submit > .icon-star,
-.pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel > .icon-star,
-#modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel > .icon-star,
-.pane-add-space-content a.dropdown-toggle.btn > .icon-lock,
-.pane-add-space-content form a.dropdown-toggle.button.fake-ok > .icon-lock,
-form .pane-add-space-content a.dropdown-toggle.button.fake-ok > .icon-lock,
-.pane-add-space-content form a.dropdown-toggle.button.fake-cancel > .icon-lock,
-form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .icon-lock,
-.pane-add-space-content #media-browser-tabset a.dropdown-toggle.button > .icon-lock,
-#media-browser-tabset .pane-add-space-content a.dropdown-toggle.button > .icon-lock,
-.pane-add-space-content #modal-content a.dropdown-toggle.form-submit > .icon-lock,
-#modal-content .pane-add-space-content a.dropdown-toggle.form-submit > .icon-lock,
-.pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel > .icon-lock,
-#modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel > .icon-lock,
-.pane-add-space-content a.dropdown-toggle.btn > .icon-unlock,
-.pane-add-space-content form a.dropdown-toggle.button.fake-ok > .icon-unlock,
-form .pane-add-space-content a.dropdown-toggle.button.fake-ok > .icon-unlock,
-.pane-add-space-content form a.dropdown-toggle.button.fake-cancel > .icon-unlock,
-form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .icon-unlock,
-.pane-add-space-content #media-browser-tabset a.dropdown-toggle.button > .icon-unlock,
-#media-browser-tabset .pane-add-space-content a.dropdown-toggle.button > .icon-unlock,
-.pane-add-space-content #modal-content a.dropdown-toggle.form-submit > .icon-unlock,
-#modal-content .pane-add-space-content a.dropdown-toggle.form-submit > .icon-unlock,
-.pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel > .icon-unlock,
-#modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel > .icon-unlock,
-.pane-oa-favorites-favorites-button a.dropdown-toggle.btn > .caret,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-ok > .caret,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-ok > .caret,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-cancel > .caret,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-cancel > .caret,
-.pane-oa-favorites-favorites-button #media-browser-tabset a.dropdown-toggle.button > .caret,
-#media-browser-tabset .pane-oa-favorites-favorites-button a.dropdown-toggle.button > .caret,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle.form-submit > .caret,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle.form-submit > .caret,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle#edit-cancel > .caret,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle#edit-cancel > .caret,
-.pane-oa-favorites-favorites-button a.dropdown-toggle.btn > .icon-star,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-ok > .icon-star,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-ok > .icon-star,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-cancel > .icon-star,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-cancel > .icon-star,
-.pane-oa-favorites-favorites-button #media-browser-tabset a.dropdown-toggle.button > .icon-star,
-#media-browser-tabset .pane-oa-favorites-favorites-button a.dropdown-toggle.button > .icon-star,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle.form-submit > .icon-star,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle.form-submit > .icon-star,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle#edit-cancel > .icon-star,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle#edit-cancel > .icon-star,
-.pane-oa-favorites-favorites-button a.dropdown-toggle.btn > .icon-lock,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-ok > .icon-lock,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-ok > .icon-lock,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-cancel > .icon-lock,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-cancel > .icon-lock,
-.pane-oa-favorites-favorites-button #media-browser-tabset a.dropdown-toggle.button > .icon-lock,
-#media-browser-tabset .pane-oa-favorites-favorites-button a.dropdown-toggle.button > .icon-lock,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle.form-submit > .icon-lock,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle.form-submit > .icon-lock,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle#edit-cancel > .icon-lock,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle#edit-cancel > .icon-lock,
-.pane-oa-favorites-favorites-button a.dropdown-toggle.btn > .icon-unlock,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-ok > .icon-unlock,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-ok > .icon-unlock,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-cancel > .icon-unlock,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-cancel > .icon-unlock,
-.pane-oa-favorites-favorites-button #media-browser-tabset a.dropdown-toggle.button > .icon-unlock,
-#media-browser-tabset .pane-oa-favorites-favorites-button a.dropdown-toggle.button > .icon-unlock,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle.form-submit > .icon-unlock,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle.form-submit > .icon-unlock,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle#edit-cancel > .icon-unlock,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle#edit-cancel > .icon-unlock,
-.pane-oa-widgets-visibility-toolbar a.dropdown-toggle.btn > .caret,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-ok > .caret,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-ok > .caret,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-cancel > .caret,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-cancel > .caret,
-.pane-oa-widgets-visibility-toolbar #media-browser-tabset a.dropdown-toggle.button > .caret,
-#media-browser-tabset .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button > .caret,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle.form-submit > .caret,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.form-submit > .caret,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle#edit-cancel > .caret,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle#edit-cancel > .caret,
-.pane-oa-widgets-visibility-toolbar a.dropdown-toggle.btn > .icon-star,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-ok > .icon-star,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-ok > .icon-star,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-cancel > .icon-star,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-cancel > .icon-star,
-.pane-oa-widgets-visibility-toolbar #media-browser-tabset a.dropdown-toggle.button > .icon-star,
-#media-browser-tabset .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button > .icon-star,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle.form-submit > .icon-star,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.form-submit > .icon-star,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle#edit-cancel > .icon-star,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle#edit-cancel > .icon-star,
-.pane-oa-widgets-visibility-toolbar a.dropdown-toggle.btn > .icon-lock,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-ok > .icon-lock,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-ok > .icon-lock,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-cancel > .icon-lock,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-cancel > .icon-lock,
-.pane-oa-widgets-visibility-toolbar #media-browser-tabset a.dropdown-toggle.button > .icon-lock,
-#media-browser-tabset .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button > .icon-lock,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle.form-submit > .icon-lock,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.form-submit > .icon-lock,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle#edit-cancel > .icon-lock,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle#edit-cancel > .icon-lock,
-.pane-oa-widgets-visibility-toolbar a.dropdown-toggle.btn > .icon-unlock,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-ok > .icon-unlock,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-ok > .icon-unlock,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-cancel > .icon-unlock,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-cancel > .icon-unlock,
-.pane-oa-widgets-visibility-toolbar #media-browser-tabset a.dropdown-toggle.button > .icon-unlock,
-#media-browser-tabset .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button > .icon-unlock,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle.form-submit > .icon-unlock,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.form-submit > .icon-unlock,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle#edit-cancel > .icon-unlock,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle#edit-cancel > .icon-unlock {
-  border: none;
-  width: 18px;
-  height: 18px;
-  margin-top: 8px;
-  display: block;
+/* line 16, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .panel-pane {
+  margin: 0 0 0 10px;
 }
-/* line 39, ../sass/partials/_navbar.scss */
-.pane-add-space-content a.dropdown-toggle.btn:hover, .pane-add-space-content form a.dropdown-toggle.button.fake-ok:hover, form .pane-add-space-content a.dropdown-toggle.button.fake-ok:hover, .pane-add-space-content form a.dropdown-toggle.button.fake-cancel:hover, form .pane-add-space-content a.dropdown-toggle.button.fake-cancel:hover, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button:hover, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button:hover, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit:hover, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit:hover,
-.pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel:hover,
-#modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel:hover,
-.pane-oa-favorites-favorites-button a.dropdown-toggle.btn:hover,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-ok:hover,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-ok:hover,
-.pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-cancel:hover,
-form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-cancel:hover,
-.pane-oa-favorites-favorites-button #media-browser-tabset a.dropdown-toggle.button:hover,
-#media-browser-tabset .pane-oa-favorites-favorites-button a.dropdown-toggle.button:hover,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle.form-submit:hover,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle.form-submit:hover,
-.pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle#edit-cancel:hover,
-#modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle#edit-cancel:hover,
-.pane-oa-widgets-visibility-toolbar a.dropdown-toggle.btn:hover,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-ok:hover,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-ok:hover,
-.pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-cancel:hover,
-form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-cancel:hover,
-.pane-oa-widgets-visibility-toolbar #media-browser-tabset a.dropdown-toggle.button:hover,
-#media-browser-tabset .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button:hover,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle.form-submit:hover,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.form-submit:hover,
-.pane-oa-widgets-visibility-toolbar #modal-content a.dropdown-toggle#edit-cancel:hover,
-#modal-content .pane-oa-widgets-visibility-toolbar a.dropdown-toggle#edit-cancel:hover {
-  background: black !important;
+/* line 20, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-toolbar-menu-button #toolbar-menu-button {
+  margin: 0;
 }
-
-/* line 45, ../sass/partials/_navbar.scss */
-.pane-add-space-content {
-  margin-right: 5px;
+/* line 24, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
-/* line 47, ../sass/partials/_navbar.scss */
-.pane-add-space-content a.dropdown-toggle.btn, .pane-add-space-content form a.dropdown-toggle.button.fake-ok, form .pane-add-space-content a.dropdown-toggle.button.fake-ok, .pane-add-space-content form a.dropdown-toggle.button.fake-cancel, form .pane-add-space-content a.dropdown-toggle.button.fake-cancel, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit,
-.pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel,
-#modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel {
-  position: relative;
-  text-indent: -9999em;
-}
-/* line 50, ../sass/partials/_navbar.scss */
-.pane-add-space-content a.dropdown-toggle.btn > .caret, .pane-add-space-content form a.dropdown-toggle.button.fake-ok > .caret, form .pane-add-space-content a.dropdown-toggle.button.fake-ok > .caret, .pane-add-space-content form a.dropdown-toggle.button.fake-cancel > .caret, form .pane-add-space-content a.dropdown-toggle.button.fake-cancel > .caret, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button > .caret, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button > .caret, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit > .caret, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit > .caret,
-.pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel > .caret,
-#modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel > .caret {
-  margin-top: 8px;
-  text-indent: 0;
-  display: block;
-  position: relative;
-  top: -23px;
-  left: 2px;
-  background: transparent url(../images/navbar-icons.png) no-repeat top left;
-}
-
-/* line 63, ../sass/partials/_navbar.scss */
-#oa_visibility_toolbar em {
-  padding: 5px 10px;
-}
-/* line 66, ../sass/partials/_navbar.scss */
-#oa_visibility_toolbar .oa-visibility-list {
-  padding: 0 10px;
-}
-/* line 68, ../sass/partials/_navbar.scss */
-#oa_visibility_toolbar .oa-visibility-list a {
-  padding: 0 0;
-}
-
-/* line 75, ../sass/partials/_navbar.scss */
-.navbar .navbar-inner {
+/* line 27, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar {
+  margin: 0;
   padding: 0;
+}
+/* line 30, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group {
+  margin: 0;
+  height: 50px;
+}
+/* line 33, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button,
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit,
+#media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit,
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > #edit-cancel,
+#modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > #edit-cancel {
+  font-size: 16px;
+  height: 42px;
+  line-height: 42px;
+  float: left;
+  background: none;
+  border: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-}
-/* line 81, ../sass/partials/_navbar.scss */
-.navbar .brand {
-  margin-left: 0;
-  padding-left: 5px;
-  font-weight: bold;
-  color: #555555;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-/* line 89, ../sass/partials/_navbar.scss */
-.navbar .icon-home {
-  color: white;
-}
-/* line 92, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search {
-  margin: 10px 10px 0 0;
-}
-/* line 95, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search form,
-.navbar .toolbar-search .btn-group {
-  margin: 0;
-}
-/* line 98, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .input-append {
-  margin: 0;
-}
-/* line 102, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .dropdown-menu {
-  margin: 5px;
-}
-/* line 104, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .dropdown-menu .radio {
-  margin: 0;
-}
-/* line 106, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .dropdown-menu .radio input[type="radio"] {
-  margin-top: 3px;
-  margin-left: -17px;
-}
-/* line 111, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .dropdown-menu li {
-  padding: 2px;
-}
-/* line 114, ../sass/partials/_navbar.scss */
-.navbar .toolbar-search .dropdown-menu li:hover {
-  background: #0081C2;
-  color: #FFF;
-}
-/* line 120, ../sass/partials/_navbar.scss */
-.navbar .pane-page-site-name {
-  margin-top: 12px;
-  margin-left: 10px;
-  font-size: 18px;
-  color: #333;
-}
-
-/* line 128, ../sass/partials/_navbar.scss */
-.navbar.navbar-inverse .pane-page-site-name {
-  color: #EEE;
-}
-
-/* line 132, ../sass/partials/_navbar.scss */
-#navbar .navbar-tray .navbar-shortcuts {
-  display: block;
-}
-
-/* line 136, ../sass/partials/_navbar.scss */
-#navbar .navbar-shortcuts .menu a {
-  background-color: black;
-  color: white;
-}
-
-/* line 141, ../sass/partials/_navbar.scss */
-#navbar div.devel-querylog div.cell-5 {
-  padding: 1em .5em !important;
-}
-
-/* line 146, ../sass/partials/_navbar.scss */
-div#panels-ipe-control-container {
-  background-color: transparent;
-  position: fixed;
-  top: 50px;
-  right: 0;
-  bottom: auto;
-  width: auto;
-  z-index: 999;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 155, ../sass/partials/_navbar.scss */
-div#panels-ipe-control-container a {
-  font-weight: normal;
+/* line 42, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok:hover, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel:hover, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button:hover, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button:hover,
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit:hover,
+#media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit:hover, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit:hover,
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > #edit-cancel:hover,
+#modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > #edit-cancel:hover {
+  background: none;
 }
-
-@media screen and (max-width: 980px) {
-  /* line 160, ../sass/partials/_navbar.scss */
-  div#panels-ipe-control-container {
-    position: absolute;
-  }
+/* line 45, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn.btn-home, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.btn-home.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.btn-home.button,
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.btn-home.form-submit,
+#media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.btn-home.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .btn-home.form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.form-submit,
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .btn-home#edit-cancel,
+#modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home#edit-cancel {
+  font-size: 24px;
 }
-/* line 166, ../sass/partials/_navbar.scss */
-body.panels-ipe {
-  margin-bottom: 0px !important;
+/* line 49, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle {
+  height: 25px;
+  line-height: 25px;
+  margin: 10px 10px 10px 0;
+  padding: 4px 8px;
+  background: #333333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
-
-/* line 183, ../sass/partials/_navbar.scss */
-.oa-dropdown {
-  display: inline-block;
-  margin: 0 0.25em 0 0.25em;
+/* line 56, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle:hover {
+  background: #333333;
+}
+/* line 59, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle .caret {
   vertical-align: middle;
-}
-/* line 187, ../sass/partials/_navbar.scss */
-.oa-dropdown ul {
-  margin: 0.5em 0;
-}
-/* line 189, ../sass/partials/_navbar.scss */
-.oa-dropdown ul li {
   margin: 0;
-}
-
-/* line 195, ../sass/partials/_navbar.scss */
-.sutro-double-container {
-  margin-bottom: 0;
-}
-
-/* line 199, ../sass/partials/_navbar.scss */
-.footer .menu li {
-  list-style-type: none;
-  list-style-image: none;
-  float: left;
-}
-/* line 203, ../sass/partials/_navbar.scss */
-.footer .menu li a {
-  color: #333333;
-}
-
-/* line 209, ../sass/partials/_navbar.scss */
-#oa-navbar #oa-user-badge,
-#oa-navbar #toolbar-menu-button {
-  padding-top: 8px;
-}
-
-/* line 213, ../sass/partials/_navbar.scss */
-ul.oa_toolbar {
-  padding-top: 8px;
-}
-
-/* line 218, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb .btn-inverse {
-  background: transparent;
-  border: none;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-/* line 225, ../sass/partials/_navbar.scss */
-.navbar-inverse ul#oa_breadcrumb .btn.btn-inverse, .navbar-inverse ul#oa_breadcrumb form .btn-inverse.button.fake-ok, form .navbar-inverse ul#oa_breadcrumb .btn-inverse.button.fake-ok, .navbar-inverse ul#oa_breadcrumb form .btn-inverse.button.fake-cancel, form .navbar-inverse ul#oa_breadcrumb .btn-inverse.button.fake-cancel, .navbar-inverse ul#oa_breadcrumb #media-browser-tabset a.btn-inverse.button, #media-browser-tabset .navbar-inverse ul#oa_breadcrumb a.btn-inverse.button,
-.navbar-inverse ul#oa_breadcrumb #media-browser-tabset input.btn-inverse.form-submit,
-#media-browser-tabset .navbar-inverse ul#oa_breadcrumb input.btn-inverse.form-submit, .navbar-inverse ul#oa_breadcrumb #modal-content .btn-inverse.form-submit, #modal-content .navbar-inverse ul#oa_breadcrumb .btn-inverse.form-submit,
-.navbar-inverse ul#oa_breadcrumb #modal-content .btn-inverse#edit-cancel,
-#modal-content .navbar-inverse ul#oa_breadcrumb .btn-inverse#edit-cancel {
-  color: #fff;
-  border: none;
-  box-shadow: none;
-}
-
-/* line 230, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb {
-  padding: 0;
-  margin: 0;
-}
-/* line 233, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb > .icon-home {
-  line-height: 5px;
-}
-/* line 236, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb > .btn-group:after {
-  content: url(../images/menu-divider.png);
-}
-/* line 239, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb > .btn-group {
-  height: 50px;
-}
-/* line 241, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb > .btn-group > a {
-  position: relative;
-  top: -20px;
-  font-size: 17px;
-}
-/* line 247, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb li:first-child a {
-  padding-right: 10px;
-}
-/* line 250, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb a.btn.btn-inverse, ul#oa_breadcrumb form a.btn-inverse.button.fake-ok, form ul#oa_breadcrumb a.btn-inverse.button.fake-ok, ul#oa_breadcrumb form a.btn-inverse.button.fake-cancel, form ul#oa_breadcrumb a.btn-inverse.button.fake-cancel, ul#oa_breadcrumb #media-browser-tabset a.btn-inverse.button, #media-browser-tabset ul#oa_breadcrumb a.btn-inverse.button, ul#oa_breadcrumb #modal-content a.btn-inverse.form-submit, #modal-content ul#oa_breadcrumb a.btn-inverse.form-submit,
-ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel,
-#modal-content ul#oa_breadcrumb a.btn-inverse#edit-cancel {
-  margin-bottom: 3px;
-}
-/* line 253, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse, ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-ok, form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-ok, ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-cancel, form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-cancel, ul#oa_breadcrumb #media-browser-tabset a.dropdown-toggle.btn-inverse.button, #media-browser-tabset ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button, ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse.form-submit, #modal-content ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.form-submit,
-ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse#edit-cancel,
-#modal-content ul#oa_breadcrumb a.dropdown-toggle.btn-inverse#edit-cancel {
-  background: #333333 !important;
-  border: none;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  padding: 8px 6px 2px;
-  margin-right: 15px;
-  margin-top: 0;
-  height: 29px;
-}
-/* line 261, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse .caret, ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-ok .caret, form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-ok .caret, ul#oa_breadcrumb form a.dropdown-toggle.btn-inverse.button.fake-cancel .caret, form ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button.fake-cancel .caret, ul#oa_breadcrumb #media-browser-tabset a.dropdown-toggle.btn-inverse.button .caret, #media-browser-tabset ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.button .caret, ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse.form-submit .caret, #modal-content ul#oa_breadcrumb a.dropdown-toggle.btn-inverse.form-submit .caret,
-ul#oa_breadcrumb #modal-content a.dropdown-toggle.btn-inverse#edit-cancel .caret,
-#modal-content ul#oa_breadcrumb a.dropdown-toggle.btn-inverse#edit-cancel .caret {
-  border-top: 6px solid #fff;
+  border-top: 6px solid white;
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
-  margin-top: 10px;
 }
-/* line 268, ../sass/partials/_navbar.scss */
-ul#oa_breadcrumb a.btn.btn-inverse:hover, ul#oa_breadcrumb form a.btn-inverse.button.fake-ok:hover, form ul#oa_breadcrumb a.btn-inverse.button.fake-ok:hover, ul#oa_breadcrumb form a.btn-inverse.button.fake-cancel:hover, form ul#oa_breadcrumb a.btn-inverse.button.fake-cancel:hover, ul#oa_breadcrumb #media-browser-tabset a.btn-inverse.button:hover, #media-browser-tabset ul#oa_breadcrumb a.btn-inverse.button:hover, ul#oa_breadcrumb #modal-content a.btn-inverse.form-submit:hover, #modal-content ul#oa_breadcrumb a.btn-inverse.form-submit:hover,
-ul#oa_breadcrumb #modal-content a.btn-inverse#edit-cancel:hover,
-#modal-content ul#oa_breadcrumb a.btn-inverse#edit-cancel:hover {
-  color: #d8d8d8;
+/* line 67, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group:after {
+  content: url("../images/menu-divider.png");
+  width: 10px;
+  height: 50px;
+  display: inline-block;
+}
+/* line 75, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group ul.dropdown-menu li h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+/* line 79, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group ul.dropdown-menu li a.more-link {
+  font-style: italic;
+}
+/* line 88, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-favorites-favorites-button ul#oa_favorites {
+  margin: 0;
+}
+/* line 90, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-favorites-favorites-button ul#oa_favorites li {
+  margin: 0;
+}
+/* line 96, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-toolbar-search form {
+  margin: 0;
+}
+/* line 98, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-toolbar-search form .input-append {
+  margin: 0;
+}
+/* line 101, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-toolbar-search form .search-text {
+  width: 150px;
+}
+/* line 105, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .btn, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .button.fake-ok, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #media-browser-tabset a.button,
+#oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #media-browser-tabset input.form-submit, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #modal-content .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .form-submit,
+#oa-navbar .panel-panel .pane-oa-toolbar-search #media-browser-tabset form .btn-group a.button,
+#oa-navbar .panel-panel .pane-oa-toolbar-search #media-browser-tabset form .btn-group input.form-submit,
+#oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #modal-content #edit-cancel,
+#modal-content #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #edit-cancel {
+  float: left;
+  clear: none;
+}
+/* line 113, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-add-space-content .btn, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-ok, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-ok, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-cancel, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-cancel, #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content a.button,
+#oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset input.form-submit,
+#media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content input.form-submit, #oa-navbar .panel-panel .pane-add-space-content #modal-content .form-submit, #modal-content #oa-navbar .panel-panel .pane-add-space-content .form-submit,
+#oa-navbar .panel-panel .pane-add-space-content #modal-content #edit-cancel,
+#modal-content #oa-navbar .panel-panel .pane-add-space-content #edit-cancel {
+  position: relative;
+  text-indent: -9999em;
+  line-height: 2px;
+}
+/* line 117, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-add-space-content .btn .caret, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-ok .caret, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-ok .caret, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-cancel .caret, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-cancel .caret, #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset a.button .caret, #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content a.button .caret,
+#oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset input.form-submit .caret,
+#media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content input.form-submit .caret, #oa-navbar .panel-panel .pane-add-space-content #modal-content .form-submit .caret, #modal-content #oa-navbar .panel-panel .pane-add-space-content .form-submit .caret,
+#oa-navbar .panel-panel .pane-add-space-content #modal-content #edit-cancel .caret,
+#modal-content #oa-navbar .panel-panel .pane-add-space-content #edit-cancel .caret {
+  background: transparent url("../images/navbar-icons.png") no-repeat 2px -1px;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  display: block;
+}
+/* line 128, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge .oa-dropdown {
+  margin: 0;
+}
+/* line 131, ../sass/partials/_navbar.scss */
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge .oa-dropdown #user-badge-dropdown img {
+  display: none;
 }
 
-@media (max-width: 767px) {
-  /* line 275, ../sass/partials/_navbar.scss */
-  #oa-navbar {
-    position: fixed;
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 144, ../sass/partials/_navbar.scss */
+  #oa-navbar .navbar-inner {
+    padding-top: 0;
+    padding-bottom: 0;
   }
-  /* line 278, ../sass/partials/_navbar.scss */
-  #oa-navbar #mini-panel-oa_toolbar_panel {
-    padding: 0 20px;
-  }
-  /* line 281, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-breadcrumb {
+  /* line 149, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
     float: none;
     border-bottom: 1px solid #676767;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0 20px;
   }
-  /* line 285, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search {
+  /* line 157, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-toolbar-search {
     float: left;
-    margin: 10px 0;
-  }
-  /* line 288, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .input-append {
-    display: block;
-  }
-  /* line 291, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search {
-    margin: 0;
-    padding: 0;
-  }
-  /* line 294, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search .submit {
-    margin: 0;
-    float: left;
-  }
-  /* line 298, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search .dropdown-toggle {
-    clear: none;
-    margin: 0;
-  }
-  /* line 304, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-user-badge {
-    margin: 10px 0;
-  }
-  /* line 306, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-user-badge .btn, #oa-navbar .pane-oa-dashboard-oa-user-badge form .button.fake-ok, form #oa-navbar .pane-oa-dashboard-oa-user-badge .button.fake-ok, #oa-navbar .pane-oa-dashboard-oa-user-badge form .button.fake-cancel, form #oa-navbar .pane-oa-dashboard-oa-user-badge .button.fake-cancel, #oa-navbar .pane-oa-dashboard-oa-user-badge #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .pane-oa-dashboard-oa-user-badge a.button,
-  #oa-navbar .pane-oa-dashboard-oa-user-badge #media-browser-tabset input.form-submit,
-  #media-browser-tabset #oa-navbar .pane-oa-dashboard-oa-user-badge input.form-submit, #oa-navbar .pane-oa-dashboard-oa-user-badge #modal-content .form-submit, #modal-content #oa-navbar .pane-oa-dashboard-oa-user-badge .form-submit,
-  #oa-navbar .pane-oa-dashboard-oa-user-badge #modal-content #edit-cancel,
-  #modal-content #oa-navbar .pane-oa-dashboard-oa-user-badge #edit-cancel {
-    margin: 0;
-  }
-  /* line 309, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-user-badge #oa-user-badge {
-    padding: 0;
-  }
-  /* line 313, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button {
-    margin: 10px 0;
-  }
-  /* line 315, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul {
-    margin: 0;
-  }
-  /* line 317, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul li {
-    margin: 0 10px 0 0;
-  }
-  /* line 319, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul li a {
-    margin: 0;
-  }
-  /* line 325, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-add-space-content {
-    margin: 10px 10px 10px 0;
-  }
-  /* line 328, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-add-space-content .btn-group a {
-    margin: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
-  /* line 275, ../sass/partials/_navbar.scss */
+@media (max-width: 767px) {
+  /* line 142, ../sass/partials/_navbar.scss */
   #oa-navbar {
-    position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  /* line 336, ../sass/partials/_navbar.scss */
-  #oa-navbar #mini-panel-oa_toolbar_panel {
-    padding: 0 20px;
+  /* line 165, ../sass/partials/_navbar.scss */
+  #oa-navbar .navbar-inner {
+    padding-top: 0;
+    padding-bottom: 0;
   }
-  /* line 339, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-breadcrumb {
+  /* line 170, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
     float: none;
     border-bottom: 1px solid #676767;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0 20px;
   }
-  /* line 343, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search {
+  /* line 178, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-toolbar-search {
     float: left;
-    margin: 10px 0;
-  }
-  /* line 346, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .input-append {
-    display: block;
-  }
-  /* line 349, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search {
-    margin: 0;
-    padding: 0;
-  }
-  /* line 352, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search .submit {
-    margin: 0;
-    float: left;
-  }
-  /* line 356, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search .dropdown-toggle {
-    clear: none;
-    margin: 0;
-  }
-  /* line 362, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-user-badge {
-    margin: 10px 0;
-  }
-  /* line 364, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-user-badge .btn, #oa-navbar .pane-oa-dashboard-oa-user-badge form .button.fake-ok, form #oa-navbar .pane-oa-dashboard-oa-user-badge .button.fake-ok, #oa-navbar .pane-oa-dashboard-oa-user-badge form .button.fake-cancel, form #oa-navbar .pane-oa-dashboard-oa-user-badge .button.fake-cancel, #oa-navbar .pane-oa-dashboard-oa-user-badge #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .pane-oa-dashboard-oa-user-badge a.button,
-  #oa-navbar .pane-oa-dashboard-oa-user-badge #media-browser-tabset input.form-submit,
-  #media-browser-tabset #oa-navbar .pane-oa-dashboard-oa-user-badge input.form-submit, #oa-navbar .pane-oa-dashboard-oa-user-badge #modal-content .form-submit, #modal-content #oa-navbar .pane-oa-dashboard-oa-user-badge .form-submit,
-  #oa-navbar .pane-oa-dashboard-oa-user-badge #modal-content #edit-cancel,
-  #modal-content #oa-navbar .pane-oa-dashboard-oa-user-badge #edit-cancel {
-    margin: 0;
-  }
-  /* line 367, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-user-badge #oa-user-badge {
-    padding: 0;
-  }
-  /* line 371, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button {
-    margin: 10px 0;
-  }
-  /* line 373, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul {
-    margin: 0;
-  }
-  /* line 375, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul li {
-    margin: 0 10px 0 0;
-  }
-  /* line 377, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul li a {
-    margin: 0;
-  }
-  /* line 383, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-add-space-content {
-    margin: 10px 10px 10px 0;
-  }
-  /* line 386, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-add-space-content .btn-group a {
-    margin: 0;
   }
 }
 @media (max-width: 480px) {
-  /* line 275, ../sass/partials/_navbar.scss */
+  /* line 142, ../sass/partials/_navbar.scss */
   #oa-navbar {
     position: static;
+    margin: 0 -20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 188, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel {
     margin: 0;
   }
-  /* line 395, ../sass/partials/_navbar.scss */
-  #oa-navbar #mini-panel-oa_toolbar_panel {
-    padding: 0;
+  /* line 190, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .panel-pane {
+    margin-left: 5px;
   }
-  /* line 397, ../sass/partials/_navbar.scss */
-  #oa-navbar #mini-panel-oa_toolbar_panel .boxton-container {
-    padding: 50px 0 0;
-    position: relative;
-  }
-  /* line 402, ../sass/partials/_navbar.scss */
-  #oa-navbar .navbar-inner {
-    border: 0;
-  }
-  /* line 405, ../sass/partials/_navbar.scss */
-  #oa-navbar .panel-pane {
-    float: none;
-  }
-  /* line 410, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb {
-    display: block;
-    float: none;
-    padding: 0;
-    margin: 0;
-    height: auto;
-  }
-  /* line 416, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb:after {
-    content: '';
+  /* line 193, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-toolbar-menu-button {
     display: none;
   }
-  /* line 420, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb > a {
-    display: inline-block;
-    padding: 15px 0;
-    text-align: center;
-    width: 100%;
-    position: static;
-    margin: 0;
-    border-bottom: 1px solid #262626;
-    text-decoration: none;
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    border-radius: 0 !important;
+  /* line 196, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
+    margin-left: -20px;
+    margin-right: -20px;
   }
-  /* line 431, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb a.dropdown-toggle {
+  /* line 200, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group {
+    float: none;
+    display: block;
+    margin: 0 0 1px;
+    position: relative;
+  }
+  /* line 205, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group:after {
+    display: none;
+  }
+  /* line 208, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button,
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit,
+  #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit,
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > #edit-cancel,
+  #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > #edit-cancel {
+    display: block;
+    float: none;
+  }
+  /* line 212, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 10px;
     margin: 0;
-    background: none !important;
-    padding: 15px 16px;
-    border: 0;
-    height: auto;
-    text-align: right;
-    outline: none;
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    border-radius: none;
+    z-index: 100;
   }
-  /* line 444, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb ul.dropdown-menu {
-    padding: 0;
-    margin: 0;
+  /* line 219, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group .dropdown-menu {
     width: 100%;
   }
-  /* line 448, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb ul.dropdown-menu h3 {
-    padding: 5px 15px;
-  }
-  /* line 453, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-breadcrumb ul#oa_breadcrumb > li.oa-breadcrumb ul.dropdown-menu ul li a {
-    padding: 5px 15px;
-    display: block;
-  }
-  /* line 463, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search {
+  /* line 225, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge {
     position: absolute;
     top: 10px;
     left: 10px;
   }
-  /* line 467, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search {
-    margin: 0;
-    padding: 0;
+  /* line 230, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-toolbar-search {
+    margin-left: 0;
   }
-  /* line 470, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search input.search-text {
-    width: 100px;
-  }
-  /* line 473, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search .btn-group {
-    width: 63px;
-  }
-  /* line 476, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search .submit {
-    margin: 0;
-    float: left;
-  }
-  /* line 480, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-toolbar-search .toolbar-search .dropdown-toggle {
-    clear: none;
-    margin: 0;
-  }
-  /* line 486, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-user-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  /* line 490, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-user-badge .btn, #oa-navbar .pane-oa-dashboard-oa-user-badge form .button.fake-ok, form #oa-navbar .pane-oa-dashboard-oa-user-badge .button.fake-ok, #oa-navbar .pane-oa-dashboard-oa-user-badge form .button.fake-cancel, form #oa-navbar .pane-oa-dashboard-oa-user-badge .button.fake-cancel, #oa-navbar .pane-oa-dashboard-oa-user-badge #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .pane-oa-dashboard-oa-user-badge a.button,
-  #oa-navbar .pane-oa-dashboard-oa-user-badge #media-browser-tabset input.form-submit,
-  #media-browser-tabset #oa-navbar .pane-oa-dashboard-oa-user-badge input.form-submit, #oa-navbar .pane-oa-dashboard-oa-user-badge #modal-content .form-submit, #modal-content #oa-navbar .pane-oa-dashboard-oa-user-badge .form-submit,
-  #oa-navbar .pane-oa-dashboard-oa-user-badge #modal-content #edit-cancel,
-  #modal-content #oa-navbar .pane-oa-dashboard-oa-user-badge #edit-cancel {
-    margin: 0;
-  }
-  /* line 493, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-user-badge #oa-user-badge {
-    padding: 0;
-  }
-  /* line 498, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button,
-  #oa-navbar .pane-add-space-content {
-    text-align: center;
-  }
-  /* line 503, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites,
-  #oa-navbar .pane-add-space-content ul#oa_favorites {
-    margin: 0;
-    padding: 0;
-  }
-  /* line 507, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites li a,
-  #oa-navbar .pane-add-space-content ul#oa_favorites li a {
-    margin: 0;
-    height: 22px;
-    line-height: 22px;
-    display: block;
-  }
-  /* line 512, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-favorites-favorites-button ul#oa_favorites li a i,
-  #oa-navbar .pane-add-space-content ul#oa_favorites li a i {
-    margin: 5px 0 0;
-  }
-  /* line 519, ../sass/partials/_navbar.scss */
-  #oa-navbar .pane-oa-dashboard-oa-toolbar-menu-button {
-    display: none;
+  /* line 233, ../sass/partials/_navbar.scss */
+  #oa-navbar .panel-panel .pane-oa-toolbar-search form .search-text {
+    width: 80px;
   }
 }
 
-/* line 529, ../sass/partials/_navbar.scss */
+/* line 246, ../sass/partials/_navbar.scss */
 #oa-responsive-regions-navbar .navbar-inner .btn-top {
   float: left;
 }
-/* line 531, ../sass/partials/_navbar.scss */
+/* line 248, ../sass/partials/_navbar.scss */
 #oa-responsive-regions-navbar .navbar-inner .btn-top.btn-active {
   -webkit-transform: none;
   -moz-transform: none;

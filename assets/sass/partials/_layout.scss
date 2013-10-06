@@ -7,6 +7,9 @@ html, body {
 }
 body {
   padding-top: 60px;
+  @include breakpoint('phone') {
+    padding-top: 0 !important;
+  }
   #main-wrapper {
     min-height: 100%;
     height: auto !important;
