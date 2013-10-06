@@ -160,6 +160,18 @@
       .pane-oa-toolbar-search {
         float: left;
       }
+      .pane-add-space-content {
+        .dropdown-menu {
+          right: 0;
+          left: auto;
+        }
+      }
+      .pane-oa-favorites-favorites-button {
+        .dropdown-menu {
+          right: 0;
+          left: auto;
+        }
+      }
     }
   }
   @include breakpoint('mini-tablet') {
@@ -180,6 +192,18 @@
       }
       .pane-oa-toolbar-search {
         float: left;
+      }
+      .pane-add-space-content {
+        .dropdown-menu {
+          right: 0;
+          left: auto;
+        }
+      }
+      .pane-oa-favorites-favorites-button {
+        .dropdown-menu {
+          right: 0;
+          left: auto;
+        }
       }
     }
   }
@@ -229,6 +253,25 @@
         position: absolute;
         top: 10px;
         left: 10px;
+        z-index: 100;
+        #oa-user-badge {
+          .dropdown-menu {
+            left: 0;
+            right: auto;
+          }
+        }
+      }
+      .pane-add-space-content {
+        .dropdown-menu {
+          right: 0;
+          left: auto;
+        }
+      }
+      .pane-oa-favorites-favorites-button {
+        .dropdown-menu {
+          right: 0;
+          left: auto;
+        }
       }
       .pane-oa-toolbar-search {
         margin-left: 0;
