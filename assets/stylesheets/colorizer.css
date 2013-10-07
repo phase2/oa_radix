@@ -1,86 +1,86 @@
 body,
 body.overlay {
-  color: @text@;
+  color: @text;
 }
 .comment .comment-arrow {
-  border-color: @bg@;
+  border-color: @bg;
 }
 #page,
 #main-wrapper,
 #main-menu-links li a.active,
 #main-menu-links li.active-trail a {
-  background: @bg@;
+  background: @bg;
 }
 .tabs ul.primary li a.active {
-  background-color: @bg@;
+  background-color: @bg;
 }
 .tabs ul.primary li.active a {
-  background-color: @bg@;
-  border-bottom: 1px solid @bg@;
+  background-color: @bg;
+  border-bottom: 1px solid @bg;
 }
 .form-actions {
-  background-color: @bg@;
+  background-color: @bg;
 }
 #header,
 .navbar-inner,
 .navbar-inverse .navbar-inner {
-background-color: @bottom@;
-background-image: -moz-linear-gradient(top, @top@, @bottom@);
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@top@), to(@bottom@));
-background-image: -webkit-linear-gradient(top, @top@, @bottom@);
-background-image: -o-linear-gradient(top, @top@, @bottom@);
-background-image: linear-gradient(to bottom, @top@, @bottom@);
+background-color: @bottom;
+background-image: -moz-linear-gradient(top, @top, @bottom);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@top), to(@bottom));
+background-image: -webkit-linear-gradient(top, @top, @bottom);
+background-image: -o-linear-gradient(top, @top, @bottom);
+background-image: linear-gradient(to bottom, @top, @bottom);
 border: none;
 box-shadow: none;
-color: @titleslogan@;
+color: @titleslogan;
 }
 .navbar-inner .btn,
 .navbar-inverse .btn.btn-inverse,
 .btn-group > .btn .dropdown-toggle,
 #oa-user-badge .user-badge {
-background-color: @toolbarbtn@;
-background-image: -moz-linear-gradient(top, @bottom@, @toolbarbtn@);
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@bottom@), to(@toolbarbtn@));
-background-image: -webkit-linear-gradient(top, @bottom@, @toolbarbtn@);
-background-image: -o-linear-gradient(top, @bottom@, @toolbarbtn@);
-background-image: linear-gradient(to bottom, @bottom@, @toolbarbtn@);
+background-color: @toolbarbtn;
+background-image: -moz-linear-gradient(top, @bottom, @toolbarbtn);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@bottom), to(@toolbarbtn));
+background-image: -webkit-linear-gradient(top, @bottom, @toolbarbtn);
+background-image: -o-linear-gradient(top, @bottom, @toolbarbtn);
+background-image: linear-gradient(to bottom, @bottom, @toolbarbtn);
 box-shadow: none;
-border-color: @toolbarborder@;
-color: @titleslogan@;
+border-color: @toolbarborder;
+color: @titleslogan;
 }
 .navbar-inverse ul#oa_breadcrumb .btn.btn-inverse,
 .navbar-inner ul#oa_breadcrumb .btn,
 .navbar-inverse #toolbar-menu-button {
-  color: @titleslogan@;
+  color: @titleslogan;
 }
 ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse,
 .navbar-inner a.dropdown-toggle.btn {
-  background-color: @toolbarbtn@ !important;
+  background-color: @toolbarbtn !important;
 }
 .navbar-inverse ul#oa_breadcrumb .btn.btn-inverse .caret,
 .navbar-inner .caret {
-border-top: 6px solid @titleslogan@;
+border-top: 6px solid @titleslogan;
 border-right: 6px solid transparent;
 border-left: 6px solid transparent;
 }
 a {
-  color: @link@;
+  color: @link;
 }
 a:hover,
 a:focus {
-  color: @linkhover@;
+  color: @linkhover;
 }
 a:active {
-  color: @linkactive@;
+  color: @linkactive;
 }
 .sidebar .block {
-  background-color: @sidebar@;
-  border-color: @sidebarborders@;
+  background-color: @sidebar;
+  border-color: @sidebarborders;
 }
 #page-wrapper,
 #footer-wrapper,
 body #footer {
-  background-color: @footer@;
+  background-color: @footer;
 }
 .region-header,
 .region-header a,
@@ -88,6 +88,6 @@ body #footer {
 #name-and-slogan,
 #name-and-slogan a,
 #secondary-menu-links li a {
-  color: @titleslogan@;
+  color: @titleslogan;
 }
 
