@@ -93,6 +93,7 @@ ul.dropdown-menu {
 #oa-navbar ul.dropdown-menu,
 ul.dropdown-menu,
 .dropdown-menu {
+  color: $dropdownLinkColor;
   .item-list {
     h3 {
       color: $black;

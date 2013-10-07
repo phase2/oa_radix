@@ -12647,7 +12647,13 @@ ul.dropdown-menu > li > .radio input {
   background-color: #E5E5E5;
 }
 
-/* line 97, ../sass/partials/_menu.scss */
+/* line 95, ../sass/partials/_menu.scss */
+#oa-navbar ul.dropdown-menu,
+ul.dropdown-menu,
+.dropdown-menu {
+  color: #333333;
+}
+/* line 98, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu .item-list h3,
 ul.dropdown-menu .item-list h3,
 .dropdown-menu .item-list h3 {
@@ -12657,20 +12663,20 @@ ul.dropdown-menu .item-list h3,
   padding: 3px 20px;
   line-height: 20px;
 }
-/* line 105, ../sass/partials/_menu.scss */
+/* line 106, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul,
 ul.dropdown-menu ul,
 .dropdown-menu ul {
   margin: 0;
 }
-/* line 107, ../sass/partials/_menu.scss */
+/* line 108, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li,
 ul.dropdown-menu ul li,
 .dropdown-menu ul li {
   padding: 0;
   margin: 0;
 }
-/* line 110, ../sass/partials/_menu.scss */
+/* line 111, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li a,
 ul.dropdown-menu ul li a,
 .dropdown-menu ul li a {
@@ -12682,7 +12688,7 @@ ul.dropdown-menu ul li a,
   color: #333333;
   white-space: nowrap;
 }
-/* line 118, ../sass/partials/_menu.scss */
+/* line 119, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li a:hover, #oa-navbar ul.dropdown-menu ul li a:focus, #oa-navbar ul.dropdown-menu ul li a.active,
 ul.dropdown-menu ul li a:hover,
 ul.dropdown-menu ul li a:focus,
@@ -12701,19 +12707,19 @@ ul.dropdown-menu ul li a.active,
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
 }
-/* line 123, ../sass/partials/_menu.scss */
+/* line 124, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li a.more-link,
 ul.dropdown-menu ul li a.more-link,
 .dropdown-menu ul li a.more-link {
   text-align: left;
 }
-/* line 127, ../sass/partials/_menu.scss */
+/* line 128, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li .flag-wrapper,
 ul.dropdown-menu ul li .flag-wrapper,
 .dropdown-menu ul li .flag-wrapper {
   padding: 0;
 }
-/* line 129, ../sass/partials/_menu.scss */
+/* line 130, ../sass/partials/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li .flag-wrapper .flag,
 ul.dropdown-menu ul li .flag-wrapper .flag,
 .dropdown-menu ul li .flag-wrapper .flag {
@@ -12722,22 +12728,22 @@ ul.dropdown-menu ul li .flag-wrapper .flag,
   font-style: italic;
 }
 
-/* line 141, ../sass/partials/_menu.scss */
+/* line 142, ../sass/partials/_menu.scss */
 .region-footer {
   background-image: url("../../logo.png");
   background-repeat: no-repeat;
   background-position: 1% center;
 }
-/* line 145, ../sass/partials/_menu.scss */
+/* line 146, ../sass/partials/_menu.scss */
 .region-footer .menu {
   float: right;
 }
-/* line 147, ../sass/partials/_menu.scss */
+/* line 148, ../sass/partials/_menu.scss */
 .region-footer .menu li {
   list-style: none !important;
   float: left;
 }
-/* line 150, ../sass/partials/_menu.scss */
+/* line 151, ../sass/partials/_menu.scss */
 .region-footer .menu li a {
   line-height: 52px;
   color: white;
