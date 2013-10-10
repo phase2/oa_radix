@@ -14,6 +14,10 @@ regions[content]      = Content
 regions[footer]       = Footer
 regions[primarytabs]  = Primary tabs
 
+; Panels
+plugins[panels][layouts] = panels/layouts
+plugins[panels][styles] = panels/styles
+
 ; CSS - General
 stylesheets[all][]     = assets/stylesheets/screen.css
 stylesheets[all][]     = assets/stylesheets/font-awesome.min.css
