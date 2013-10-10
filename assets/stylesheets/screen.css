@@ -11355,25 +11355,43 @@ ul.dropdown-menu ul li .flag-wrapper .flag,
 }
 
 /* line 142, ../sass/partials/_menu.scss */
-.region-footer {
-  background-image: url("../../logo.png");
-  background-repeat: no-repeat;
-  background-position: 1% center;
+.region-footer, #footer {
+  overflow: hidden;
+}
+/* line 144, ../sass/partials/_menu.scss */
+.region-footer ul.menu, #footer ul.menu {
+  margin-bottom: 0;
 }
 /* line 146, ../sass/partials/_menu.scss */
-.region-footer .menu {
-  float: right;
-}
-/* line 148, ../sass/partials/_menu.scss */
-.region-footer .menu li {
-  list-style: none !important;
+.region-footer ul.menu > li, #footer ul.menu > li {
   float: left;
+  min-width: 150px;
+  list-style: none !important;
 }
-/* line 151, ../sass/partials/_menu.scss */
-.region-footer .menu li a {
-  line-height: 52px;
-  color: white;
+/* line 150, ../sass/partials/_menu.scss */
+.region-footer ul.menu > li > a, #footer ul.menu > li > a {
+  font-weight: bold;
+  font-size: 14px;
+}
+/* line 155, ../sass/partials/_menu.scss */
+.region-footer ul.menu > li > ul > li, #footer ul.menu > li > ul > li {
+  float: none;
+}
+/* line 157, ../sass/partials/_menu.scss */
+.region-footer ul.menu > li > ul > li > a, #footer ul.menu > li > ul > li > a {
+  font-weight: normal;
+  font-size: 12px;
+}
+/* line 164, ../sass/partials/_menu.scss */
+.region-footer ul.menu a, #footer ul.menu a {
+  border: 0;
   display: block;
+  padding: 0 5px;
+}
+/* line 168, ../sass/partials/_menu.scss */
+.region-footer ul.menu a:hover, #footer ul.menu a:hover {
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /* line 7, ../sass/partials/_page.scss */
