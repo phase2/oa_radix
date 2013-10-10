@@ -9948,6 +9948,7 @@ ul.tabs > li > a, ul.action-links > li > a {
 
 .pane-oa-widgets-visibility-toolbar #oa_visibility_toolbar,
 #oa_favorites,
+.pane-oa-tour-custom-pane,
 .pane-add-space-content {
   margin-top: 2.5px;
 }
@@ -9963,6 +9964,7 @@ ul.tabs > li > a, ul.action-links > li > a {
 form .pane-add-space-content a.dropdown-toggle.button.fake-cancel, .pane-add-space-content #media-browser-tabset a.dropdown-toggle.button, #media-browser-tabset .pane-add-space-content a.dropdown-toggle.button, .pane-add-space-content #modal-content a.dropdown-toggle.form-submit, #modal-content .pane-add-space-content a.dropdown-toggle.form-submit,
 .pane-add-space-content #modal-content a.dropdown-toggle#edit-cancel,
 #modal-content .pane-add-space-content a.dropdown-toggle#edit-cancel,
+.pane-oa-tour-custom-pane a.dropdown-toggle.btn,
 .pane-oa-favorites-favorites-button a.dropdown-toggle.btn,
 .pane-oa-favorites-favorites-button form a.dropdown-toggle.button.fake-ok,
 form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-ok,
@@ -10077,6 +10079,7 @@ form .pane-oa-favorites-favorites-button a.dropdown-toggle.button.fake-cancel > 
 #modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle.form-submit > .icon-unlock,
 .pane-oa-favorites-favorites-button #modal-content a.dropdown-toggle#edit-cancel > .icon-unlock,
 #modal-content .pane-oa-favorites-favorites-button a.dropdown-toggle#edit-cancel > .icon-unlock,
+.pane-oa-tour-custom-pane a.dropdown-toggle.btn > .icon-question-sign,
 .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.btn > .caret,
 .pane-oa-widgets-visibility-toolbar form a.dropdown-toggle.button.fake-ok > .caret,
 form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-ok > .caret,
@@ -10157,6 +10160,7 @@ form .pane-oa-widgets-visibility-toolbar a.dropdown-toggle.button.fake-cancel:ho
   background: black !important;
 }
 
+.pane-oa-tour-custom-pane,
 .pane-add-space-content {
   margin-right: 5px;
 }
