@@ -51,7 +51,7 @@ function oa_radix_preprocess_page(&$vars) {
   // grab the Bootstrap JS since we can't currently add Bootstrap to our
   // make file because Drupal is GPLv2 instead of GPLv3
   $base = parse_url($base_url);
-  drupal_add_js($base['scheme'] . '://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js', 'external');
+  drupal_add_js($base['scheme'] . '://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js', 'external');
 
   // Rework search_form to our liking.
   $vars['search_form'] = '';
@@ -77,6 +77,11 @@ function oa_radix_preprocess_page(&$vars) {
   $vars['oa_toolbar_panel'] = isset($toolbar) ? $toolbar['content'] : '';
   $footer = panels_mini_block_view('oa_footer_panel');
   $vars['oa_footer_panel'] = isset($footer) ? $footer['content'] : '';
+
+  $banner = ctools_content_render('oa_space_banner', '', array('banner_position' => 2));
+  if (!empty($banner->content)) {
+    $vars['oa_banner'] = $banner->content;
+  }
 }
 
 /**

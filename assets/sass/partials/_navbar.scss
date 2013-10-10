@@ -93,6 +93,14 @@
         }
       }
     }
+    .pane-oa-tour-custom-pane {
+      ul#oa_tours {
+        margin: 0;
+        li {
+          margin: 0;
+        }
+      }
+    }
     .pane-oa-toolbar-search {
       form {
         margin: 0;
@@ -124,6 +132,13 @@
           display: block;
         }
       }
+    }
+    .pane-oa-space-banner {
+      clear: both;
+      padding-bottom: 5px;
+      margin-top: -5px;
+      margin-left: -20px;
+      margin-right: -20px;
     }
     .pane-oa-dashboard-oa-user-badge {
       .oa-dropdown {
