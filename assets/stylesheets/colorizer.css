@@ -91,9 +91,11 @@ body #footer {
 #secondary-menu-links li a {
   color: @titleslogan;
 }
-.oa-banner-text,
 .oa-banner-overlay,
-.oa-banner-slogan,
 .oa-banner-slogan-overlay {
   color: @titleslogan;
+}
+.oa-banner-text,
+.oa-banner-slogan {
+  color: @toolbartext;
 }
