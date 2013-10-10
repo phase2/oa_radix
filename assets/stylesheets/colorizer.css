@@ -90,4 +90,6 @@ body #footer {
 #secondary-menu-links li a {
   color: @titleslogan;
 }
-
+.oa-banner-text {
+  color: @bannertext;
+}

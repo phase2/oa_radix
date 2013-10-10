@@ -66,6 +66,9 @@
 <?php endif; ?>
 
 <div id="main-wrapper">
+  <?php if (!empty($oa_banner)): ?>
+    <?php print $oa_banner; ?>
+  <?php endif; ?>
   <div id="main" class="container">
     <?php if ($breadcrumb && (arg(0) == 'admin')): ?>
       <div id="breadcrumb" class="visible-desktop">

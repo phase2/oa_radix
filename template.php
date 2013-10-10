@@ -77,6 +77,11 @@ function oa_radix_preprocess_page(&$vars) {
   $vars['oa_toolbar_panel'] = isset($toolbar) ? $toolbar['content'] : '';
   $footer = panels_mini_block_view('oa_footer_panel');
   $vars['oa_footer_panel'] = isset($footer) ? $footer['content'] : '';
+
+  $banner = ctools_content_render('oa_space_banner', '', array('banner_position' => 2));
+  if (!empty($banner->content)) {
+    $vars['oa_banner'] = $banner->content;
+  }
 }
 
 /**
