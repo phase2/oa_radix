@@ -99,3 +99,20 @@ body #footer {
 .oa-banner-slogan {
   color: @toolbartext;
 }
+.oa-pane .pane-title {
+color: @sidebartext;
+background-color: @sidebar;
+background-image: -moz-linear-gradient(top, @sidebar, @sidebarbottom);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@sidebar), to(@sidebarbottom));
+background-image: -webkit-linear-gradient(top, @sidebar, @sidebarbottom);
+background-image: -o-linear-gradient(top, @sidebar, @sidebarbottom);
+background-image: linear-gradient(to bottom, @sidebar, @sidebarbottom);
+}
+.oa-pane .panel-pane {
+color: @sidebartext;
+background-color: @sidebar;
+border-color: @sidebarborders;
+}
+.oa-pane {
+border-color: @sidebarborders;
+}
