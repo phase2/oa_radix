@@ -16,6 +16,23 @@
     .panel-pane {
       margin: 0 0 0 5px;
     }
+    .pane-oa-navigation {
+      width: 100%;
+      border-bottom: 1px solid #676767;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-bottom: 5px;
+      padding: 0 $gridGutterWidth 5px;
+      .pane-content {
+        ul.nav {
+          > li {
+            > a {
+              padding: 6px 15px 6px;
+            }
+          }
+        }
+      }
+    }
     .pane-oa-dashboard-oa-toolbar-menu-button {
       z-index: 100;
       #toolbar-menu-button {
@@ -295,6 +312,35 @@
         form {
           .search-text {
             width: 80px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 979px) {
+    .panel-panel {
+      .pane-oa-navigation {
+        margin-left: -20px;
+        margin-right: -20px;
+        .pane-content {
+          nav {
+            float: none;
+            margin-top: 5px;
+          }
+          ul.nav {
+            > li {
+              > a {
+                display: block;
+                text-align: center;
+                font-weight: normal;
+                .caret {
+                  display: none;
+                }
+              }
+              ul.dropdown-menu {
+                display: none;
+              }
+            }
           }
         }
       }

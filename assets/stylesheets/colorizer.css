@@ -51,12 +51,18 @@ color: @toolbartext;
 .navbar-inverse ul#oa_breadcrumb .btn.btn-inverse,
 .navbar-inner ul#oa_breadcrumb .btn,
 .navbar-inverse #oa-user-badge .user-badge,
-.navbar-inverse #toolbar-menu-button {
+.navbar-inverse #toolbar-menu-button,
+.navbar-inverse .nav > li > a,
+.navbar .nav > li > a {
   color: @toolbartext;
+  background-color: transparent !important;
 }
 ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse,
 .navbar-inner a.dropdown-toggle.btn {
   background-color: @toolbarbtn !important;
+}
+#oa-navbar .panel-panel .panel-pane {
+  border-color: @toolbarborder ! important;
 }
 .navbar-inverse ul#oa_breadcrumb .btn.btn-inverse .caret,
 .navbar-inner .caret {

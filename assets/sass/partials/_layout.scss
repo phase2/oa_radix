@@ -7,8 +7,14 @@ html, body {
 }
 body {
   padding-top: 60px;
+  @include breakpoint('tablet') {
+    padding-top: 90px;
+  }
+  @include breakpoint('mini-tablet') {
+    padding-top: 90px;
+  }
   @include breakpoint('phone') {
-    padding-top: 0 !important;
+    padding-top: 0;
   }
   #main-wrapper {
     min-height: 100%;
