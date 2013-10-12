@@ -10950,13 +10950,12 @@ body #main-wrapper {
   height: auto !important;
   height: 100%;
   margin: 0 auto -100px;
-  padding-top: 18px;
 }
-/* line 26, ../sass/partials/_layout.scss */
+/* line 25, ../sass/partials/_layout.scss */
 body #push {
   height: 100px;
 }
-/* line 29, ../sass/partials/_layout.scss */
+/* line 28, ../sass/partials/_layout.scss */
 body #footer {
   font-size: 12px;
   line-height: 1.5;
@@ -10965,7 +10964,7 @@ body #footer {
   border-top: 1px solid #e5e5e5;
 }
 @media (max-width: 767px) {
-  /* line 29, ../sass/partials/_layout.scss */
+  /* line 28, ../sass/partials/_layout.scss */
   body #footer {
     margin-left: -20px;
     margin-right: -20px;
@@ -10974,7 +10973,7 @@ body #footer {
   }
 }
 @media (max-width: 480px) {
-  /* line 29, ../sass/partials/_layout.scss */
+  /* line 28, ../sass/partials/_layout.scss */
   body #footer {
     margin-left: -20px;
     margin-right: -20px;
@@ -10982,7 +10981,7 @@ body #footer {
     padding-right: 20px;
   }
 }
-/* line 47, ../sass/partials/_layout.scss */
+/* line 46, ../sass/partials/_layout.scss */
 body #footer > .container {
   height: 100px;
   padding: 18px 0;
