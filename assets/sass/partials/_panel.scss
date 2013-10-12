@@ -34,7 +34,9 @@ div#panels-ipe-control-container {
   right: -12px;
   bottom: auto;
   width: auto;
-  z-index: 9999;
+  // needs to be above most stuff, but below the dropdown
+  // which are at z-index 1000
+  z-index: 999;
   @include box-shadow(none);
   a {
     font-weight: normal;

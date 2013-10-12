@@ -11530,12 +11530,12 @@ div#panels-ipe-control-container {
   right: -12px;
   bottom: auto;
   width: auto;
-  z-index: 9999;
+  z-index: 999;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 39, ../sass/partials/_panel.scss */
+/* line 41, ../sass/partials/_panel.scss */
 div#panels-ipe-control-container a {
   font-weight: normal;
 }
@@ -11547,12 +11547,12 @@ div#panels-ipe-control-container a {
 }
 
 @media screen and (max-width: 980px) {
-  /* line 48, ../sass/partials/_panel.scss */
+  /* line 50, ../sass/partials/_panel.scss */
   div#panels-ipe-control-container {
     position: absolute;
   }
 }
-/* line 55, ../sass/partials/_panel.scss */
+/* line 57, ../sass/partials/_panel.scss */
 .oa-pane {
   border: 1px solid #e3e3e3;
   border-bottom: 0;
@@ -11560,7 +11560,7 @@ div#panels-ipe-control-container a {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 59, ../sass/partials/_panel.scss */
+/* line 61, ../sass/partials/_panel.scss */
 .oa-pane .panel-pane {
   padding: 0;
   border: 0;
@@ -11568,12 +11568,12 @@ div#panels-ipe-control-container a {
   margin-bottom: 0;
   padding-bottom: 15px;
 }
-/* line 66, ../sass/partials/_panel.scss */
+/* line 68, ../sass/partials/_panel.scss */
 .oa-pane.inner-pane .panel-pane {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 70, ../sass/partials/_panel.scss */
+/* line 72, ../sass/partials/_panel.scss */
 .oa-pane .pane-title {
   font-size: 20px;
   line-height: 32px;
@@ -11589,26 +11589,26 @@ div#panels-ipe-control-container a {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e3e3e3', GradientType=0);
 }
-/* line 78, ../sass/partials/_panel.scss */
+/* line 80, ../sass/partials/_panel.scss */
 .oa-pane .pane-content {
   padding: 15px 15px 0 15px;
 }
-/* line 80, ../sass/partials/_panel.scss */
+/* line 82, ../sass/partials/_panel.scss */
 .oa-pane .pane-content .oa-list {
   margin-left: -16px;
   margin-right: -16px;
 }
-/* line 85, ../sass/partials/_panel.scss */
+/* line 87, ../sass/partials/_panel.scss */
 .oa-pane .oa-list {
   margin-left: -1px;
   margin-right: -1px;
 }
-/* line 89, ../sass/partials/_panel.scss */
+/* line 91, ../sass/partials/_panel.scss */
 .oa-pane .pager {
   margin-top: 15px;
 }
 
-/* line 93, ../sass/partials/_panel.scss */
+/* line 95, ../sass/partials/_panel.scss */
 .oa-bottom-right {
   position: absolute;
   right: 3px;
@@ -11616,155 +11616,155 @@ div#panels-ipe-control-container a {
   text-align: right;
 }
 
-/* line 102, ../sass/partials/_panel.scss */
+/* line 104, ../sass/partials/_panel.scss */
 .selby-flipped-column-inner {
   margin-right: 0;
   margin-left: 20px;
 }
 
-/* line 111, ../sass/partials/_panel.scss */
+/* line 113, ../sass/partials/_panel.scss */
 .attachments .user-badge .user-picture img {
   margin: 0 8px 0 0;
 }
-/* line 114, ../sass/partials/_panel.scss */
+/* line 116, ../sass/partials/_panel.scss */
 .attachments .user-badge .created {
   font-size: 10.5px;
   line-height: 13px;
   color: #555555;
 }
-/* line 120, ../sass/partials/_panel.scss */
+/* line 122, ../sass/partials/_panel.scss */
 .attachments .oa-body {
   padding: 10px;
 }
-/* line 122, ../sass/partials/_panel.scss */
+/* line 124, ../sass/partials/_panel.scss */
 .attachments .oa-body ul {
   margin: 0;
 }
-/* line 124, ../sass/partials/_panel.scss */
+/* line 126, ../sass/partials/_panel.scss */
 .attachments .oa-body ul li {
   margin: 0 0 5px;
 }
 
-/* line 134, ../sass/partials/_panel.scss */
+/* line 136, ../sass/partials/_panel.scss */
 .pane-oa-widgets-content-visibility .visibility {
   text-transform: uppercase;
 }
 
-/* line 142, ../sass/partials/_panel.scss */
+/* line 144, ../sass/partials/_panel.scss */
 .pane-oa-widgets-add-content ul {
   margin-left: 0;
 }
-/* line 146, ../sass/partials/_panel.scss */
+/* line 148, ../sass/partials/_panel.scss */
 .pane-oa-widgets-add-content li a.btn, .pane-oa-widgets-add-content li form a.button.fake-ok, form .pane-oa-widgets-add-content li a.button.fake-ok, .pane-oa-widgets-add-content li form a.button.fake-cancel, form .pane-oa-widgets-add-content li a.button.fake-cancel, .pane-oa-widgets-add-content li #media-browser-tabset a.button, #media-browser-tabset .pane-oa-widgets-add-content li a.button, .pane-oa-widgets-add-content li #modal-content a.form-submit, #modal-content .pane-oa-widgets-add-content li a.form-submit,
 .pane-oa-widgets-add-content li #modal-content a#edit-cancel,
 #modal-content .pane-oa-widgets-add-content li a#edit-cancel {
   margin-bottom: 5px;
 }
 
-/* line 155, ../sass/partials/_panel.scss */
+/* line 157, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-picture {
   width: 20%;
   margin-right: 5%;
 }
-/* line 159, ../sass/partials/_panel.scss */
+/* line 161, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-info {
   text-align: center;
   width: 75%;
 }
-/* line 166, ../sass/partials/_panel.scss */
+/* line 168, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-info .user-name,
 .pane-oa-widgets-user-profile .user-info .user-role {
   font-size: 11.9px;
 }
-/* line 170, ../sass/partials/_panel.scss */
+/* line 172, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links {
   text-align: right;
 }
-/* line 172, ../sass/partials/_panel.scss */
+/* line 174, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links a {
   font-size: 10.5px;
   border-right: 1px solid #555555;
   padding-right: 5px;
 }
-/* line 177, ../sass/partials/_panel.scss */
+/* line 179, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links a:last-child {
   border: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 189, ../sass/partials/_panel.scss */
+/* line 191, ../sass/partials/_panel.scss */
 .pane-oa-core-summary .space-links .favorite {
   float: left;
 }
-/* line 192, ../sass/partials/_panel.scss */
+/* line 194, ../sass/partials/_panel.scss */
 .pane-oa-core-summary .space-links .edit {
   float: right;
 }
 
-/* line 201, ../sass/partials/_panel.scss */
+/* line 203, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .pane-content {
   position: relative;
 }
-/* line 204, ../sass/partials/_panel.scss */
+/* line 206, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .spaces-container {
   float: left;
   margin-right: 20px;
 }
-/* line 208, ../sass/partials/_panel.scss */
+/* line 210, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space-switcher {
   position: absolute;
   top: 0;
   right: 0;
   margin: 10px;
 }
-/* line 214, ../sass/partials/_panel.scss */
+/* line 216, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space {
   border-bottom: 1px solid #d4d4d4;
   padding-bottom: 15px;
   margin-bottom: 5px;
 }
-/* line 218, ../sass/partials/_panel.scss */
+/* line 220, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space .pull-left img {
   margin-right: 15px;
 }
-/* line 222, ../sass/partials/_panel.scss */
+/* line 224, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .member-sidebar {
   margin-bottom: 15px;
 }
-/* line 224, ../sass/partials/_panel.scss */
+/* line 226, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .member-sidebar .space {
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: 0;
 }
 
-/* line 235, ../sass/partials/_panel.scss */
+/* line 237, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search form {
   margin: 0;
 }
-/* line 238, ../sass/partials/_panel.scss */
+/* line 240, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .input-append {
   box-sizing: border-box;
 }
-/* line 241, ../sass/partials/_panel.scss */
+/* line 243, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .search-text {
   height: 32px;
   width: 80%;
   box-sizing: border-box;
 }
-/* line 246, ../sass/partials/_panel.scss */
+/* line 248, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .submit {
   padding: 5px 0;
   width: 20%;
   box-sizing: border-box;
 }
-/* line 251, ../sass/partials/_panel.scss */
+/* line 253, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .options {
   margin: 10px 0 0;
 }
 
-/* line 257, ../sass/partials/_panel.scss */
+/* line 259, ../sass/partials/_panel.scss */
 .oa-command-buttons li {
   margin-bottom: 3px;
 }
