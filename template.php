@@ -79,9 +79,12 @@ function oa_radix_preprocess_page(&$vars) {
     $vars['oa_banner'] = $banner->content;
   }
   $vars['oa_space_menu'] = '';
-  $space_menu = ctools_content_render('oa_space_menu', '', array(), array());
-  if (!empty($space_menu->content)) {
-    $vars['oa_space_menu'] = $space_menu->content;
+  $space_id = oa_core_get_space_context();
+  if (variable_get('oa_space_menu_' . $space_id, TRUE)) {
+    $space_menu = ctools_content_render('oa_space_menu', '', array(), array());
+    if (!empty($space_menu->content)) {
+      $vars['oa_space_menu'] = $space_menu->content;
+    }
   }
 }
 

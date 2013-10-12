@@ -51,7 +51,9 @@ color: @toolbartext;
 .navbar-inverse ul#oa_breadcrumb .btn.btn-inverse,
 .navbar-inner ul#oa_breadcrumb .btn,
 .navbar-inverse #oa-user-badge .user-badge,
-.navbar-inverse #toolbar-menu-button,
+.navbar-inverse #toolbar-menu-button {
+  color: @toolbartext;
+}
 .navbar-inverse .nav > li > a,
 .navbar .nav > li > a {
   color: @toolbartext;
@@ -64,8 +66,6 @@ color: @toolbartext;
 .navbar .nav > .active > a:hover,
 .navbar .nav > li > a:hover {
   color: @linkhover;
-}
-
 }
 ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse,
 .navbar-inner a.dropdown-toggle.btn {
