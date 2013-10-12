@@ -348,6 +348,15 @@
   }
 }
 
+// OA Space Menu
+.navbar.oa-space-menu {
+  margin-bottom: 0;
+  .navbar-inner {
+    border: 0;
+    @include border-radius(0);
+  }
+}
+
 // OA Responsive Navbar
 // --------------------------------------------------
 #oa-responsive-regions-navbar {

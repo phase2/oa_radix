@@ -72,9 +72,16 @@ function oa_radix_preprocess_page(&$vars) {
   $footer = panels_mini_block_view('oa_footer_panel');
   $vars['oa_footer_panel'] = isset($footer) ? $footer['content'] : '';
 
-  $banner = ctools_content_render('oa_space_banner', '', array('banner_position' => 2));
+  $banner = ctools_content_render('oa_space_banner', '', array(
+    'banner_position' => 2
+  ));
   if (!empty($banner->content)) {
     $vars['oa_banner'] = $banner->content;
+  }
+  $vars['oa_space_menu'] = '';
+  $space_menu = ctools_content_render('oa_space_menu', '', array(), array());
+  if (!empty($space_menu->content)) {
+    $vars['oa_space_menu'] = $space_menu->content;
   }
 }
 

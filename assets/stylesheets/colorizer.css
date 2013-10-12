@@ -57,6 +57,16 @@ color: @toolbartext;
   color: @toolbartext;
   background-color: transparent !important;
 }
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:focus {
+  color: @linkactive;
+}
+.navbar .nav > .active > a:hover,
+.navbar .nav > li > a:hover {
+  color: @linkhover;
+}
+
+}
 ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse,
 .navbar-inner a.dropdown-toggle.btn {
   background-color: @toolbarbtn !important;
