@@ -21,27 +21,23 @@ body.panels-ipe {
   margin-bottom: 0px !important;
   #main {
     margin-top: 20px;
+    position: relative;
   }
 }
 
 // Move the Panels IPE buttons from bottom to the top
+// script.js moves this element into #main
 div#panels-ipe-control-container {
   background-color: transparent;
   position: absolute;
-  top: 35px;
-  right: 0;
+  top: -25px;
+  right: -12px;
   bottom: auto;
   width: auto;
   z-index: 9999;
   @include box-shadow(none);
   a {
     font-weight: normal;
-  }
-  @include breakpoint('tablet') {
-    top: 77px;
-  }
-  @include breakpoint('mini-tablet') {
-    top: 77px;
   }
   @include breakpoint('phone') {
     // We don't need this on phone for now.
