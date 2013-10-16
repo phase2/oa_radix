@@ -43,6 +43,7 @@ body.oa-login div.content {
     left: 501px;
     top: 173px;
     width: 40%;
+    min-width: 300px;
     .panel-pane {
       background-color: white;
       h3 {
@@ -63,6 +64,26 @@ body.oa-login div.content {
         font-size: 90%;
         color: #777;
       }
+    }
+  }
+  @include breakpoint('tablet') {
+    .oa-pane {
+      left: 0;
+      top: 0;
+    }
+  }
+  @include breakpoint('mini-tablet') {
+    background-image: none;
+    .oa-pane {
+      left: 0;
+      top: 0;
+    }
+  }
+  @include breakpoint('phone') {
+    background-image: none;
+    .oa-pane {
+      left: 0;
+      top: 0;
     }
   }
 }

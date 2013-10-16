@@ -12902,36 +12902,66 @@ body.oa-login div.content .oa-pane {
   left: 501px;
   top: 173px;
   width: 40%;
+  min-width: 300px;
 }
-/* line 46, ../sass/partials/_page.scss */
+/* line 47, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane {
   background-color: white;
 }
-/* line 48, ../sass/partials/_page.scss */
+/* line 49, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane h3 {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 26px;
 }
-/* line 53, ../sass/partials/_page.scss */
+/* line 54, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane input.form-text {
   width: 95%;
 }
-/* line 56, ../sass/partials/_page.scss */
+/* line 57, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane .form-type-password {
   margin-bottom: 0;
 }
-/* line 58, ../sass/partials/_page.scss */
+/* line 59, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane .form-type-password input {
   margin-bottom: 0;
 }
-/* line 62, ../sass/partials/_page.scss */
+/* line 63, ../sass/partials/_page.scss */
 body.oa-login div.content .oa-pane .panel-pane .password-reset {
   font-size: 90%;
   color: #777;
 }
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 70, ../sass/partials/_page.scss */
+  body.oa-login div.content .oa-pane {
+    left: 0;
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 33, ../sass/partials/_page.scss */
+  body.oa-login div.content {
+    background-image: none;
+  }
+  /* line 77, ../sass/partials/_page.scss */
+  body.oa-login div.content .oa-pane {
+    left: 0;
+    top: 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 33, ../sass/partials/_page.scss */
+  body.oa-login div.content {
+    background-image: none;
+  }
+  /* line 84, ../sass/partials/_page.scss */
+  body.oa-login div.content .oa-pane {
+    left: 0;
+    top: 0;
+  }
+}
 
-/* line 69, ../sass/partials/_page.scss */
+/* line 90, ../sass/partials/_page.scss */
 body.oa-login #user-login-panel .oa-pane {
   top: 115px;
 }
