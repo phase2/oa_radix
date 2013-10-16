@@ -14,15 +14,18 @@
     padding: 0;
     margin: 0 0 0 -5px;
     .panel-pane {
-      margin: 0 0 5px 5px;
+      margin: 0 0 0 5px;
+      padding: 5px 0;
     }
     .pane-oa-navigation {
       width: 100%;
       border-bottom: 1px solid #676767;
       margin-left: -20px;
       margin-right: -20px;
-      margin-bottom: 5px;
-      padding: 5px $gridGutterWidth 5px;
+      padding: 5px $gridGutterWidth 0;
+      .oa-menu-banner {
+        padding-bottom: 5px;
+      }
       .pane-content {
         ul.nav {
           > li {
@@ -152,7 +155,7 @@
     }
     .pane-oa-space-banner {
       clear: both;
-      padding-bottom: 5px;
+      padding-bottom: 0;
       margin-top: -5px;
       margin-left: -20px;
       margin-right: -20px;
