@@ -11,10 +11,10 @@
     }
   }
   .panel-panel {
-    padding: 5px 0;
+    padding: 0;
     margin: 0 0 0 -5px;
     .panel-pane {
-      margin: 0 0 0 5px;
+      margin: 0 0 5px 5px;
     }
     .pane-oa-navigation {
       width: 100%;
@@ -22,7 +22,7 @@
       margin-left: -20px;
       margin-right: -20px;
       margin-bottom: 5px;
-      padding: 0 $gridGutterWidth 5px;
+      padding: 5px $gridGutterWidth 5px;
       .pane-content {
         ul.nav {
           > li {
@@ -245,6 +245,9 @@
     margin: 0 -20px;
     padding-left: 0;
     padding-right: 0;
+    .oa-space-banner {
+      display: none;
+    }
     .panel-panel {
       margin: 0;
       .panel-pane {
@@ -344,6 +347,14 @@
           }
         }
       }
+    }
+  }
+}
+
+#main-wrapper {
+  @include breakpoint('phone') {
+    .oa-banner {
+      display: none;
     }
   }
 }
