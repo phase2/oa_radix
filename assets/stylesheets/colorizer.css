@@ -99,6 +99,13 @@ a:active {
 body #footer {
   background-color: @footer;
 }
+
+#page-wrapper a,
+#footer-wrapper a,
+body #footer a {
+  color: @toolbartext;
+}
+
 .region-header,
 .region-header a,
 .region-header li a.active,
