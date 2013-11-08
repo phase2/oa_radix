@@ -2729,7 +2729,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('../images/glyphicons-halflings.png?1381759649');
+  background-image: url('../images/glyphicons-halflings.png?1383940665');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2754,7 +2754,7 @@ table th[class*="span"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url('../images/glyphicons-halflings-white.png?1381759649');
+  background-image: url('../images/glyphicons-halflings-white.png?1383940665');
 }
 
 /* line 52, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_sprites.scss */
@@ -10437,7 +10437,7 @@ select[size] {
 
 /* line 70, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-0.0.24/stylesheets/compass_radix/_form.scss */
 html.js input.form-autocomplete {
-  background: url('../images/throbber.gif?1381759649') no-repeat right 8px white !important;
+  background: url('../images/throbber.gif?1383940665') no-repeat right 8px white !important;
 }
 
 /* line 73, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-0.0.24/stylesheets/compass_radix/_form.scss */
@@ -13738,7 +13738,7 @@ form .form-actions #modal-content #edit-cancel,
 }
 /* line 33, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-navigation .oa-menu-banner {
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 /* line 39, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-navigation .pane-content ul.nav > li > a {
