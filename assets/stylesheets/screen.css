@@ -13708,8 +13708,9 @@ form .form-actions #modal-content #edit-cancel,
 /* line 13, ../sass/partials/_navbar.scss */
 #oa-navbar .navbar-inner {
   border: 0;
+  padding: 0;
 }
-/* line 15, ../sass/partials/_navbar.scss */
+/* line 16, ../sass/partials/_navbar.scss */
 #oa-navbar .navbar-inner .btn, #oa-navbar .navbar-inner form .button.fake-ok, form #oa-navbar .navbar-inner .button.fake-ok, #oa-navbar .navbar-inner form .button.fake-cancel, form #oa-navbar .navbar-inner .button.fake-cancel, #oa-navbar .navbar-inner #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .navbar-inner a.button,
 #oa-navbar .navbar-inner #media-browser-tabset input.form-submit,
 #media-browser-tabset #oa-navbar .navbar-inner input.form-submit, #oa-navbar .navbar-inner #modal-content .form-submit, #modal-content #oa-navbar .navbar-inner .form-submit,
@@ -13717,17 +13718,18 @@ form .form-actions #modal-content #edit-cancel,
 #modal-content #oa-navbar .navbar-inner #edit-cancel {
   margin: 0;
 }
-/* line 19, ../sass/partials/_navbar.scss */
+/* line 20, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel {
-  padding: 0;
+  padding: 0 20px;
   margin: 0 0 0 -5px;
+  min-height: 0;
 }
-/* line 22, ../sass/partials/_navbar.scss */
+/* line 24, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .panel-pane {
   margin: 0 0 0 5px;
   padding: 5px 0;
 }
-/* line 26, ../sass/partials/_navbar.scss */
+/* line 28, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-navigation {
   width: 100%;
   border-bottom: 1px solid #676767;
@@ -13736,38 +13738,38 @@ form .form-actions #modal-content #edit-cancel,
   padding: 5px 20px 0;
   background-color: #003853;
 }
-/* line 33, ../sass/partials/_navbar.scss */
+/* line 35, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-navigation .oa-menu-banner {
   padding-bottom: 0;
 }
-/* line 39, ../sass/partials/_navbar.scss */
+/* line 41, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-navigation .pane-content ul.nav > li > a {
   padding: 6px 15px 6px;
 }
-/* line 46, ../sass/partials/_navbar.scss */
+/* line 48, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-toolbar-menu-button {
   z-index: 100;
 }
-/* line 48, ../sass/partials/_navbar.scss */
+/* line 50, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-toolbar-menu-button #toolbar-menu-button {
   margin: 0;
 }
-/* line 52, ../sass/partials/_navbar.scss */
+/* line 54, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
   margin-top: -5px;
   margin-bottom: -5px;
 }
-/* line 55, ../sass/partials/_navbar.scss */
+/* line 57, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar {
   margin: 0;
   padding: 0;
 }
-/* line 58, ../sass/partials/_navbar.scss */
+/* line 60, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group {
   margin: 0;
   height: 42px;
 }
-/* line 61, ../sass/partials/_navbar.scss */
+/* line 63, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button,
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit,
 #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit,
@@ -13786,7 +13788,7 @@ form .form-actions #modal-content #edit-cancel,
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 70, ../sass/partials/_navbar.scss */
+/* line 72, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok:hover, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel:hover, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button:hover, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button:hover,
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit:hover,
 #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit:hover, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit:hover,
@@ -13794,7 +13796,7 @@ form .form-actions #modal-content #edit-cancel,
 #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > #edit-cancel:hover {
   background: none;
 }
-/* line 73, ../sass/partials/_navbar.scss */
+/* line 75, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn.btn-home, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.btn-home.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.btn-home.button,
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.btn-home.form-submit,
 #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.btn-home.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .btn-home.form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.form-submit,
@@ -13802,7 +13804,7 @@ form .form-actions #modal-content #edit-cancel,
 #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home#edit-cancel {
   font-size: 24px;
 }
-/* line 77, ../sass/partials/_navbar.scss */
+/* line 79, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle {
   height: 25px;
   line-height: 25px;
@@ -13813,11 +13815,11 @@ form .form-actions #modal-content #edit-cancel,
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 84, ../sass/partials/_navbar.scss */
+/* line 86, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle:hover {
   background: #333333;
 }
-/* line 87, ../sass/partials/_navbar.scss */
+/* line 89, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle .caret {
   vertical-align: middle;
   margin: 0;
@@ -13825,51 +13827,51 @@ form .form-actions #modal-content #edit-cancel,
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
 }
-/* line 95, ../sass/partials/_navbar.scss */
+/* line 97, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group:after {
   content: url("../images/menu-divider.png");
   width: 10px;
   height: 42px;
   display: inline-block;
 }
-/* line 103, ../sass/partials/_navbar.scss */
+/* line 105, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group ul.dropdown-menu li h3 {
   font-size: 1.2em;
   margin: 0;
 }
-/* line 107, ../sass/partials/_navbar.scss */
+/* line 109, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group ul.dropdown-menu li a.more-link {
   font-style: italic;
 }
-/* line 116, ../sass/partials/_navbar.scss */
+/* line 118, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-favorites-favorites-button ul#oa_favorites {
   margin: 0;
 }
-/* line 118, ../sass/partials/_navbar.scss */
+/* line 120, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-favorites-favorites-button ul#oa_favorites li {
   margin: 0;
 }
-/* line 124, ../sass/partials/_navbar.scss */
+/* line 126, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-tour-custom-pane ul#oa_tours {
   margin: 0;
 }
-/* line 126, ../sass/partials/_navbar.scss */
+/* line 128, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-tour-custom-pane ul#oa_tours li {
   margin: 0;
 }
-/* line 132, ../sass/partials/_navbar.scss */
+/* line 134, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-toolbar-search form {
   margin: 0;
 }
-/* line 134, ../sass/partials/_navbar.scss */
+/* line 136, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-toolbar-search form .input-append {
   margin: 0;
 }
-/* line 137, ../sass/partials/_navbar.scss */
+/* line 139, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-toolbar-search form .search-text {
   width: 150px;
 }
-/* line 141, ../sass/partials/_navbar.scss */
+/* line 143, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .btn, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .button.fake-ok, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #media-browser-tabset a.button,
 #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #media-browser-tabset input.form-submit, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #modal-content .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .form-submit,
 #oa-navbar .panel-panel .pane-oa-toolbar-search #media-browser-tabset form .btn-group a.button,
@@ -13881,7 +13883,7 @@ form .form-actions #modal-content #edit-cancel,
   float: left;
   clear: none;
 }
-/* line 149, ../sass/partials/_navbar.scss */
+/* line 151, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-add-space-content .btn, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-ok, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-ok, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-cancel, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-cancel, #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content a.button,
 #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset input.form-submit,
 #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content input.form-submit, #oa-navbar .panel-panel .pane-add-space-content #modal-content .form-submit, #modal-content #oa-navbar .panel-panel .pane-add-space-content .form-submit,
@@ -13891,7 +13893,7 @@ form .form-actions #modal-content #edit-cancel,
   text-indent: -9999em;
   line-height: 2px;
 }
-/* line 153, ../sass/partials/_navbar.scss */
+/* line 155, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-add-space-content .btn .caret, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-ok .caret, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-ok .caret, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-cancel .caret, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-cancel .caret, #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset a.button .caret, #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content a.button .caret,
 #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset input.form-submit .caret,
 #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content input.form-submit .caret, #oa-navbar .panel-panel .pane-add-space-content #modal-content .form-submit .caret, #modal-content #oa-navbar .panel-panel .pane-add-space-content .form-submit .caret,
@@ -13904,7 +13906,7 @@ form .form-actions #modal-content #edit-cancel,
   border: 0;
   display: block;
 }
-/* line 163, ../sass/partials/_navbar.scss */
+/* line 165, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-space-banner {
   clear: both;
   padding-bottom: 0;
@@ -13913,15 +13915,15 @@ form .form-actions #modal-content #edit-cancel,
   margin-right: -20px;
   background-color: #003853;
 }
-/* line 172, ../sass/partials/_navbar.scss */
+/* line 174, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge .oa-dropdown {
   margin: 0;
 }
-/* line 174, ../sass/partials/_navbar.scss */
+/* line 176, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge .oa-dropdown #user-badge-dropdown {
   overflow: hidden;
 }
-/* line 176, ../sass/partials/_navbar.scss */
+/* line 178, ../sass/partials/_navbar.scss */
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge .oa-dropdown #user-badge-dropdown img {
   width: auto;
   height: 29px;
@@ -13929,12 +13931,12 @@ form .form-actions #modal-content #edit-cancel,
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 191, ../sass/partials/_navbar.scss */
+  /* line 193, ../sass/partials/_navbar.scss */
   #oa-navbar .navbar-inner {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 196, ../sass/partials/_navbar.scss */
+  /* line 198, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
     float: none;
     border-bottom: 1px solid #676767;
@@ -13944,33 +13946,33 @@ form .form-actions #modal-content #edit-cancel,
     margin-right: -20px;
     padding: 0 20px;
   }
-  /* line 205, ../sass/partials/_navbar.scss */
+  /* line 207, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-toolbar-search {
     float: left;
   }
-  /* line 209, ../sass/partials/_navbar.scss */
+  /* line 211, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-add-space-content .dropdown-menu {
     right: 0;
     left: auto;
   }
-  /* line 215, ../sass/partials/_navbar.scss */
+  /* line 217, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-favorites-favorites-button .dropdown-menu {
     right: 0;
     left: auto;
   }
 }
 @media (max-width: 767px) {
-  /* line 189, ../sass/partials/_navbar.scss */
+  /* line 191, ../sass/partials/_navbar.scss */
   #oa-navbar {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 225, ../sass/partials/_navbar.scss */
+  /* line 227, ../sass/partials/_navbar.scss */
   #oa-navbar .navbar-inner {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 230, ../sass/partials/_navbar.scss */
+  /* line 232, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
     float: none;
     border-bottom: 1px solid #676767;
@@ -13980,62 +13982,62 @@ form .form-actions #modal-content #edit-cancel,
     margin-right: -20px;
     padding: 0 20px;
   }
-  /* line 239, ../sass/partials/_navbar.scss */
+  /* line 241, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-toolbar-search {
     float: left;
   }
-  /* line 243, ../sass/partials/_navbar.scss */
+  /* line 245, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-add-space-content .dropdown-menu {
     right: 0;
     left: auto;
   }
-  /* line 249, ../sass/partials/_navbar.scss */
+  /* line 251, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-favorites-favorites-button .dropdown-menu {
     right: 0;
     left: auto;
   }
 }
 @media (max-width: 480px) {
-  /* line 189, ../sass/partials/_navbar.scss */
+  /* line 191, ../sass/partials/_navbar.scss */
   #oa-navbar {
     position: static;
     margin: 0 -20px;
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 261, ../sass/partials/_navbar.scss */
+  /* line 263, ../sass/partials/_navbar.scss */
   #oa-navbar .oa-space-banner {
     display: none;
   }
-  /* line 264, ../sass/partials/_navbar.scss */
+  /* line 266, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel {
     margin: 0;
   }
-  /* line 266, ../sass/partials/_navbar.scss */
+  /* line 268, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .panel-pane {
     margin-left: 5px;
   }
-  /* line 269, ../sass/partials/_navbar.scss */
+  /* line 271, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-toolbar-menu-button {
     display: none;
   }
-  /* line 272, ../sass/partials/_navbar.scss */
+  /* line 274, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
     margin-left: -20px;
     margin-right: -20px;
   }
-  /* line 276, ../sass/partials/_navbar.scss */
+  /* line 278, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group {
     float: none;
     display: block;
     margin: 0 0 1px;
     position: relative;
   }
-  /* line 281, ../sass/partials/_navbar.scss */
+  /* line 283, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group:after {
     display: none;
   }
-  /* line 284, ../sass/partials/_navbar.scss */
+  /* line 286, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button,
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit,
   #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit,
@@ -14044,7 +14046,7 @@ form .form-actions #modal-content #edit-cancel,
     display: block;
     float: none;
   }
-  /* line 288, ../sass/partials/_navbar.scss */
+  /* line 290, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle {
     position: absolute;
     right: 0;
@@ -14052,11 +14054,11 @@ form .form-actions #modal-content #edit-cancel,
     margin: 0;
     z-index: 100;
   }
-  /* line 295, ../sass/partials/_navbar.scss */
+  /* line 297, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group .dropdown-menu {
     width: 100%;
   }
-  /* line 301, ../sass/partials/_navbar.scss */
+  /* line 303, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge {
     position: absolute;
     top: 5px;
@@ -14064,70 +14066,70 @@ form .form-actions #modal-content #edit-cancel,
     z-index: 100;
     margin: 0;
   }
-  /* line 308, ../sass/partials/_navbar.scss */
+  /* line 310, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge #oa-user-badge .dropdown-menu {
     left: 0;
     right: auto;
   }
-  /* line 315, ../sass/partials/_navbar.scss */
+  /* line 317, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-add-space-content .dropdown-menu {
     right: 0;
     left: auto;
   }
-  /* line 321, ../sass/partials/_navbar.scss */
+  /* line 323, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-favorites-favorites-button .dropdown-menu {
     right: 0;
     left: auto;
   }
-  /* line 326, ../sass/partials/_navbar.scss */
+  /* line 328, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-toolbar-search {
     margin-left: 0;
   }
-  /* line 329, ../sass/partials/_navbar.scss */
+  /* line 331, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-toolbar-search form .search-text {
     width: 80px;
   }
 }
 @media (max-width: 979px) {
-  /* line 338, ../sass/partials/_navbar.scss */
+  /* line 340, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-navigation {
     margin-left: -20px;
     margin-right: -20px;
     padding-bottom: 5px;
   }
-  /* line 343, ../sass/partials/_navbar.scss */
+  /* line 345, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-navigation .pane-content nav {
     float: none;
     margin-top: 5px;
   }
-  /* line 349, ../sass/partials/_navbar.scss */
+  /* line 351, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-navigation .pane-content ul.nav > li > a {
     display: block;
     text-align: center;
     font-weight: normal;
   }
-  /* line 353, ../sass/partials/_navbar.scss */
+  /* line 355, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-navigation .pane-content ul.nav > li > a .caret {
     display: none;
   }
-  /* line 357, ../sass/partials/_navbar.scss */
+  /* line 359, ../sass/partials/_navbar.scss */
   #oa-navbar .panel-panel .pane-oa-navigation .pane-content ul.nav > li ul.dropdown-menu {
     display: none;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 370, ../sass/partials/_navbar.scss */
+  /* line 372, ../sass/partials/_navbar.scss */
   #main-wrapper .oa-banner {
     display: none;
   }
 }
 
-/* line 377, ../sass/partials/_navbar.scss */
+/* line 379, ../sass/partials/_navbar.scss */
 .navbar.oa-space-menu {
   margin-bottom: 0;
 }
-/* line 379, ../sass/partials/_navbar.scss */
+/* line 381, ../sass/partials/_navbar.scss */
 .navbar.oa-space-menu .navbar-inner {
   border: 0;
   -webkit-border-radius: 0;
@@ -14135,11 +14137,11 @@ form .form-actions #modal-content #edit-cancel,
   border-radius: 0;
 }
 
-/* line 389, ../sass/partials/_navbar.scss */
+/* line 391, ../sass/partials/_navbar.scss */
 #oa-responsive-regions-navbar .navbar-inner .btn-top {
   float: left;
 }
-/* line 391, ../sass/partials/_navbar.scss */
+/* line 393, ../sass/partials/_navbar.scss */
 #oa-responsive-regions-navbar .navbar-inner .btn-top.btn-active {
   -webkit-transform: none;
   -moz-transform: none;
