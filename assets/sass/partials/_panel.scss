@@ -84,6 +84,18 @@ div#panels-ipe-control-container {
       margin-right: -16px;
     }
   }
+  .pane-section-sidebar-top {
+    padding: 0;
+    > .pane-content {
+      padding: 0;
+    }
+  }
+  .pane-default-section-sidebar {
+    padding: 0;
+    > .pane-content {
+      padding: 0;
+    }
+  }
   .oa-list {
     margin-left: -1px;
     margin-right: -1px;
