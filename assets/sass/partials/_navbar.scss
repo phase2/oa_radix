@@ -7,6 +7,9 @@
 .drupal-navbar .navbar-tray {
 z-index: 1000;
 }
+#admin-menu, #admin-menu .dropdown {
+  z-index: 1001;
+}
 #oa-navbar {
   position: fixed;
   top: 0;
@@ -365,6 +368,10 @@ z-index: 1000;
       }
     }
   }
+}
+
+body.admin-menu #oa-navbar {
+  top: 25px;
 }
 
 #main-wrapper {
