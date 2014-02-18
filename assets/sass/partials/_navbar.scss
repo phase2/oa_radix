@@ -7,6 +7,11 @@
 .drupal-navbar .navbar-tray {
 z-index: 1000;
 }
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: auto;
+}
 #admin-menu, #admin-menu .dropdown {
   z-index: 1001;
 }
@@ -21,6 +26,7 @@ z-index: 1000;
     }
   }
   .panel-panel {
+    box-sizing: border-box;
     padding: 0 20px;
     margin: 0 0 0 -5px;
     min-height: 0;
