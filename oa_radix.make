@@ -8,4 +8,4 @@ projects[radix][type] = theme
 projects[radix][version] = 2.x-dev
 projects[radix][download][type] = git
 projects[radix][download][branch] = 7.x-2.x
-projects[radix][download][revision] = 474313
+projects[radix][download][revision] = b91458
