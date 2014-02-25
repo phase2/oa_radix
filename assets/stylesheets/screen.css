@@ -2729,7 +2729,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('../images/glyphicons-halflings.png?1392665968');
+  background-image: url('../images/glyphicons-halflings.png?1393253653');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2754,7 +2754,7 @@ table th[class*="span"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url('../images/glyphicons-halflings-white.png?1392665968');
+  background-image: url('../images/glyphicons-halflings-white.png?1393253653');
 }
 
 /* line 52, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_twitter_bootstrap-2.3.1/stylesheets/compass_twitter_bootstrap/_sprites.scss */
@@ -10431,7 +10431,7 @@ select[size] {
 
 /* line 70, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-2.0.0/stylesheets/compass_radix/_form.scss */
 html.js input.form-autocomplete {
-  background: url('../images/throbber.gif?1392665968') no-repeat right 8px white !important;
+  background: url('../images/throbber.gif?1393253653') no-repeat right 8px white !important;
 }
 
 /* line 73, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-2.0.0/stylesheets/compass_radix/_form.scss */
@@ -13022,33 +13022,37 @@ div#panels-ipe-control-container a {
     position: absolute;
   }
 }
-/* line 61, ../sass/partials/_panel.scss */
+/* line 62, ../sass/partials/_panel.scss */
 .oa-pane,
-body.page-node-edit #main .burr-flipped-sidebar-inner {
+body.page-node-edit #main .burr-flipped-sidebar-inner,
+body.page-node-add #main .burr-flipped-sidebar-inner {
   border: 1px solid #e3e3e3;
   border-bottom: 0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 65, ../sass/partials/_panel.scss */
+/* line 66, ../sass/partials/_panel.scss */
 .oa-pane .panel-pane,
-body.page-node-edit #main .burr-flipped-sidebar-inner .panel-pane {
+body.page-node-edit #main .burr-flipped-sidebar-inner .panel-pane,
+body.page-node-add #main .burr-flipped-sidebar-inner .panel-pane {
   padding: 0;
   border: 0;
   border-bottom: 1px solid #e3e3e3;
   margin-bottom: 0;
   padding-bottom: 15px;
 }
-/* line 72, ../sass/partials/_panel.scss */
+/* line 73, ../sass/partials/_panel.scss */
 .oa-pane.inner-pane .panel-pane,
-body.page-node-edit #main .burr-flipped-sidebar-inner.inner-pane .panel-pane {
+body.page-node-edit #main .burr-flipped-sidebar-inner.inner-pane .panel-pane,
+body.page-node-add #main .burr-flipped-sidebar-inner.inner-pane .panel-pane {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 76, ../sass/partials/_panel.scss */
+/* line 77, ../sass/partials/_panel.scss */
 .oa-pane .pane-title,
-body.page-node-edit #main .burr-flipped-sidebar-inner .pane-title {
+body.page-node-edit #main .burr-flipped-sidebar-inner .pane-title,
+body.page-node-add #main .burr-flipped-sidebar-inner .pane-title {
   font-size: 20px;
   line-height: 32px;
   margin: 0;
@@ -13063,50 +13067,58 @@ body.page-node-edit #main .burr-flipped-sidebar-inner .pane-title {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e3e3e3', GradientType=0);
 }
-/* line 84, ../sass/partials/_panel.scss */
+/* line 85, ../sass/partials/_panel.scss */
 .oa-pane .pane-content,
-body.page-node-edit #main .burr-flipped-sidebar-inner .pane-content {
+body.page-node-edit #main .burr-flipped-sidebar-inner .pane-content,
+body.page-node-add #main .burr-flipped-sidebar-inner .pane-content {
   padding: 15px 15px 0 15px;
 }
-/* line 86, ../sass/partials/_panel.scss */
+/* line 87, ../sass/partials/_panel.scss */
 .oa-pane .pane-content .oa-list,
-body.page-node-edit #main .burr-flipped-sidebar-inner .pane-content .oa-list {
+body.page-node-edit #main .burr-flipped-sidebar-inner .pane-content .oa-list,
+body.page-node-add #main .burr-flipped-sidebar-inner .pane-content .oa-list {
   margin-left: -16px;
   margin-right: -16px;
 }
-/* line 91, ../sass/partials/_panel.scss */
+/* line 92, ../sass/partials/_panel.scss */
 .oa-pane .pane-section-sidebar-top,
-body.page-node-edit #main .burr-flipped-sidebar-inner .pane-section-sidebar-top {
+body.page-node-edit #main .burr-flipped-sidebar-inner .pane-section-sidebar-top,
+body.page-node-add #main .burr-flipped-sidebar-inner .pane-section-sidebar-top {
   padding: 0;
 }
-/* line 93, ../sass/partials/_panel.scss */
+/* line 94, ../sass/partials/_panel.scss */
 .oa-pane .pane-section-sidebar-top > .pane-content,
-body.page-node-edit #main .burr-flipped-sidebar-inner .pane-section-sidebar-top > .pane-content {
+body.page-node-edit #main .burr-flipped-sidebar-inner .pane-section-sidebar-top > .pane-content,
+body.page-node-add #main .burr-flipped-sidebar-inner .pane-section-sidebar-top > .pane-content {
   padding: 0;
 }
-/* line 97, ../sass/partials/_panel.scss */
+/* line 98, ../sass/partials/_panel.scss */
 .oa-pane .pane-default-section-sidebar,
-body.page-node-edit #main .burr-flipped-sidebar-inner .pane-default-section-sidebar {
+body.page-node-edit #main .burr-flipped-sidebar-inner .pane-default-section-sidebar,
+body.page-node-add #main .burr-flipped-sidebar-inner .pane-default-section-sidebar {
   padding: 0;
 }
-/* line 99, ../sass/partials/_panel.scss */
+/* line 100, ../sass/partials/_panel.scss */
 .oa-pane .pane-default-section-sidebar > .pane-content,
-body.page-node-edit #main .burr-flipped-sidebar-inner .pane-default-section-sidebar > .pane-content {
+body.page-node-edit #main .burr-flipped-sidebar-inner .pane-default-section-sidebar > .pane-content,
+body.page-node-add #main .burr-flipped-sidebar-inner .pane-default-section-sidebar > .pane-content {
   padding: 0;
 }
-/* line 103, ../sass/partials/_panel.scss */
+/* line 104, ../sass/partials/_panel.scss */
 .oa-pane .oa-list,
-body.page-node-edit #main .burr-flipped-sidebar-inner .oa-list {
+body.page-node-edit #main .burr-flipped-sidebar-inner .oa-list,
+body.page-node-add #main .burr-flipped-sidebar-inner .oa-list {
   margin-left: -1px;
   margin-right: -1px;
 }
-/* line 107, ../sass/partials/_panel.scss */
+/* line 108, ../sass/partials/_panel.scss */
 .oa-pane .pager,
-body.page-node-edit #main .burr-flipped-sidebar-inner .pager {
+body.page-node-edit #main .burr-flipped-sidebar-inner .pager,
+body.page-node-add #main .burr-flipped-sidebar-inner .pager {
   margin-top: 15px;
 }
 
-/* line 111, ../sass/partials/_panel.scss */
+/* line 112, ../sass/partials/_panel.scss */
 .oa-bottom-right {
   position: absolute;
   right: 3px;
@@ -13114,155 +13126,155 @@ body.page-node-edit #main .burr-flipped-sidebar-inner .pager {
   text-align: right;
 }
 
-/* line 120, ../sass/partials/_panel.scss */
+/* line 121, ../sass/partials/_panel.scss */
 .selby-flipped-column-inner {
   margin-right: 0;
   margin-left: 20px;
 }
 
-/* line 129, ../sass/partials/_panel.scss */
+/* line 130, ../sass/partials/_panel.scss */
 .attachments .user-badge .user-picture img {
   margin: 0 8px 0 0;
 }
-/* line 132, ../sass/partials/_panel.scss */
+/* line 133, ../sass/partials/_panel.scss */
 .attachments .user-badge .created {
   font-size: 10.5px;
   line-height: 13px;
   color: #555555;
 }
-/* line 138, ../sass/partials/_panel.scss */
+/* line 139, ../sass/partials/_panel.scss */
 .attachments .oa-body {
   padding: 10px;
 }
-/* line 140, ../sass/partials/_panel.scss */
+/* line 141, ../sass/partials/_panel.scss */
 .attachments .oa-body ul {
   margin: 0;
 }
-/* line 142, ../sass/partials/_panel.scss */
+/* line 143, ../sass/partials/_panel.scss */
 .attachments .oa-body ul li {
   margin: 0 0 5px;
 }
 
-/* line 152, ../sass/partials/_panel.scss */
+/* line 153, ../sass/partials/_panel.scss */
 .pane-oa-widgets-content-visibility .visibility {
   text-transform: uppercase;
 }
 
-/* line 160, ../sass/partials/_panel.scss */
+/* line 161, ../sass/partials/_panel.scss */
 .pane-oa-widgets-add-content ul {
   margin-left: 0;
 }
-/* line 164, ../sass/partials/_panel.scss */
+/* line 165, ../sass/partials/_panel.scss */
 .pane-oa-widgets-add-content li a.btn, .pane-oa-widgets-add-content li form a.button.fake-ok, form .pane-oa-widgets-add-content li a.button.fake-ok, .pane-oa-widgets-add-content li form a.button.fake-cancel, form .pane-oa-widgets-add-content li a.button.fake-cancel, .pane-oa-widgets-add-content li #media-browser-tabset a.button, #media-browser-tabset .pane-oa-widgets-add-content li a.button, .pane-oa-widgets-add-content li #modal-content a.form-submit, #modal-content .pane-oa-widgets-add-content li a.form-submit,
 .pane-oa-widgets-add-content li #modal-content a#edit-cancel,
 #modal-content .pane-oa-widgets-add-content li a#edit-cancel {
   margin-bottom: 5px;
 }
 
-/* line 173, ../sass/partials/_panel.scss */
+/* line 174, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-picture {
   width: 20%;
   margin-right: 5%;
 }
-/* line 177, ../sass/partials/_panel.scss */
+/* line 178, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-info {
   text-align: center;
   width: 75%;
 }
-/* line 184, ../sass/partials/_panel.scss */
+/* line 185, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .user-info .user-name,
 .pane-oa-widgets-user-profile .user-info .user-role {
   font-size: 11.9px;
 }
-/* line 188, ../sass/partials/_panel.scss */
+/* line 189, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links {
   text-align: right;
 }
-/* line 190, ../sass/partials/_panel.scss */
+/* line 191, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links a {
   font-size: 10.5px;
   border-right: 1px solid #555;
   padding-right: 5px;
 }
-/* line 195, ../sass/partials/_panel.scss */
+/* line 196, ../sass/partials/_panel.scss */
 .pane-oa-widgets-user-profile .links a:last-child {
   border: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 207, ../sass/partials/_panel.scss */
+/* line 208, ../sass/partials/_panel.scss */
 .pane-oa-core-summary .space-links .favorite {
   float: left;
 }
-/* line 210, ../sass/partials/_panel.scss */
+/* line 211, ../sass/partials/_panel.scss */
 .pane-oa-core-summary .space-links .edit {
   float: right;
 }
 
-/* line 219, ../sass/partials/_panel.scss */
+/* line 220, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .pane-content {
   position: relative;
 }
-/* line 222, ../sass/partials/_panel.scss */
+/* line 223, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .spaces-container {
   float: left;
   margin-right: 20px;
 }
-/* line 226, ../sass/partials/_panel.scss */
+/* line 227, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space-switcher {
   position: absolute;
   top: 0;
   right: 0;
   margin: 10px;
 }
-/* line 232, ../sass/partials/_panel.scss */
+/* line 233, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space {
   border-bottom: 1px solid #D4D4D4;
   padding-bottom: 15px;
   margin-bottom: 5px;
 }
-/* line 236, ../sass/partials/_panel.scss */
+/* line 237, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .space .pull-left img {
   margin-right: 15px;
 }
-/* line 240, ../sass/partials/_panel.scss */
+/* line 241, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .member-sidebar {
   margin-bottom: 15px;
 }
-/* line 242, ../sass/partials/_panel.scss */
+/* line 243, ../sass/partials/_panel.scss */
 .pane-oa-core-user-spaces .member-sidebar .space {
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: 0;
 }
 
-/* line 253, ../sass/partials/_panel.scss */
+/* line 254, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search form {
   margin: 0;
 }
-/* line 256, ../sass/partials/_panel.scss */
+/* line 257, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .input-append {
   box-sizing: border-box;
 }
-/* line 259, ../sass/partials/_panel.scss */
+/* line 260, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .search-text {
   height: 32px;
   width: 80%;
   box-sizing: border-box;
 }
-/* line 264, ../sass/partials/_panel.scss */
+/* line 265, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .submit {
   padding: 5px 0;
   width: 20%;
   box-sizing: border-box;
 }
-/* line 269, ../sass/partials/_panel.scss */
+/* line 270, ../sass/partials/_panel.scss */
 .pane-oa-sidebar-search .options {
   margin: 10px 0 0;
 }
 
-/* line 275, ../sass/partials/_panel.scss */
+/* line 276, ../sass/partials/_panel.scss */
 .oa-command-buttons li {
   margin-bottom: 3px;
 }

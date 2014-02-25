@@ -58,7 +58,8 @@ div#panels-ipe-control-container {
 // OA pane
 // --------------------------------------------------
 .oa-pane,
-body.page-node-edit #main .burr-flipped-sidebar-inner {
+body.page-node-edit #main .burr-flipped-sidebar-inner,
+body.page-node-add #main .burr-flipped-sidebar-inner {
   border: 1px solid #e3e3e3;
   border-bottom: 0;
   @include border-radius(4px);
