@@ -193,6 +193,9 @@ z-index: 1000;
       }
     }
   }
+  .panel-panel-inner {
+    min-height: 0;
+  }
 }
 
 // Open Atrium Navbar
