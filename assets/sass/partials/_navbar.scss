@@ -25,6 +25,9 @@ z-index: 1000;
       margin: 0;
     }
   }
+  .panel-panel-inner {
+    min-height: 0;
+  }
   .panel-panel {
     box-sizing: border-box;
     padding: 0 20px;
