@@ -29,7 +29,7 @@ z-index: 1000;
     min-height: 0;
   }
   .panel-panel {
-    box-sizing: border-box;
+    @include box-sizing("border-box");
     padding: 0 20px;
     margin: 0 0 0 -5px;
     min-height: 0;
