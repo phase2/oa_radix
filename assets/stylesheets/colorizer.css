@@ -129,7 +129,7 @@ body #footer a {
 }
 .oa-banner-text,
 .oa-banner-slogan {
-  color: @toolbartext;
+  color: @titleslogan;
 }
 .oa-pane .pane-title {
 color: @sidebartext;
