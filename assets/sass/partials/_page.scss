@@ -66,20 +66,20 @@ body.oa-login div.content {
       }
     }
   }
-  @include breakpoint('tablet') {
+  @include breakpoint('md') {
     .oa-pane {
       left: 0;
       top: 0;
     }
   }
-  @include breakpoint('mini-tablet') {
+  @include breakpoint('sm') {
     background-image: none;
     .oa-pane {
       left: 0;
       top: 0;
     }
   }
-  @include breakpoint('phone') {
+  @include breakpoint('xs') {
     background-image: none;
     .oa-pane {
       left: 0;
