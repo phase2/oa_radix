@@ -7,15 +7,15 @@ html, body {
 }
 body {
   padding-top: 60px;
-  @include breakpoint('md') {
+  @include oa-breakpoint('md') {
     padding-top: 90px;
   }
-  @include breakpoint('sm') {
+  @include oa-breakpoint('sm') {
     padding-top: 90px;
     padding-left: 0;
     padding-right: 0;
   }
-  @include breakpoint('xs') {
+  @include oa-breakpoint('xs') {
     padding-top: 0;
   }
   #main-wrapper {
@@ -33,13 +33,13 @@ body {
     color: #CCC;
     background-color: #003853;
     border-top: 1px solid #e5e5e5;
-    @include breakpoint('sm') {
+    @include oa-breakpoint('sm') {
       margin-left: -$gridGutterWidth;
       margin-right: -$gridGutterWidth;
       padding-left: $gridGutterWidth;
       padding-right: $gridGutterWidth;
     }
-    @include breakpoint('xs') {
+    @include oa-breakpoint('xs') {
       margin-left: -$gridGutterWidth;
       margin-right: -$gridGutterWidth;
       padding-left: $gridGutterWidth;

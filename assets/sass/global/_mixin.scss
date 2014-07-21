@@ -4,20 +4,20 @@
 
 // Breakpoints
 // --------------------------------------------------
-//@mixin breakpoint($point) {
-//  @if $point == desktop {
-//    @media (min-width: 1200px) { @content; }
-//  }
-//  @else if $point == tablet {
-//    @media (min-width: 768px) and (max-width: 979px) { @content; }
-//  }
-//  @else if $point == mini-tablet {
-//    @media (max-width: 767px) { @content; }
-//  }
-//  @else if $point == phone {
-//    @media (max-width: 480px)  { @content; }
-//  }
-//}
+@mixin oa-breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 1200px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (min-width: 768px) and (max-width: 979px) { @content; }
+  }
+  @else if $point == mini-tablet {
+    @media (max-width: 767px) { @content; }
+  }
+  @else if $point == phone {
+    @media (max-width: 480px)  { @content; }
+  }
+}
 
 // Utilities
 // --------------------------------------------------

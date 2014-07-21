@@ -201,7 +201,7 @@ z-index: 1000;
 // Open Atrium Navbar
 // --------------------------------------------------
 #oa-navbar {
-  @include breakpoint('md') {
+  @include oa-breakpoint('md') {
     .navbar-inner {
       padding-top: 0;
       padding-bottom: 0;
@@ -233,7 +233,7 @@ z-index: 1000;
       }
     }
   }
-  @include breakpoint('sm') {
+  @include oa-breakpoint('sm') {
     padding-left: 20px;
     padding-right: 20px;
     .navbar-inner {
@@ -267,7 +267,7 @@ z-index: 1000;
       }
     }
   }
-  @include breakpoint('xs') {
+  @include oa-breakpoint('xs') {
     position: static;
     margin: 0 -20px;
     padding-left: 0;
@@ -384,7 +384,7 @@ body.admin-menu #oa-navbar {
 }
 
 #main-wrapper {
-  @include breakpoint('xs') {
+  @include oa-breakpoint('xs') {
     .oa-banner {
       display: none;
     }

@@ -4,7 +4,7 @@
 
 // Breakpoints
 // --------------------------------------------------
-@mixin breakpoint($point) {
+@mixin oa-breakpoint($point) {
   @if $point == desktop {
     @media (min-width: 1200px) { @content; }
   }
