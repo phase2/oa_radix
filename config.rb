@@ -1,6 +1,5 @@
 # Require any additional compass plugins here.
 require 'bootstrap-sass';
-#require "compass_twitter_bootstrap";
 require "compass_radix";
 
 environment = :development
