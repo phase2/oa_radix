@@ -29,9 +29,6 @@
       margin: 0;
     }
   }
-  .container {
-    padding: 0;
-  }
   .panel-panel-inner {
     min-height: 0;
   }
@@ -48,8 +45,6 @@
     .pane-oa-navigation {
       width: 100%;
       border-bottom: 1px solid #676767;
-      //      margin-left: -20px;
-      //      margin-right: -20px;
       padding: 5px $gridGutterWidth 0;
       background-color: #003853;
       .oa-menu-banner {
@@ -186,8 +181,6 @@
       clear: both;
       padding-bottom: 0;
       margin-top: -5px;
-      //      margin-left: -20px;
-      //      margin-right: -20px;
       background-color: #003853;
     }
     .pane-oa-dashboard-oa-user-badge {
