@@ -14,9 +14,9 @@
 ?>
 <?php if (user_is_logged_in()): ?>
   <div id="oa-user-badge">
-    <div class="dropdown oa-dropdown btn-group pull-right">
+    <div class="dropdown oa-dropdown btn-group oa-pull-right">
       <div
-        class="dropdown-toggle btn clearfix pull-right user-badge <?php print $oa_toolbar_btn_class; ?>"
+        class="dropdown-toggle btn clearfix oa-pull-right user-badge <?php print $oa_toolbar_btn_class; ?>"
         id="user-badge-dropdown" data-toggle="dropdown">
         <?php print $realname; ?>
         <?php print $picture; ?>

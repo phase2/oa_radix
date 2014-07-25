@@ -8,8 +8,8 @@
 ?>
 
 <div class="toolbar-search">
-  <form action="search/site" method="post">
-    <div class="input-append">
+  <form action="search/site" method="post" role="form">
+    <div class="input-append form-group">
       <input type="text" class="search-text">
       <button type="submit" class="btn submit">
         <i class="icon-search"></i><span

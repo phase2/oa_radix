@@ -2,21 +2,18 @@
 // SASS partials import
 // --------------------------------------------------
 @import "compass";
-
 // Mixins and Variables
 // --------------------------------------------------
 @import "global/variable";
 @import "global/helper";
 @import "global/mixin";
 @import "global/font";
-
 // Radix
 // --------------------------------------------------
 @import "compass_radix";
 @import "bootstrap";
 // Bootswatch
 // --------------------------------------------------
-
 // Theme CSS
 // --------------------------------------------------
 @import "layout/layout";
@@ -31,3 +28,4 @@
 @import "components/user";
 @import "components/navbar";
 @import "components/add-content-modal";
+@import "components/oa-pulls";

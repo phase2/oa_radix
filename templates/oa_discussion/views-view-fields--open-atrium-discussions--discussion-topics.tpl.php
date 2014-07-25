@@ -26,11 +26,11 @@
 ?>
 <div
   class='oa-list oa-discussion-topic well clearfix <?php print $current_class; ?> <?php print $nid_class; ?>'>
-  <div class='pull-left'>
-    <?php print $field_user_picture; ?>
+  <div class='oa-pull-left'>
+  <?php print $field_user_picture; ?>
   </div>
-  <div class='oa-list-header oa-description pull-right'>
-    <?php print $nid_2 . " " . format_plural($nid_2, t('reply'), t('replies')); ?>
+  <div class='oa-list-header oa-description oa-pull-right'>
+  <?php print $nid_2 . " " . format_plural($nid_2, t('reply'), t('replies')); ?>
     <?php if (!empty($timestamp_new)): print $timestamp_new . t(' new'); endif; ?>
     <?php if (!empty($timestamp_updated)): print $timestamp_updated . t(' updated'); endif; ?>
     <?php

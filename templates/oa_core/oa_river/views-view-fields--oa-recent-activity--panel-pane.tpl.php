@@ -30,7 +30,7 @@
       <?php print $field_user_picture; ?>
     </div>
   <?php endif; ?>
-  <div class='oa-list-category pull-right'>
+  <div class='oa-list-category oa-pull-right'>
     <?php if ($display == 'user_activity'): ?>
       <?php print $field_oa_message_space; ?>
     <?php endif; ?>

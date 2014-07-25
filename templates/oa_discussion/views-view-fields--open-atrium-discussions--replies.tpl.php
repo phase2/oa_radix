@@ -32,8 +32,8 @@
       <div class="accordion-toggle">
         <div
           class="oa-list-header oa-description<?php print !empty($in) ? '' : ' oa-discussion-hide' ?>">
-          <div class='pull-right'>
-            <?php if (!empty($unpublished)): ?>
+          <div class='oa-pull-right'>
+          <?php if (!empty($unpublished)): ?>
               <span class="status"><?php print $unpublished; ?></span>
             <?php endif; ?>
             <?php print $timestamp; ?>

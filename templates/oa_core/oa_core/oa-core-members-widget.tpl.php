@@ -42,7 +42,7 @@
       <?php endif; ?>
       <?php
       $tab = $tabs[$cat];
-      $well = (!empty($tab['title'])) ? ' well well-small' : '';
+      $well = (!empty($tab['title'])) ? ' well well-sm' : '';
       ?>
       <div class='clearfix <?php print $well . ' ' . $cat; ?>'>
         <?php if (!empty($tab['items']) || !empty($tab['global_links'])): ?>
@@ -57,18 +57,18 @@
             <?php endif; ?>
             <?php foreach ($items as $item): ?>
               <?php if (empty($tab['links'])): ?>
-                <div class='pull-left label'>
+                <div class='oa-pull-left label'>
                   <?php print $item['title']; ?>
                 </div>
               <?php elseif (empty($item['uid'])): ?>
-                <div class='pull-left user-badge'>
+                <div class='oa-pull-left user-badge'>
                   <?php print $item['picture']; ?>
                   <?php print $item['title']; ?>
                 </div>
               <?php
               else: ?>
-                <div class="dropdown oa-dropdown btn-group">
-                  <div class="dropdown-toggle btn pull-left user-badge"
+                <div class="oa-pull-left dropdown oa-dropdown btn-group">
+                  <div class="dropdown-toggle btn oa-pull-left user-badge"
                        data-toggle="dropdown">
                     <?php print $item['picture']; ?>
                     <?php print $item['title']; ?>
@@ -104,7 +104,7 @@
           <div class='clear-both oa-global-links'>
             <?php foreach ($tab['global_links'] as $link): ?>
               <a href="<?php print $link['url'] ?>"
-                 class="btn btn-small"><?php print $link['title'] ?></a>
+                 class="btn btn-sm"><?php print $link['title'] ?></a>
             <?php endforeach; ?>
           </div>
         <?php endif; ?>

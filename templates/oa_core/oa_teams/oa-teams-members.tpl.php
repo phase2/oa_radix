@@ -17,13 +17,13 @@
   <div class='clearfix members'>
     <?php foreach ($members as $member): ?>
       <?php if (empty($links['remove'])): ?>
-        <div class='pull-left user-badge'>
-          <?php print $member['picture']; ?>
+        <div class='oa-pull-left user-badge'>
+        <?php print $member['picture']; ?>
           <?php print $member['title']; ?>
         </div>
       <?php else: ?>
         <div class="dropdown oa-dropdown btn-group">
-          <div class="dropdown-toggle btn pull-left user-badge"
+          <div class="dropdown-toggle btn oa-pull-left user-badge"
                data-toggle="dropdown">
             <?php print $member['picture']; ?>
             <?php print $member['title']; ?>
