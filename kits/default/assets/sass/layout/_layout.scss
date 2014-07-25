@@ -5,6 +5,7 @@
 html, body {
   height: 100%;
 }
+
 body {
   padding-top: 60px;
   @include oa-breakpoint('md') {

@@ -10,9 +10,11 @@
     padding-bottom: 15px;
   }
 }
+
 .row-fluid [class="span12"] {
   min-height: 0;
 }
+
 .content .bryant-flipped-sidebar-inner,
 .content .burr-flipped-sidebar-inner {
   padding-top: 0;
@@ -49,6 +51,7 @@ div#panels-ipe-control-container {
     display: none !important;
   }
 }
+
 @media screen and (max-width: $tabletBreakpoint) {
   div#panels-ipe-control-container {
     position: absolute;
@@ -109,6 +112,7 @@ body.page-node-add #main .burr-flipped-sidebar-inner {
     margin-top: 15px;
   }
 }
+
 .oa-bottom-right {
   position: absolute;
   right: 3px;
