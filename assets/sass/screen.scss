@@ -17,14 +17,14 @@
 // Theme CSS
 // --------------------------------------------------
 @import "layout/layout";
+@import "base/page";
+@import "base/panel";
+@import "base/node";
+@import "base/view";
 @import "components/structure";
 @import "components/menu";
-@import "components/page";
-@import "components/panel";
-@import "components/view";
 @import "components/form";
 @import "components/comment";
-@import "layout/node";
 @import "components/user";
 @import "components/navbar";
 @import "components/add-content-modal";
