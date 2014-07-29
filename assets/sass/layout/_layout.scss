@@ -5,22 +5,24 @@
 html, body {
   height: 100%;
 }
+
 body {
   padding-top: 60px;
-  @include breakpoint('tablet') {
+  @include oa-breakpoint('md') {
     padding-top: 90px;
   }
-  @include breakpoint('mini-tablet') {
+  @include oa-breakpoint('sm') {
     padding-top: 90px;
     padding-left: 0;
     padding-right: 0;
   }
-  @include breakpoint('phone') {
+  @include oa-breakpoint('xs') {
     padding-top: 0;
   }
   #main-wrapper {
     min-height: 100%;
     height: auto !important;
+    height: 100%;
     margin: 0 20px -100px;
   }
   #push {
@@ -32,13 +34,13 @@ body {
     color: #CCC;
     background-color: #003853;
     border-top: 1px solid #e5e5e5;
-    @include breakpoint('mini-tablet') {
+    @include oa-breakpoint('sm') {
       margin-left: -$gridGutterWidth;
       margin-right: -$gridGutterWidth;
       padding-left: $gridGutterWidth;
       padding-right: $gridGutterWidth;
     }
-    @include breakpoint('phone') {
+    @include oa-breakpoint('xs') {
       margin-left: -$gridGutterWidth;
       margin-right: -$gridGutterWidth;
       padding-left: $gridGutterWidth;

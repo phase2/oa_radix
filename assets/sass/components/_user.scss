@@ -3,6 +3,48 @@
 // Styles for User pages
 // --------------------------------------------------
 
+// User badge
+// --------------------------------------------------
+// .user-badge {
+//   border: 1px solid #CCC;
+//   padding: 3px 3px 3px 5px;
+//   min-width: 160px;
+//   z-index: 99;
+//   position: relative;
+//   @include border-radius(4px);
+//   img {
+//     vertical-align: middle;
+//   }
+//   &.pull-right, &.badge-right {
+//     text-align: right;
+//     margin-left: 10px;
+//     img {
+//       margin-left: 5px;
+//     }
+//   }
+//   &.pull-left {
+//     text-align: left;
+//     margin-right: 10px;
+//     padding-left: 3px;
+//     img {
+//       margin-right: 5px;
+//     }
+//   }
+//   &.no-border {
+//     padding: 4px 3px 4px 8px;
+//     border: 0;
+//     min-width: inherit;
+//     background: transparent;
+//   }
+// }
+// .content .user-badge {
+//   @include ctb-gradient-vertical($navbarBackgroundHighlight, $navbarBackground);
+// }
+// .oa-river .user-badge {
+//   border-top: 0;
+//   border-right: 0;
+// }
+
 // User spaces page
 // --------------------------------------------------
 .pane-oa-user-spaces-full {

@@ -34,6 +34,7 @@ form {
     }
   }
 }
+
 .label {
   font-weight: normal;
   background-color: #ddd;
@@ -74,11 +75,13 @@ form {
     background-image: none;
   }
 }
+
 #modal-content .form-submit,
 #media-browser-tabset input.form-submit,
 #media-browser-tabset form input.form-submit {
   @extend .btn-primary;
 }
+
 #modal-content {
   .form-item {
     clear: both;
@@ -90,9 +93,11 @@ form {
     margin-bottom: 0;
   }
 }
+
 #media-tabs-wrapper ul.ui-tabs-nav {
   margin-bottom: 0;
 }
+
 #media-browser-tabset {
   .views-exposed-form {
     .views-submit-button {
@@ -190,9 +195,11 @@ form {
     right: 10px;
   }
 }
+
 .view-filters form {
   margin: 0;
 }
+
 .views-exposed-widget.views-submit-button {
   padding-right: 5px;
 }
@@ -232,6 +239,7 @@ form {
     right: 0;
   }
 }
+
 .checkbox-table {
   .center {
     text-align: center;

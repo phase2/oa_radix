@@ -32,4 +32,10 @@ line_comments = (environment == :development) ? true : false
 #Custom paths for parent-child theming
 
 #Relative path to sass files in the oa_radix theme. May need updating on each site implementation
-add_import_path "../../../../profiles/openatrium/themes/oa_radix/assets/sass"
+add_import_path "../oa_radix/assets/sass"
+
+# the following ADDS a path to the sprite_load_path ARRAY
+sprite_load_path << "assets/images/sprites"
+
+#render sprites to the sub-theme
+generated_images_dir = 'assets/images'

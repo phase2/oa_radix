@@ -8,6 +8,7 @@
 #logo img {
   vertical-align: middle;
 }
+
 #site-name {
   display: inline-block;
   padding: 10px 0.5em;
@@ -21,6 +22,7 @@ ul.action-links > li > a {
   background: none;
   border: 1px solid transparent;
 }
+
 div.tabs.main-tabs {
   padding-left: 0;
   padding-right: 0;
@@ -118,10 +120,12 @@ div.tabs.main-tabs {
     }
   }
 }
+
 .oa-list-metadata {
   float: right;
   text-align: right;
 }
+
 .oa-list-header {
   padding: 6px 5px 0 5px;
   &.oa-description {
@@ -130,6 +134,7 @@ div.tabs.main-tabs {
     padding: 0;
   }
 }
+
 .oa-list-category {
   text-align: right;
 }
@@ -160,6 +165,7 @@ dl.admin-list {
     text-transform: uppercase;
   }
 }
+
 ul.group-content {
   margin: 0;
 }
