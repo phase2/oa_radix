@@ -15,7 +15,7 @@ plugins[panels][layouts] = panels/layouts
 plugins[panels][styles] = panels/styles
 
 ; CSS - General
-stylesheets[all][]     = assets/stylesheets/screen.css
+stylesheets[all][]     = assets/stylesheets/sub-screen.css
 stylesheets[print][]   = assets/stylesheets/print.css
 
 ; CSS - Conditional
