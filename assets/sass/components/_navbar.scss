@@ -69,6 +69,8 @@
     .pane-oa-dashboard-oa-breadcrumb {
       margin-top: -5px;
       margin-bottom: -5px;
+      float: none !important;
+      border-bottom: solid 1px #333;
       ul.oa_toolbar {
         margin: 0;
         padding: 0;
@@ -95,7 +97,7 @@
             height: 25px;
             line-height: 25px;
             margin: 5px 10px 5px 0;
-            padding: 4px 8px;
+            padding: 4px 8px 30px 8px;
             background: $grayDark;
             @include border-radius(3px);
             &:hover {
@@ -128,10 +130,15 @@
           }
         }
       }
+      @include breakpoint('md') {
+        float: left !important;
+        border-bottom: none;
+      }
     }
     .pane-oa-favorites-favorites-button {
       ul#oa_favorites {
         margin: 0;
+        padding: 0;
         li {
           margin: 0;
         }
@@ -140,12 +147,17 @@
     .pane-oa-tour-custom-pane {
       ul#oa_tours {
         margin: 0;
+        padding: 0;
         li {
           margin: 0;
         }
       }
     }
     .pane-oa-toolbar-search {
+      float: left !important;
+      [name=searchOptions] {
+        position: relative;
+      }
       form {
         margin: 0;
         .input-append {
@@ -160,6 +172,9 @@
             clear: none;
           }
         }
+      }
+      @include breakpoint('md') {
+        float: right !important;
       }
     }
     .pane-add-space-content {
@@ -202,7 +217,7 @@
 // Open Atrium Navbar
 // --------------------------------------------------
 #oa-navbar {
-  //  @include oa-breakpoint('md') {
+  //  @include breakpoint('md') {
   //    .navbar-inner {
   //      padding-top: 0;
   //      padding-bottom: 0;
@@ -236,7 +251,7 @@
   //      }
   //    }
   //  }
-  //  @include oa-breakpoint('sm') {
+  //  @include breakpoint('sm') {
   ////    padding-left: 20px;
   ////    padding-right: 20px;
   //    backgorund-color: red;
@@ -273,7 +288,7 @@
   //      }
   //    }
   //  }
-  //  @include oa-breakpoint('xs') {
+  //  @include breakpoint('xs') {
   //    position: static;
   //    padding: 0;
   ////    margin: 0 -20px;
@@ -391,7 +406,7 @@ body.admin-menu #oa-navbar {
 }
 
 #main-wrapper {
-  @include oa-breakpoint('xs') {
+  @include breakpoint('xs') {
     .oa-banner {
       display: none;
     }

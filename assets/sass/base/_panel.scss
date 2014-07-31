@@ -46,7 +46,7 @@ div#panels-ipe-control-container {
   a {
     font-weight: normal;
   }
-  @include oa-breakpoint('xs') {
+  @include breakpoint('xs') {
     // We don't need this on phone for now.
     display: none !important;
   }

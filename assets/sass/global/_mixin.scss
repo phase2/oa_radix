@@ -4,17 +4,17 @@
 
 // Breakpoints
 // --------------------------------------------------
-@mixin oa-breakpoint($point) {
-  @if $point == desktop {
+@mixin breakpoint($point) {
+  @if $point == lg {
     @media (min-width: 1200px) { @content; }
   }
-  @else if $point == tablet {
+  @else if $point == md {
     @media (min-width: 768px) and (max-width: 979px) { @content; }
   }
   @else if $point == mini-tablet {
     @media (max-width: 767px) { @content; }
   }
-  @else if $point == phone {
+  @else if $point == xs {
     @media (max-width: 480px)  { @content; }
   }
 }
