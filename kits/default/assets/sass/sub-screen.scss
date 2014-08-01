@@ -6,9 +6,7 @@
 // Mixins and Variables
 // --------------------------------------------------
 @import "global/variable";
-@import "global/helper";
 @import "global/mixin";
-@import "global/font";
 
 // Radix
 // --------------------------------------------------
@@ -18,13 +16,7 @@
 // Theme CSS
 // --------------------------------------------------
 @import "layout/layout";
-@import "components/structure";
-@import "components/menu";
-@import "base/page";
-@import "base/panel";
-@import "base/view";
-@import "components/form";
-@import "components/comment";
 @import "base/node";
-@import "components/user";
-@import "components/navbar";
+@import "components/form";
+@import "components/panel";
+
