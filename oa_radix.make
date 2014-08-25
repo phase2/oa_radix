@@ -5,9 +5,7 @@ core = 7.x
 
 ; Parent Theme
 projects[radix][type] = theme
-projects[radix][version] = 2.x-dev
+projects[radix][version] = 3.x-dev
 projects[radix][download][type] = git
-projects[radix][download][branch] = 7.x-2.x
-projects[radix][download][revision] = 6208a6c
-; remove screen.css missing warning
-projects[radix][patch][2194335] = http://drupal.org/files/issues/radix-screen-css-2194335-13_0.patch
+projects[radix][download][branch] = 7.x-3.x
+projects[radix][download][revision] = a12f216
