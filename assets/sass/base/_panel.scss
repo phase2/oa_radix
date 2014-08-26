@@ -20,13 +20,30 @@
   padding-top: 0;
 }
 
+#main .container {
+  padding: 0 10px 0 0;
+  @include breakpoint('xs') {
+    padding: 0;
+  }
+}
+
 // IPE
 // --------------------------------------------------
 body.panels-ipe {
   margin-bottom: 0px !important;
-  #main {
-    margin-top: 20px;
+  #main-wrapper #main {
+    padding-top: 20px;
     position: relative;
+    @include breakpoint('xs') {
+      // panels ipe buttons not displayed in this breakpoint
+      padding-top: 0;
+    }
+  }
+}
+
+#contextual-tabs {
+  @include breakpoint('xs') {
+    margin-top: 5px;
   }
 }
 
@@ -35,21 +52,28 @@ body.panels-ipe {
 div#panels-ipe-control-container {
   background-color: transparent;
   position: absolute;
-  top: -25px;
-  right: -12px;
+  top: -5px;
+  right: -6px;
   bottom: auto;
   width: auto;
   // needs to be above most stuff, but below the dropdown
   // which are at z-index 1000
   z-index: 999;
   @include box-shadow(none);
-  a {
+  .panels-ipe-button-container, .panels-ipe-form-container form > div {
+    text-align: right;
+  }
+  a, .btn {
     font-weight: normal;
+    text-shadow: none;
   }
   @include breakpoint('xs') {
     // We don't need this on phone for now.
     display: none !important;
   }
+}
+div.panels-ipe-pseudobutton-container, div.panels-ipe-control .form-submit {
+  font-weight: normal;
 }
 
 @media screen and (max-width: $tabletBreakpoint) {
@@ -273,11 +297,5 @@ body.page-node-add #main .burr-flipped-sidebar-inner {
   }
   .options {
     margin: 10px 0 0;
-  }
-}
-
-.oa-command-buttons {
-  li {
-    margin-bottom: 3px;
   }
 }

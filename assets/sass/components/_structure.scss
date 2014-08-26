@@ -91,6 +91,7 @@ div.tabs.main-tabs {
   }
   .accordion-heading .accordion-toggle {
     padding: 0;
+    display: block;
     &:hover {
       background-color: #E0EEFF;
     }
@@ -157,7 +158,7 @@ dl.admin-list {
 // --------------------------------------------------
 .group-header {
   margin-top: 20px;
-  h3 {
+  h3, h4 {
     font-size: 20px;
     line-height: 32px;
     color: #777;

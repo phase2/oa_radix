@@ -44,6 +44,20 @@ function oa_radix_module_implements_alter(&$implementations, $hook) {
 }
 
 /**
+ * Replace Panopoly layouts with Radix Layouts
+ * @param $plugin
+ * @param $info
+ */
+function oa_radix_ctools_plugin_post_alter(&$plugin, &$info) {
+  if (($info['type'] == 'layouts') && ($plugin['module'] == 'panopoly_theme')) {
+    if (strpos($plugin['theme'], 'radix_') === FALSE) {
+      $plugin['theme'] = 'radix_' . $plugin['theme'];
+      unset($plugin['css']);
+    }
+  }
+}
+
+/**
  * Implements template_preprocess_page().
  */
 function oa_radix_preprocess_page(&$vars) {
