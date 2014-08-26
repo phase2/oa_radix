@@ -43,6 +43,16 @@ form {
   }
 }
 
+a.mceButton {
+  box-sizing: content-box;
+}
+
+.media-widget>a {
+  @extend .btn;
+  @extend .btn-default;
+  background-color: #eee;
+}
+
 .label {
   font-weight: normal;
   background-color: #ddd;
@@ -265,5 +275,6 @@ form {
 
 .chosen-container {
   height: auto;
-  min-height: 45px;
+  border: 0;
+  padding: 0;
 }
