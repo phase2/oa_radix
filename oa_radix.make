@@ -3,12 +3,16 @@
 api = 2
 core = 7.x
 
-; Parent Theme
+; Parent Theme Radix
 projects[radix][type] = theme
 projects[radix][version] = 3.x-dev
 projects[radix][download][type] = git
 projects[radix][download][branch] = 7.x-3.x
 projects[radix][download][revision] = a12f216
+
+; Radix Layouts
+projects[radix_layouts][version] = 3.0-alpha2
+projects[radix_layouts][subdir] = contrib
 
 ; Bootstrap Library
 projects[bootstrap_library][version] = 1.4
