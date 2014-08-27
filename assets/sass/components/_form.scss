@@ -43,6 +43,10 @@ form {
   }
 }
 
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 1.6em;
+}
+
 a.mceButton {
   @include box-sizing("content-box");
 }
