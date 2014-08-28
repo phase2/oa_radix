@@ -48,7 +48,7 @@ form {
 }
 
 a.mceButton {
-  @include box-sizing("content-box");
+  @include box-sizing(content-box);
 }
 
 .media-widget>a {
