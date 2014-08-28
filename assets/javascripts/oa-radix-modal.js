@@ -53,7 +53,6 @@
 
     Drupal.CTools.Modal.currentSettings = settings;
 
-    console.log('IN OARadix');
     var resize = function(e) {
       // When creating the modal, it actually exists only in a theoretical
       // place that is not in the DOM. But once the modal exists, it is in the
@@ -61,7 +60,6 @@
       var context = e ? document : Drupal.CTools.Modal.modal;
 
       if (Drupal.CTools.Modal.currentSettings.modalSize.type == 'scale') {
-        console.log('scale');
         var width = $(window).width() * Drupal.CTools.Modal.currentSettings.modalSize.width;
         var height = $(window).height() * Drupal.CTools.Modal.currentSettings.modalSize.height;
       }
@@ -69,8 +67,6 @@
         var width = Drupal.CTools.Modal.currentSettings.modalSize.width;
         var height = Drupal.CTools.Modal.currentSettings.modalSize.height;
       }
-      console.log(width);
-      console.log(height);
 
       // Use the additionol pixels for creating the width and height.
       $('div.ctools-modal-dialog', context).css({
