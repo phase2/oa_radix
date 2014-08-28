@@ -9,6 +9,10 @@
   z-index: 1000;
 }
 
+.drupal-navbar .navbar-tray-vertical > .navbar-lining:before {
+  display: none !important;
+}
+
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
