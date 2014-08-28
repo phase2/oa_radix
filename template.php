@@ -33,6 +33,21 @@ function oa_radix_css_alter(&$css) {
 }
 
 /**
+ * Implements hook_js_alter().
+ */
+function oa_radix_js_alter(&$javascript) {
+  // Add oa-radix-modal when required.
+  $ctools_modal = drupal_get_path('module', 'ctools') . '/js/modal.js';
+  $radix_modal = drupal_get_path('theme', 'radix') . '/assets/javascripts/radix-modal.js';
+  $oa_radix_modal = drupal_get_path('theme', 'oa_radix') . '/assets/javascripts/oa-radix-modal.js';
+  if ((!empty($javascript[$ctools_modal]) || !empty($javascript[$radix_modal])) && empty($javascript[$oa_radix_modal])) {
+    unset($javascript[$radix_modal]);
+    $javascript[$oa_radix_modal] = array_merge(
+      drupal_js_defaults(), array('group' => JS_THEME, 'data' => $oa_radix_modal));
+  }
+}
+
+/**
  * Implements hook_module_implements_alter().
  * Remove panopoly_core which uses this alter to set it's own jquery_ui theme
  * Should be done in a theme layer, not in panopoly_core
