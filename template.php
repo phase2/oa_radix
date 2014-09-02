@@ -70,6 +70,7 @@ function oa_radix_ctools_plugin_post_alter(&$plugin, &$info) {
       $path = drupal_get_path('module', 'radix_layouts') . '/plugins/layouts/' . $new_name;
       if (file_exists($path)) {
         $plugin['theme'] = $new_name;
+        $plugin['file'] = 'radix_' . $plugin['file'];
         if (file_exists($path . '/radix-' . $plugin['icon'])) {
           $plugin['path'] = $path;
           $plugin['icon'] = 'radix-' . $plugin['icon'];
