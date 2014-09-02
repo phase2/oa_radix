@@ -64,10 +64,22 @@ function oa_radix_module_implements_alter(&$implementations, $hook) {
  * @param $info
  */
 function oa_radix_ctools_plugin_post_alter(&$plugin, &$info) {
-  if (($info['type'] == 'layouts') && ($plugin['module'] == 'panopoly_theme')) {
+  if (module_exists('radix_layouts') && ($info['type'] == 'layouts') && ($plugin['module'] == 'panopoly_theme')) {
     if (strpos($plugin['theme'], 'radix_') === FALSE) {
-      $plugin['theme'] = 'radix_' . $plugin['theme'];
-      unset($plugin['css']);
+      $new_name = 'radix_' . $plugin['theme'];
+      $path = drupal_get_path('module', 'radix_layouts') . '/plugins/layouts/' . $new_name;
+      if (file_exists($path)) {
+        $plugin['theme'] = $new_name;
+        if (file_exists($path . '/radix-' . $plugin['icon'])) {
+          $plugin['path'] = $path;
+          $plugin['icon'] = 'radix-' . $plugin['icon'];
+        }
+        elseif (file_exists($path . '/radix_' . $plugin['icon'])) {
+          $plugin['path'] = $path;
+          $plugin['icon'] = 'radix_' . $plugin['icon'];
+        }
+        unset($plugin['css']);
+      }
     }
   }
 }
