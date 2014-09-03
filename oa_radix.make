@@ -11,7 +11,7 @@ projects[radix][download][branch] = 7.x-3.x
 projects[radix][download][revision] = a12f216
 
 ; Radix Layouts
-projects[radix_layouts][version] = 3.0-alpha2
+projects[radix_layouts][version] = 3.0
 projects[radix_layouts][subdir] = contrib
 
 ; Bootstrap Library
