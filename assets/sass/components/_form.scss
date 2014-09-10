@@ -9,6 +9,9 @@ form {
   .form-item {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    &.checkbox, &.radio {
+      padding-left: 0;
+    }
   }
   .btn {
     width: auto;
@@ -33,9 +36,6 @@ form {
     .btn {
       margin-bottom: 10px;
     }
-  }
-  .radio label, .checkbox label {
-    padding-left: 5px;
   }
   fieldset.collapsible legend a.fieldset-title {
     display: inline-block;
