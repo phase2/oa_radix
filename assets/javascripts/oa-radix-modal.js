@@ -60,8 +60,6 @@
       var context = e ? document : Drupal.CTools.Modal.modal;
 
       if (Drupal.CTools.Modal.currentSettings.modalSize.type == 'scale') {
-        console.log('scaling');
-        console.log($(window).width());
         if ($(window).width() <= 600) {
           // don't make modals too small on small screens
           var width = $(window).width() * 0.95;
