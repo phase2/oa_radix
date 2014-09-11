@@ -241,3 +241,16 @@ form {
     margin: 0.4em 0;
   }
 }
+
+//OA-messages form
+#oa-users-settings-form{
+  .container-fluid{
+    @extend .row-fluid;
+  }
+  .col-sm-3{
+    @extend .span3;
+  }
+  .col-sm-6{
+    @extend .span6;
+  }
+}
