@@ -1,0 +1,15 @@
+
+#oa-users-settings-form{
+  .row-fluid{
+    @extend .container-fluid;
+  }
+  .span3{
+    @extend .col-sm-3;
+  }
+  .span6{
+    @extend .col-sm-6;
+  }
+}
+.display-block{
+  display:block;
+}
