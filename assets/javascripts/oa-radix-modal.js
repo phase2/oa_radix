@@ -60,8 +60,17 @@
       var context = e ? document : Drupal.CTools.Modal.modal;
 
       if (Drupal.CTools.Modal.currentSettings.modalSize.type == 'scale') {
-        var width = $(window).width() * Drupal.CTools.Modal.currentSettings.modalSize.width;
-        var height = $(window).height() * Drupal.CTools.Modal.currentSettings.modalSize.height;
+        console.log('scaling');
+        console.log($(window).width());
+        if ($(window).width() <= 600) {
+          // don't make modals too small on small screens
+          var width = $(window).width() * 0.95;
+          var height = $(window).height() * 0.95;
+        }
+        else {
+          var width = $(window).width() * Drupal.CTools.Modal.currentSettings.modalSize.width;
+          var height = $(window).height() * Drupal.CTools.Modal.currentSettings.modalSize.height;
+        }
       }
       else {
         var width = Drupal.CTools.Modal.currentSettings.modalSize.width;
