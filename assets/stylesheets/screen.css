@@ -13809,14 +13809,40 @@ a.mceButton {
   padding: 3px 0;
 }
 /* line 301, ../sass/components/_form.scss */
-#oa-users-settings-form .col-sm-6 legend {
+#oa-users-settings-form .col-sm-6 .panel-heading {
   display: block;
   float: none;
   line-height: 40px;
+  background: none;
+  padding: 0;
 }
-/* line 307, ../sass/components/_form.scss */
+/* line 309, ../sass/components/_form.scss */
 #oa-users-settings-form div.column3 div.form-type-checkboxes {
   margin-left: -54%;
+}
+/* line 313, ../sass/components/_form.scss */
+#oa-users-settings-form .collapsible.form-wrapper {
+  border: none;
+  box-shadow: none;
+}
+/* line 314, ../sass/components/_form.scss */
+#oa-users-settings-form .collapsible.form-wrapper .fieldset-wrapper {
+  overflow: visible !important;
+  padding: 0;
+}
+/* line 322, ../sass/components/_form.scss */
+#oa-users-settings-form input[type="text"] {
+  width: auto;
+}
+/* line 325, ../sass/components/_form.scss */
+#oa-users-settings-form .panel-title > a {
+  color: #0071B3;
+  font-size: 18px;
+}
+/* line 329, ../sass/components/_form.scss */
+#oa-users-settings-form div.column2 div.chosen-container {
+  margin: 8px 0;
+  padding: 0;
 }
 
 /* line 9, ../sass/components/_user.scss */
