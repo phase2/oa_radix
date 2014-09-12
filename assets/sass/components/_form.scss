@@ -9,10 +9,14 @@ form {
   .form-item {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    &.checkbox, &.radio {
+      padding-left: 0;
+    }
   }
   .btn {
     width: auto;
     height: inherit;
+    text-shadow: none;
   }
   .button {
     &.fake-ok,
@@ -33,7 +37,26 @@ form {
       margin-bottom: 10px;
     }
   }
+  fieldset.collapsible legend a.fieldset-title {
+    display: inline-block;
+    width: 90%;
+  }
 }
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 1.6em;
+}
+
+a.mceButton {
+  @include box-sizing(content-box);
+}
+
+.media-widget>a {
+  @extend .btn;
+  @extend .btn-default;
+  background-color: #eee;
+}
+
 .label {
   font-weight: normal;
   background-color: #ddd;
@@ -74,11 +97,13 @@ form {
     background-image: none;
   }
 }
+
 #modal-content .form-submit,
 #media-browser-tabset input.form-submit,
 #media-browser-tabset form input.form-submit {
   @extend .btn-primary;
 }
+
 #modal-content {
   .form-item {
     clear: both;
@@ -90,9 +115,11 @@ form {
     margin-bottom: 0;
   }
 }
+
 #media-tabs-wrapper ul.ui-tabs-nav {
   margin-bottom: 0;
 }
+
 #media-browser-tabset {
   .views-exposed-form {
     .views-submit-button {
@@ -117,7 +144,8 @@ form {
 // Node edit form
 // --------------------------------------------------
 #node-edit {
-  .burr-flipped-sidebar .panel-pane {
+  .burr-flipped-sidebar .panel-pane,
+  .burr-flipped .sidebar .panel-pane {
     border: 0;
     border-bottom: 1px solid #e3e3e3;
     margin-bottom: 0;
@@ -186,13 +214,19 @@ form {
   }
   .filter-btn {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
   }
 }
+
+.oa-pane .views-exposed-form .filter-btn {
+  top: 10px;
+}
+
 .view-filters form {
   margin: 0;
 }
+
 .views-exposed-widget.views-submit-button {
   padding-right: 5px;
 }
@@ -232,6 +266,7 @@ form {
     right: 0;
   }
 }
+
 .checkbox-table {
   .center {
     text-align: center;
@@ -240,6 +275,12 @@ form {
   .space-label {
     margin: 0.4em 0;
   }
+}
+
+.chosen-container {
+  height: auto;
+  border: 0;
+  padding: 0;
 }
 
 //OA-messages form

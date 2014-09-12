@@ -375,12 +375,13 @@ th {
   }
 
   /* line 83, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_print.scss */
-  .btn > .caret, form .button.fake-ok > .caret, form .button.fake-cancel > .caret, #media-browser-tabset a.button > .caret,
+  .btn > .caret, form .button.fake-ok > .caret, form .button.fake-cancel > .caret, .media-widget > a > .caret, #media-browser-tabset a.button > .caret,
   #media-browser-tabset input.form-submit > .caret, #modal-content .form-submit > .caret,
   #modal-content #edit-cancel > .caret,
   .dropup > .btn > .caret,
   form .dropup > .button.fake-ok > .caret,
   form .dropup > .button.fake-cancel > .caret,
+  .media-widget.dropup > a > .caret,
   #media-browser-tabset .dropup > a.button > .caret,
   #media-browser-tabset .dropup > input.form-submit > .caret,
   #modal-content .dropup > .form-submit > .caret,
@@ -3788,6 +3789,7 @@ input[type="checkbox"] {
 .input-group-lg > .input-group-btn > .form-control-static.btn,
 form .input-group-lg > .input-group-btn > .form-control-static.button.fake-ok,
 form .input-group-lg > .input-group-btn > .form-control-static.button.fake-cancel,
+.input-group-lg > .media-widget.input-group-btn > a.form-control-static,
 #media-browser-tabset .input-group-lg > .input-group-btn > a.form-control-static.button,
 #media-browser-tabset .input-group-lg > .input-group-btn > input.form-control-static.form-submit,
 #modal-content .input-group-lg > .input-group-btn > .form-control-static.form-submit,
@@ -3796,6 +3798,7 @@ form .input-group-lg > .input-group-btn > .form-control-static.button.fake-cance
 .input-group-sm > .input-group-btn > .form-control-static.btn,
 form .input-group-sm > .input-group-btn > .form-control-static.button.fake-ok,
 form .input-group-sm > .input-group-btn > .form-control-static.button.fake-cancel,
+.input-group-sm > .media-widget.input-group-btn > a.form-control-static,
 #media-browser-tabset .input-group-sm > .input-group-btn > a.form-control-static.button,
 #media-browser-tabset .input-group-sm > .input-group-btn > input.form-control-static.form-submit,
 #modal-content .input-group-sm > .input-group-btn > .form-control-static.form-submit,
@@ -3810,6 +3813,7 @@ form .input-group-sm > .input-group-btn > .form-control-static.button.fake-cance
 .input-group-sm > .input-group-btn > .btn,
 form .input-group-sm > .input-group-btn > .button.fake-ok,
 form .input-group-sm > .input-group-btn > .button.fake-cancel,
+.input-group-sm > .media-widget.input-group-btn > a,
 #media-browser-tabset .input-group-sm > .input-group-btn > a.button,
 #media-browser-tabset .input-group-sm > .input-group-btn > input.form-submit,
 #modal-content .input-group-sm > .input-group-btn > .form-submit,
@@ -3859,6 +3863,7 @@ form .input-group-sm > .input-group-btn > select[multiple].button.fake-cancel,
 .input-group-lg > .input-group-btn > .btn,
 form .input-group-lg > .input-group-btn > .button.fake-ok,
 form .input-group-lg > .input-group-btn > .button.fake-cancel,
+.input-group-lg > .media-widget.input-group-btn > a,
 #media-browser-tabset .input-group-lg > .input-group-btn > a.button,
 #media-browser-tabset .input-group-lg > .input-group-btn > input.form-submit,
 #modal-content .input-group-lg > .input-group-btn > .form-submit,
@@ -3930,6 +3935,7 @@ form .input-group-lg > .input-group-btn > select[multiple].button.fake-cancel,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 form .input-group-lg > .input-group-btn > .button.fake-ok + .form-control-feedback,
 form .input-group-lg > .input-group-btn > .button.fake-cancel + .form-control-feedback,
+.input-group-lg > .media-widget.input-group-btn > a + .form-control-feedback,
 #media-browser-tabset .input-group-lg > .input-group-btn > a.button + .form-control-feedback,
 #media-browser-tabset .input-group-lg > .input-group-btn > input.form-submit + .form-control-feedback,
 #modal-content .input-group-lg > .input-group-btn > .form-submit + .form-control-feedback,
@@ -3945,6 +3951,7 @@ form .input-group-lg > .input-group-btn > .button.fake-cancel + .form-control-fe
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 form .input-group-sm > .input-group-btn > .button.fake-ok + .form-control-feedback,
 form .input-group-sm > .input-group-btn > .button.fake-cancel + .form-control-feedback,
+.input-group-sm > .media-widget.input-group-btn > a + .form-control-feedback,
 #media-browser-tabset .input-group-sm > .input-group-btn > a.button + .form-control-feedback,
 #media-browser-tabset .input-group-sm > .input-group-btn > input.form-submit + .form-control-feedback,
 #modal-content .input-group-sm > .input-group-btn > .form-submit + .form-control-feedback,
@@ -4181,7 +4188,7 @@ form .input-group-sm > .input-group-btn > .button.fake-cancel + .form-control-fe
 }
 
 /* line 9, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_buttons.scss */
-.btn, form .button.fake-ok, form .button.fake-cancel, #media-browser-tabset a.button,
+.btn, form .button.fake-ok, form .button.fake-cancel, .media-widget > a, #media-browser-tabset a.button,
 #media-browser-tabset input.form-submit, #modal-content .form-submit,
 #media-browser-tabset form a.button,
 #media-browser-tabset form input.form-submit,
@@ -4205,11 +4212,11 @@ form .input-group-sm > .input-group-btn > .button.fake-cancel + .form-control-fe
   user-select: none;
 }
 /* line 25, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:focus, form .button.fake-ok:focus, form .button.fake-cancel:focus, #media-browser-tabset a.button:focus,
+.btn:focus, form .button.fake-ok:focus, form .button.fake-cancel:focus, .media-widget > a:focus, #media-browser-tabset a.button:focus,
 #media-browser-tabset input.form-submit:focus, #modal-content .form-submit:focus,
-#modal-content #edit-cancel:focus, .btn:active:focus, form .button.fake-ok:active:focus, form .button.fake-cancel:active:focus, #media-browser-tabset a.button:active:focus,
+#modal-content #edit-cancel:focus, .btn:active:focus, form .button.fake-ok:active:focus, form .button.fake-cancel:active:focus, .media-widget > a:active:focus, #media-browser-tabset a.button:active:focus,
 #media-browser-tabset input.form-submit:active:focus, #modal-content .form-submit:active:focus,
-#modal-content #edit-cancel:active:focus, .btn.active:focus, form .active.button.fake-ok:focus, form .active.button.fake-cancel:focus, #media-browser-tabset a.active.button:focus,
+#modal-content #edit-cancel:active:focus, .btn.active:focus, form .active.button.fake-ok:focus, form .active.button.fake-cancel:focus, .media-widget > a.active:focus, #media-browser-tabset a.active.button:focus,
 #media-browser-tabset input.active.form-submit:focus, #modal-content .active.form-submit:focus,
 #modal-content .active#edit-cancel:focus {
   outline: thin dotted;
@@ -4217,18 +4224,18 @@ form .input-group-sm > .input-group-btn > .button.fake-cancel + .form-control-fe
   outline-offset: -2px;
 }
 /* line 31, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:hover, form .button.fake-ok:hover, form .button.fake-cancel:hover, #media-browser-tabset a.button:hover,
+.btn:hover, form .button.fake-ok:hover, form .button.fake-cancel:hover, .media-widget > a:hover, #media-browser-tabset a.button:hover,
 #media-browser-tabset input.form-submit:hover, #modal-content .form-submit:hover,
-#modal-content #edit-cancel:hover, .btn:focus, form .button.fake-ok:focus, form .button.fake-cancel:focus, #media-browser-tabset a.button:focus,
+#modal-content #edit-cancel:hover, .btn:focus, form .button.fake-ok:focus, form .button.fake-cancel:focus, .media-widget > a:focus, #media-browser-tabset a.button:focus,
 #media-browser-tabset input.form-submit:focus, #modal-content .form-submit:focus,
 #modal-content #edit-cancel:focus {
   color: #333333;
   text-decoration: none;
 }
 /* line 37, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:active, form .button.fake-ok:active, form .button.fake-cancel:active, #media-browser-tabset a.button:active,
+.btn:active, form .button.fake-ok:active, form .button.fake-cancel:active, .media-widget > a:active, #media-browser-tabset a.button:active,
 #media-browser-tabset input.form-submit:active, #modal-content .form-submit:active,
-#modal-content #edit-cancel:active, .btn.active, form .active.button.fake-ok, form .active.button.fake-cancel, #media-browser-tabset a.active.button,
+#modal-content #edit-cancel:active, .btn.active, form .active.button.fake-ok, form .active.button.fake-cancel, .media-widget > a.active, #media-browser-tabset a.active.button,
 #media-browser-tabset input.active.form-submit, #modal-content .active.form-submit,
 #modal-content .active#edit-cancel {
   outline: 0;
@@ -4237,11 +4244,11 @@ form .input-group-sm > .input-group-btn > .button.fake-cancel + .form-control-fe
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 /* line 45, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_buttons.scss */
-.btn.disabled, form .disabled.button.fake-ok, form .disabled.button.fake-cancel, #media-browser-tabset a.disabled.button,
+.btn.disabled, form .disabled.button.fake-ok, form .disabled.button.fake-cancel, .media-widget > a.disabled, #media-browser-tabset a.disabled.button,
 #media-browser-tabset input.disabled.form-submit, #modal-content .disabled.form-submit,
-#modal-content .disabled#edit-cancel, .btn[disabled], form [disabled].button.fake-ok, form [disabled].button.fake-cancel, #media-browser-tabset a[disabled].button,
+#modal-content .disabled#edit-cancel, .btn[disabled], form [disabled].button.fake-ok, form [disabled].button.fake-cancel, .media-widget > a[disabled], #media-browser-tabset a[disabled].button,
 #media-browser-tabset input[disabled].form-submit, #modal-content [disabled].form-submit,
-#modal-content [disabled]#edit-cancel, fieldset[disabled] .btn, fieldset[disabled] form .button.fake-ok, form fieldset[disabled] .button.fake-ok, fieldset[disabled] form .button.fake-cancel, form fieldset[disabled] .button.fake-cancel, fieldset[disabled] #media-browser-tabset a.button, #media-browser-tabset fieldset[disabled] a.button,
+#modal-content [disabled]#edit-cancel, fieldset[disabled] .btn, fieldset[disabled] form .button.fake-ok, form fieldset[disabled] .button.fake-ok, fieldset[disabled] form .button.fake-cancel, form fieldset[disabled] .button.fake-cancel, fieldset[disabled] .media-widget > a, fieldset[disabled] #media-browser-tabset a.button, #media-browser-tabset fieldset[disabled] a.button,
 fieldset[disabled] #media-browser-tabset input.form-submit,
 #media-browser-tabset fieldset[disabled] input.form-submit, fieldset[disabled] #modal-content .form-submit, #modal-content fieldset[disabled] .form-submit,
 fieldset[disabled] #modal-content #edit-cancel,
@@ -4255,28 +4262,28 @@ fieldset[disabled] #modal-content #edit-cancel,
 }
 
 /* line 57, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-default {
+.btn-default, .media-widget > a {
   color: #333333;
   background-color: white;
   border-color: #cccccc;
 }
 /* line 15, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+.btn-default:hover, .media-widget > a:hover, .btn-default:focus, .media-widget > a:focus, .btn-default:active, .media-widget > a:active, .btn-default.active, .media-widget > a.active, .open > .btn-default.dropdown-toggle, .media-widget.open > a.dropdown-toggle {
   color: #333333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
 /* line 22, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+.btn-default:active, .media-widget > a:active, .btn-default.active, .media-widget > a.active, .open > .btn-default.dropdown-toggle, .media-widget.open > a.dropdown-toggle {
   background-image: none;
 }
 /* line 32, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+.btn-default.disabled, .media-widget > a.disabled, .btn-default.disabled:hover, .media-widget > a.disabled:hover, .btn-default.disabled:focus, .media-widget > a.disabled:focus, .btn-default.disabled:active, .media-widget > a.disabled:active, .btn-default.disabled.active, .media-widget > a.disabled.active, .btn-default[disabled], .media-widget > a[disabled], .btn-default[disabled]:hover, .media-widget > a[disabled]:hover, .btn-default[disabled]:focus, .media-widget > a[disabled]:focus, .btn-default[disabled]:active, .media-widget > a[disabled]:active, .btn-default[disabled].active, .media-widget > a[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .media-widget > a, fieldset[disabled] .btn-default:hover, fieldset[disabled] .media-widget > a:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .media-widget > a:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .media-widget > a:active, fieldset[disabled] .btn-default.active, fieldset[disabled] .media-widget > a.active {
   background-color: white;
   border-color: #cccccc;
 }
 /* line 38, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-default .badge {
+.btn-default .badge, .media-widget > a .badge {
   color: white;
   background-color: #333333;
 }
@@ -4477,7 +4484,7 @@ fieldset[disabled] #media-browser-tabset input.active.form-submit,
 }
 
 /* line 124, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-lg, .btn-group-lg > .btn, form .btn-group-lg > .button.fake-ok, form .btn-group-lg > .button.fake-cancel, #media-browser-tabset .btn-group-lg > a.button,
+.btn-lg, .btn-group-lg > .btn, form .btn-group-lg > .button.fake-ok, form .btn-group-lg > .button.fake-cancel, .media-widget.btn-group-lg > a, #media-browser-tabset .btn-group-lg > a.button,
 #media-browser-tabset .btn-group-lg > input.form-submit, #modal-content .btn-group-lg > .form-submit,
 #modal-content .btn-group-lg > #edit-cancel {
   padding: 10px 16px;
@@ -4487,7 +4494,7 @@ fieldset[disabled] #media-browser-tabset input.active.form-submit,
 }
 
 /* line 128, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-sm, .btn-group-sm > .btn, form .btn-group-sm > .button.fake-ok, form .btn-group-sm > .button.fake-cancel, #media-browser-tabset .btn-group-sm > a.button,
+.btn-sm, .btn-group-sm > .btn, form .btn-group-sm > .button.fake-ok, form .btn-group-sm > .button.fake-cancel, .media-widget.btn-group-sm > a, #media-browser-tabset .btn-group-sm > a.button,
 #media-browser-tabset .btn-group-sm > input.form-submit, #modal-content .btn-group-sm > .form-submit,
 #modal-content .btn-group-sm > #edit-cancel {
   padding: 5px 10px;
@@ -4497,7 +4504,7 @@ fieldset[disabled] #media-browser-tabset input.active.form-submit,
 }
 
 /* line 132, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-xs, .btn-group-xs > .btn, form .btn-group-xs > .button.fake-ok, form .btn-group-xs > .button.fake-cancel, #media-browser-tabset .btn-group-xs > a.button,
+.btn-xs, .btn-group-xs > .btn, form .btn-group-xs > .button.fake-ok, form .btn-group-xs > .button.fake-cancel, .media-widget.btn-group-xs > a, #media-browser-tabset .btn-group-xs > a.button,
 #media-browser-tabset .btn-group-xs > input.form-submit, #modal-content .btn-group-xs > .form-submit,
 #modal-content .btn-group-xs > #edit-cancel {
   padding: 1px 5px;
@@ -4743,12 +4750,13 @@ tbody.collapse.in {
   vertical-align: middle;
 }
 /* line 11, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn, form .btn-group > .button.fake-ok, form .btn-group > .button.fake-cancel, #media-browser-tabset .btn-group > a.button,
+.btn-group > .btn, form .btn-group > .button.fake-ok, form .btn-group > .button.fake-cancel, .media-widget.btn-group > a, #media-browser-tabset .btn-group > a.button,
 #media-browser-tabset .btn-group > input.form-submit, #modal-content .btn-group > .form-submit,
 #modal-content .btn-group > #edit-cancel,
 .btn-group-vertical > .btn,
 form .btn-group-vertical > .button.fake-ok,
 form .btn-group-vertical > .button.fake-cancel,
+.media-widget.btn-group-vertical > a,
 #media-browser-tabset .btn-group-vertical > a.button,
 #media-browser-tabset .btn-group-vertical > input.form-submit,
 #modal-content .btn-group-vertical > .form-submit,
@@ -4757,18 +4765,19 @@ form .btn-group-vertical > .button.fake-cancel,
   float: left;
 }
 /* line 18, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:hover, form .btn-group > .button.fake-ok:hover, form .btn-group > .button.fake-cancel:hover, #media-browser-tabset .btn-group > a.button:hover,
+.btn-group > .btn:hover, form .btn-group > .button.fake-ok:hover, form .btn-group > .button.fake-cancel:hover, .media-widget.btn-group > a:hover, #media-browser-tabset .btn-group > a.button:hover,
 #media-browser-tabset .btn-group > input.form-submit:hover, #modal-content .btn-group > .form-submit:hover,
-#modal-content .btn-group > #edit-cancel:hover, .btn-group > .btn:focus, form .btn-group > .button.fake-ok:focus, form .btn-group > .button.fake-cancel:focus, #media-browser-tabset .btn-group > a.button:focus,
+#modal-content .btn-group > #edit-cancel:hover, .btn-group > .btn:focus, form .btn-group > .button.fake-ok:focus, form .btn-group > .button.fake-cancel:focus, .media-widget.btn-group > a:focus, #media-browser-tabset .btn-group > a.button:focus,
 #media-browser-tabset .btn-group > input.form-submit:focus, #modal-content .btn-group > .form-submit:focus,
-#modal-content .btn-group > #edit-cancel:focus, .btn-group > .btn:active, form .btn-group > .button.fake-ok:active, form .btn-group > .button.fake-cancel:active, #media-browser-tabset .btn-group > a.button:active,
+#modal-content .btn-group > #edit-cancel:focus, .btn-group > .btn:active, form .btn-group > .button.fake-ok:active, form .btn-group > .button.fake-cancel:active, .media-widget.btn-group > a:active, #media-browser-tabset .btn-group > a.button:active,
 #media-browser-tabset .btn-group > input.form-submit:active, #modal-content .btn-group > .form-submit:active,
-#modal-content .btn-group > #edit-cancel:active, .btn-group > .btn.active, form .btn-group > .active.button.fake-ok, form .btn-group > .active.button.fake-cancel, #media-browser-tabset .btn-group > a.active.button,
+#modal-content .btn-group > #edit-cancel:active, .btn-group > .btn.active, form .btn-group > .active.button.fake-ok, form .btn-group > .active.button.fake-cancel, .media-widget.btn-group > a.active, #media-browser-tabset .btn-group > a.active.button,
 #media-browser-tabset .btn-group > input.active.form-submit, #modal-content .btn-group > .active.form-submit,
 #modal-content .btn-group > .active#edit-cancel,
 .btn-group-vertical > .btn:hover,
 form .btn-group-vertical > .button.fake-ok:hover,
 form .btn-group-vertical > .button.fake-cancel:hover,
+.media-widget.btn-group-vertical > a:hover,
 #media-browser-tabset .btn-group-vertical > a.button:hover,
 #media-browser-tabset .btn-group-vertical > input.form-submit:hover,
 #modal-content .btn-group-vertical > .form-submit:hover,
@@ -4776,6 +4785,7 @@ form .btn-group-vertical > .button.fake-cancel:hover,
 .btn-group-vertical > .btn:focus,
 form .btn-group-vertical > .button.fake-ok:focus,
 form .btn-group-vertical > .button.fake-cancel:focus,
+.media-widget.btn-group-vertical > a:focus,
 #media-browser-tabset .btn-group-vertical > a.button:focus,
 #media-browser-tabset .btn-group-vertical > input.form-submit:focus,
 #modal-content .btn-group-vertical > .form-submit:focus,
@@ -4783,6 +4793,7 @@ form .btn-group-vertical > .button.fake-cancel:focus,
 .btn-group-vertical > .btn:active,
 form .btn-group-vertical > .button.fake-ok:active,
 form .btn-group-vertical > .button.fake-cancel:active,
+.media-widget.btn-group-vertical > a:active,
 #media-browser-tabset .btn-group-vertical > a.button:active,
 #media-browser-tabset .btn-group-vertical > input.form-submit:active,
 #modal-content .btn-group-vertical > .form-submit:active,
@@ -4790,6 +4801,7 @@ form .btn-group-vertical > .button.fake-cancel:active,
 .btn-group-vertical > .btn.active,
 form .btn-group-vertical > .active.button.fake-ok,
 form .btn-group-vertical > .active.button.fake-cancel,
+.media-widget.btn-group-vertical > a.active,
 #media-browser-tabset .btn-group-vertical > a.active.button,
 #media-browser-tabset .btn-group-vertical > input.active.form-submit,
 #modal-content .btn-group-vertical > .active.form-submit,
@@ -4797,12 +4809,13 @@ form .btn-group-vertical > .active.button.fake-cancel,
   z-index: 2;
 }
 /* line 21, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:focus, form .btn-group > .button.fake-ok:focus, form .btn-group > .button.fake-cancel:focus, #media-browser-tabset .btn-group > a.button:focus,
+.btn-group > .btn:focus, form .btn-group > .button.fake-ok:focus, form .btn-group > .button.fake-cancel:focus, .media-widget.btn-group > a:focus, #media-browser-tabset .btn-group > a.button:focus,
 #media-browser-tabset .btn-group > input.form-submit:focus, #modal-content .btn-group > .form-submit:focus,
 #modal-content .btn-group > #edit-cancel:focus,
 .btn-group-vertical > .btn:focus,
 form .btn-group-vertical > .button.fake-ok:focus,
 form .btn-group-vertical > .button.fake-cancel:focus,
+.media-widget.btn-group-vertical > a:focus,
 #media-browser-tabset .btn-group-vertical > a.button:focus,
 #media-browser-tabset .btn-group-vertical > input.form-submit:focus,
 #modal-content .btn-group-vertical > .form-submit:focus,
@@ -4811,11 +4824,11 @@ form .btn-group-vertical > .button.fake-cancel:focus,
 }
 
 /* line 33, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group .btn + .btn, .btn-group form .button.fake-ok + .btn, form .btn-group .button.fake-ok + .btn, .btn-group form .button.fake-cancel + .btn, form .btn-group .button.fake-cancel + .btn, .btn-group #media-browser-tabset a.button + .btn, #media-browser-tabset .btn-group a.button + .btn,
+.btn-group .btn + .btn, .btn-group form .button.fake-ok + .btn, form .btn-group .button.fake-ok + .btn, .btn-group form .button.fake-cancel + .btn, form .btn-group .button.fake-cancel + .btn, .btn-group .media-widget > a + .btn, .btn-group #media-browser-tabset a.button + .btn, #media-browser-tabset .btn-group a.button + .btn,
 .btn-group #media-browser-tabset input.form-submit + .btn,
 #media-browser-tabset .btn-group input.form-submit + .btn, .btn-group #modal-content .form-submit + .btn, #modal-content .btn-group .form-submit + .btn,
 .btn-group #modal-content #edit-cancel + .btn,
-#modal-content .btn-group #edit-cancel + .btn, .btn-group form .btn + .button.fake-ok, form .btn-group .btn + .button.fake-ok, .btn-group form .button.fake-ok + .button.fake-ok, form .btn-group .button.fake-ok + .button.fake-ok, .btn-group form .button.fake-cancel + .button.fake-ok, form .btn-group .button.fake-cancel + .button.fake-ok, form .btn-group #media-browser-tabset a.button + .button.fake-ok, #media-browser-tabset .btn-group form a.button + .button.fake-ok, form #media-browser-tabset .btn-group a.button + .button.fake-ok,
+#modal-content .btn-group #edit-cancel + .btn, .btn-group form .btn + .button.fake-ok, form .btn-group .btn + .button.fake-ok, .btn-group form .button.fake-ok + .button.fake-ok, form .btn-group .button.fake-ok + .button.fake-ok, .btn-group form .button.fake-cancel + .button.fake-ok, form .btn-group .button.fake-cancel + .button.fake-ok, .btn-group form .media-widget > a + .button.fake-ok, form .btn-group .media-widget > a + .button.fake-ok, form .btn-group #media-browser-tabset a.button + .button.fake-ok, #media-browser-tabset .btn-group form a.button + .button.fake-ok, form #media-browser-tabset .btn-group a.button + .button.fake-ok,
 form .btn-group #media-browser-tabset input.form-submit + .button.fake-ok,
 #media-browser-tabset .btn-group form input.form-submit + .button.fake-ok,
 form #media-browser-tabset .btn-group input.form-submit + .button.fake-ok, .btn-group #modal-content form .form-submit + .button.fake-ok, form .btn-group #modal-content .form-submit + .button.fake-ok, #modal-content .btn-group form .form-submit + .button.fake-ok, form #modal-content .btn-group .form-submit + .button.fake-ok,
@@ -4826,7 +4839,7 @@ form #media-browser-tabset .btn-group input.form-submit + .button.fake-ok, .btn-
 .btn-group #modal-content form #edit-cancel + .button.fake-ok,
 form .btn-group #modal-content #edit-cancel + .button.fake-ok,
 #modal-content .btn-group form #edit-cancel + .button.fake-ok,
-form #modal-content .btn-group #edit-cancel + .button.fake-ok, .btn-group form .btn + .button.fake-cancel, form .btn-group .btn + .button.fake-cancel, .btn-group form .button.fake-ok + .button.fake-cancel, form .btn-group .button.fake-ok + .button.fake-cancel, .btn-group form .button.fake-cancel + .button.fake-cancel, form .btn-group .button.fake-cancel + .button.fake-cancel, form .btn-group #media-browser-tabset a.button + .button.fake-cancel, #media-browser-tabset .btn-group form a.button + .button.fake-cancel, form #media-browser-tabset .btn-group a.button + .button.fake-cancel,
+form #modal-content .btn-group #edit-cancel + .button.fake-ok, .btn-group form .btn + .button.fake-cancel, form .btn-group .btn + .button.fake-cancel, .btn-group form .button.fake-ok + .button.fake-cancel, form .btn-group .button.fake-ok + .button.fake-cancel, .btn-group form .button.fake-cancel + .button.fake-cancel, form .btn-group .button.fake-cancel + .button.fake-cancel, .btn-group form .media-widget > a + .button.fake-cancel, form .btn-group .media-widget > a + .button.fake-cancel, form .btn-group #media-browser-tabset a.button + .button.fake-cancel, #media-browser-tabset .btn-group form a.button + .button.fake-cancel, form #media-browser-tabset .btn-group a.button + .button.fake-cancel,
 form .btn-group #media-browser-tabset input.form-submit + .button.fake-cancel,
 #media-browser-tabset .btn-group form input.form-submit + .button.fake-cancel,
 form #media-browser-tabset .btn-group input.form-submit + .button.fake-cancel, .btn-group #modal-content form .form-submit + .button.fake-cancel, form .btn-group #modal-content .form-submit + .button.fake-cancel, #modal-content .btn-group form .form-submit + .button.fake-cancel, form #modal-content .btn-group .form-submit + .button.fake-cancel,
@@ -4837,7 +4850,11 @@ form #media-browser-tabset .btn-group input.form-submit + .button.fake-cancel, .
 .btn-group #modal-content form #edit-cancel + .button.fake-cancel,
 form .btn-group #modal-content #edit-cancel + .button.fake-cancel,
 #modal-content .btn-group form #edit-cancel + .button.fake-cancel,
-form #modal-content .btn-group #edit-cancel + .button.fake-cancel, .btn-group #media-browser-tabset .btn + a.button, #media-browser-tabset .btn-group .btn + a.button, .btn-group form #media-browser-tabset .button.fake-ok + a.button, form .btn-group #media-browser-tabset .button.fake-ok + a.button, .btn-group form #media-browser-tabset .button.fake-cancel + a.button, form .btn-group #media-browser-tabset .button.fake-cancel + a.button, .btn-group #media-browser-tabset a.button + a.button, #media-browser-tabset .btn-group a.button + a.button,
+form #modal-content .btn-group #edit-cancel + .button.fake-cancel, .btn-group .media-widget > .btn + a, .btn-group form .media-widget > .button.fake-ok + a, form .btn-group .media-widget > .button.fake-ok + a, .btn-group form .media-widget > .button.fake-cancel + a, form .btn-group .media-widget > .button.fake-cancel + a, .btn-group .media-widget > a + a, .btn-group #media-browser-tabset .media-widget > a.button + a, #media-browser-tabset .btn-group .media-widget > a.button + a,
+.btn-group #media-browser-tabset .media-widget > input.form-submit + a,
+#media-browser-tabset .btn-group .media-widget > input.form-submit + a, .btn-group #modal-content .media-widget > .form-submit + a, #modal-content .btn-group .media-widget > .form-submit + a,
+.btn-group #modal-content .media-widget > #edit-cancel + a,
+#modal-content .btn-group .media-widget > #edit-cancel + a, .btn-group #media-browser-tabset .btn + a.button, #media-browser-tabset .btn-group .btn + a.button, .btn-group form #media-browser-tabset .button.fake-ok + a.button, form .btn-group #media-browser-tabset .button.fake-ok + a.button, .btn-group form #media-browser-tabset .button.fake-cancel + a.button, form .btn-group #media-browser-tabset .button.fake-cancel + a.button, .btn-group #media-browser-tabset .media-widget > a + a.button, #media-browser-tabset .btn-group .media-widget > a + a.button, .btn-group #media-browser-tabset a.button + a.button, #media-browser-tabset .btn-group a.button + a.button,
 .btn-group #media-browser-tabset input.form-submit + a.button,
 #media-browser-tabset .btn-group input.form-submit + a.button, .btn-group #modal-content #media-browser-tabset .form-submit + a.button, #media-browser-tabset .btn-group #modal-content .form-submit + a.button, #modal-content .btn-group #media-browser-tabset .form-submit + a.button, #media-browser-tabset #modal-content .btn-group .form-submit + a.button,
 .btn-group #modal-content #media-browser-tabset #edit-cancel + a.button,
@@ -4850,10 +4867,12 @@ form #modal-content .btn-group #edit-cancel + .button.fake-cancel, .btn-group #m
 form .btn-group #media-browser-tabset .button.fake-ok + input.form-submit,
 .btn-group form #media-browser-tabset .button.fake-cancel + input.form-submit,
 form .btn-group #media-browser-tabset .button.fake-cancel + input.form-submit,
+.btn-group #media-browser-tabset .media-widget > a + input.form-submit,
+#media-browser-tabset .btn-group .media-widget > a + input.form-submit,
 .btn-group #media-browser-tabset a.button + input.form-submit,
 #media-browser-tabset .btn-group a.button + input.form-submit,
 .btn-group #media-browser-tabset input.form-submit + input.form-submit,
-#media-browser-tabset .btn-group input.form-submit + input.form-submit, .btn-group #modal-content .btn + .form-submit, #modal-content .btn-group .btn + .form-submit, .btn-group form #modal-content .button.fake-ok + .form-submit, #modal-content .btn-group form .button.fake-ok + .form-submit, form .btn-group #modal-content .button.fake-ok + .form-submit, #modal-content form .btn-group .button.fake-ok + .form-submit, .btn-group form #modal-content .button.fake-cancel + .form-submit, #modal-content .btn-group form .button.fake-cancel + .form-submit, form .btn-group #modal-content .button.fake-cancel + .form-submit, #modal-content form .btn-group .button.fake-cancel + .form-submit, .btn-group #media-browser-tabset #modal-content a.button + .form-submit, #modal-content .btn-group #media-browser-tabset a.button + .form-submit, #media-browser-tabset .btn-group #modal-content a.button + .form-submit, #modal-content #media-browser-tabset .btn-group a.button + .form-submit, .btn-group #modal-content .form-submit + .form-submit, #modal-content .btn-group .form-submit + .form-submit,
+#media-browser-tabset .btn-group input.form-submit + input.form-submit, .btn-group #modal-content .btn + .form-submit, #modal-content .btn-group .btn + .form-submit, .btn-group form #modal-content .button.fake-ok + .form-submit, #modal-content .btn-group form .button.fake-ok + .form-submit, form .btn-group #modal-content .button.fake-ok + .form-submit, #modal-content form .btn-group .button.fake-ok + .form-submit, .btn-group form #modal-content .button.fake-cancel + .form-submit, #modal-content .btn-group form .button.fake-cancel + .form-submit, form .btn-group #modal-content .button.fake-cancel + .form-submit, #modal-content form .btn-group .button.fake-cancel + .form-submit, .btn-group #modal-content .media-widget > a + .form-submit, #modal-content .btn-group .media-widget > a + .form-submit, .btn-group #media-browser-tabset #modal-content a.button + .form-submit, #modal-content .btn-group #media-browser-tabset a.button + .form-submit, #media-browser-tabset .btn-group #modal-content a.button + .form-submit, #modal-content #media-browser-tabset .btn-group a.button + .form-submit, .btn-group #modal-content .form-submit + .form-submit, #modal-content .btn-group .form-submit + .form-submit,
 .btn-group #modal-content #edit-cancel + .form-submit,
 #modal-content .btn-group #edit-cancel + .form-submit,
 .btn-group #media-browser-tabset form .button.fake-ok + a.button,
@@ -4878,6 +4897,8 @@ form .btn-group #modal-content .button.fake-ok + #edit-cancel,
 #modal-content .btn-group form .button.fake-cancel + #edit-cancel,
 form .btn-group #modal-content .button.fake-cancel + #edit-cancel,
 #modal-content form .btn-group .button.fake-cancel + #edit-cancel,
+.btn-group #modal-content .media-widget > a + #edit-cancel,
+#modal-content .btn-group .media-widget > a + #edit-cancel,
 .btn-group #media-browser-tabset #modal-content a.button + #edit-cancel,
 #modal-content .btn-group #media-browser-tabset a.button + #edit-cancel,
 #media-browser-tabset .btn-group #modal-content a.button + #edit-cancel,
@@ -4891,6 +4912,7 @@ form .btn-group #modal-content .button.fake-cancel + #edit-cancel,
 form .btn-group .button.fake-ok + .btn-group,
 .btn-group form .button.fake-cancel + .btn-group,
 form .btn-group .button.fake-cancel + .btn-group,
+.btn-group .media-widget > a + .btn-group,
 .btn-group #media-browser-tabset a.button + .btn-group,
 #media-browser-tabset .btn-group a.button + .btn-group,
 .btn-group #media-browser-tabset input.form-submit + .btn-group,
@@ -4904,6 +4926,7 @@ form .btn-group .button.fake-cancel + .btn-group,
 form .btn-group .btn-group + .button.fake-ok,
 .btn-group form .btn-group + .button.fake-cancel,
 form .btn-group .btn-group + .button.fake-cancel,
+.btn-group .media-widget > .btn-group + a,
 .btn-group #media-browser-tabset .btn-group + a.button,
 #media-browser-tabset .btn-group .btn-group + a.button,
 .btn-group #media-browser-tabset .btn-group + input.form-submit,
@@ -4935,7 +4958,7 @@ form .btn-group .btn-group + .button.fake-cancel,
   float: left;
 }
 /* line 49, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-toolbar > .btn, form .btn-toolbar > .button.fake-ok, form .btn-toolbar > .button.fake-cancel, #media-browser-tabset .btn-toolbar > a.button,
+.btn-toolbar > .btn, form .btn-toolbar > .button.fake-ok, form .btn-toolbar > .button.fake-cancel, .media-widget.btn-toolbar > a, #media-browser-tabset .btn-toolbar > a.button,
 #media-browser-tabset .btn-toolbar > input.form-submit, #modal-content .btn-toolbar > .form-submit,
 #modal-content .btn-toolbar > #edit-cancel,
 .btn-toolbar > .btn-group,
@@ -4944,20 +4967,20 @@ form .btn-group .btn-group + .button.fake-cancel,
 }
 
 /* line 54, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > .button.fake-ok:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > .button.fake-cancel:not(:first-child):not(:last-child):not(.dropdown-toggle), #media-browser-tabset .btn-group > a.button:not(:first-child):not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > .button.fake-ok:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > .button.fake-cancel:not(:first-child):not(:last-child):not(.dropdown-toggle), .media-widget.btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), #media-browser-tabset .btn-group > a.button:not(:first-child):not(:last-child):not(.dropdown-toggle),
 #media-browser-tabset .btn-group > input.form-submit:not(:first-child):not(:last-child):not(.dropdown-toggle), #modal-content .btn-group > .form-submit:not(:first-child):not(:last-child):not(.dropdown-toggle),
 #modal-content .btn-group > #edit-cancel:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
 /* line 59, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child, form .btn-group > .button.fake-ok:first-child, form .btn-group > .button.fake-cancel:first-child, #media-browser-tabset .btn-group > a.button:first-child,
+.btn-group > .btn:first-child, form .btn-group > .button.fake-ok:first-child, form .btn-group > .button.fake-cancel:first-child, .media-widget.btn-group > a:first-child, #media-browser-tabset .btn-group > a.button:first-child,
 #media-browser-tabset .btn-group > input.form-submit:first-child, #modal-content .btn-group > .form-submit:first-child,
 #modal-content .btn-group > #edit-cancel:first-child {
   margin-left: 0;
 }
 /* line 61, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > .button.fake-ok:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > .button.fake-cancel:first-child:not(:last-child):not(.dropdown-toggle), #media-browser-tabset .btn-group > a.button:first-child:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > .button.fake-ok:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > .button.fake-cancel:first-child:not(:last-child):not(.dropdown-toggle), .media-widget.btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), #media-browser-tabset .btn-group > a.button:first-child:not(:last-child):not(.dropdown-toggle),
 #media-browser-tabset .btn-group > input.form-submit:first-child:not(:last-child):not(.dropdown-toggle), #modal-content .btn-group > .form-submit:first-child:not(:last-child):not(.dropdown-toggle),
 #modal-content .btn-group > #edit-cancel:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
@@ -4965,7 +4988,7 @@ form .btn-group .btn-group + .button.fake-cancel,
 }
 
 /* line 67, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child:not(:first-child), form .btn-group > .button.fake-ok:last-child:not(:first-child), form .btn-group > .button.fake-cancel:last-child:not(:first-child), #media-browser-tabset .btn-group > a.button:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), form .btn-group > .button.fake-ok:last-child:not(:first-child), form .btn-group > .button.fake-cancel:last-child:not(:first-child), .media-widget.btn-group > a:last-child:not(:first-child), #media-browser-tabset .btn-group > a.button:last-child:not(:first-child),
 #media-browser-tabset .btn-group > input.form-submit:last-child:not(:first-child), #modal-content .btn-group > .form-submit:last-child:not(:first-child),
 #modal-content .btn-group > #edit-cancel:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
@@ -4979,14 +5002,14 @@ form .btn-group .btn-group + .button.fake-cancel,
 }
 
 /* line 75, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, form .btn-group > .btn-group:not(:first-child):not(:last-child) > .button.fake-ok, form .btn-group > .btn-group:not(:first-child):not(:last-child) > .button.fake-cancel, #media-browser-tabset .btn-group > .btn-group:not(:first-child):not(:last-child) > a.button,
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, form .btn-group > .btn-group:not(:first-child):not(:last-child) > .button.fake-ok, form .btn-group > .btn-group:not(:first-child):not(:last-child) > .button.fake-cancel, .btn-group > .media-widget.btn-group:not(:first-child):not(:last-child) > a, #media-browser-tabset .btn-group > .btn-group:not(:first-child):not(:last-child) > a.button,
 #media-browser-tabset .btn-group > .btn-group:not(:first-child):not(:last-child) > input.form-submit, #modal-content .btn-group > .btn-group:not(:first-child):not(:last-child) > .form-submit,
 #modal-content .btn-group > .btn-group:not(:first-child):not(:last-child) > #edit-cancel {
   border-radius: 0;
 }
 
 /* line 80, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:first-child > .btn:last-child, form .btn-group > .btn-group:first-child > .button.fake-ok:last-child, form .btn-group > .btn-group:first-child > .button.fake-cancel:last-child, #media-browser-tabset .btn-group > .btn-group:first-child > a.button:last-child,
+.btn-group > .btn-group:first-child > .btn:last-child, form .btn-group > .btn-group:first-child > .button.fake-ok:last-child, form .btn-group > .btn-group:first-child > .button.fake-cancel:last-child, .btn-group > .media-widget.btn-group:first-child > a:last-child, #media-browser-tabset .btn-group > .btn-group:first-child > a.button:last-child,
 #media-browser-tabset .btn-group > .btn-group:first-child > input.form-submit:last-child, #modal-content .btn-group > .btn-group:first-child > .form-submit:last-child,
 #modal-content .btn-group > .btn-group:first-child > #edit-cancel:last-child,
 .btn-group > .btn-group:first-child > .dropdown-toggle {
@@ -4995,7 +5018,7 @@ form .btn-group .btn-group + .button.fake-cancel,
 }
 
 /* line 84, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:last-child > .btn:first-child, form .btn-group > .btn-group:last-child > .button.fake-ok:first-child, form .btn-group > .btn-group:last-child > .button.fake-cancel:first-child, #media-browser-tabset .btn-group > .btn-group:last-child > a.button:first-child,
+.btn-group > .btn-group:last-child > .btn:first-child, form .btn-group > .btn-group:last-child > .button.fake-ok:first-child, form .btn-group > .btn-group:last-child > .button.fake-cancel:first-child, .btn-group > .media-widget.btn-group:last-child > a:first-child, #media-browser-tabset .btn-group > .btn-group:last-child > a.button:first-child,
 #media-browser-tabset .btn-group > .btn-group:last-child > input.form-submit:first-child, #modal-content .btn-group > .btn-group:last-child > .form-submit:first-child,
 #modal-content .btn-group > .btn-group:last-child > #edit-cancel:first-child {
   border-bottom-left-radius: 0;
@@ -5009,7 +5032,7 @@ form .btn-group .btn-group + .button.fake-cancel,
 }
 
 /* line 108, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn + .dropdown-toggle, form .btn-group > .button.fake-ok + .dropdown-toggle, form .btn-group > .button.fake-cancel + .dropdown-toggle, #media-browser-tabset .btn-group > a.button + .dropdown-toggle,
+.btn-group > .btn + .dropdown-toggle, form .btn-group > .button.fake-ok + .dropdown-toggle, form .btn-group > .button.fake-cancel + .dropdown-toggle, .media-widget.btn-group > a + .dropdown-toggle, #media-browser-tabset .btn-group > a.button + .dropdown-toggle,
 #media-browser-tabset .btn-group > input.form-submit + .dropdown-toggle, #modal-content .btn-group > .form-submit + .dropdown-toggle,
 #modal-content .btn-group > #edit-cancel + .dropdown-toggle {
   padding-left: 8px;
@@ -5017,7 +5040,7 @@ form .btn-group .btn-group + .button.fake-cancel,
 }
 
 /* line 112, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, form .btn-group-lg.btn-group > .button.fake-ok + .dropdown-toggle, form .btn-group-lg.btn-group > .button.fake-cancel + .dropdown-toggle, #media-browser-tabset .btn-group-lg.btn-group > a.button + .dropdown-toggle,
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, form .btn-group-lg.btn-group > .button.fake-ok + .dropdown-toggle, form .btn-group-lg.btn-group > .button.fake-cancel + .dropdown-toggle, .media-widget.btn-group-lg.btn-group > a + .dropdown-toggle, #media-browser-tabset .btn-group-lg.btn-group > a.button + .dropdown-toggle,
 #media-browser-tabset .btn-group-lg.btn-group > input.form-submit + .dropdown-toggle, #modal-content .btn-group-lg.btn-group > .form-submit + .dropdown-toggle,
 #modal-content .btn-group-lg.btn-group > #edit-cancel + .dropdown-toggle {
   padding-left: 12px;
@@ -5036,14 +5059,14 @@ form .btn-group .btn-group + .button.fake-cancel,
 }
 
 /* line 130, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn .caret, form .button.fake-ok .caret, form .button.fake-cancel .caret, #media-browser-tabset a.button .caret,
+.btn .caret, form .button.fake-ok .caret, form .button.fake-cancel .caret, .media-widget > a .caret, #media-browser-tabset a.button .caret,
 #media-browser-tabset input.form-submit .caret, #modal-content .form-submit .caret,
 #modal-content #edit-cancel .caret {
   margin-left: 0;
 }
 
 /* line 134, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-lg .caret, .btn-group-lg > .btn .caret, form .btn-group-lg > .button.fake-ok .caret, form .btn-group-lg > .button.fake-cancel .caret, #media-browser-tabset .btn-group-lg > a.button .caret,
+.btn-lg .caret, .btn-group-lg > .btn .caret, form .btn-group-lg > .button.fake-ok .caret, form .btn-group-lg > .button.fake-cancel .caret, .media-widget.btn-group-lg > a .caret, #media-browser-tabset .btn-group-lg > a.button .caret,
 #media-browser-tabset .btn-group-lg > input.form-submit .caret, #modal-content .btn-group-lg > .form-submit .caret,
 #modal-content .btn-group-lg > #edit-cancel .caret {
   border-width: 5px 5px 0;
@@ -5051,7 +5074,7 @@ form .btn-group .btn-group + .button.fake-cancel,
 }
 
 /* line 139, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup form .btn-group-lg > .button.fake-ok .caret, form .dropup .btn-group-lg > .button.fake-ok .caret, .dropup form .btn-group-lg > .button.fake-cancel .caret, form .dropup .btn-group-lg > .button.fake-cancel .caret, .dropup #media-browser-tabset .btn-group-lg > a.button .caret, #media-browser-tabset .dropup .btn-group-lg > a.button .caret,
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup form .btn-group-lg > .button.fake-ok .caret, form .dropup .btn-group-lg > .button.fake-ok .caret, .dropup form .btn-group-lg > .button.fake-cancel .caret, form .dropup .btn-group-lg > .button.fake-cancel .caret, .dropup .media-widget.btn-group-lg > a .caret, .dropup #media-browser-tabset .btn-group-lg > a.button .caret, #media-browser-tabset .dropup .btn-group-lg > a.button .caret,
 .dropup #media-browser-tabset .btn-group-lg > input.form-submit .caret,
 #media-browser-tabset .dropup .btn-group-lg > input.form-submit .caret, .dropup #modal-content .btn-group-lg > .form-submit .caret, #modal-content .dropup .btn-group-lg > .form-submit .caret,
 .dropup #modal-content .btn-group-lg > #edit-cancel .caret,
@@ -5060,13 +5083,14 @@ form .btn-group .btn-group + .button.fake-cancel,
 }
 
 /* line 150, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn, form .btn-group-vertical > .button.fake-ok, form .btn-group-vertical > .button.fake-cancel, #media-browser-tabset .btn-group-vertical > a.button,
+.btn-group-vertical > .btn, form .btn-group-vertical > .button.fake-ok, form .btn-group-vertical > .button.fake-cancel, .media-widget.btn-group-vertical > a, #media-browser-tabset .btn-group-vertical > a.button,
 #media-browser-tabset .btn-group-vertical > input.form-submit, #modal-content .btn-group-vertical > .form-submit,
 #modal-content .btn-group-vertical > #edit-cancel,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
 form .btn-group-vertical > .btn-group > .button.fake-ok,
 form .btn-group-vertical > .btn-group > .button.fake-cancel,
+.btn-group-vertical > .media-widget.btn-group > a,
 #media-browser-tabset .btn-group-vertical > .btn-group > a.button,
 #media-browser-tabset .btn-group-vertical > .btn-group > input.form-submit,
 #modal-content .btn-group-vertical > .btn-group > .form-submit,
@@ -5086,33 +5110,36 @@ form .btn-group-vertical > .btn-group > .button.fake-cancel,
   clear: both;
 }
 /* line 160, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group > .btn, form .btn-group-vertical > .btn-group > .button.fake-ok, form .btn-group-vertical > .btn-group > .button.fake-cancel, #media-browser-tabset .btn-group-vertical > .btn-group > a.button,
+.btn-group-vertical > .btn-group > .btn, form .btn-group-vertical > .btn-group > .button.fake-ok, form .btn-group-vertical > .btn-group > .button.fake-cancel, .btn-group-vertical > .media-widget.btn-group > a, #media-browser-tabset .btn-group-vertical > .btn-group > a.button,
 #media-browser-tabset .btn-group-vertical > .btn-group > input.form-submit, #modal-content .btn-group-vertical > .btn-group > .form-submit,
 #modal-content .btn-group-vertical > .btn-group > #edit-cancel {
   float: none;
 }
 /* line 168, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn + .btn, form .btn-group-vertical > .button.fake-ok + .btn, form .btn-group-vertical > .button.fake-cancel + .btn, #media-browser-tabset .btn-group-vertical > a.button + .btn,
+.btn-group-vertical > .btn + .btn, form .btn-group-vertical > .button.fake-ok + .btn, form .btn-group-vertical > .button.fake-cancel + .btn, .media-widget.btn-group-vertical > a + .btn, #media-browser-tabset .btn-group-vertical > a.button + .btn,
 #media-browser-tabset .btn-group-vertical > input.form-submit + .btn, #modal-content .btn-group-vertical > .form-submit + .btn,
-#modal-content .btn-group-vertical > #edit-cancel + .btn, form .btn-group-vertical > .btn + .button.fake-ok, form .btn-group-vertical > .button.fake-ok + .button.fake-ok, form .btn-group-vertical > .button.fake-cancel + .button.fake-ok, form #media-browser-tabset .btn-group-vertical > a.button + .button.fake-ok,
+#modal-content .btn-group-vertical > #edit-cancel + .btn, form .btn-group-vertical > .btn + .button.fake-ok, form .btn-group-vertical > .button.fake-ok + .button.fake-ok, form .btn-group-vertical > .button.fake-cancel + .button.fake-ok, form .media-widget.btn-group-vertical > a + .button.fake-ok, form #media-browser-tabset .btn-group-vertical > a.button + .button.fake-ok,
 form #media-browser-tabset .btn-group-vertical > input.form-submit + .button.fake-ok, #modal-content form .btn-group-vertical > .form-submit + .button.fake-ok, form #modal-content .btn-group-vertical > .form-submit + .button.fake-ok,
 #media-browser-tabset form .btn-group-vertical > a.button + .button.fake-ok,
 #media-browser-tabset form .btn-group-vertical > input.form-submit + .button.fake-ok,
 #modal-content form .btn-group-vertical > #edit-cancel + .button.fake-ok,
-form #modal-content .btn-group-vertical > #edit-cancel + .button.fake-ok, form .btn-group-vertical > .btn + .button.fake-cancel, form .btn-group-vertical > .button.fake-ok + .button.fake-cancel, form .btn-group-vertical > .button.fake-cancel + .button.fake-cancel, form #media-browser-tabset .btn-group-vertical > a.button + .button.fake-cancel,
+form #modal-content .btn-group-vertical > #edit-cancel + .button.fake-ok, form .btn-group-vertical > .btn + .button.fake-cancel, form .btn-group-vertical > .button.fake-ok + .button.fake-cancel, form .btn-group-vertical > .button.fake-cancel + .button.fake-cancel, form .media-widget.btn-group-vertical > a + .button.fake-cancel, form #media-browser-tabset .btn-group-vertical > a.button + .button.fake-cancel,
 form #media-browser-tabset .btn-group-vertical > input.form-submit + .button.fake-cancel, #modal-content form .btn-group-vertical > .form-submit + .button.fake-cancel, form #modal-content .btn-group-vertical > .form-submit + .button.fake-cancel,
 #media-browser-tabset form .btn-group-vertical > a.button + .button.fake-cancel,
 #media-browser-tabset form .btn-group-vertical > input.form-submit + .button.fake-cancel,
 #modal-content form .btn-group-vertical > #edit-cancel + .button.fake-cancel,
-form #modal-content .btn-group-vertical > #edit-cancel + .button.fake-cancel, #media-browser-tabset .btn-group-vertical > .btn + a.button, form #media-browser-tabset .btn-group-vertical > .button.fake-ok + a.button, form #media-browser-tabset .btn-group-vertical > .button.fake-cancel + a.button, #media-browser-tabset .btn-group-vertical > a.button + a.button,
+form #modal-content .btn-group-vertical > #edit-cancel + .button.fake-cancel, .media-widget.btn-group-vertical > .btn + a, form .media-widget.btn-group-vertical > .button.fake-ok + a, form .media-widget.btn-group-vertical > .button.fake-cancel + a, .media-widget.btn-group-vertical > a + a, #media-browser-tabset .media-widget.btn-group-vertical > a.button + a,
+#media-browser-tabset .media-widget.btn-group-vertical > input.form-submit + a, #modal-content .media-widget.btn-group-vertical > .form-submit + a,
+#modal-content .media-widget.btn-group-vertical > #edit-cancel + a, #media-browser-tabset .btn-group-vertical > .btn + a.button, form #media-browser-tabset .btn-group-vertical > .button.fake-ok + a.button, form #media-browser-tabset .btn-group-vertical > .button.fake-cancel + a.button, #media-browser-tabset .media-widget.btn-group-vertical > a + a.button, #media-browser-tabset .btn-group-vertical > a.button + a.button,
 #media-browser-tabset .btn-group-vertical > input.form-submit + a.button, #modal-content #media-browser-tabset .btn-group-vertical > .form-submit + a.button, #media-browser-tabset #modal-content .btn-group-vertical > .form-submit + a.button,
 #modal-content #media-browser-tabset .btn-group-vertical > #edit-cancel + a.button,
 #media-browser-tabset #modal-content .btn-group-vertical > #edit-cancel + a.button,
 #media-browser-tabset .btn-group-vertical > .btn + input.form-submit,
 form #media-browser-tabset .btn-group-vertical > .button.fake-ok + input.form-submit,
 form #media-browser-tabset .btn-group-vertical > .button.fake-cancel + input.form-submit,
+#media-browser-tabset .media-widget.btn-group-vertical > a + input.form-submit,
 #media-browser-tabset .btn-group-vertical > a.button + input.form-submit,
-#media-browser-tabset .btn-group-vertical > input.form-submit + input.form-submit, #modal-content .btn-group-vertical > .btn + .form-submit, form #modal-content .btn-group-vertical > .button.fake-ok + .form-submit, #modal-content form .btn-group-vertical > .button.fake-ok + .form-submit, form #modal-content .btn-group-vertical > .button.fake-cancel + .form-submit, #modal-content form .btn-group-vertical > .button.fake-cancel + .form-submit, #media-browser-tabset #modal-content .btn-group-vertical > a.button + .form-submit, #modal-content #media-browser-tabset .btn-group-vertical > a.button + .form-submit, #modal-content .btn-group-vertical > .form-submit + .form-submit,
+#media-browser-tabset .btn-group-vertical > input.form-submit + input.form-submit, #modal-content .btn-group-vertical > .btn + .form-submit, form #modal-content .btn-group-vertical > .button.fake-ok + .form-submit, #modal-content form .btn-group-vertical > .button.fake-ok + .form-submit, form #modal-content .btn-group-vertical > .button.fake-cancel + .form-submit, #modal-content form .btn-group-vertical > .button.fake-cancel + .form-submit, #modal-content .media-widget.btn-group-vertical > a + .form-submit, #media-browser-tabset #modal-content .btn-group-vertical > a.button + .form-submit, #modal-content #media-browser-tabset .btn-group-vertical > a.button + .form-submit, #modal-content .btn-group-vertical > .form-submit + .form-submit,
 #modal-content .btn-group-vertical > #edit-cancel + .form-submit,
 #media-browser-tabset form .btn-group-vertical > .button.fake-ok + a.button,
 #media-browser-tabset form .btn-group-vertical > .button.fake-cancel + a.button,
@@ -5123,6 +5150,7 @@ form #modal-content .btn-group-vertical > .button.fake-ok + #edit-cancel,
 #modal-content form .btn-group-vertical > .button.fake-ok + #edit-cancel,
 form #modal-content .btn-group-vertical > .button.fake-cancel + #edit-cancel,
 #modal-content form .btn-group-vertical > .button.fake-cancel + #edit-cancel,
+#modal-content .media-widget.btn-group-vertical > a + #edit-cancel,
 #media-browser-tabset #modal-content .btn-group-vertical > a.button + #edit-cancel,
 #modal-content #media-browser-tabset .btn-group-vertical > a.button + #edit-cancel,
 #modal-content .btn-group-vertical > .form-submit + #edit-cancel,
@@ -5130,6 +5158,7 @@ form #modal-content .btn-group-vertical > .button.fake-cancel + #edit-cancel,
 .btn-group-vertical > .btn + .btn-group,
 form .btn-group-vertical > .button.fake-ok + .btn-group,
 form .btn-group-vertical > .button.fake-cancel + .btn-group,
+.media-widget.btn-group-vertical > a + .btn-group,
 #media-browser-tabset .btn-group-vertical > a.button + .btn-group,
 #media-browser-tabset .btn-group-vertical > input.form-submit + .btn-group,
 #modal-content .btn-group-vertical > .form-submit + .btn-group,
@@ -5137,6 +5166,7 @@ form .btn-group-vertical > .button.fake-cancel + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
 form .btn-group-vertical > .btn-group + .button.fake-ok,
 form .btn-group-vertical > .btn-group + .button.fake-cancel,
+.media-widget.btn-group-vertical > .btn-group + a,
 #media-browser-tabset .btn-group-vertical > .btn-group + a.button,
 #media-browser-tabset .btn-group-vertical > .btn-group + input.form-submit,
 #modal-content .btn-group-vertical > .btn-group + .form-submit,
@@ -5147,13 +5177,13 @@ form .btn-group-vertical > .btn-group + .button.fake-cancel,
 }
 
 /* line 175, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), form .btn-group-vertical > .button.fake-ok:not(:first-child):not(:last-child), form .btn-group-vertical > .button.fake-cancel:not(:first-child):not(:last-child), #media-browser-tabset .btn-group-vertical > a.button:not(:first-child):not(:last-child),
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), form .btn-group-vertical > .button.fake-ok:not(:first-child):not(:last-child), form .btn-group-vertical > .button.fake-cancel:not(:first-child):not(:last-child), .media-widget.btn-group-vertical > a:not(:first-child):not(:last-child), #media-browser-tabset .btn-group-vertical > a.button:not(:first-child):not(:last-child),
 #media-browser-tabset .btn-group-vertical > input.form-submit:not(:first-child):not(:last-child), #modal-content .btn-group-vertical > .form-submit:not(:first-child):not(:last-child),
 #modal-content .btn-group-vertical > #edit-cancel:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 /* line 178, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:first-child:not(:last-child), form .btn-group-vertical > .button.fake-ok:first-child:not(:last-child), form .btn-group-vertical > .button.fake-cancel:first-child:not(:last-child), #media-browser-tabset .btn-group-vertical > a.button:first-child:not(:last-child),
+.btn-group-vertical > .btn:first-child:not(:last-child), form .btn-group-vertical > .button.fake-ok:first-child:not(:last-child), form .btn-group-vertical > .button.fake-cancel:first-child:not(:last-child), .media-widget.btn-group-vertical > a:first-child:not(:last-child), #media-browser-tabset .btn-group-vertical > a.button:first-child:not(:last-child),
 #media-browser-tabset .btn-group-vertical > input.form-submit:first-child:not(:last-child), #modal-content .btn-group-vertical > .form-submit:first-child:not(:last-child),
 #modal-content .btn-group-vertical > #edit-cancel:first-child:not(:last-child) {
   border-top-right-radius: 4px;
@@ -5161,7 +5191,7 @@ form .btn-group-vertical > .btn-group + .button.fake-cancel,
   border-bottom-left-radius: 0;
 }
 /* line 182, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:last-child:not(:first-child), form .btn-group-vertical > .button.fake-ok:last-child:not(:first-child), form .btn-group-vertical > .button.fake-cancel:last-child:not(:first-child), #media-browser-tabset .btn-group-vertical > a.button:last-child:not(:first-child),
+.btn-group-vertical > .btn:last-child:not(:first-child), form .btn-group-vertical > .button.fake-ok:last-child:not(:first-child), form .btn-group-vertical > .button.fake-cancel:last-child:not(:first-child), .media-widget.btn-group-vertical > a:last-child:not(:first-child), #media-browser-tabset .btn-group-vertical > a.button:last-child:not(:first-child),
 #media-browser-tabset .btn-group-vertical > input.form-submit:last-child:not(:first-child), #modal-content .btn-group-vertical > .form-submit:last-child:not(:first-child),
 #modal-content .btn-group-vertical > #edit-cancel:last-child:not(:first-child) {
   border-bottom-left-radius: 4px;
@@ -5170,14 +5200,14 @@ form .btn-group-vertical > .btn-group + .button.fake-cancel,
 }
 
 /* line 187, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button.fake-ok, form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button.fake-cancel, #media-browser-tabset .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a.button,
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button.fake-ok, form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .button.fake-cancel, .btn-group-vertical > .media-widget.btn-group:not(:first-child):not(:last-child) > a, #media-browser-tabset .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a.button,
 #media-browser-tabset .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input.form-submit, #modal-content .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .form-submit,
 #modal-content .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > #edit-cancel {
   border-radius: 0;
 }
 
 /* line 192, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button.fake-ok:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button.fake-cancel:last-child, #media-browser-tabset .btn-group-vertical > .btn-group:first-child:not(:last-child) > a.button:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button.fake-ok:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > .button.fake-cancel:last-child, .btn-group-vertical > .media-widget.btn-group:first-child:not(:last-child) > a:last-child, #media-browser-tabset .btn-group-vertical > .btn-group:first-child:not(:last-child) > a.button:last-child,
 #media-browser-tabset .btn-group-vertical > .btn-group:first-child:not(:last-child) > input.form-submit:last-child, #modal-content .btn-group-vertical > .btn-group:first-child:not(:last-child) > .form-submit:last-child,
 #modal-content .btn-group-vertical > .btn-group:first-child:not(:last-child) > #edit-cancel:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
@@ -5186,7 +5216,7 @@ form .btn-group-vertical > .btn-group + .button.fake-cancel,
 }
 
 /* line 196, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button.fake-ok:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button.fake-cancel:first-child, #media-browser-tabset .btn-group-vertical > .btn-group:last-child:not(:first-child) > a.button:first-child,
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button.fake-ok:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > .button.fake-cancel:first-child, .btn-group-vertical > .media-widget.btn-group:last-child:not(:first-child) > a:first-child, #media-browser-tabset .btn-group-vertical > .btn-group:last-child:not(:first-child) > a.button:first-child,
 #media-browser-tabset .btn-group-vertical > .btn-group:last-child:not(:first-child) > input.form-submit:first-child, #modal-content .btn-group-vertical > .btn-group:last-child:not(:first-child) > .form-submit:first-child,
 #modal-content .btn-group-vertical > .btn-group:last-child:not(:first-child) > #edit-cancel:first-child {
   border-top-right-radius: 0;
@@ -5201,7 +5231,7 @@ form .btn-group-vertical > .btn-group + .button.fake-cancel,
   border-collapse: separate;
 }
 /* line 211, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn, form .btn-group-justified > .button.fake-ok, form .btn-group-justified > .button.fake-cancel, #media-browser-tabset .btn-group-justified > a.button,
+.btn-group-justified > .btn, form .btn-group-justified > .button.fake-ok, form .btn-group-justified > .button.fake-cancel, .media-widget.btn-group-justified > a, #media-browser-tabset .btn-group-justified > a.button,
 #media-browser-tabset .btn-group-justified > input.form-submit, #modal-content .btn-group-justified > .form-submit,
 #modal-content .btn-group-justified > #edit-cancel,
 .btn-group-justified > .btn-group {
@@ -5210,7 +5240,7 @@ form .btn-group-vertical > .btn-group + .button.fake-cancel,
   width: 1%;
 }
 /* line 216, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group form .button.fake-ok, form .btn-group-justified > .btn-group .button.fake-ok, .btn-group-justified > .btn-group form .button.fake-cancel, form .btn-group-justified > .btn-group .button.fake-cancel, .btn-group-justified > .btn-group #media-browser-tabset a.button, #media-browser-tabset .btn-group-justified > .btn-group a.button,
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group form .button.fake-ok, form .btn-group-justified > .btn-group .button.fake-ok, .btn-group-justified > .btn-group form .button.fake-cancel, form .btn-group-justified > .btn-group .button.fake-cancel, .btn-group-justified > .btn-group .media-widget > a, .btn-group-justified > .btn-group #media-browser-tabset a.button, #media-browser-tabset .btn-group-justified > .btn-group a.button,
 .btn-group-justified > .btn-group #media-browser-tabset input.form-submit,
 #media-browser-tabset .btn-group-justified > .btn-group input.form-submit, .btn-group-justified > .btn-group #modal-content .form-submit, #modal-content .btn-group-justified > .btn-group .form-submit,
 .btn-group-justified > .btn-group #modal-content #edit-cancel,
@@ -5223,12 +5253,13 @@ form .btn-group-vertical > .btn-group + .button.fake-cancel,
 }
 
 /* line 236, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_button-groups.scss */
-[data-toggle="buttons"] > .btn > input[type="radio"], form [data-toggle="buttons"] > .button.fake-ok > input[type="radio"], form [data-toggle="buttons"] > .button.fake-cancel > input[type="radio"], #media-browser-tabset [data-toggle="buttons"] > a.button > input[type="radio"],
+[data-toggle="buttons"] > .btn > input[type="radio"], form [data-toggle="buttons"] > .button.fake-ok > input[type="radio"], form [data-toggle="buttons"] > .button.fake-cancel > input[type="radio"], .media-widget[data-toggle="buttons"] > a > input[type="radio"], #media-browser-tabset [data-toggle="buttons"] > a.button > input[type="radio"],
 #media-browser-tabset [data-toggle="buttons"] > input.form-submit > input[type="radio"], #modal-content [data-toggle="buttons"] > .form-submit > input[type="radio"],
 #modal-content [data-toggle="buttons"] > #edit-cancel > input[type="radio"],
 [data-toggle="buttons"] > .btn > input[type="checkbox"],
 form [data-toggle="buttons"] > .button.fake-ok > input[type="checkbox"],
 form [data-toggle="buttons"] > .button.fake-cancel > input[type="checkbox"],
+.media-widget[data-toggle="buttons"] > a > input[type="checkbox"],
 #media-browser-tabset [data-toggle="buttons"] > a.button > input[type="checkbox"],
 #media-browser-tabset [data-toggle="buttons"] > input.form-submit > input[type="checkbox"],
 #modal-content [data-toggle="buttons"] > .form-submit > input[type="checkbox"],
@@ -5299,6 +5330,7 @@ form [data-toggle="buttons"] > .button.fake-cancel > input[type="checkbox"],
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
 form .input-group-sm > .input-group-btn > .input-group-addon.button.fake-ok,
 form .input-group-sm > .input-group-btn > .input-group-addon.button.fake-cancel,
+.input-group-sm > .media-widget.input-group-btn > a.input-group-addon,
 #media-browser-tabset .input-group-sm > .input-group-btn > a.input-group-addon.button,
 #media-browser-tabset .input-group-sm > .input-group-btn > input.input-group-addon.form-submit,
 #modal-content .input-group-sm > .input-group-btn > .input-group-addon.form-submit,
@@ -5313,6 +5345,7 @@ form .input-group-sm > .input-group-btn > .input-group-addon.button.fake-cancel,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
 form .input-group-lg > .input-group-btn > .input-group-addon.button.fake-ok,
 form .input-group-lg > .input-group-btn > .input-group-addon.button.fake-cancel,
+.input-group-lg > .media-widget.input-group-btn > a.input-group-addon,
 #media-browser-tabset .input-group-lg > .input-group-btn > a.input-group-addon.button,
 #media-browser-tabset .input-group-lg > .input-group-btn > input.input-group-addon.form-submit,
 #modal-content .input-group-lg > .input-group-btn > .input-group-addon.form-submit,
@@ -5333,6 +5366,7 @@ form .input-group-lg > .input-group-btn > .input-group-addon.button.fake-cancel,
 .input-group-btn:first-child > .btn,
 form .input-group-btn:first-child > .button.fake-ok,
 form .input-group-btn:first-child > .button.fake-cancel,
+.media-widget.input-group-btn:first-child > a,
 #media-browser-tabset .input-group-btn:first-child > a.button,
 #media-browser-tabset .input-group-btn:first-child > input.form-submit,
 #modal-content .input-group-btn:first-child > .form-submit,
@@ -5340,6 +5374,7 @@ form .input-group-btn:first-child > .button.fake-cancel,
 .input-group-btn:first-child > .btn-group > .btn,
 form .input-group-btn:first-child > .btn-group > .button.fake-ok,
 form .input-group-btn:first-child > .btn-group > .button.fake-cancel,
+.input-group-btn:first-child > .media-widget.btn-group > a,
 #media-browser-tabset .input-group-btn:first-child > .btn-group > a.button,
 #media-browser-tabset .input-group-btn:first-child > .btn-group > input.form-submit,
 #modal-content .input-group-btn:first-child > .btn-group > .form-submit,
@@ -5348,6 +5383,7 @@ form .input-group-btn:first-child > .btn-group > .button.fake-cancel,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 form .input-group-btn:last-child > .button.fake-ok:not(:last-child):not(.dropdown-toggle),
 form .input-group-btn:last-child > .button.fake-cancel:not(:last-child):not(.dropdown-toggle),
+.media-widget.input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
 #media-browser-tabset .input-group-btn:last-child > a.button:not(:last-child):not(.dropdown-toggle),
 #media-browser-tabset .input-group-btn:last-child > input.form-submit:not(:last-child):not(.dropdown-toggle),
 #modal-content .input-group-btn:last-child > .form-submit:not(:last-child):not(.dropdown-toggle),
@@ -5355,6 +5391,7 @@ form .input-group-btn:last-child > .button.fake-cancel:not(:last-child):not(.dro
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
 form .input-group-btn:last-child > .btn-group:not(:last-child) > .button.fake-ok,
 form .input-group-btn:last-child > .btn-group:not(:last-child) > .button.fake-cancel,
+.input-group-btn:last-child > .media-widget.btn-group:not(:last-child) > a,
 #media-browser-tabset .input-group-btn:last-child > .btn-group:not(:last-child) > a.button,
 #media-browser-tabset .input-group-btn:last-child > .btn-group:not(:last-child) > input.form-submit,
 #modal-content .input-group-btn:last-child > .btn-group:not(:last-child) > .form-submit,
@@ -5374,6 +5411,7 @@ form .input-group-btn:last-child > .btn-group:not(:last-child) > .button.fake-ca
 .input-group-btn:last-child > .btn,
 form .input-group-btn:last-child > .button.fake-ok,
 form .input-group-btn:last-child > .button.fake-cancel,
+.media-widget.input-group-btn:last-child > a,
 #media-browser-tabset .input-group-btn:last-child > a.button,
 #media-browser-tabset .input-group-btn:last-child > input.form-submit,
 #modal-content .input-group-btn:last-child > .form-submit,
@@ -5381,6 +5419,7 @@ form .input-group-btn:last-child > .button.fake-cancel,
 .input-group-btn:last-child > .btn-group > .btn,
 form .input-group-btn:last-child > .btn-group > .button.fake-ok,
 form .input-group-btn:last-child > .btn-group > .button.fake-cancel,
+.input-group-btn:last-child > .media-widget.btn-group > a,
 #media-browser-tabset .input-group-btn:last-child > .btn-group > a.button,
 #media-browser-tabset .input-group-btn:last-child > .btn-group > input.form-submit,
 #modal-content .input-group-btn:last-child > .btn-group > .form-submit,
@@ -5389,6 +5428,7 @@ form .input-group-btn:last-child > .btn-group > .button.fake-cancel,
 .input-group-btn:first-child > .btn:not(:first-child),
 form .input-group-btn:first-child > .button.fake-ok:not(:first-child),
 form .input-group-btn:first-child > .button.fake-cancel:not(:first-child),
+.media-widget.input-group-btn:first-child > a:not(:first-child),
 #media-browser-tabset .input-group-btn:first-child > a.button:not(:first-child),
 #media-browser-tabset .input-group-btn:first-child > input.form-submit:not(:first-child),
 #modal-content .input-group-btn:first-child > .form-submit:not(:first-child),
@@ -5396,6 +5436,7 @@ form .input-group-btn:first-child > .button.fake-cancel:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
 form .input-group-btn:first-child > .btn-group:not(:first-child) > .button.fake-ok,
 form .input-group-btn:first-child > .btn-group:not(:first-child) > .button.fake-cancel,
+.input-group-btn:first-child > .media-widget.btn-group:not(:first-child) > a,
 #media-browser-tabset .input-group-btn:first-child > .btn-group:not(:first-child) > a.button,
 #media-browser-tabset .input-group-btn:first-child > .btn-group:not(:first-child) > input.form-submit,
 #modal-content .input-group-btn:first-child > .btn-group:not(:first-child) > .form-submit,
@@ -5416,33 +5457,36 @@ form .input-group-btn:first-child > .btn-group:not(:first-child) > .button.fake-
   white-space: nowrap;
 }
 /* line 140, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn, form .input-group-btn > .button.fake-ok, form .input-group-btn > .button.fake-cancel, #media-browser-tabset .input-group-btn > a.button,
+.input-group-btn > .btn, form .input-group-btn > .button.fake-ok, form .input-group-btn > .button.fake-cancel, .media-widget.input-group-btn > a, #media-browser-tabset .input-group-btn > a.button,
 #media-browser-tabset .input-group-btn > input.form-submit, #modal-content .input-group-btn > .form-submit,
 #modal-content .input-group-btn > #edit-cancel {
   position: relative;
 }
 /* line 142, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn + .btn, form .input-group-btn > .button.fake-ok + .btn, form .input-group-btn > .button.fake-cancel + .btn, #media-browser-tabset .input-group-btn > a.button + .btn,
+.input-group-btn > .btn + .btn, form .input-group-btn > .button.fake-ok + .btn, form .input-group-btn > .button.fake-cancel + .btn, .media-widget.input-group-btn > a + .btn, #media-browser-tabset .input-group-btn > a.button + .btn,
 #media-browser-tabset .input-group-btn > input.form-submit + .btn, #modal-content .input-group-btn > .form-submit + .btn,
-#modal-content .input-group-btn > #edit-cancel + .btn, form .input-group-btn > .btn + .button.fake-ok, form .input-group-btn > .button.fake-ok + .button.fake-ok, form .input-group-btn > .button.fake-cancel + .button.fake-ok, form #media-browser-tabset .input-group-btn > a.button + .button.fake-ok,
+#modal-content .input-group-btn > #edit-cancel + .btn, form .input-group-btn > .btn + .button.fake-ok, form .input-group-btn > .button.fake-ok + .button.fake-ok, form .input-group-btn > .button.fake-cancel + .button.fake-ok, form .media-widget.input-group-btn > a + .button.fake-ok, form #media-browser-tabset .input-group-btn > a.button + .button.fake-ok,
 form #media-browser-tabset .input-group-btn > input.form-submit + .button.fake-ok, #modal-content form .input-group-btn > .form-submit + .button.fake-ok, form #modal-content .input-group-btn > .form-submit + .button.fake-ok,
 #media-browser-tabset form .input-group-btn > a.button + .button.fake-ok,
 #media-browser-tabset form .input-group-btn > input.form-submit + .button.fake-ok,
 #modal-content form .input-group-btn > #edit-cancel + .button.fake-ok,
-form #modal-content .input-group-btn > #edit-cancel + .button.fake-ok, form .input-group-btn > .btn + .button.fake-cancel, form .input-group-btn > .button.fake-ok + .button.fake-cancel, form .input-group-btn > .button.fake-cancel + .button.fake-cancel, form #media-browser-tabset .input-group-btn > a.button + .button.fake-cancel,
+form #modal-content .input-group-btn > #edit-cancel + .button.fake-ok, form .input-group-btn > .btn + .button.fake-cancel, form .input-group-btn > .button.fake-ok + .button.fake-cancel, form .input-group-btn > .button.fake-cancel + .button.fake-cancel, form .media-widget.input-group-btn > a + .button.fake-cancel, form #media-browser-tabset .input-group-btn > a.button + .button.fake-cancel,
 form #media-browser-tabset .input-group-btn > input.form-submit + .button.fake-cancel, #modal-content form .input-group-btn > .form-submit + .button.fake-cancel, form #modal-content .input-group-btn > .form-submit + .button.fake-cancel,
 #media-browser-tabset form .input-group-btn > a.button + .button.fake-cancel,
 #media-browser-tabset form .input-group-btn > input.form-submit + .button.fake-cancel,
 #modal-content form .input-group-btn > #edit-cancel + .button.fake-cancel,
-form #modal-content .input-group-btn > #edit-cancel + .button.fake-cancel, #media-browser-tabset .input-group-btn > .btn + a.button, form #media-browser-tabset .input-group-btn > .button.fake-ok + a.button, form #media-browser-tabset .input-group-btn > .button.fake-cancel + a.button, #media-browser-tabset .input-group-btn > a.button + a.button,
+form #modal-content .input-group-btn > #edit-cancel + .button.fake-cancel, .media-widget.input-group-btn > .btn + a, form .media-widget.input-group-btn > .button.fake-ok + a, form .media-widget.input-group-btn > .button.fake-cancel + a, .media-widget.input-group-btn > a + a, #media-browser-tabset .media-widget.input-group-btn > a.button + a,
+#media-browser-tabset .media-widget.input-group-btn > input.form-submit + a, #modal-content .media-widget.input-group-btn > .form-submit + a,
+#modal-content .media-widget.input-group-btn > #edit-cancel + a, #media-browser-tabset .input-group-btn > .btn + a.button, form #media-browser-tabset .input-group-btn > .button.fake-ok + a.button, form #media-browser-tabset .input-group-btn > .button.fake-cancel + a.button, #media-browser-tabset .media-widget.input-group-btn > a + a.button, #media-browser-tabset .input-group-btn > a.button + a.button,
 #media-browser-tabset .input-group-btn > input.form-submit + a.button, #modal-content #media-browser-tabset .input-group-btn > .form-submit + a.button, #media-browser-tabset #modal-content .input-group-btn > .form-submit + a.button,
 #modal-content #media-browser-tabset .input-group-btn > #edit-cancel + a.button,
 #media-browser-tabset #modal-content .input-group-btn > #edit-cancel + a.button,
 #media-browser-tabset .input-group-btn > .btn + input.form-submit,
 form #media-browser-tabset .input-group-btn > .button.fake-ok + input.form-submit,
 form #media-browser-tabset .input-group-btn > .button.fake-cancel + input.form-submit,
+#media-browser-tabset .media-widget.input-group-btn > a + input.form-submit,
 #media-browser-tabset .input-group-btn > a.button + input.form-submit,
-#media-browser-tabset .input-group-btn > input.form-submit + input.form-submit, #modal-content .input-group-btn > .btn + .form-submit, form #modal-content .input-group-btn > .button.fake-ok + .form-submit, #modal-content form .input-group-btn > .button.fake-ok + .form-submit, form #modal-content .input-group-btn > .button.fake-cancel + .form-submit, #modal-content form .input-group-btn > .button.fake-cancel + .form-submit, #media-browser-tabset #modal-content .input-group-btn > a.button + .form-submit, #modal-content #media-browser-tabset .input-group-btn > a.button + .form-submit, #modal-content .input-group-btn > .form-submit + .form-submit,
+#media-browser-tabset .input-group-btn > input.form-submit + input.form-submit, #modal-content .input-group-btn > .btn + .form-submit, form #modal-content .input-group-btn > .button.fake-ok + .form-submit, #modal-content form .input-group-btn > .button.fake-ok + .form-submit, form #modal-content .input-group-btn > .button.fake-cancel + .form-submit, #modal-content form .input-group-btn > .button.fake-cancel + .form-submit, #modal-content .media-widget.input-group-btn > a + .form-submit, #media-browser-tabset #modal-content .input-group-btn > a.button + .form-submit, #modal-content #media-browser-tabset .input-group-btn > a.button + .form-submit, #modal-content .input-group-btn > .form-submit + .form-submit,
 #modal-content .input-group-btn > #edit-cancel + .form-submit,
 #media-browser-tabset form .input-group-btn > .button.fake-ok + a.button,
 #media-browser-tabset form .input-group-btn > .button.fake-cancel + a.button,
@@ -5453,6 +5497,7 @@ form #modal-content .input-group-btn > .button.fake-ok + #edit-cancel,
 #modal-content form .input-group-btn > .button.fake-ok + #edit-cancel,
 form #modal-content .input-group-btn > .button.fake-cancel + #edit-cancel,
 #modal-content form .input-group-btn > .button.fake-cancel + #edit-cancel,
+#modal-content .media-widget.input-group-btn > a + #edit-cancel,
 #media-browser-tabset #modal-content .input-group-btn > a.button + #edit-cancel,
 #modal-content #media-browser-tabset .input-group-btn > a.button + #edit-cancel,
 #modal-content .input-group-btn > .form-submit + #edit-cancel,
@@ -5460,24 +5505,24 @@ form #modal-content .input-group-btn > .button.fake-cancel + #edit-cancel,
   margin-left: -1px;
 }
 /* line 148, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn:hover, form .input-group-btn > .button.fake-ok:hover, form .input-group-btn > .button.fake-cancel:hover, #media-browser-tabset .input-group-btn > a.button:hover,
+.input-group-btn > .btn:hover, form .input-group-btn > .button.fake-ok:hover, form .input-group-btn > .button.fake-cancel:hover, .media-widget.input-group-btn > a:hover, #media-browser-tabset .input-group-btn > a.button:hover,
 #media-browser-tabset .input-group-btn > input.form-submit:hover, #modal-content .input-group-btn > .form-submit:hover,
-#modal-content .input-group-btn > #edit-cancel:hover, .input-group-btn > .btn:focus, form .input-group-btn > .button.fake-ok:focus, form .input-group-btn > .button.fake-cancel:focus, #media-browser-tabset .input-group-btn > a.button:focus,
+#modal-content .input-group-btn > #edit-cancel:hover, .input-group-btn > .btn:focus, form .input-group-btn > .button.fake-ok:focus, form .input-group-btn > .button.fake-cancel:focus, .media-widget.input-group-btn > a:focus, #media-browser-tabset .input-group-btn > a.button:focus,
 #media-browser-tabset .input-group-btn > input.form-submit:focus, #modal-content .input-group-btn > .form-submit:focus,
-#modal-content .input-group-btn > #edit-cancel:focus, .input-group-btn > .btn:active, form .input-group-btn > .button.fake-ok:active, form .input-group-btn > .button.fake-cancel:active, #media-browser-tabset .input-group-btn > a.button:active,
+#modal-content .input-group-btn > #edit-cancel:focus, .input-group-btn > .btn:active, form .input-group-btn > .button.fake-ok:active, form .input-group-btn > .button.fake-cancel:active, .media-widget.input-group-btn > a:active, #media-browser-tabset .input-group-btn > a.button:active,
 #media-browser-tabset .input-group-btn > input.form-submit:active, #modal-content .input-group-btn > .form-submit:active,
 #modal-content .input-group-btn > #edit-cancel:active {
   z-index: 2;
 }
 /* line 156, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn:first-child > .btn, form .input-group-btn:first-child > .button.fake-ok, form .input-group-btn:first-child > .button.fake-cancel, #media-browser-tabset .input-group-btn:first-child > a.button,
+.input-group-btn:first-child > .btn, form .input-group-btn:first-child > .button.fake-ok, form .input-group-btn:first-child > .button.fake-cancel, .media-widget.input-group-btn:first-child > a, #media-browser-tabset .input-group-btn:first-child > a.button,
 #media-browser-tabset .input-group-btn:first-child > input.form-submit, #modal-content .input-group-btn:first-child > .form-submit,
 #modal-content .input-group-btn:first-child > #edit-cancel,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
 /* line 162, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn:last-child > .btn, form .input-group-btn:last-child > .button.fake-ok, form .input-group-btn:last-child > .button.fake-cancel, #media-browser-tabset .input-group-btn:last-child > a.button,
+.input-group-btn:last-child > .btn, form .input-group-btn:last-child > .button.fake-ok, form .input-group-btn:last-child > .button.fake-cancel, .media-widget.input-group-btn:last-child > a, #media-browser-tabset .input-group-btn:last-child > a.button,
 #media-browser-tabset .input-group-btn:last-child > input.form-submit, #modal-content .input-group-btn:last-child > .form-submit,
 #modal-content .input-group-btn:last-child > #edit-cancel,
 .input-group-btn:last-child > .btn-group {
@@ -6016,14 +6061,14 @@ form #modal-content .input-group-btn > .button.fake-cancel + #edit-cancel,
   margin-bottom: 8px;
 }
 /* line 362, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, form .btn-group-sm > .navbar-btn.button.fake-ok, form .btn-group-sm > .navbar-btn.button.fake-cancel, #media-browser-tabset .btn-group-sm > a.navbar-btn.button,
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, form .btn-group-sm > .navbar-btn.button.fake-ok, form .btn-group-sm > .navbar-btn.button.fake-cancel, .media-widget.btn-group-sm > a.navbar-btn, #media-browser-tabset .btn-group-sm > a.navbar-btn.button,
 #media-browser-tabset .btn-group-sm > input.navbar-btn.form-submit, #modal-content .btn-group-sm > .navbar-btn.form-submit,
 #modal-content .btn-group-sm > .navbar-btn#edit-cancel {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 /* line 365, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, form .btn-group-xs > .navbar-btn.button.fake-ok, form .btn-group-xs > .navbar-btn.button.fake-cancel, #media-browser-tabset .btn-group-xs > a.navbar-btn.button,
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, form .btn-group-xs > .navbar-btn.button.fake-ok, form .btn-group-xs > .navbar-btn.button.fake-cancel, .media-widget.btn-group-xs > a.navbar-btn, #media-browser-tabset .btn-group-xs > a.navbar-btn.button,
 #media-browser-tabset .btn-group-xs > input.navbar-btn.form-submit, #modal-content .btn-group-xs > .navbar-btn.form-submit,
 #modal-content .btn-group-xs > .navbar-btn#edit-cancel {
   margin-top: 14px;
@@ -6461,9 +6506,9 @@ form #modal-content .input-group-btn > .button.fake-cancel + #edit-cancel,
   display: none;
 }
 /* line 25, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_labels.scss */
-.btn .label, form .button.fake-ok .label, form .button.fake-cancel .label, #media-browser-tabset a.button .label,
+.btn .label, form .button.fake-ok .label, form .button.fake-cancel .label, .media-widget > a .label, #media-browser-tabset a.button .label,
 #media-browser-tabset input.form-submit .label, #modal-content .form-submit .label,
-#modal-content #edit-cancel .label, .btn .oa-news .oa-news-tags a, .oa-news .oa-news-tags .btn a, form .button.fake-ok .oa-news .oa-news-tags a, .oa-news .oa-news-tags form .button.fake-ok a, form .button.fake-cancel .oa-news .oa-news-tags a, .oa-news .oa-news-tags form .button.fake-cancel a, #media-browser-tabset a.button .oa-news .oa-news-tags a, .oa-news .oa-news-tags #media-browser-tabset a.button a,
+#modal-content #edit-cancel .label, .btn .oa-news .oa-news-tags a, .oa-news .oa-news-tags .btn a, form .button.fake-ok .oa-news .oa-news-tags a, .oa-news .oa-news-tags form .button.fake-ok a, form .button.fake-cancel .oa-news .oa-news-tags a, .oa-news .oa-news-tags form .button.fake-cancel a, .media-widget > a .oa-news .oa-news-tags a, .oa-news .oa-news-tags .media-widget > a a, #media-browser-tabset a.button .oa-news .oa-news-tags a, .oa-news .oa-news-tags #media-browser-tabset a.button a,
 #media-browser-tabset input.form-submit .oa-news .oa-news-tags a,
 .oa-news .oa-news-tags #media-browser-tabset input.form-submit a, #modal-content .form-submit .oa-news .oa-news-tags a, .oa-news .oa-news-tags #modal-content .form-submit a,
 #modal-content #edit-cancel .oa-news .oa-news-tags a,
@@ -6553,14 +6598,14 @@ a.label:hover, .oa-news .oa-news-tags a:hover, a.label:focus, .oa-news .oa-news-
   display: none;
 }
 /* line 27, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_badges.scss */
-.btn .badge, form .button.fake-ok .badge, form .button.fake-cancel .badge, #media-browser-tabset a.button .badge,
+.btn .badge, form .button.fake-ok .badge, form .button.fake-cancel .badge, .media-widget > a .badge, #media-browser-tabset a.button .badge,
 #media-browser-tabset input.form-submit .badge, #modal-content .form-submit .badge,
 #modal-content #edit-cancel .badge {
   position: relative;
   top: -1px;
 }
 /* line 31, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_badges.scss */
-.btn-xs .badge, .btn-group-xs > .btn .badge, form .btn-group-xs > .button.fake-ok .badge, form .btn-group-xs > .button.fake-cancel .badge, #media-browser-tabset .btn-group-xs > a.button .badge,
+.btn-xs .badge, .btn-group-xs > .btn .badge, form .btn-group-xs > .button.fake-ok .badge, form .btn-group-xs > .button.fake-cancel .badge, .media-widget.btn-group-xs > a .badge, #media-browser-tabset .btn-group-xs > a.button .badge,
 #media-browser-tabset .btn-group-xs > input.form-submit .badge, #modal-content .btn-group-xs > .form-submit .badge,
 #modal-content .btn-group-xs > #edit-cancel .badge {
   top: 0;
@@ -7780,11 +7825,11 @@ button.close {
   clear: both;
 }
 /* line 110, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn + .btn, .modal-footer form .button.fake-ok + .btn, form .modal-footer .button.fake-ok + .btn, .modal-footer form .button.fake-cancel + .btn, form .modal-footer .button.fake-cancel + .btn, .modal-footer #media-browser-tabset a.button + .btn, #media-browser-tabset .modal-footer a.button + .btn,
+.modal-footer .btn + .btn, .modal-footer form .button.fake-ok + .btn, form .modal-footer .button.fake-ok + .btn, .modal-footer form .button.fake-cancel + .btn, form .modal-footer .button.fake-cancel + .btn, .modal-footer .media-widget > a + .btn, .modal-footer #media-browser-tabset a.button + .btn, #media-browser-tabset .modal-footer a.button + .btn,
 .modal-footer #media-browser-tabset input.form-submit + .btn,
 #media-browser-tabset .modal-footer input.form-submit + .btn, .modal-footer #modal-content .form-submit + .btn, #modal-content .modal-footer .form-submit + .btn,
 .modal-footer #modal-content #edit-cancel + .btn,
-#modal-content .modal-footer #edit-cancel + .btn, .modal-footer form .btn + .button.fake-ok, form .modal-footer .btn + .button.fake-ok, .modal-footer form .button.fake-ok + .button.fake-ok, form .modal-footer .button.fake-ok + .button.fake-ok, .modal-footer form .button.fake-cancel + .button.fake-ok, form .modal-footer .button.fake-cancel + .button.fake-ok, form .modal-footer #media-browser-tabset a.button + .button.fake-ok, #media-browser-tabset .modal-footer form a.button + .button.fake-ok, form #media-browser-tabset .modal-footer a.button + .button.fake-ok,
+#modal-content .modal-footer #edit-cancel + .btn, .modal-footer form .btn + .button.fake-ok, form .modal-footer .btn + .button.fake-ok, .modal-footer form .button.fake-ok + .button.fake-ok, form .modal-footer .button.fake-ok + .button.fake-ok, .modal-footer form .button.fake-cancel + .button.fake-ok, form .modal-footer .button.fake-cancel + .button.fake-ok, .modal-footer form .media-widget > a + .button.fake-ok, form .modal-footer .media-widget > a + .button.fake-ok, form .modal-footer #media-browser-tabset a.button + .button.fake-ok, #media-browser-tabset .modal-footer form a.button + .button.fake-ok, form #media-browser-tabset .modal-footer a.button + .button.fake-ok,
 form .modal-footer #media-browser-tabset input.form-submit + .button.fake-ok,
 #media-browser-tabset .modal-footer form input.form-submit + .button.fake-ok,
 form #media-browser-tabset .modal-footer input.form-submit + .button.fake-ok, .modal-footer #modal-content form .form-submit + .button.fake-ok, form .modal-footer #modal-content .form-submit + .button.fake-ok, #modal-content .modal-footer form .form-submit + .button.fake-ok, form #modal-content .modal-footer .form-submit + .button.fake-ok,
@@ -7795,7 +7840,7 @@ form #media-browser-tabset .modal-footer input.form-submit + .button.fake-ok, .m
 .modal-footer #modal-content form #edit-cancel + .button.fake-ok,
 form .modal-footer #modal-content #edit-cancel + .button.fake-ok,
 #modal-content .modal-footer form #edit-cancel + .button.fake-ok,
-form #modal-content .modal-footer #edit-cancel + .button.fake-ok, .modal-footer form .btn + .button.fake-cancel, form .modal-footer .btn + .button.fake-cancel, .modal-footer form .button.fake-ok + .button.fake-cancel, form .modal-footer .button.fake-ok + .button.fake-cancel, .modal-footer form .button.fake-cancel + .button.fake-cancel, form .modal-footer .button.fake-cancel + .button.fake-cancel, form .modal-footer #media-browser-tabset a.button + .button.fake-cancel, #media-browser-tabset .modal-footer form a.button + .button.fake-cancel, form #media-browser-tabset .modal-footer a.button + .button.fake-cancel,
+form #modal-content .modal-footer #edit-cancel + .button.fake-ok, .modal-footer form .btn + .button.fake-cancel, form .modal-footer .btn + .button.fake-cancel, .modal-footer form .button.fake-ok + .button.fake-cancel, form .modal-footer .button.fake-ok + .button.fake-cancel, .modal-footer form .button.fake-cancel + .button.fake-cancel, form .modal-footer .button.fake-cancel + .button.fake-cancel, .modal-footer form .media-widget > a + .button.fake-cancel, form .modal-footer .media-widget > a + .button.fake-cancel, form .modal-footer #media-browser-tabset a.button + .button.fake-cancel, #media-browser-tabset .modal-footer form a.button + .button.fake-cancel, form #media-browser-tabset .modal-footer a.button + .button.fake-cancel,
 form .modal-footer #media-browser-tabset input.form-submit + .button.fake-cancel,
 #media-browser-tabset .modal-footer form input.form-submit + .button.fake-cancel,
 form #media-browser-tabset .modal-footer input.form-submit + .button.fake-cancel, .modal-footer #modal-content form .form-submit + .button.fake-cancel, form .modal-footer #modal-content .form-submit + .button.fake-cancel, #modal-content .modal-footer form .form-submit + .button.fake-cancel, form #modal-content .modal-footer .form-submit + .button.fake-cancel,
@@ -7806,7 +7851,11 @@ form #media-browser-tabset .modal-footer input.form-submit + .button.fake-cancel
 .modal-footer #modal-content form #edit-cancel + .button.fake-cancel,
 form .modal-footer #modal-content #edit-cancel + .button.fake-cancel,
 #modal-content .modal-footer form #edit-cancel + .button.fake-cancel,
-form #modal-content .modal-footer #edit-cancel + .button.fake-cancel, .modal-footer #media-browser-tabset .btn + a.button, #media-browser-tabset .modal-footer .btn + a.button, .modal-footer form #media-browser-tabset .button.fake-ok + a.button, form .modal-footer #media-browser-tabset .button.fake-ok + a.button, .modal-footer form #media-browser-tabset .button.fake-cancel + a.button, form .modal-footer #media-browser-tabset .button.fake-cancel + a.button, .modal-footer #media-browser-tabset a.button + a.button, #media-browser-tabset .modal-footer a.button + a.button,
+form #modal-content .modal-footer #edit-cancel + .button.fake-cancel, .modal-footer .media-widget > .btn + a, .modal-footer form .media-widget > .button.fake-ok + a, form .modal-footer .media-widget > .button.fake-ok + a, .modal-footer form .media-widget > .button.fake-cancel + a, form .modal-footer .media-widget > .button.fake-cancel + a, .modal-footer .media-widget > a + a, .modal-footer #media-browser-tabset .media-widget > a.button + a, #media-browser-tabset .modal-footer .media-widget > a.button + a,
+.modal-footer #media-browser-tabset .media-widget > input.form-submit + a,
+#media-browser-tabset .modal-footer .media-widget > input.form-submit + a, .modal-footer #modal-content .media-widget > .form-submit + a, #modal-content .modal-footer .media-widget > .form-submit + a,
+.modal-footer #modal-content .media-widget > #edit-cancel + a,
+#modal-content .modal-footer .media-widget > #edit-cancel + a, .modal-footer #media-browser-tabset .btn + a.button, #media-browser-tabset .modal-footer .btn + a.button, .modal-footer form #media-browser-tabset .button.fake-ok + a.button, form .modal-footer #media-browser-tabset .button.fake-ok + a.button, .modal-footer form #media-browser-tabset .button.fake-cancel + a.button, form .modal-footer #media-browser-tabset .button.fake-cancel + a.button, .modal-footer #media-browser-tabset .media-widget > a + a.button, #media-browser-tabset .modal-footer .media-widget > a + a.button, .modal-footer #media-browser-tabset a.button + a.button, #media-browser-tabset .modal-footer a.button + a.button,
 .modal-footer #media-browser-tabset input.form-submit + a.button,
 #media-browser-tabset .modal-footer input.form-submit + a.button, .modal-footer #modal-content #media-browser-tabset .form-submit + a.button, #media-browser-tabset .modal-footer #modal-content .form-submit + a.button, #modal-content .modal-footer #media-browser-tabset .form-submit + a.button, #media-browser-tabset #modal-content .modal-footer .form-submit + a.button,
 .modal-footer #modal-content #media-browser-tabset #edit-cancel + a.button,
@@ -7819,10 +7868,12 @@ form #modal-content .modal-footer #edit-cancel + .button.fake-cancel, .modal-foo
 form .modal-footer #media-browser-tabset .button.fake-ok + input.form-submit,
 .modal-footer form #media-browser-tabset .button.fake-cancel + input.form-submit,
 form .modal-footer #media-browser-tabset .button.fake-cancel + input.form-submit,
+.modal-footer #media-browser-tabset .media-widget > a + input.form-submit,
+#media-browser-tabset .modal-footer .media-widget > a + input.form-submit,
 .modal-footer #media-browser-tabset a.button + input.form-submit,
 #media-browser-tabset .modal-footer a.button + input.form-submit,
 .modal-footer #media-browser-tabset input.form-submit + input.form-submit,
-#media-browser-tabset .modal-footer input.form-submit + input.form-submit, .modal-footer #modal-content .btn + .form-submit, #modal-content .modal-footer .btn + .form-submit, .modal-footer form #modal-content .button.fake-ok + .form-submit, #modal-content .modal-footer form .button.fake-ok + .form-submit, form .modal-footer #modal-content .button.fake-ok + .form-submit, #modal-content form .modal-footer .button.fake-ok + .form-submit, .modal-footer form #modal-content .button.fake-cancel + .form-submit, #modal-content .modal-footer form .button.fake-cancel + .form-submit, form .modal-footer #modal-content .button.fake-cancel + .form-submit, #modal-content form .modal-footer .button.fake-cancel + .form-submit, .modal-footer #media-browser-tabset #modal-content a.button + .form-submit, #modal-content .modal-footer #media-browser-tabset a.button + .form-submit, #media-browser-tabset .modal-footer #modal-content a.button + .form-submit, #modal-content #media-browser-tabset .modal-footer a.button + .form-submit, .modal-footer #modal-content .form-submit + .form-submit, #modal-content .modal-footer .form-submit + .form-submit,
+#media-browser-tabset .modal-footer input.form-submit + input.form-submit, .modal-footer #modal-content .btn + .form-submit, #modal-content .modal-footer .btn + .form-submit, .modal-footer form #modal-content .button.fake-ok + .form-submit, #modal-content .modal-footer form .button.fake-ok + .form-submit, form .modal-footer #modal-content .button.fake-ok + .form-submit, #modal-content form .modal-footer .button.fake-ok + .form-submit, .modal-footer form #modal-content .button.fake-cancel + .form-submit, #modal-content .modal-footer form .button.fake-cancel + .form-submit, form .modal-footer #modal-content .button.fake-cancel + .form-submit, #modal-content form .modal-footer .button.fake-cancel + .form-submit, .modal-footer #modal-content .media-widget > a + .form-submit, #modal-content .modal-footer .media-widget > a + .form-submit, .modal-footer #media-browser-tabset #modal-content a.button + .form-submit, #modal-content .modal-footer #media-browser-tabset a.button + .form-submit, #media-browser-tabset .modal-footer #modal-content a.button + .form-submit, #modal-content #media-browser-tabset .modal-footer a.button + .form-submit, .modal-footer #modal-content .form-submit + .form-submit, #modal-content .modal-footer .form-submit + .form-submit,
 .modal-footer #modal-content #edit-cancel + .form-submit,
 #modal-content .modal-footer #edit-cancel + .form-submit,
 .modal-footer #media-browser-tabset form .button.fake-ok + a.button,
@@ -7847,6 +7898,8 @@ form .modal-footer #modal-content .button.fake-ok + #edit-cancel,
 #modal-content .modal-footer form .button.fake-cancel + #edit-cancel,
 form .modal-footer #modal-content .button.fake-cancel + #edit-cancel,
 #modal-content form .modal-footer .button.fake-cancel + #edit-cancel,
+.modal-footer #modal-content .media-widget > a + #edit-cancel,
+#modal-content .modal-footer .media-widget > a + #edit-cancel,
 .modal-footer #media-browser-tabset #modal-content a.button + #edit-cancel,
 #modal-content .modal-footer #media-browser-tabset a.button + #edit-cancel,
 #media-browser-tabset .modal-footer #modal-content a.button + #edit-cancel,
@@ -7859,11 +7912,11 @@ form .modal-footer #modal-content .button.fake-cancel + #edit-cancel,
   margin-bottom: 0;
 }
 /* line 115, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group form .button.fake-ok + .btn, form .modal-footer .btn-group .button.fake-ok + .btn, .modal-footer .btn-group form .button.fake-cancel + .btn, form .modal-footer .btn-group .button.fake-cancel + .btn, .modal-footer .btn-group #media-browser-tabset a.button + .btn, #media-browser-tabset .modal-footer .btn-group a.button + .btn,
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group form .button.fake-ok + .btn, form .modal-footer .btn-group .button.fake-ok + .btn, .modal-footer .btn-group form .button.fake-cancel + .btn, form .modal-footer .btn-group .button.fake-cancel + .btn, .modal-footer .btn-group .media-widget > a + .btn, .modal-footer .btn-group #media-browser-tabset a.button + .btn, #media-browser-tabset .modal-footer .btn-group a.button + .btn,
 .modal-footer .btn-group #media-browser-tabset input.form-submit + .btn,
 #media-browser-tabset .modal-footer .btn-group input.form-submit + .btn, .modal-footer .btn-group #modal-content .form-submit + .btn, #modal-content .modal-footer .btn-group .form-submit + .btn,
 .modal-footer .btn-group #modal-content #edit-cancel + .btn,
-#modal-content .modal-footer .btn-group #edit-cancel + .btn, .modal-footer .btn-group form .btn + .button.fake-ok, form .modal-footer .btn-group .btn + .button.fake-ok, .modal-footer .btn-group form .button.fake-ok + .button.fake-ok, form .modal-footer .btn-group .button.fake-ok + .button.fake-ok, .modal-footer .btn-group form .button.fake-cancel + .button.fake-ok, form .modal-footer .btn-group .button.fake-cancel + .button.fake-ok, form .modal-footer .btn-group #media-browser-tabset a.button + .button.fake-ok, #media-browser-tabset .modal-footer .btn-group form a.button + .button.fake-ok, form #media-browser-tabset .modal-footer .btn-group a.button + .button.fake-ok,
+#modal-content .modal-footer .btn-group #edit-cancel + .btn, .modal-footer .btn-group form .btn + .button.fake-ok, form .modal-footer .btn-group .btn + .button.fake-ok, .modal-footer .btn-group form .button.fake-ok + .button.fake-ok, form .modal-footer .btn-group .button.fake-ok + .button.fake-ok, .modal-footer .btn-group form .button.fake-cancel + .button.fake-ok, form .modal-footer .btn-group .button.fake-cancel + .button.fake-ok, .modal-footer .btn-group form .media-widget > a + .button.fake-ok, form .modal-footer .btn-group .media-widget > a + .button.fake-ok, form .modal-footer .btn-group #media-browser-tabset a.button + .button.fake-ok, #media-browser-tabset .modal-footer .btn-group form a.button + .button.fake-ok, form #media-browser-tabset .modal-footer .btn-group a.button + .button.fake-ok,
 form .modal-footer .btn-group #media-browser-tabset input.form-submit + .button.fake-ok,
 #media-browser-tabset .modal-footer .btn-group form input.form-submit + .button.fake-ok,
 form #media-browser-tabset .modal-footer .btn-group input.form-submit + .button.fake-ok, .modal-footer .btn-group #modal-content form .form-submit + .button.fake-ok, form .modal-footer .btn-group #modal-content .form-submit + .button.fake-ok, #modal-content .modal-footer .btn-group form .form-submit + .button.fake-ok, form #modal-content .modal-footer .btn-group .form-submit + .button.fake-ok,
@@ -7874,7 +7927,7 @@ form #media-browser-tabset .modal-footer .btn-group input.form-submit + .button.
 .modal-footer .btn-group #modal-content form #edit-cancel + .button.fake-ok,
 form .modal-footer .btn-group #modal-content #edit-cancel + .button.fake-ok,
 #modal-content .modal-footer .btn-group form #edit-cancel + .button.fake-ok,
-form #modal-content .modal-footer .btn-group #edit-cancel + .button.fake-ok, .modal-footer .btn-group form .btn + .button.fake-cancel, form .modal-footer .btn-group .btn + .button.fake-cancel, .modal-footer .btn-group form .button.fake-ok + .button.fake-cancel, form .modal-footer .btn-group .button.fake-ok + .button.fake-cancel, .modal-footer .btn-group form .button.fake-cancel + .button.fake-cancel, form .modal-footer .btn-group .button.fake-cancel + .button.fake-cancel, form .modal-footer .btn-group #media-browser-tabset a.button + .button.fake-cancel, #media-browser-tabset .modal-footer .btn-group form a.button + .button.fake-cancel, form #media-browser-tabset .modal-footer .btn-group a.button + .button.fake-cancel,
+form #modal-content .modal-footer .btn-group #edit-cancel + .button.fake-ok, .modal-footer .btn-group form .btn + .button.fake-cancel, form .modal-footer .btn-group .btn + .button.fake-cancel, .modal-footer .btn-group form .button.fake-ok + .button.fake-cancel, form .modal-footer .btn-group .button.fake-ok + .button.fake-cancel, .modal-footer .btn-group form .button.fake-cancel + .button.fake-cancel, form .modal-footer .btn-group .button.fake-cancel + .button.fake-cancel, .modal-footer .btn-group form .media-widget > a + .button.fake-cancel, form .modal-footer .btn-group .media-widget > a + .button.fake-cancel, form .modal-footer .btn-group #media-browser-tabset a.button + .button.fake-cancel, #media-browser-tabset .modal-footer .btn-group form a.button + .button.fake-cancel, form #media-browser-tabset .modal-footer .btn-group a.button + .button.fake-cancel,
 form .modal-footer .btn-group #media-browser-tabset input.form-submit + .button.fake-cancel,
 #media-browser-tabset .modal-footer .btn-group form input.form-submit + .button.fake-cancel,
 form #media-browser-tabset .modal-footer .btn-group input.form-submit + .button.fake-cancel, .modal-footer .btn-group #modal-content form .form-submit + .button.fake-cancel, form .modal-footer .btn-group #modal-content .form-submit + .button.fake-cancel, #modal-content .modal-footer .btn-group form .form-submit + .button.fake-cancel, form #modal-content .modal-footer .btn-group .form-submit + .button.fake-cancel,
@@ -7885,7 +7938,11 @@ form #media-browser-tabset .modal-footer .btn-group input.form-submit + .button.
 .modal-footer .btn-group #modal-content form #edit-cancel + .button.fake-cancel,
 form .modal-footer .btn-group #modal-content #edit-cancel + .button.fake-cancel,
 #modal-content .modal-footer .btn-group form #edit-cancel + .button.fake-cancel,
-form #modal-content .modal-footer .btn-group #edit-cancel + .button.fake-cancel, .modal-footer .btn-group #media-browser-tabset .btn + a.button, #media-browser-tabset .modal-footer .btn-group .btn + a.button, .modal-footer .btn-group form #media-browser-tabset .button.fake-ok + a.button, form .modal-footer .btn-group #media-browser-tabset .button.fake-ok + a.button, .modal-footer .btn-group form #media-browser-tabset .button.fake-cancel + a.button, form .modal-footer .btn-group #media-browser-tabset .button.fake-cancel + a.button, .modal-footer .btn-group #media-browser-tabset a.button + a.button, #media-browser-tabset .modal-footer .btn-group a.button + a.button,
+form #modal-content .modal-footer .btn-group #edit-cancel + .button.fake-cancel, .modal-footer .btn-group .media-widget > .btn + a, .modal-footer .btn-group form .media-widget > .button.fake-ok + a, form .modal-footer .btn-group .media-widget > .button.fake-ok + a, .modal-footer .btn-group form .media-widget > .button.fake-cancel + a, form .modal-footer .btn-group .media-widget > .button.fake-cancel + a, .modal-footer .btn-group .media-widget > a + a, .modal-footer .btn-group #media-browser-tabset .media-widget > a.button + a, #media-browser-tabset .modal-footer .btn-group .media-widget > a.button + a,
+.modal-footer .btn-group #media-browser-tabset .media-widget > input.form-submit + a,
+#media-browser-tabset .modal-footer .btn-group .media-widget > input.form-submit + a, .modal-footer .btn-group #modal-content .media-widget > .form-submit + a, #modal-content .modal-footer .btn-group .media-widget > .form-submit + a,
+.modal-footer .btn-group #modal-content .media-widget > #edit-cancel + a,
+#modal-content .modal-footer .btn-group .media-widget > #edit-cancel + a, .modal-footer .btn-group #media-browser-tabset .btn + a.button, #media-browser-tabset .modal-footer .btn-group .btn + a.button, .modal-footer .btn-group form #media-browser-tabset .button.fake-ok + a.button, form .modal-footer .btn-group #media-browser-tabset .button.fake-ok + a.button, .modal-footer .btn-group form #media-browser-tabset .button.fake-cancel + a.button, form .modal-footer .btn-group #media-browser-tabset .button.fake-cancel + a.button, .modal-footer .btn-group #media-browser-tabset .media-widget > a + a.button, #media-browser-tabset .modal-footer .btn-group .media-widget > a + a.button, .modal-footer .btn-group #media-browser-tabset a.button + a.button, #media-browser-tabset .modal-footer .btn-group a.button + a.button,
 .modal-footer .btn-group #media-browser-tabset input.form-submit + a.button,
 #media-browser-tabset .modal-footer .btn-group input.form-submit + a.button, .modal-footer .btn-group #modal-content #media-browser-tabset .form-submit + a.button, #media-browser-tabset .modal-footer .btn-group #modal-content .form-submit + a.button, #modal-content .modal-footer .btn-group #media-browser-tabset .form-submit + a.button, #media-browser-tabset #modal-content .modal-footer .btn-group .form-submit + a.button,
 .modal-footer .btn-group #modal-content #media-browser-tabset #edit-cancel + a.button,
@@ -7898,10 +7955,12 @@ form #modal-content .modal-footer .btn-group #edit-cancel + .button.fake-cancel,
 form .modal-footer .btn-group #media-browser-tabset .button.fake-ok + input.form-submit,
 .modal-footer .btn-group form #media-browser-tabset .button.fake-cancel + input.form-submit,
 form .modal-footer .btn-group #media-browser-tabset .button.fake-cancel + input.form-submit,
+.modal-footer .btn-group #media-browser-tabset .media-widget > a + input.form-submit,
+#media-browser-tabset .modal-footer .btn-group .media-widget > a + input.form-submit,
 .modal-footer .btn-group #media-browser-tabset a.button + input.form-submit,
 #media-browser-tabset .modal-footer .btn-group a.button + input.form-submit,
 .modal-footer .btn-group #media-browser-tabset input.form-submit + input.form-submit,
-#media-browser-tabset .modal-footer .btn-group input.form-submit + input.form-submit, .modal-footer .btn-group #modal-content .btn + .form-submit, #modal-content .modal-footer .btn-group .btn + .form-submit, .modal-footer .btn-group form #modal-content .button.fake-ok + .form-submit, #modal-content .modal-footer .btn-group form .button.fake-ok + .form-submit, form .modal-footer .btn-group #modal-content .button.fake-ok + .form-submit, #modal-content form .modal-footer .btn-group .button.fake-ok + .form-submit, .modal-footer .btn-group form #modal-content .button.fake-cancel + .form-submit, #modal-content .modal-footer .btn-group form .button.fake-cancel + .form-submit, form .modal-footer .btn-group #modal-content .button.fake-cancel + .form-submit, #modal-content form .modal-footer .btn-group .button.fake-cancel + .form-submit, .modal-footer .btn-group #media-browser-tabset #modal-content a.button + .form-submit, #modal-content .modal-footer .btn-group #media-browser-tabset a.button + .form-submit, #media-browser-tabset .modal-footer .btn-group #modal-content a.button + .form-submit, #modal-content #media-browser-tabset .modal-footer .btn-group a.button + .form-submit, .modal-footer .btn-group #modal-content .form-submit + .form-submit, #modal-content .modal-footer .btn-group .form-submit + .form-submit,
+#media-browser-tabset .modal-footer .btn-group input.form-submit + input.form-submit, .modal-footer .btn-group #modal-content .btn + .form-submit, #modal-content .modal-footer .btn-group .btn + .form-submit, .modal-footer .btn-group form #modal-content .button.fake-ok + .form-submit, #modal-content .modal-footer .btn-group form .button.fake-ok + .form-submit, form .modal-footer .btn-group #modal-content .button.fake-ok + .form-submit, #modal-content form .modal-footer .btn-group .button.fake-ok + .form-submit, .modal-footer .btn-group form #modal-content .button.fake-cancel + .form-submit, #modal-content .modal-footer .btn-group form .button.fake-cancel + .form-submit, form .modal-footer .btn-group #modal-content .button.fake-cancel + .form-submit, #modal-content form .modal-footer .btn-group .button.fake-cancel + .form-submit, .modal-footer .btn-group #modal-content .media-widget > a + .form-submit, #modal-content .modal-footer .btn-group .media-widget > a + .form-submit, .modal-footer .btn-group #media-browser-tabset #modal-content a.button + .form-submit, #modal-content .modal-footer .btn-group #media-browser-tabset a.button + .form-submit, #media-browser-tabset .modal-footer .btn-group #modal-content a.button + .form-submit, #modal-content #media-browser-tabset .modal-footer .btn-group a.button + .form-submit, .modal-footer .btn-group #modal-content .form-submit + .form-submit, #modal-content .modal-footer .btn-group .form-submit + .form-submit,
 .modal-footer .btn-group #modal-content #edit-cancel + .form-submit,
 #modal-content .modal-footer .btn-group #edit-cancel + .form-submit,
 .modal-footer .btn-group #media-browser-tabset form .button.fake-ok + a.button,
@@ -7926,6 +7985,8 @@ form .modal-footer .btn-group #modal-content .button.fake-ok + #edit-cancel,
 #modal-content .modal-footer .btn-group form .button.fake-cancel + #edit-cancel,
 form .modal-footer .btn-group #modal-content .button.fake-cancel + #edit-cancel,
 #modal-content form .modal-footer .btn-group .button.fake-cancel + #edit-cancel,
+.modal-footer .btn-group #modal-content .media-widget > a + #edit-cancel,
+#modal-content .modal-footer .btn-group .media-widget > a + #edit-cancel,
 .modal-footer .btn-group #media-browser-tabset #modal-content a.button + #edit-cancel,
 #modal-content .modal-footer .btn-group #media-browser-tabset a.button + #edit-cancel,
 #media-browser-tabset .modal-footer .btn-group #modal-content a.button + #edit-cancel,
@@ -8428,7 +8489,7 @@ form .modal-footer .btn-group #modal-content .button.fake-cancel + #edit-cancel,
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 /* line 202, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_carousel.scss */
-.carousel-caption .btn, .carousel-caption form .button.fake-ok, form .carousel-caption .button.fake-ok, .carousel-caption form .button.fake-cancel, form .carousel-caption .button.fake-cancel, .carousel-caption #media-browser-tabset a.button, #media-browser-tabset .carousel-caption a.button,
+.carousel-caption .btn, .carousel-caption form .button.fake-ok, form .carousel-caption .button.fake-ok, .carousel-caption form .button.fake-cancel, form .carousel-caption .button.fake-cancel, .carousel-caption .media-widget > a, .carousel-caption #media-browser-tabset a.button, #media-browser-tabset .carousel-caption a.button,
 .carousel-caption #media-browser-tabset input.form-submit,
 #media-browser-tabset .carousel-caption input.form-submit, .carousel-caption #modal-content .form-submit, #modal-content .carousel-caption .form-submit,
 .carousel-caption #modal-content #edit-cancel,
@@ -11647,7 +11708,7 @@ body.ctools-modal-open {
   padding-bottom: 20px;
 }
 /* line 285, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass_radix-3.0.13/stylesheets/compass_radix/_structure.scss */
-#modalContent .panels-section-column-categories .btn, #modalContent .panels-section-column-categories form .button.fake-ok, form #modalContent .panels-section-column-categories .button.fake-ok, #modalContent .panels-section-column-categories form .button.fake-cancel, form #modalContent .panels-section-column-categories .button.fake-cancel, #modalContent .panels-section-column-categories #media-browser-tabset a.button, #media-browser-tabset #modalContent .panels-section-column-categories a.button,
+#modalContent .panels-section-column-categories .btn, #modalContent .panels-section-column-categories form .button.fake-ok, form #modalContent .panels-section-column-categories .button.fake-ok, #modalContent .panels-section-column-categories form .button.fake-cancel, form #modalContent .panels-section-column-categories .button.fake-cancel, #modalContent .panels-section-column-categories .media-widget > a, #modalContent .panels-section-column-categories #media-browser-tabset a.button, #media-browser-tabset #modalContent .panels-section-column-categories a.button,
 #modalContent .panels-section-column-categories #media-browser-tabset input.form-submit,
 #media-browser-tabset #modalContent .panels-section-column-categories input.form-submit, #modalContent .panels-section-column-categories #modal-content .form-submit, #modal-content #modalContent .panels-section-column-categories .form-submit,
 #modalContent .panels-section-column-categories #modal-content #edit-cancel,
@@ -11662,7 +11723,7 @@ body.ctools-modal-open {
   border: 0;
 }
 /* line 294, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass_radix-3.0.13/stylesheets/compass_radix/_structure.scss */
-#modalContent .panels-categories-box a.btn, #modalContent .panels-categories-box form a.button.fake-ok, form #modalContent .panels-categories-box a.button.fake-ok, #modalContent .panels-categories-box form a.button.fake-cancel, form #modalContent .panels-categories-box a.button.fake-cancel, #modalContent .panels-categories-box #media-browser-tabset a.button, #media-browser-tabset #modalContent .panels-categories-box a.button, #modalContent .panels-categories-box #modal-content a.form-submit, #modal-content #modalContent .panels-categories-box a.form-submit,
+#modalContent .panels-categories-box a.btn, #modalContent .panels-categories-box form a.button.fake-ok, form #modalContent .panels-categories-box a.button.fake-ok, #modalContent .panels-categories-box form a.button.fake-cancel, form #modalContent .panels-categories-box a.button.fake-cancel, #modalContent .panels-categories-box .media-widget > a, #modalContent .panels-categories-box #media-browser-tabset a.button, #media-browser-tabset #modalContent .panels-categories-box a.button, #modalContent .panels-categories-box #modal-content a.form-submit, #modal-content #modalContent .panels-categories-box a.form-submit,
 #modalContent .panels-categories-box #modal-content a#edit-cancel,
 #modal-content #modalContent .panels-categories-box a#edit-cancel {
   padding: 5px 10px;
@@ -11674,7 +11735,7 @@ body.ctools-modal-open {
   box-shadow: none;
 }
 /* line 303, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass_radix-3.0.13/stylesheets/compass_radix/_structure.scss */
-#modalContent .panels-root-content-box a.btn, #modalContent .panels-root-content-box form a.button.fake-ok, form #modalContent .panels-root-content-box a.button.fake-ok, #modalContent .panels-root-content-box form a.button.fake-cancel, form #modalContent .panels-root-content-box a.button.fake-cancel, #modalContent .panels-root-content-box #media-browser-tabset a.button, #media-browser-tabset #modalContent .panels-root-content-box a.button, #modalContent .panels-root-content-box #modal-content a.form-submit, #modal-content #modalContent .panels-root-content-box a.form-submit,
+#modalContent .panels-root-content-box a.btn, #modalContent .panels-root-content-box form a.button.fake-ok, form #modalContent .panels-root-content-box a.button.fake-ok, #modalContent .panels-root-content-box form a.button.fake-cancel, form #modalContent .panels-root-content-box a.button.fake-cancel, #modalContent .panels-root-content-box .media-widget > a, #modalContent .panels-root-content-box #media-browser-tabset a.button, #media-browser-tabset #modalContent .panels-root-content-box a.button, #modalContent .panels-root-content-box #modal-content a.form-submit, #modal-content #modalContent .panels-root-content-box a.form-submit,
 #modalContent .panels-root-content-box #modal-content a#edit-cancel,
 #modal-content #modalContent .panels-root-content-box a#edit-cancel {
   padding: 5px 10px;
@@ -11700,7 +11761,7 @@ body.ctools-modal-open {
   position: relative;
 }
 /* line 321, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass_radix-3.0.13/stylesheets/compass_radix/_structure.scss */
-#modal-content fieldset.widget-preview .panel-heading .btn, #modal-content fieldset.widget-preview .panel-heading form .button.fake-ok, form #modal-content fieldset.widget-preview .panel-heading .button.fake-ok, #modal-content fieldset.widget-preview .panel-heading form .button.fake-cancel, form #modal-content fieldset.widget-preview .panel-heading .button.fake-cancel, #modal-content fieldset.widget-preview .panel-heading #media-browser-tabset a.button, #media-browser-tabset #modal-content fieldset.widget-preview .panel-heading a.button, #modal-content fieldset.widget-preview .panel-heading .form-submit,
+#modal-content fieldset.widget-preview .panel-heading .btn, #modal-content fieldset.widget-preview .panel-heading form .button.fake-ok, form #modal-content fieldset.widget-preview .panel-heading .button.fake-ok, #modal-content fieldset.widget-preview .panel-heading form .button.fake-cancel, form #modal-content fieldset.widget-preview .panel-heading .button.fake-cancel, #modal-content fieldset.widget-preview .panel-heading .media-widget > a, #modal-content fieldset.widget-preview .panel-heading #media-browser-tabset a.button, #media-browser-tabset #modal-content fieldset.widget-preview .panel-heading a.button, #modal-content fieldset.widget-preview .panel-heading .form-submit,
 #modal-content fieldset.widget-preview .panel-heading #edit-cancel {
   position: absolute;
   right: 10px;
@@ -11922,7 +11983,7 @@ form .container-inline-date .date-padding {
   float: none;
 }
 /* line 22, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass_radix-3.0.13/stylesheets/compass_radix/_form.scss */
-form .form-actions .btn, form .form-actions .button.fake-ok, form .form-actions .button.fake-cancel, form .form-actions #media-browser-tabset a.button,
+form .form-actions .btn, form .form-actions .button.fake-ok, form .form-actions .button.fake-cancel, form .form-actions .media-widget > a, form .form-actions #media-browser-tabset a.button,
 form .form-actions #media-browser-tabset input.form-submit, form .form-actions #modal-content .form-submit, #modal-content form .form-actions .form-submit,
 #media-browser-tabset form .form-actions a.button,
 #media-browser-tabset form .form-actions input.form-submit,
@@ -11993,7 +12054,7 @@ html.js fieldset.collapsed {
 
 @media (max-width: 767px) {
   /* line 92, ../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass_radix-3.0.13/stylesheets/compass_radix/_form.scss */
-  form .btn, form .button.fake-ok, form .button.fake-cancel, form #media-browser-tabset a.button,
+  form .btn, form .button.fake-ok, form .button.fake-cancel, form .media-widget > a, form #media-browser-tabset a.button,
   form #media-browser-tabset input.form-submit, form #modal-content .form-submit, #modal-content form .form-submit,
   #media-browser-tabset form a.button,
   #media-browser-tabset form input.form-submit,
@@ -12543,7 +12604,7 @@ div#panels-ipe-control-container .panels-ipe-button-container, div#panels-ipe-co
   text-align: right;
 }
 /* line 68, ../sass/base/_panel.scss */
-div#panels-ipe-control-container a, div#panels-ipe-control-container .btn, div#panels-ipe-control-container form .button.fake-ok, form div#panels-ipe-control-container .button.fake-ok, div#panels-ipe-control-container form .button.fake-cancel, form div#panels-ipe-control-container .button.fake-cancel, div#panels-ipe-control-container #media-browser-tabset a.button, #media-browser-tabset div#panels-ipe-control-container a.button,
+div#panels-ipe-control-container a, div#panels-ipe-control-container .btn, div#panels-ipe-control-container form .button.fake-ok, form div#panels-ipe-control-container .button.fake-ok, div#panels-ipe-control-container form .button.fake-cancel, form div#panels-ipe-control-container .button.fake-cancel, div#panels-ipe-control-container .media-widget > a, div#panels-ipe-control-container #media-browser-tabset a.button, #media-browser-tabset div#panels-ipe-control-container a.button,
 div#panels-ipe-control-container #media-browser-tabset input.form-submit,
 #media-browser-tabset div#panels-ipe-control-container input.form-submit, div#panels-ipe-control-container #modal-content .form-submit, #modal-content div#panels-ipe-control-container .form-submit,
 div#panels-ipe-control-container #modal-content #edit-cancel,
@@ -12744,7 +12805,7 @@ body.page-node-add #main .burr-flipped .sidebar .panel-panel-inner .pager {
   margin-left: 0;
 }
 /* line 200, ../sass/base/_panel.scss */
-.pane-oa-widgets-add-content li a.btn, .pane-oa-widgets-add-content li form a.button.fake-ok, form .pane-oa-widgets-add-content li a.button.fake-ok, .pane-oa-widgets-add-content li form a.button.fake-cancel, form .pane-oa-widgets-add-content li a.button.fake-cancel, .pane-oa-widgets-add-content li #media-browser-tabset a.button, #media-browser-tabset .pane-oa-widgets-add-content li a.button, .pane-oa-widgets-add-content li #modal-content a.form-submit, #modal-content .pane-oa-widgets-add-content li a.form-submit,
+.pane-oa-widgets-add-content li a.btn, .pane-oa-widgets-add-content li form a.button.fake-ok, form .pane-oa-widgets-add-content li a.button.fake-ok, .pane-oa-widgets-add-content li form a.button.fake-cancel, form .pane-oa-widgets-add-content li a.button.fake-cancel, .pane-oa-widgets-add-content li .media-widget > a, .pane-oa-widgets-add-content li #media-browser-tabset a.button, #media-browser-tabset .pane-oa-widgets-add-content li a.button, .pane-oa-widgets-add-content li #modal-content a.form-submit, #modal-content .pane-oa-widgets-add-content li a.form-submit,
 .pane-oa-widgets-add-content li #modal-content a#edit-cancel,
 #modal-content .pane-oa-widgets-add-content li a#edit-cancel {
   margin-bottom: 5px;
@@ -12950,7 +13011,7 @@ table thead th {
 }
 
 /* line 8, ../sass/base/_view.scss */
-.filter-btn .btn, .filter-btn form .button.fake-ok, form .filter-btn .button.fake-ok, .filter-btn form .button.fake-cancel, form .filter-btn .button.fake-cancel, .filter-btn #media-browser-tabset a.button, #media-browser-tabset .filter-btn a.button,
+.filter-btn .btn, .filter-btn form .button.fake-ok, form .filter-btn .button.fake-ok, .filter-btn form .button.fake-cancel, form .filter-btn .button.fake-cancel, .filter-btn .media-widget > a, .filter-btn #media-browser-tabset a.button, #media-browser-tabset .filter-btn a.button,
 .filter-btn #media-browser-tabset input.form-submit,
 #media-browser-tabset .filter-btn input.form-submit, .filter-btn #modal-content .form-submit, #modal-content .filter-btn .form-submit,
 .filter-btn #modal-content #edit-cancel,
@@ -13442,8 +13503,12 @@ form .form-item {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-/* line 13, ../sass/components/_form.scss */
-form .btn, form .button.fake-ok, form .button.fake-cancel, form #media-browser-tabset a.button,
+/* line 12, ../sass/components/_form.scss */
+form .form-item.checkbox, form .form-item.radio {
+  padding-left: 0;
+}
+/* line 16, ../sass/components/_form.scss */
+form .btn, form .button.fake-ok, form .button.fake-cancel, form .media-widget > a, form #media-browser-tabset a.button,
 form #media-browser-tabset input.form-submit, form #modal-content .form-submit, #modal-content form .form-submit,
 #media-browser-tabset form a.button,
 #media-browser-tabset form input.form-submit,
@@ -13451,20 +13516,21 @@ form #modal-content #edit-cancel,
 #modal-content form #edit-cancel {
   width: auto;
   height: inherit;
+  text-shadow: none;
 }
-/* line 19, ../sass/components/_form.scss */
+/* line 23, ../sass/components/_form.scss */
 form .button.fake-ok, form .button.fake-cancel {
   display: inline-block;
   max-width: 60px;
   margin-right: 5px;
 }
-/* line 29, ../sass/components/_form.scss */
+/* line 33, ../sass/components/_form.scss */
 form .form-actions {
   border: 0;
   padding: 0;
 }
-/* line 32, ../sass/components/_form.scss */
-form .form-actions .btn, form .form-actions .button.fake-ok, form .form-actions .button.fake-cancel, form .form-actions #media-browser-tabset a.button,
+/* line 36, ../sass/components/_form.scss */
+form .form-actions .btn, form .form-actions .button.fake-ok, form .form-actions .button.fake-cancel, form .form-actions .media-widget > a, form .form-actions #media-browser-tabset a.button,
 form .form-actions #media-browser-tabset input.form-submit, form .form-actions #modal-content .form-submit, #modal-content form .form-actions .form-submit,
 #media-browser-tabset form .form-actions a.button,
 #media-browser-tabset form .form-actions input.form-submit,
@@ -13472,24 +13538,46 @@ form .form-actions #modal-content #edit-cancel,
 #modal-content form .form-actions #edit-cancel {
   margin-bottom: 10px;
 }
+/* line 40, ../sass/components/_form.scss */
+form fieldset.collapsible legend a.fieldset-title {
+  display: inline-block;
+  width: 90%;
+}
 
-/* line 37, ../sass/components/_form.scss */
+/* line 46, ../sass/components/_form.scss */
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 1.6em;
+}
+
+/* line 50, ../sass/components/_form.scss */
+a.mceButton {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 54, ../sass/components/_form.scss */
+.media-widget > a {
+  background-color: #eee;
+}
+
+/* line 60, ../sass/components/_form.scss */
 .label, .oa-news .oa-news-tags a {
   font-weight: normal;
   background-color: #ddd;
   color: #333;
 }
-/* line 41, ../sass/components/_form.scss */
+/* line 64, ../sass/components/_form.scss */
 .label a, .oa-news .oa-news-tags a a {
   font-weight: normal;
 }
 
-/* line 49, ../sass/components/_form.scss */
+/* line 72, ../sass/components/_form.scss */
 #media-browser-tabset h1 {
   font-size: 16px;
 }
 
-/* line 66, ../sass/components/_form.scss */
+/* line 89, ../sass/components/_form.scss */
 #modal-content .form-submit,
 #media-browser-tabset a.button,
 #media-browser-tabset form a.button,
@@ -13500,7 +13588,7 @@ form .form-actions #modal-content #edit-cancel,
   font-weight: normal;
   display: inline-block;
 }
-/* line 71, ../sass/components/_form.scss */
+/* line 94, ../sass/components/_form.scss */
 #modal-content .form-submit:hover,
 #media-browser-tabset a.button:hover,
 #media-browser-tabset form a.button:hover,
@@ -13512,11 +13600,11 @@ form .form-actions #modal-content #edit-cancel,
   background-image: none;
 }
 
-/* line 83, ../sass/components/_form.scss */
+/* line 108, ../sass/components/_form.scss */
 #modal-content .form-item {
   clear: both;
 }
-/* line 86, ../sass/components/_form.scss */
+/* line 111, ../sass/components/_form.scss */
 #modal-content .form-submit {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -13524,35 +13612,36 @@ form .form-actions #modal-content #edit-cancel,
   margin-bottom: 0;
 }
 
-/* line 93, ../sass/components/_form.scss */
+/* line 119, ../sass/components/_form.scss */
 #media-tabs-wrapper ul.ui-tabs-nav {
   margin-bottom: 0;
 }
 
-/* line 98, ../sass/components/_form.scss */
+/* line 125, ../sass/components/_form.scss */
 #media-browser-tabset .views-exposed-form .views-submit-button {
   margin-top: 30px;
 }
-/* line 101, ../sass/components/_form.scss */
+/* line 128, ../sass/components/_form.scss */
 #media-browser-tabset .views-exposed-form .views-exposed-widget {
   margin-right: 0;
 }
-/* line 105, ../sass/components/_form.scss */
+/* line 132, ../sass/components/_form.scss */
 #media-browser-tabset #edit-filename-wrapper {
   width: 200px;
 }
-/* line 108, ../sass/components/_form.scss */
+/* line 135, ../sass/components/_form.scss */
 #media-browser-tabset form select {
   width: 100%;
 }
-/* line 112, ../sass/components/_form.scss */
+/* line 139, ../sass/components/_form.scss */
 #media-browser-tabset input.form-file,
 #media-browser-tabset span.file {
   margin-right: 10px;
 }
 
-/* line 120, ../sass/components/_form.scss */
-#node-edit .burr-flipped-sidebar .panel-pane {
+/* line 148, ../sass/components/_form.scss */
+#node-edit .burr-flipped-sidebar .panel-pane,
+#node-edit .burr-flipped .sidebar .panel-pane {
   border: 0;
   border-bottom: 1px solid #e3e3e3;
   margin-bottom: 0;
@@ -13564,11 +13653,12 @@ form .form-actions #modal-content #edit-cancel,
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 128, ../sass/components/_form.scss */
-#node-edit .burr-flipped-sidebar .panel-pane .pane-content {
+/* line 156, ../sass/components/_form.scss */
+#node-edit .burr-flipped-sidebar .panel-pane .pane-content,
+#node-edit .burr-flipped .sidebar .panel-pane .pane-content {
   padding: 0;
 }
-/* line 135, ../sass/components/_form.scss */
+/* line 163, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-group-ref, #node-edit .panel-pane.pane-node-field-oa-team-ref, #node-edit .panel-pane.pane-node-field-oa-user-ref {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -13576,12 +13666,12 @@ form .form-actions #modal-content #edit-cancel,
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 139, ../sass/components/_form.scss */
+/* line 167, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-group-ref {
   margin-bottom: 0;
   border-bottom: 0;
 }
-/* line 143, ../sass/components/_form.scss */
+/* line 171, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-team-ref {
   margin-bottom: 0;
   margin-top: 0;
@@ -13590,129 +13680,141 @@ form .form-actions #modal-content #edit-cancel,
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 151, ../sass/components/_form.scss */
+/* line 179, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-user-ref {
   border-top: 0;
   margin-top: 0;
 }
-/* line 157, ../sass/components/_form.scss */
+/* line 185, ../sass/components/_form.scss */
 #node-edit .container-inline-date .date-padding {
   padding: 0;
 }
-/* line 161, ../sass/components/_form.scss */
+/* line 189, ../sass/components/_form.scss */
 #node-edit .container-inline-date .form-item-date-time,
 #node-edit .container-inline-date .form-item-date-date {
   padding-bottom: 0.5em;
 }
-/* line 165, ../sass/components/_form.scss */
+/* line 193, ../sass/components/_form.scss */
 #node-edit .form-actions {
   background: transparent;
 }
-/* line 167, ../sass/components/_form.scss */
+/* line 195, ../sass/components/_form.scss */
 #node-edit .form-actions input {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 172, ../sass/components/_form.scss */
+/* line 200, ../sass/components/_form.scss */
 #node-edit .form-actions input:hover {
   color: white;
   background-color: #0044cc;
   background-image: none;
 }
 
-/* line 184, ../sass/components/_form.scss */
+/* line 212, ../sass/components/_form.scss */
 .views-exposed-form .well {
   padding: 0 1em;
 }
-/* line 187, ../sass/components/_form.scss */
+/* line 215, ../sass/components/_form.scss */
 .views-exposed-form .filter-btn {
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 10px;
 }
 
-/* line 193, ../sass/components/_form.scss */
+/* line 222, ../sass/components/_form.scss */
+.oa-pane .views-exposed-form .filter-btn {
+  top: 10px;
+}
+
+/* line 226, ../sass/components/_form.scss */
 .view-filters form {
   margin: 0;
 }
 
-/* line 196, ../sass/components/_form.scss */
+/* line 230, ../sass/components/_form.scss */
 .views-exposed-widget.views-submit-button {
   padding-right: 5px;
 }
 
-/* line 202, ../sass/components/_form.scss */
+/* line 236, ../sass/components/_form.scss */
 #oa-discussion-reply-form {
   position: relative;
 }
-/* line 204, ../sass/components/_form.scss */
+/* line 238, ../sass/components/_form.scss */
 #oa-discussion-reply-form .form-item {
   margin: 0;
 }
-/* line 207, ../sass/components/_form.scss */
+/* line 241, ../sass/components/_form.scss */
 #oa-discussion-reply-form input#edit-subject {
   width: 75%;
 }
-/* line 210, ../sass/components/_form.scss */
+/* line 244, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media {
   position: relative;
 }
-/* line 212, ../sass/components/_form.scss */
+/* line 246, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .tabledrag-toggle-weight-wrapper {
   position: absolute;
   top: 0;
   right: 0;
   margin: 10px;
 }
-/* line 219, ../sass/components/_form.scss */
+/* line 253, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .media-item img {
   display: block;
   margin: auto;
   width: auto;
 }
-/* line 224, ../sass/components/_form.scss */
+/* line 258, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .media-item .file a {
   display: none;
 }
-/* line 229, ../sass/components/_form.scss */
+/* line 263, ../sass/components/_form.scss */
 #oa-discussion-reply-form #edit-submit {
   position: absolute;
   bottom: 2px;
   right: 0;
 }
 
-/* line 236, ../sass/components/_form.scss */
+/* line 271, ../sass/components/_form.scss */
 .checkbox-table .center {
   text-align: center;
 }
-/* line 240, ../sass/components/_form.scss */
+/* line 275, ../sass/components/_form.scss */
 .checkbox-table .form-type-checkbox,
 .checkbox-table .space-label {
   margin: 0.4em 0;
 }
 
-/* line 247, ../sass/components/_form.scss */
+/* line 280, ../sass/components/_form.scss */
+.chosen-container {
+  height: auto;
+  border: 0;
+  padding: 0;
+}
+
+/* line 288, ../sass/components/_form.scss */
 #oa-users-settings-form .container-fluid {
   border-bottom: 2px solid #dedede;
   margin: 5px auto;
   padding-right: 0;
   padding-left: 0;
 }
-/* line 248, ../sass/components/_form.scss */
+/* line 289, ../sass/components/_form.scss */
 #oa-users-settings-form .container-fluid.header {
   background-color: #dedede;
   clear: both;
   height: 25px;
   padding: 3px 0;
 }
-/* line 260, ../sass/components/_form.scss */
+/* line 301, ../sass/components/_form.scss */
 #oa-users-settings-form .col-sm-6 legend {
   display: block;
   float: none;
   line-height: 40px;
 }
-/* line 266, ../sass/components/_form.scss */
+/* line 307, ../sass/components/_form.scss */
 #oa-users-settings-form div.column3 div.form-type-checkboxes {
   margin-left: -54%;
 }
@@ -13847,7 +13949,7 @@ form .form-actions #modal-content #edit-cancel,
   padding: 0;
 }
 /* line 32, ../sass/components/_navbar.scss */
-#oa-navbar .navbar-inner .btn, #oa-navbar .navbar-inner form .button.fake-ok, form #oa-navbar .navbar-inner .button.fake-ok, #oa-navbar .navbar-inner form .button.fake-cancel, form #oa-navbar .navbar-inner .button.fake-cancel, #oa-navbar .navbar-inner #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .navbar-inner a.button,
+#oa-navbar .navbar-inner .btn, #oa-navbar .navbar-inner form .button.fake-ok, form #oa-navbar .navbar-inner .button.fake-ok, #oa-navbar .navbar-inner form .button.fake-cancel, form #oa-navbar .navbar-inner .button.fake-cancel, #oa-navbar .navbar-inner .media-widget > a, #oa-navbar .navbar-inner #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .navbar-inner a.button,
 #oa-navbar .navbar-inner #media-browser-tabset input.form-submit,
 #media-browser-tabset #oa-navbar .navbar-inner input.form-submit, #oa-navbar .navbar-inner #modal-content .form-submit, #modal-content #oa-navbar .navbar-inner .form-submit,
 #oa-navbar .navbar-inner #modal-content #edit-cancel,
@@ -13909,7 +14011,7 @@ form .form-actions #modal-content #edit-cancel,
   height: 42px;
 }
 /* line 81, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button,
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.media-widget.btn-group > a, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button,
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit,
 #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit,
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > #edit-cancel,
@@ -13927,7 +14029,7 @@ form .form-actions #modal-content #edit-cancel,
   box-shadow: none;
 }
 /* line 90, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok:hover, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel:hover, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button:hover, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button:hover,
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok:hover, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel:hover, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.media-widget.btn-group > a:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button:hover, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button:hover,
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit:hover,
 #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit:hover, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit:hover,
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > #edit-cancel:hover,
@@ -13935,7 +14037,7 @@ form .form-actions #modal-content #edit-cancel,
   background: none;
 }
 /* line 93, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn.btn-home, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.btn-home.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.btn-home.button,
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn.btn-home, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.media-widget.btn-group > a.btn-home, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.btn-home.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.btn-home.button,
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.btn-home.form-submit,
 #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.btn-home.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .btn-home.form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.form-submit,
 #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .btn-home#edit-cancel,
@@ -14027,7 +14129,7 @@ form .form-actions #modal-content #edit-cancel,
   width: 150px;
 }
 /* line 171, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .btn, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .button.fake-ok, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #media-browser-tabset a.button,
+#oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .btn, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .button.fake-ok, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .media-widget > a, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #media-browser-tabset a.button,
 #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #media-browser-tabset input.form-submit, #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group #modal-content .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group .form-submit,
 #oa-navbar .panel-panel .pane-oa-toolbar-search #media-browser-tabset form .btn-group a.button,
 #media-browser-tabset #oa-navbar .panel-panel .pane-oa-toolbar-search form .btn-group a.button,
@@ -14045,7 +14147,7 @@ form .form-actions #modal-content #edit-cancel,
   }
 }
 /* line 182, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-add-space-content .btn, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-ok, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-ok, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-cancel, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-cancel, #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content a.button,
+#oa-navbar .panel-panel .pane-add-space-content .btn, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-ok, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-ok, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-cancel, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-cancel, #oa-navbar .panel-panel .pane-add-space-content .media-widget > a, #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content a.button,
 #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset input.form-submit,
 #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content input.form-submit, #oa-navbar .panel-panel .pane-add-space-content #modal-content .form-submit, #modal-content #oa-navbar .panel-panel .pane-add-space-content .form-submit,
 #oa-navbar .panel-panel .pane-add-space-content #modal-content #edit-cancel,
@@ -14055,7 +14157,7 @@ form .form-actions #modal-content #edit-cancel,
   line-height: 2px;
 }
 /* line 186, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-add-space-content .btn .caret, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-ok .caret, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-ok .caret, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-cancel .caret, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-cancel .caret, #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset a.button .caret, #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content a.button .caret,
+#oa-navbar .panel-panel .pane-add-space-content .btn .caret, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-ok .caret, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-ok .caret, #oa-navbar .panel-panel .pane-add-space-content form .button.fake-cancel .caret, form #oa-navbar .panel-panel .pane-add-space-content .button.fake-cancel .caret, #oa-navbar .panel-panel .pane-add-space-content .media-widget > a .caret, #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset a.button .caret, #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content a.button .caret,
 #oa-navbar .panel-panel .pane-add-space-content #media-browser-tabset input.form-submit .caret,
 #media-browser-tabset #oa-navbar .panel-panel .pane-add-space-content input.form-submit .caret, #oa-navbar .panel-panel .pane-add-space-content #modal-content .form-submit .caret, #modal-content #oa-navbar .panel-panel .pane-add-space-content .form-submit .caret,
 #oa-navbar .panel-panel .pane-add-space-content #modal-content #edit-cancel .caret,
