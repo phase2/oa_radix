@@ -298,13 +298,36 @@ a.mceButton {
     padding-left:0;
   }
   .col-sm-6{
-    legend{
+    .panel-heading{
       display: block;
       float: none;
       line-height: 40px;
+      background: none;
+      padding: 0;
     }
   }
   div.column3 div.form-type-checkboxes {
     margin-left: -54%;
+  }
+  .collapsible{
+    &.form-wrapper{
+      .fieldset-wrapper{
+        overflow: visible !important;
+        padding:0;
+      }
+      border:none;
+      box-shadow: none;
+    }
+  }
+  input[type="text"]{
+    width:auto;
+  }
+  .panel-title > a {
+    color: #0071B3;
+    font-size:18px;
+  }
+  div.column2 div.chosen-container{
+    margin: 8px 0;
+    padding:0;
   }
 }
