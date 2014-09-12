@@ -13794,6 +13794,31 @@ a.mceButton {
   padding: 0;
 }
 
+/* line 288, ../sass/components/_form.scss */
+#oa-users-settings-form .container-fluid {
+  border-bottom: 2px solid #dedede;
+  margin: 5px auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 289, ../sass/components/_form.scss */
+#oa-users-settings-form .container-fluid.header {
+  background-color: #dedede;
+  clear: both;
+  height: 25px;
+  padding: 3px 0;
+}
+/* line 301, ../sass/components/_form.scss */
+#oa-users-settings-form .col-sm-6 legend {
+  display: block;
+  float: none;
+  line-height: 40px;
+}
+/* line 307, ../sass/components/_form.scss */
+#oa-users-settings-form div.column3 div.form-type-checkboxes {
+  margin-left: -54%;
+}
+
 /* line 9, ../sass/components/_user.scss */
 .pane-oa-user-spaces-full .views-row {
   border: 1px solid #DDD;

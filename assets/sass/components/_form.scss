@@ -282,3 +282,29 @@ a.mceButton {
   border: 0;
   padding: 0;
 }
+
+//OA-messages form
+#oa-users-settings-form{
+  .container-fluid{
+    &.header{
+      background-color: #dedede;
+      clear: both;
+      height: 25px;
+      padding: 3px 0;
+    }
+    border-bottom: 2px solid #dedede;
+    margin: 5px auto;
+    padding-right:0;
+    padding-left:0;
+  }
+  .col-sm-6{
+    legend{
+      display: block;
+      float: none;
+      line-height: 40px;
+    }
+  }
+  div.column3 div.form-type-checkboxes {
+    margin-left: -54%;
+  }
+}
