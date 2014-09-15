@@ -78,7 +78,7 @@ div.panels-ipe-pseudobutton-container, div.panels-ipe-control .form-submit {
   font-weight: normal;
 }
 
-@media screen and (max-width: $tabletBreakpoint) {
+@include breakpoint('md') {
   div#panels-ipe-control-container {
     position: absolute;
   }

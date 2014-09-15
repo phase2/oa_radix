@@ -135,6 +135,10 @@
         float: left !important;
         border-bottom: none;
       }
+      @include breakpoint('lg') {
+    float: left !important;
+      border-bottom: none;
+    }
     }
     .pane-oa-favorites-favorites-button {
       ul#oa_favorites {
@@ -175,6 +179,9 @@
         }
       }
       @include breakpoint('md') {
+        float: right !important;
+      }
+      @include breakpoint('lg') {
         float: right !important;
       }
     }
