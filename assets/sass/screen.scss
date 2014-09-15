@@ -6,13 +6,14 @@
 // --------------------------------------------------
 @import "global/variable";
 @import "global/helper";
-@import "global/mixin";
 @import "global/font";
 // Radix
 // --------------------------------------------------
 @import "compass_radix";
 // Bootswatch
 // --------------------------------------------------
+// Mixins (allow override of compass_radix)
+@import "global/mixin";
 // Theme CSS
 // --------------------------------------------------
 @import "layout/layout";
