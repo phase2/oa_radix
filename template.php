@@ -48,6 +48,17 @@ function oa_radix_js_alter(&$javascript) {
 }
 
 /**
+ * Implements hook_libraries_info_alter(&$libraries)().
+ */
+function oa_radix_libraries_info_alter(&$libraries) {
+  // prevent duplicate bootstrap css since it's already
+  // compiled into our screen.css from compass_bootstrap via radix theme
+  if (isset($libraries['bootstrap'])) {
+    unset($libraries['bootstrap']['files']['css']);
+  }
+}
+
+/**
  * Implements hook_module_implements_alter().
  * Remove panopoly_core which uses this alter to set it's own jquery_ui theme
  * Should be done in a theme layer, not in panopoly_core
