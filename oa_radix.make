@@ -8,7 +8,8 @@ projects[radix][type] = theme
 projects[radix][version] = 3.x-dev
 projects[radix][download][type] = git
 projects[radix][download][branch] = 7.x-3.x
-projects[radix][download][revision] = a12f216
+projects[radix][download][revision] = 38eb2d99
+projects[radix][patch][2339395] = http://www.drupal.org/files/issues/radix-checkbox-labels-2339395-1.patch
 
 ; Radix Layouts
 projects[radix_layouts][version] = 3.0
