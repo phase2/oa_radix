@@ -70,6 +70,23 @@ function oa_radix_module_implements_alter(&$implementations, $hook) {
 }
 
 /**
+ * Implements hook_ctools_plugin_post_alter().
+ *
+ * @param $plugin
+ * @param $info
+ */
+function oa_radix_ctools_plugin_post_alter(&$plugin, &$info) {
+  // Fix Panopoly bryant_flipped_flipped.inc filename
+  if ($info['type'] == 'layouts' && $plugin['module'] == 'panopoly_theme') {
+    if (strpos($plugin['theme'], 'bryant_flipped') !== FALSE) {
+      if (strpos($plugin['file'], 'flipped_flipped') !== FALSE) {
+        $plugin['file'] = str_replace('flipped_flipped', 'flipped', $plugin['file']);
+      }
+    }
+  }
+}
+
+/**
  * Implements template_preprocess_page().
  */
 function oa_radix_preprocess_page(&$vars) {
