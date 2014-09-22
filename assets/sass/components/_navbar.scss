@@ -31,7 +31,7 @@ z-index: 1000;
   .panel-panel {
     @include box-sizing("border-box");
     padding: 0 20px;
-    margin: 0 0 0 -5px;
+    margin: 0;
     min-height: 0;
     .panel-pane {
       margin: 0 0 0 5px;
@@ -57,13 +57,15 @@ z-index: 1000;
         }
       }
     }
-    .pane-oa-dashboard-oa-toolbar-menu-button {
+    .pane-oa-dashboard-oa-toolbar-menu-button,
+    .pane-oa-toolbar-oa-toolbar-menu-button {
       z-index: 100;
       #toolbar-menu-button {
         margin: 0;
       }
     }
-    .pane-oa-dashboard-oa-breadcrumb {
+    .pane-oa-dashboard-oa-breadcrumb,
+    .pane-oa-toolbar-oa-breadcrumb {
       margin-top: -5px;
       margin-bottom: -5px;
       ul.oa_toolbar {
@@ -182,7 +184,8 @@ z-index: 1000;
       margin-right: -20px;
       background-color: #003853;
     }
-    .pane-oa-dashboard-oa-user-badge {
+    .pane-oa-dashboard-oa-user-badge,
+    .pane-oa-toolbar-oa-user-badge {
       .oa-dropdown {
         margin: 0;
         #user-badge-dropdown {
@@ -207,7 +210,8 @@ z-index: 1000;
       padding-bottom: 0;
     }
     .panel-panel {
-      .pane-oa-dashboard-oa-breadcrumb {
+      .pane-oa-dashboard-oa-breadcrumb,
+      .pane-oa-toolbar-oa-breadcrumb {
         float: none;
         border-bottom: 1px solid #676767;
         margin-top: 0;
@@ -241,7 +245,8 @@ z-index: 1000;
       padding-bottom: 0;
     }
     .panel-panel {
-      .pane-oa-dashboard-oa-breadcrumb {
+      .pane-oa-dashboard-oa-breadcrumb,
+      .pane-oa-toolbar-oa-breadcrumb {
         float: none;
         border-bottom: 1px solid #676767;
         margin-top: 0;
@@ -280,10 +285,12 @@ z-index: 1000;
       .panel-pane {
         margin-left: 5px;
       }
-      .pane-oa-dashboard-oa-toolbar-menu-button {
+      .pane-oa-dashboard-oa-toolbar-menu-button,
+      .pane-oa-toolbar-oa-toolbar-menu-button {
         display: none;
       }
-      .pane-oa-dashboard-oa-breadcrumb {
+      .pane-oa-dashboard-oa-breadcrumb,
+      .pane-oa-toolbar-oa-breadcrumb {
         margin-left: -20px;
         margin-right: -20px;
         ul.oa_toolbar {
@@ -312,7 +319,8 @@ z-index: 1000;
           }
         }
       }
-      .pane-oa-dashboard-oa-user-badge {
+      .pane-oa-dashboard-oa-user-badge,
+      .pane-oa-toolbar-oa-user-badge {
         position: absolute;
         top: 5px;
         left: 20px;
