@@ -12597,7 +12597,7 @@ fieldset .panel-body {
 
 /* line 73, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-3.0.13/stylesheets/compass_radix/_form.scss */
 html.js input.form-autocomplete {
-  background: url('../images/throbber.gif?1406647261') no-repeat right 8px white !important;
+  background: url('../images/throbber.gif?1411418888') no-repeat right 8px white !important;
 }
 /* line 76, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-3.0.13/stylesheets/compass_radix/_form.scss */
 html.js input.throbbing {
@@ -14598,32 +14598,32 @@ a.mceButton {
   padding: 6px 15px 6px;
 }
 /* line 67, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-toolbar-menu-button {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-toolbar-menu-button {
   z-index: 100;
 }
 /* line 70, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb {
   margin-top: -5px;
   margin-bottom: -5px;
   float: none !important;
   border-bottom: solid 1px #333;
 }
 /* line 75, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar {
   margin: 0;
   padding: 0;
 }
 /* line 78, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group {
   margin: 0;
   height: 42px;
 }
 /* line 81, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar .app-teaser li.btn-group > .app-action, .app-teaser #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .app-action, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.media-widget.btn-group > a, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button,
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit,
-#media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit,
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > #edit-cancel,
-#modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > #edit-cancel {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar .app-teaser li.btn-group > .app-action, .app-teaser #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .app-action, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok, form #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.media-widget.btn-group > a, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button,
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit,
+#media-browser-tabset #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit,
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > #edit-cancel,
+#modal-content #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > #edit-cancel {
   font-size: 16px;
   height: 32px;
   line-height: 32px;
@@ -14637,23 +14637,23 @@ a.mceButton {
   box-shadow: none;
 }
 /* line 90, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar .app-teaser li.btn-group > .app-action:hover, .app-teaser #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .app-action:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok:hover, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel:hover, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.media-widget.btn-group > a:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button:hover, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button:hover,
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit:hover,
-#media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit:hover, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit:hover, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit:hover,
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > #edit-cancel:hover,
-#modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > #edit-cancel:hover {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn:hover, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar .app-teaser li.btn-group > .app-action:hover, .app-teaser #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .app-action:hover, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-ok:hover, form #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-ok:hover, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar form li.btn-group > .button.fake-cancel:hover, form #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .button.fake-cancel:hover, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.media-widget.btn-group > a:hover, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.button:hover, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > a.button:hover,
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.form-submit:hover,
+#media-browser-tabset #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > input.form-submit:hover, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .form-submit:hover, #modal-content #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .form-submit:hover,
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > #edit-cancel:hover,
+#modal-content #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > #edit-cancel:hover {
   background: none;
 }
 /* line 93, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn.btn-home, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar .app-teaser li.btn-group > .btn-home.app-action, .app-teaser #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.app-action, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-ok, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-ok, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-cancel, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.media-widget.btn-group > a.btn-home, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.btn-home.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > a.btn-home.button,
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.btn-home.form-submit,
-#media-browser-tabset #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > input.btn-home.form-submit, #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .btn-home.form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.form-submit,
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .btn-home#edit-cancel,
-#modal-content #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home#edit-cancel {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn.btn-home, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar .app-teaser li.btn-group > .btn-home.app-action, .app-teaser #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.app-action, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-ok, form #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-ok, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar form li.btn-group > .btn-home.button.fake-cancel, form #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.button.fake-cancel, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.media-widget.btn-group > a.btn-home, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > a.btn-home.button, #media-browser-tabset #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > a.btn-home.button,
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #media-browser-tabset li.btn-group > input.btn-home.form-submit,
+#media-browser-tabset #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > input.btn-home.form-submit, #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .btn-home.form-submit, #modal-content #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home.form-submit,
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar #modal-content li.btn-group > .btn-home#edit-cancel,
+#modal-content #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .btn-home#edit-cancel {
   font-size: 24px;
 }
 /* line 97, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle {
   height: 25px;
   line-height: 25px;
   margin: 5px 10px 5px 0;
@@ -14664,11 +14664,11 @@ a.mceButton {
   border-radius: 3px;
 }
 /* line 104, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle:hover {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle:hover {
   background: #333333;
 }
 /* line 107, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle .caret {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle .caret {
   vertical-align: middle;
   margin: 0;
   border-top: 6px solid white;
@@ -14676,31 +14676,31 @@ a.mceButton {
   border-left: 6px solid transparent;
 }
 /* line 115, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group:after {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group:after {
   content: url("../images/menu-divider.png");
   width: 10px;
   height: 42px;
   display: inline-block;
 }
 /* line 123, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group ul.dropdown-menu li h3 {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group ul.dropdown-menu li h3 {
   font-size: 1.2em;
   margin: 0;
 }
 /* line 127, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group ul.dropdown-menu li a.more-link {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb ul.oa_toolbar li.btn-group ul.dropdown-menu li a.more-link {
   font-style: italic;
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   /* line 70, ../sass/components/_navbar.scss */
-  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
+  #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb {
     float: left !important;
     border-bottom: none;
   }
 }
 @media (min-width: 1200px) {
   /* line 70, ../sass/components/_navbar.scss */
-  #oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb {
+  #oa-navbar .panel-panel .pane-oa-toolbar-oa-breadcrumb {
     float: left !important;
     border-bottom: none;
   }
@@ -14798,15 +14798,15 @@ a.mceButton {
   background-color: #003853;
 }
 /* line 210, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge .oa-dropdown {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-user-badge .oa-dropdown {
   margin: 0;
 }
 /* line 212, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge .oa-dropdown #user-badge-dropdown {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-user-badge .oa-dropdown #user-badge-dropdown {
   overflow: hidden;
 }
 /* line 214, ../sass/components/_navbar.scss */
-#oa-navbar .panel-panel .pane-oa-dashboard-oa-user-badge .oa-dropdown #user-badge-dropdown img {
+#oa-navbar .panel-panel .pane-oa-toolbar-oa-user-badge .oa-dropdown #user-badge-dropdown img {
   width: auto;
   height: 29px;
   margin: -5px -12px -5px 5px;
