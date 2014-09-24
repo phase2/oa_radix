@@ -14869,3 +14869,24 @@ body.admin-menu #oa-navbar {
 table th.checkbox, table td.checkbox {
   display: table-cell;
 }
+
+/* line 7, ../sass/components/_apps.scss */
+#app-wrapper .app-description {
+  font-size: 16px;
+}
+/* line 9, ../sass/components/_apps.scss */
+#app-wrapper .app-description h2 {
+  font-size: 24px;
+}
+/* line 13, ../sass/components/_apps.scss */
+#app-wrapper .screenshot-shadow {
+  display: none;
+}
+/* line 16, ../sass/components/_apps.scss */
+#app-wrapper .app-logo-small {
+  margin-right: 15px;
+}
+/* line 19, ../sass/components/_apps.scss */
+#app-wrapper h1 {
+  margin-top: 0;
+}
