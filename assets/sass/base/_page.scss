@@ -92,19 +92,3 @@ body.oa-login div.content {
 body.oa-login #user-login-panel .oa-pane {
   top: 115px;
 }
-
-#apps-list ul li {
-  height: 120px;
-  padding-left: 110px;
-  position: relative;
-}
-.app-teaser .app-action {
-  background: transparent;
-  width: auto;
-  @extend .btn;
-  @extend .btn-default;
-}
-.app-logo {
-  position: absolute;
-  left: 10px;
-}
