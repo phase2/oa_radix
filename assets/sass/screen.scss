@@ -17,6 +17,8 @@
 // Theme CSS
 // --------------------------------------------------
 @import "layout/layout";
+@import "layout/auto_widths";
+@import "layout/media_query_pulls";
 @import "base/page";
 @import "base/panel";
 @import "base/node";

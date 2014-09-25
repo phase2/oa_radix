@@ -17,4 +17,13 @@
     }
 
   });
+
+  Drupal.behaviors.main_menu_nav_behavior = {
+    attach: function(context) {
+      $('#oa-navbar .oa-navigation > .navbar-toggle').click(function(){
+        $('#oa-navbar .moscone-footer').slideToggle(400);
+      })
+    }
+  };
+
 })(jQuery);

@@ -159,7 +159,7 @@
       }
     }
     .pane-oa-toolbar-search {
-      float: left !important;
+      //float: left !important;
       [name=searchOptions] {
         position: relative;
       }
@@ -256,5 +256,48 @@ body.admin-menu #oa-navbar {
         @include transform(none);
       }
     }
+  }
+}
+
+//OA Mobile Menu Makeover
+// --------------------------------------------------
+@media (max-width: 767px) {
+  #oa-navbar{
+    .dropdown-menu{
+      float: left;
+      position: static;
+    }
+    #oa-user-badge{
+      .dropdown{
+        width:262px;
+      }
+      .dropdown-toggle{
+        width:100%;
+      }
+    }
+    #oa_breadcrumb{
+
+      vertical-align: top;
+      .oa-breadcrumb{
+        width:100%;
+        height:auto;
+        .dropdown-menu{
+          width: 262px;
+        }
+      }
+    }
+    .oa-navigation{
+      .main-menu{
+        .navbar-nav{
+          width:100%;
+        }
+      }
+    }
+    .moscone-footer{
+      display: none;
+    }
+  }
+  #oa-responsive-regions-navbar{
+    display: none;
   }
 }
