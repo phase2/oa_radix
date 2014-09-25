@@ -331,3 +331,23 @@ a.mceButton {
     padding:0;
   }
 }
+
+// Vertical tabs
+.oa-vertical-tabs {
+  background: #eee;
+  padding: 10px 10px;
+  div.vertical-tabs {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    .vertical-tabs-panes {
+      padding: 0;
+    }
+    ul.vertical-tabs-list {
+      li {
+        margin-top: -1px;
+      }
+      margin-top: 0;
+    }
+  }
+}

@@ -12597,7 +12597,7 @@ fieldset .panel-body {
 
 /* line 73, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-3.0.13/stylesheets/compass_radix/_form.scss */
 html.js input.form-autocomplete {
-  background: url('../images/throbber.gif?1411418888') no-repeat right 8px white !important;
+  background: url('../images/throbber.gif?1411650538') no-repeat right 8px white !important;
 }
 /* line 76, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-3.0.13/stylesheets/compass_radix/_form.scss */
 html.js input.throbbing {
@@ -14406,6 +14406,30 @@ a.mceButton {
 #oa-users-settings-form div.column2 div.chosen-container {
   margin: 8px 0;
   padding: 0;
+}
+
+/* line 336, ../sass/components/_form.scss */
+.oa-vertical-tabs {
+  background: #eee;
+  padding: 10px 10px;
+}
+/* line 339, ../sass/components/_form.scss */
+.oa-vertical-tabs div.vertical-tabs {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: white;
+}
+/* line 343, ../sass/components/_form.scss */
+.oa-vertical-tabs div.vertical-tabs .vertical-tabs-panes {
+  padding: 0;
+}
+/* line 346, ../sass/components/_form.scss */
+.oa-vertical-tabs div.vertical-tabs ul.vertical-tabs-list {
+  margin-top: 0;
+}
+/* line 347, ../sass/components/_form.scss */
+.oa-vertical-tabs div.vertical-tabs ul.vertical-tabs-list li {
+  margin-top: -1px;
 }
 
 /* line 9, ../sass/components/_user.scss */
