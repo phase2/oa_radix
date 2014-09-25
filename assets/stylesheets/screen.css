@@ -14140,7 +14140,12 @@ a.mceButton {
   font-size: 16px;
 }
 
-/* line 89, ../sass/components/_form.scss */
+/* line 84, ../sass/components/_form.scss */
+.modal-title {
+  font-size: 24px;
+}
+
+/* line 92, ../sass/components/_form.scss */
 #modal-content .form-submit,
 #media-browser-tabset a.button,
 #media-browser-tabset form a.button,
@@ -14151,7 +14156,7 @@ a.mceButton {
   font-weight: normal;
   display: inline-block;
 }
-/* line 94, ../sass/components/_form.scss */
+/* line 97, ../sass/components/_form.scss */
 #modal-content .form-submit:hover,
 #media-browser-tabset a.button:hover,
 #media-browser-tabset form a.button:hover,
@@ -14163,11 +14168,11 @@ a.mceButton {
   background-image: none;
 }
 
-/* line 108, ../sass/components/_form.scss */
+/* line 111, ../sass/components/_form.scss */
 #modal-content .form-item {
   clear: both;
 }
-/* line 111, ../sass/components/_form.scss */
+/* line 114, ../sass/components/_form.scss */
 #modal-content .form-submit {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -14175,34 +14180,34 @@ a.mceButton {
   margin-bottom: 0;
 }
 
-/* line 119, ../sass/components/_form.scss */
+/* line 122, ../sass/components/_form.scss */
 #media-tabs-wrapper ul.ui-tabs-nav {
   margin-bottom: 0;
 }
 
-/* line 125, ../sass/components/_form.scss */
+/* line 128, ../sass/components/_form.scss */
 #media-browser-tabset .views-exposed-form .views-submit-button {
   margin-top: 30px;
 }
-/* line 128, ../sass/components/_form.scss */
+/* line 131, ../sass/components/_form.scss */
 #media-browser-tabset .views-exposed-form .views-exposed-widget {
   margin-right: 0;
 }
-/* line 132, ../sass/components/_form.scss */
+/* line 135, ../sass/components/_form.scss */
 #media-browser-tabset #edit-filename-wrapper {
   width: 200px;
 }
-/* line 135, ../sass/components/_form.scss */
+/* line 138, ../sass/components/_form.scss */
 #media-browser-tabset form select {
   width: 100%;
 }
-/* line 139, ../sass/components/_form.scss */
+/* line 142, ../sass/components/_form.scss */
 #media-browser-tabset input.form-file,
 #media-browser-tabset span.file {
   margin-right: 10px;
 }
 
-/* line 148, ../sass/components/_form.scss */
+/* line 151, ../sass/components/_form.scss */
 #node-edit .burr-flipped-sidebar .panel-pane,
 #node-edit .burr-flipped .sidebar .panel-pane {
   border: 0;
@@ -14216,12 +14221,12 @@ a.mceButton {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 156, ../sass/components/_form.scss */
+/* line 159, ../sass/components/_form.scss */
 #node-edit .burr-flipped-sidebar .panel-pane .pane-content,
 #node-edit .burr-flipped .sidebar .panel-pane .pane-content {
   padding: 0;
 }
-/* line 163, ../sass/components/_form.scss */
+/* line 166, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-group-ref, #node-edit .panel-pane.pane-node-field-oa-team-ref, #node-edit .panel-pane.pane-node-field-oa-user-ref {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -14229,12 +14234,12 @@ a.mceButton {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 167, ../sass/components/_form.scss */
+/* line 170, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-group-ref {
   margin-bottom: 0;
   border-bottom: 0;
 }
-/* line 171, ../sass/components/_form.scss */
+/* line 174, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-team-ref {
   margin-bottom: 0;
   margin-top: 0;
@@ -14243,135 +14248,135 @@ a.mceButton {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 179, ../sass/components/_form.scss */
+/* line 182, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-user-ref {
   border-top: 0;
   margin-top: 0;
 }
-/* line 185, ../sass/components/_form.scss */
+/* line 188, ../sass/components/_form.scss */
 #node-edit .container-inline-date .date-padding {
   padding: 0;
 }
-/* line 189, ../sass/components/_form.scss */
+/* line 192, ../sass/components/_form.scss */
 #node-edit .container-inline-date .form-item-date-time,
 #node-edit .container-inline-date .form-item-date-date {
   padding-bottom: 0.5em;
 }
-/* line 193, ../sass/components/_form.scss */
+/* line 196, ../sass/components/_form.scss */
 #node-edit .form-actions {
   background: transparent;
 }
-/* line 195, ../sass/components/_form.scss */
+/* line 198, ../sass/components/_form.scss */
 #node-edit .form-actions input {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 200, ../sass/components/_form.scss */
+/* line 203, ../sass/components/_form.scss */
 #node-edit .form-actions input:hover {
   color: white;
   background-color: #0044cc;
   background-image: none;
 }
 
-/* line 212, ../sass/components/_form.scss */
+/* line 215, ../sass/components/_form.scss */
 .views-exposed-form .well {
   padding: 0 1em;
 }
-/* line 215, ../sass/components/_form.scss */
+/* line 218, ../sass/components/_form.scss */
 .views-exposed-form .filter-btn {
   position: absolute;
   top: 0px;
   right: 10px;
 }
 
-/* line 222, ../sass/components/_form.scss */
+/* line 225, ../sass/components/_form.scss */
 .oa-pane .views-exposed-form .filter-btn {
   top: 10px;
 }
 
-/* line 226, ../sass/components/_form.scss */
+/* line 229, ../sass/components/_form.scss */
 .view-filters form {
   margin: 0;
 }
 
-/* line 230, ../sass/components/_form.scss */
+/* line 233, ../sass/components/_form.scss */
 .views-exposed-widget.views-submit-button {
   padding-right: 5px;
 }
 
-/* line 236, ../sass/components/_form.scss */
+/* line 239, ../sass/components/_form.scss */
 #oa-discussion-reply-form {
   position: relative;
 }
-/* line 238, ../sass/components/_form.scss */
+/* line 241, ../sass/components/_form.scss */
 #oa-discussion-reply-form .form-item {
   margin: 0;
 }
-/* line 241, ../sass/components/_form.scss */
+/* line 244, ../sass/components/_form.scss */
 #oa-discussion-reply-form input#edit-subject {
   width: 75%;
 }
-/* line 244, ../sass/components/_form.scss */
+/* line 247, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media {
   position: relative;
 }
-/* line 246, ../sass/components/_form.scss */
+/* line 249, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .tabledrag-toggle-weight-wrapper {
   position: absolute;
   top: 0;
   right: 0;
   margin: 10px;
 }
-/* line 253, ../sass/components/_form.scss */
+/* line 256, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .media-item img {
   display: block;
   margin: auto;
   width: auto;
 }
-/* line 258, ../sass/components/_form.scss */
+/* line 261, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .media-item .file a {
   display: none;
 }
-/* line 263, ../sass/components/_form.scss */
+/* line 266, ../sass/components/_form.scss */
 #oa-discussion-reply-form #edit-submit {
   position: absolute;
   bottom: 2px;
   right: 0;
 }
 
-/* line 271, ../sass/components/_form.scss */
+/* line 274, ../sass/components/_form.scss */
 .checkbox-table .center {
   text-align: center;
 }
-/* line 275, ../sass/components/_form.scss */
+/* line 278, ../sass/components/_form.scss */
 .checkbox-table .form-type-checkbox,
 .checkbox-table .space-label {
   margin: 0.4em 0;
 }
 
-/* line 280, ../sass/components/_form.scss */
+/* line 283, ../sass/components/_form.scss */
 .chosen-container {
   height: auto;
   border: 0;
   padding: 0;
 }
 
-/* line 288, ../sass/components/_form.scss */
+/* line 291, ../sass/components/_form.scss */
 #oa-users-settings-form .container-fluid {
   border-bottom: 2px solid #dedede;
   margin: 5px auto;
   padding-right: 0;
   padding-left: 0;
 }
-/* line 289, ../sass/components/_form.scss */
+/* line 292, ../sass/components/_form.scss */
 #oa-users-settings-form .container-fluid.header {
   background-color: #dedede;
   clear: both;
   height: 25px;
   padding: 3px 0;
 }
-/* line 301, ../sass/components/_form.scss */
+/* line 304, ../sass/components/_form.scss */
 #oa-users-settings-form .col-sm-6 .panel-heading {
   display: block;
   float: none;
@@ -14379,55 +14384,55 @@ a.mceButton {
   background: none;
   padding: 0;
 }
-/* line 309, ../sass/components/_form.scss */
+/* line 312, ../sass/components/_form.scss */
 #oa-users-settings-form div.column3 div.form-type-checkboxes {
   margin-left: -54%;
 }
-/* line 313, ../sass/components/_form.scss */
+/* line 316, ../sass/components/_form.scss */
 #oa-users-settings-form .collapsible.form-wrapper {
   border: none;
   box-shadow: none;
 }
-/* line 314, ../sass/components/_form.scss */
+/* line 317, ../sass/components/_form.scss */
 #oa-users-settings-form .collapsible.form-wrapper .fieldset-wrapper {
   overflow: visible !important;
   padding: 0;
 }
-/* line 322, ../sass/components/_form.scss */
+/* line 325, ../sass/components/_form.scss */
 #oa-users-settings-form input[type="text"] {
   width: auto;
 }
-/* line 325, ../sass/components/_form.scss */
+/* line 328, ../sass/components/_form.scss */
 #oa-users-settings-form .panel-title > a {
   color: #0071B3;
   font-size: 18px;
 }
-/* line 329, ../sass/components/_form.scss */
+/* line 332, ../sass/components/_form.scss */
 #oa-users-settings-form div.column2 div.chosen-container {
   margin: 8px 0;
   padding: 0;
 }
 
-/* line 336, ../sass/components/_form.scss */
+/* line 339, ../sass/components/_form.scss */
 .oa-vertical-tabs {
   background: #eee;
   padding: 10px 10px;
 }
-/* line 339, ../sass/components/_form.scss */
+/* line 342, ../sass/components/_form.scss */
 .oa-vertical-tabs div.vertical-tabs {
   margin-top: 0;
   margin-bottom: 0;
   background-color: white;
 }
-/* line 343, ../sass/components/_form.scss */
+/* line 346, ../sass/components/_form.scss */
 .oa-vertical-tabs div.vertical-tabs .vertical-tabs-panes {
   padding: 0;
 }
-/* line 346, ../sass/components/_form.scss */
+/* line 349, ../sass/components/_form.scss */
 .oa-vertical-tabs div.vertical-tabs ul.vertical-tabs-list {
   margin-top: 0;
 }
-/* line 347, ../sass/components/_form.scss */
+/* line 350, ../sass/components/_form.scss */
 .oa-vertical-tabs div.vertical-tabs ul.vertical-tabs-list li {
   margin-top: -1px;
 }
