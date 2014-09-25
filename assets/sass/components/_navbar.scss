@@ -270,6 +270,7 @@ body.admin-menu #oa-navbar {
     #oa-user-badge{
       .dropdown{
         width:262px;
+        float:left;
       }
       .dropdown-toggle{
         width:100%;
@@ -299,5 +300,11 @@ body.admin-menu #oa-navbar {
   }
   #oa-responsive-regions-navbar{
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .responsive-panels-region.responsive-panels-region-top {
+    position: static;
+    height: auto;
   }
 }

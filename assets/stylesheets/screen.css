@@ -14920,36 +14920,44 @@ body.admin-menu #oa-navbar {
   /* line 271, ../sass/components/_navbar.scss */
   #oa-navbar #oa-user-badge .dropdown {
     width: 262px;
+    float: left;
   }
-  /* line 274, ../sass/components/_navbar.scss */
+  /* line 275, ../sass/components/_navbar.scss */
   #oa-navbar #oa-user-badge .dropdown-toggle {
     width: 100%;
   }
-  /* line 278, ../sass/components/_navbar.scss */
+  /* line 279, ../sass/components/_navbar.scss */
   #oa-navbar #oa_breadcrumb {
     vertical-align: top;
   }
-  /* line 281, ../sass/components/_navbar.scss */
+  /* line 282, ../sass/components/_navbar.scss */
   #oa-navbar #oa_breadcrumb .oa-breadcrumb {
     width: 100%;
     height: auto;
   }
-  /* line 284, ../sass/components/_navbar.scss */
+  /* line 285, ../sass/components/_navbar.scss */
   #oa-navbar #oa_breadcrumb .oa-breadcrumb .dropdown-menu {
     width: 262px;
   }
-  /* line 291, ../sass/components/_navbar.scss */
+  /* line 292, ../sass/components/_navbar.scss */
   #oa-navbar .oa-navigation .main-menu .navbar-nav {
     width: 100%;
   }
-  /* line 296, ../sass/components/_navbar.scss */
+  /* line 297, ../sass/components/_navbar.scss */
   #oa-navbar .moscone-footer {
     display: none;
   }
 
-  /* line 300, ../sass/components/_navbar.scss */
+  /* line 301, ../sass/components/_navbar.scss */
   #oa-responsive-regions-navbar {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 306, ../sass/components/_navbar.scss */
+  .responsive-panels-region.responsive-panels-region-top {
+    position: static;
+    height: auto;
   }
 }
 /* line 3, ../sass/components/_add-content-modal.scss */
