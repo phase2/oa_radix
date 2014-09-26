@@ -20,6 +20,11 @@
 
 // Dropdown Menus
 // --------------------------------------------------
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: white;
+  background-color: #0081c2;
+}
 ul.dropdown-menu {
   margin: 0;
   > li {
