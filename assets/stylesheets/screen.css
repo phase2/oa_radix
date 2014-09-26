@@ -14158,12 +14158,18 @@ a.mceButton {
   font-size: 16px;
 }
 
-/* line 84, ../sass/components/_form.scss */
+/* line 82, ../sass/components/_form.scss */
+#modalContent .modal-content {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* line 88, ../sass/components/_form.scss */
 .modal-title {
   font-size: 24px;
 }
 
-/* line 92, ../sass/components/_form.scss */
+/* line 96, ../sass/components/_form.scss */
 #modal-content .form-submit,
 #media-browser-tabset a.button,
 #media-browser-tabset form a.button,
@@ -14174,7 +14180,7 @@ a.mceButton {
   font-weight: normal;
   display: inline-block;
 }
-/* line 97, ../sass/components/_form.scss */
+/* line 101, ../sass/components/_form.scss */
 #modal-content .form-submit:hover,
 #media-browser-tabset a.button:hover,
 #media-browser-tabset form a.button:hover,
@@ -14186,46 +14192,45 @@ a.mceButton {
   background-image: none;
 }
 
-/* line 111, ../sass/components/_form.scss */
+/* line 115, ../sass/components/_form.scss */
 #modal-content .form-item {
   clear: both;
 }
-/* line 114, ../sass/components/_form.scss */
+/* line 118, ../sass/components/_form.scss */
 #modal-content .form-submit {
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
   margin-bottom: 0;
 }
 
-/* line 122, ../sass/components/_form.scss */
+/* line 124, ../sass/components/_form.scss */
 #media-tabs-wrapper ul.ui-tabs-nav {
   margin-bottom: 0;
 }
 
-/* line 128, ../sass/components/_form.scss */
+/* line 130, ../sass/components/_form.scss */
 #media-browser-tabset .views-exposed-form .views-submit-button {
   margin-top: 30px;
 }
-/* line 131, ../sass/components/_form.scss */
+/* line 133, ../sass/components/_form.scss */
 #media-browser-tabset .views-exposed-form .views-exposed-widget {
   margin-right: 0;
 }
-/* line 135, ../sass/components/_form.scss */
+/* line 137, ../sass/components/_form.scss */
 #media-browser-tabset #edit-filename-wrapper {
   width: 200px;
 }
-/* line 138, ../sass/components/_form.scss */
+/* line 140, ../sass/components/_form.scss */
 #media-browser-tabset form select {
   width: 100%;
 }
-/* line 142, ../sass/components/_form.scss */
+/* line 144, ../sass/components/_form.scss */
 #media-browser-tabset input.form-file,
 #media-browser-tabset span.file {
   margin-right: 10px;
 }
 
-/* line 151, ../sass/components/_form.scss */
+/* line 153, ../sass/components/_form.scss */
 #node-edit .burr-flipped-sidebar .panel-pane,
 #node-edit .burr-flipped .sidebar .panel-pane {
   border: 0;
@@ -14239,12 +14244,12 @@ a.mceButton {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 159, ../sass/components/_form.scss */
+/* line 161, ../sass/components/_form.scss */
 #node-edit .burr-flipped-sidebar .panel-pane .pane-content,
 #node-edit .burr-flipped .sidebar .panel-pane .pane-content {
   padding: 0;
 }
-/* line 166, ../sass/components/_form.scss */
+/* line 168, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-group-ref, #node-edit .panel-pane.pane-node-field-oa-team-ref, #node-edit .panel-pane.pane-node-field-oa-user-ref {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -14252,12 +14257,12 @@ a.mceButton {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 170, ../sass/components/_form.scss */
+/* line 172, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-group-ref {
   margin-bottom: 0;
   border-bottom: 0;
 }
-/* line 174, ../sass/components/_form.scss */
+/* line 176, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-team-ref {
   margin-bottom: 0;
   margin-top: 0;
@@ -14266,28 +14271,27 @@ a.mceButton {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 182, ../sass/components/_form.scss */
+/* line 184, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-user-ref {
   border-top: 0;
   margin-top: 0;
 }
-/* line 188, ../sass/components/_form.scss */
+/* line 190, ../sass/components/_form.scss */
 #node-edit .container-inline-date .date-padding {
   padding: 0;
 }
-/* line 192, ../sass/components/_form.scss */
+/* line 194, ../sass/components/_form.scss */
 #node-edit .container-inline-date .form-item-date-time,
 #node-edit .container-inline-date .form-item-date-date {
   padding-bottom: 0.5em;
 }
-/* line 196, ../sass/components/_form.scss */
+/* line 198, ../sass/components/_form.scss */
 #node-edit .form-actions {
   background: transparent;
 }
-/* line 198, ../sass/components/_form.scss */
+/* line 200, ../sass/components/_form.scss */
 #node-edit .form-actions input {
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 /* line 203, ../sass/components/_form.scss */
@@ -14410,6 +14414,7 @@ a.mceButton {
 /* line 317, ../sass/components/_form.scss */
 #oa-users-settings-form .collapsible.form-wrapper {
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 /* line 318, ../sass/components/_form.scss */
