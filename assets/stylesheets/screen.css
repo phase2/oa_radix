@@ -13839,6 +13839,11 @@ ul.group-content {
   margin: 0;
 }
 
+/* line 176, ../sass/components/_structure.scss */
+ul.links.inline li {
+  display: inline-block;
+}
+
 /* line 8, ../sass/components/_menu.scss */
 .navbar .navbar-inner {
   padding-left: 20px;

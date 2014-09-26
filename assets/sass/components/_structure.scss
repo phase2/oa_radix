@@ -171,3 +171,8 @@ dl.admin-list {
 ul.group-content {
   margin: 0;
 }
+
+// Inline links
+ul.links.inline li {
+  display: inline-block;
+}
