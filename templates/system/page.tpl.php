@@ -12,7 +12,7 @@
 ?>
 <?php if (!empty($oa_toolbar_panel)): ?>
   <div class="responsive-panels-region responsive-panels-region-top">
-    <div id="oa-navbar" class="navbar <?php print $oa_toolbar_class; ?> <?php print $oa_toolbar_sticky; ?>">
+    <div id="oa-navbar" class="navbar <?php print !empty($oa_toolbar_class) ? $oa_toolbar_class : ''; ?> <?php print !empty($oa_toolbar_sticky) ? $oa_toolbar_sticky : ''; ?>">
       <div class="navbar-inner">
         <?php print $oa_toolbar_panel; ?>
       </div>
