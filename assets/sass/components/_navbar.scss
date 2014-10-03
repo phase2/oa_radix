@@ -282,9 +282,6 @@ body.admin-menu #oa-navbar {
       .oa-breadcrumb{
         width:100%;
         height:auto;
-        .dropdown-menu{
-          width: 262px;
-        }
       }
     }
     .oa-navigation{
@@ -297,6 +294,13 @@ body.admin-menu #oa-navbar {
     .moscone-footer{
       display: none;
     }
+    ul{
+      padding:0;
+      margin:0;
+    }
+    li{
+      width:100%;
+    }
   }
   #oa-responsive-regions-navbar{
     display: none;
@@ -306,5 +310,201 @@ body.admin-menu #oa-navbar {
   .responsive-panels-region.responsive-panels-region-top {
     position: static;
     height: auto;
+  }
+}
+
+.navbar-toggle{
+  &.spaces{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    .fa-square{
+      font-size: 8px;
+      &.odd{
+        float: left;
+      }
+      &.even{
+        float: right;
+      }
+      &.first,
+      &.third{
+        margin-right: 2px;
+      }
+      &.third{
+        clear:both;
+      }
+    }
+  }
+  &.admin{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    float:left;
+    .fa-drupal{
+      font-size: 16px;
+    }
+  }
+  &.search{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    .fa-search{
+      font-size: 16px;
+    }
+  }
+  &.user{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-lining,
+  .admin-mobile-menu,
+  .spaces-mobile-menu,
+  .search-mobile-menu,
+  .user-mobile-menu{
+    display: none;
+  }
+  #oa-navbar-admin{
+    max-height: none;
+    padding:0;
+  }
+  .oa-navigation{
+    .expanded{
+      ul{
+        display:none;
+      }
+      &.open{
+        >ul{
+          display: block;
+        }
+        button{
+          &:before{
+            content: "\f0d8";
+          }
+        }
+        .navbar-box{
+          border-bottom:1px solid rgba(#fff, .1);
+        }
+        li{
+          a{
+            padding-left:20px;
+          }
+          li{
+            a{
+              padding-left:40px;
+            }
+          }
+        }
+      }
+      >div>button{
+        border: none;
+        background: #003853;
+        padding: 5px 11px;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        &:before{
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          content: "\f0d7";
+        }
+        &:hover{
+          background-color: #333333;
+        }
+        span{
+           display: none;
+         }
+      }
+    }
+    li{
+      position: relative;
+      border-bottom:1px solid rgba(#fff, .1);
+      &:last-child{
+        border:none;
+      }
+
+      a{
+        padding:5px;
+        display: block;
+        &:hover{
+          background-color: #333333;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  #oa-navbar-search{
+    padding:0;
+    form{
+      float:right;
+      clear:none;
+    }
+    ul,
+    button {
+      float: left;
+      clear: none;
+    }
+    .search-text{
+      vertical-align: top;
+    }
+  }
+  #oa-navbar-spaces{
+    padding:0;
+  }
+  #oa_breadcrumb{
+    li{
+      position: relative;
+      a{
+        width:100%;
+        background:none;
+        text-align: left;
+        &.dropdown-toggle{
+          border: none;
+          background: #003853 !important;
+          padding: 5px 11px;
+          position: absolute;
+          right: 0px;
+          top: 0;
+          width:auto;
+          z-index: 10;
+          &:hover{
+            background-color: #333333;
+          }
+        }
+        &:hover{
+          background-color: #333333;
+        }
+      }
+      .dropdown-menu{
+        width:100%;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+  #oa-navbar-header{
+    padding:0;
+    .main-menu{
+      width:100%;
+      a{
+        &:hover{
+          background-color: #333333 !important;
+        }
+      }
+      .dropdown-toggle{
+        span{
+          float:right;
+          margin-top: 8px;
+        }
+      }
+      .dropdown-menu{
+        width:100%;
+        float:none;
+      }
+    }
+  }
+  #oa-navbar-user{
+    padding:0;
   }
 }
