@@ -13871,59 +13871,59 @@ ul.links.inline li {
   background-color: #0081c2;
 }
 
-/* line 28, ../sass/components/_menu.scss */
+/* line 34, ../sass/components/_menu.scss */
 ul.dropdown-menu {
   margin: 0;
 }
-/* line 31, ../sass/components/_menu.scss */
+/* line 37, ../sass/components/_menu.scss */
 ul.dropdown-menu > li > .radio {
   padding: 3px 20px;
   clear: both;
 }
-/* line 34, ../sass/components/_menu.scss */
+/* line 40, ../sass/components/_menu.scss */
 ul.dropdown-menu > li > .radio input {
   margin: 2px 8px 0 0;
   vertical-align: middle;
 }
 
-/* line 42, ../sass/components/_menu.scss */
+/* line 48, ../sass/components/_menu.scss */
 .oa-dropdown {
   display: inline-block;
   margin: 0 0.25em 0 0.25em;
   vertical-align: middle;
 }
-/* line 46, ../sass/components/_menu.scss */
+/* line 52, ../sass/components/_menu.scss */
 .oa-dropdown ul {
   margin: 0.5em 0;
 }
-/* line 48, ../sass/components/_menu.scss */
+/* line 54, ../sass/components/_menu.scss */
 .oa-dropdown ul li {
   margin: 0;
 }
 
-/* line 56, ../sass/components/_menu.scss */
+/* line 62, ../sass/components/_menu.scss */
 #main-menu {
   clear: left;
 }
-/* line 60, ../sass/components/_menu.scss */
+/* line 66, ../sass/components/_menu.scss */
 #main-menu > ul.menu > li > a {
   color: white;
   text-decoration: none;
   text-shadow: 0 1px 0 gray;
 }
-/* line 64, ../sass/components/_menu.scss */
+/* line 70, ../sass/components/_menu.scss */
 #main-menu > ul.menu > li > a:hover {
   text-decoration: none;
   background-color: transparent;
 }
-/* line 68, ../sass/components/_menu.scss */
+/* line 74, ../sass/components/_menu.scss */
 #main-menu > ul.menu > li > a:focus, #main-menu > ul.menu > li > a.active {
   text-decoration: none;
   background-color: transparent;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
-/* line 74, ../sass/components/_menu.scss */
+/* line 80, ../sass/components/_menu.scss */
 #main-menu > ul.menu > li > ul.menu {
   background-color: white;
   border: 1px solid #CCC;
@@ -13934,11 +13934,11 @@ ul.dropdown-menu > li > .radio input {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 81, ../sass/components/_menu.scss */
+/* line 87, ../sass/components/_menu.scss */
 #main-menu > ul.menu > li > ul.menu li a {
   color: #333;
 }
-/* line 83, ../sass/components/_menu.scss */
+/* line 89, ../sass/components/_menu.scss */
 #main-menu > ul.menu > li > ul.menu li a:focus, #main-menu > ul.menu > li > ul.menu li a:hover {
   color: white;
   text-decoration: none;
@@ -13952,19 +13952,19 @@ ul.dropdown-menu > li > .radio input {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
 }
-/* line 93, ../sass/components/_menu.scss */
+/* line 99, ../sass/components/_menu.scss */
 #main-menu > ul.menu > li.open > a {
   color: #555;
   background-color: #E5E5E5;
 }
 
-/* line 106, ../sass/components/_menu.scss */
+/* line 112, ../sass/components/_menu.scss */
 #oa-navbar ul.dropdown-menu,
 ul.dropdown-menu,
 .dropdown-menu {
   color: #333333;
 }
-/* line 109, ../sass/components/_menu.scss */
+/* line 115, ../sass/components/_menu.scss */
 #oa-navbar ul.dropdown-menu .item-list h3,
 ul.dropdown-menu .item-list h3,
 .dropdown-menu .item-list h3 {
@@ -13974,20 +13974,20 @@ ul.dropdown-menu .item-list h3,
   padding: 3px 20px;
   line-height: 20px;
 }
-/* line 117, ../sass/components/_menu.scss */
+/* line 123, ../sass/components/_menu.scss */
 #oa-navbar ul.dropdown-menu ul,
 ul.dropdown-menu ul,
 .dropdown-menu ul {
   margin: 0;
 }
-/* line 119, ../sass/components/_menu.scss */
+/* line 125, ../sass/components/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li,
 ul.dropdown-menu ul li,
 .dropdown-menu ul li {
   padding: 0;
   margin: 0;
 }
-/* line 122, ../sass/components/_menu.scss */
+/* line 128, ../sass/components/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li a,
 ul.dropdown-menu ul li a,
 .dropdown-menu ul li a {
@@ -13999,7 +13999,7 @@ ul.dropdown-menu ul li a,
   color: #333333;
   white-space: nowrap;
 }
-/* line 130, ../sass/components/_menu.scss */
+/* line 136, ../sass/components/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li a:hover, #oa-navbar ul.dropdown-menu ul li a:focus, #oa-navbar ul.dropdown-menu ul li a.active,
 ul.dropdown-menu ul li a:hover,
 ul.dropdown-menu ul li a:focus,
@@ -14018,19 +14018,19 @@ ul.dropdown-menu ul li a.active,
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
 }
-/* line 135, ../sass/components/_menu.scss */
+/* line 141, ../sass/components/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li a.more-link,
 ul.dropdown-menu ul li a.more-link,
 .dropdown-menu ul li a.more-link {
   text-align: left;
 }
-/* line 139, ../sass/components/_menu.scss */
+/* line 145, ../sass/components/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li .flag-wrapper,
 ul.dropdown-menu ul li .flag-wrapper,
 .dropdown-menu ul li .flag-wrapper {
   padding: 0;
 }
-/* line 141, ../sass/components/_menu.scss */
+/* line 147, ../sass/components/_menu.scss */
 #oa-navbar ul.dropdown-menu ul li .flag-wrapper .flag,
 ul.dropdown-menu ul li .flag-wrapper .flag,
 .dropdown-menu ul li .flag-wrapper .flag {
@@ -14039,41 +14039,41 @@ ul.dropdown-menu ul li .flag-wrapper .flag,
   font-style: italic;
 }
 
-/* line 153, ../sass/components/_menu.scss */
+/* line 159, ../sass/components/_menu.scss */
 .region-footer, #footer {
   overflow: hidden;
 }
-/* line 155, ../sass/components/_menu.scss */
+/* line 161, ../sass/components/_menu.scss */
 .region-footer ul.menu, #footer ul.menu {
   margin-bottom: 0;
 }
-/* line 157, ../sass/components/_menu.scss */
+/* line 163, ../sass/components/_menu.scss */
 .region-footer ul.menu > li, #footer ul.menu > li {
   float: left;
   min-width: 150px;
   list-style: none !important;
 }
-/* line 161, ../sass/components/_menu.scss */
+/* line 167, ../sass/components/_menu.scss */
 .region-footer ul.menu > li > a, #footer ul.menu > li > a {
   font-weight: bold;
   font-size: 14px;
 }
-/* line 166, ../sass/components/_menu.scss */
+/* line 172, ../sass/components/_menu.scss */
 .region-footer ul.menu > li > ul > li, #footer ul.menu > li > ul > li {
   float: none;
 }
-/* line 168, ../sass/components/_menu.scss */
+/* line 174, ../sass/components/_menu.scss */
 .region-footer ul.menu > li > ul > li > a, #footer ul.menu > li > ul > li > a {
   font-weight: normal;
   font-size: 12px;
 }
-/* line 175, ../sass/components/_menu.scss */
+/* line 181, ../sass/components/_menu.scss */
 .region-footer ul.menu a, #footer ul.menu a {
   border: 0;
   display: block;
   padding: 0 5px;
 }
-/* line 179, ../sass/components/_menu.scss */
+/* line 185, ../sass/components/_menu.scss */
 .region-footer ul.menu a:hover, #footer ul.menu a:hover {
   background-color: transparent;
   text-decoration: underline;
@@ -14164,12 +14164,12 @@ a.mceButton {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* line 88, ../sass/components/_form.scss */
+/* line 89, ../sass/components/_form.scss */
 .modal-title {
   font-size: 24px;
 }
 
-/* line 96, ../sass/components/_form.scss */
+/* line 97, ../sass/components/_form.scss */
 #modal-content .form-submit,
 #media-browser-tabset a.button,
 #media-browser-tabset form a.button,
@@ -14180,7 +14180,7 @@ a.mceButton {
   font-weight: normal;
   display: inline-block;
 }
-/* line 101, ../sass/components/_form.scss */
+/* line 102, ../sass/components/_form.scss */
 #modal-content .form-submit:hover,
 #media-browser-tabset a.button:hover,
 #media-browser-tabset form a.button:hover,
@@ -14192,45 +14192,45 @@ a.mceButton {
   background-image: none;
 }
 
-/* line 115, ../sass/components/_form.scss */
+/* line 116, ../sass/components/_form.scss */
 #modal-content .form-item {
   clear: both;
 }
-/* line 118, ../sass/components/_form.scss */
+/* line 119, ../sass/components/_form.scss */
 #modal-content .form-submit {
   -webkit-box-shadow: none;
   box-shadow: none;
   margin-bottom: 0;
 }
 
-/* line 124, ../sass/components/_form.scss */
+/* line 125, ../sass/components/_form.scss */
 #media-tabs-wrapper ul.ui-tabs-nav {
   margin-bottom: 0;
 }
 
-/* line 130, ../sass/components/_form.scss */
+/* line 131, ../sass/components/_form.scss */
 #media-browser-tabset .views-exposed-form .views-submit-button {
   margin-top: 30px;
 }
-/* line 133, ../sass/components/_form.scss */
+/* line 134, ../sass/components/_form.scss */
 #media-browser-tabset .views-exposed-form .views-exposed-widget {
   margin-right: 0;
 }
-/* line 137, ../sass/components/_form.scss */
+/* line 138, ../sass/components/_form.scss */
 #media-browser-tabset #edit-filename-wrapper {
   width: 200px;
 }
-/* line 140, ../sass/components/_form.scss */
+/* line 141, ../sass/components/_form.scss */
 #media-browser-tabset form select {
   width: 100%;
 }
-/* line 144, ../sass/components/_form.scss */
+/* line 145, ../sass/components/_form.scss */
 #media-browser-tabset input.form-file,
 #media-browser-tabset span.file {
   margin-right: 10px;
 }
 
-/* line 153, ../sass/components/_form.scss */
+/* line 154, ../sass/components/_form.scss */
 #node-edit .burr-flipped-sidebar .panel-pane,
 #node-edit .burr-flipped .sidebar .panel-pane {
   border: 0;
@@ -14244,12 +14244,12 @@ a.mceButton {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 161, ../sass/components/_form.scss */
+/* line 162, ../sass/components/_form.scss */
 #node-edit .burr-flipped-sidebar .panel-pane .pane-content,
 #node-edit .burr-flipped .sidebar .panel-pane .pane-content {
   padding: 0;
 }
-/* line 168, ../sass/components/_form.scss */
+/* line 169, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-group-ref, #node-edit .panel-pane.pane-node-field-oa-team-ref, #node-edit .panel-pane.pane-node-field-oa-user-ref {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -14257,12 +14257,12 @@ a.mceButton {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 172, ../sass/components/_form.scss */
+/* line 173, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-group-ref {
   margin-bottom: 0;
   border-bottom: 0;
 }
-/* line 176, ../sass/components/_form.scss */
+/* line 177, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-team-ref {
   margin-bottom: 0;
   margin-top: 0;
@@ -14271,113 +14271,113 @@ a.mceButton {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 184, ../sass/components/_form.scss */
+/* line 185, ../sass/components/_form.scss */
 #node-edit .panel-pane.pane-node-field-oa-user-ref {
   border-top: 0;
   margin-top: 0;
 }
-/* line 190, ../sass/components/_form.scss */
+/* line 191, ../sass/components/_form.scss */
 #node-edit .container-inline-date .date-padding {
   padding: 0;
 }
-/* line 194, ../sass/components/_form.scss */
+/* line 195, ../sass/components/_form.scss */
 #node-edit .container-inline-date .form-item-date-time,
 #node-edit .container-inline-date .form-item-date-date {
   padding-bottom: 0.5em;
 }
-/* line 198, ../sass/components/_form.scss */
+/* line 199, ../sass/components/_form.scss */
 #node-edit .form-actions {
   background: transparent;
 }
-/* line 200, ../sass/components/_form.scss */
+/* line 201, ../sass/components/_form.scss */
 #node-edit .form-actions input {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 203, ../sass/components/_form.scss */
+/* line 204, ../sass/components/_form.scss */
 #node-edit .form-actions input:hover {
   color: white;
   background-color: #0044cc;
   background-image: none;
 }
 
-/* line 215, ../sass/components/_form.scss */
+/* line 216, ../sass/components/_form.scss */
 .views-exposed-form .well {
   padding: 0 1em;
 }
-/* line 218, ../sass/components/_form.scss */
+/* line 219, ../sass/components/_form.scss */
 .views-exposed-form .filter-btn {
   position: absolute;
   top: 0px;
   right: 10px;
 }
 
-/* line 225, ../sass/components/_form.scss */
+/* line 226, ../sass/components/_form.scss */
 .oa-pane .views-exposed-form .filter-btn {
   top: 10px;
 }
 
-/* line 229, ../sass/components/_form.scss */
+/* line 230, ../sass/components/_form.scss */
 .view-filters form {
   margin: 0;
 }
 
-/* line 233, ../sass/components/_form.scss */
+/* line 234, ../sass/components/_form.scss */
 .views-exposed-widget.views-submit-button {
   padding-right: 5px;
 }
 
-/* line 239, ../sass/components/_form.scss */
+/* line 240, ../sass/components/_form.scss */
 #oa-discussion-reply-form {
   position: relative;
 }
-/* line 241, ../sass/components/_form.scss */
+/* line 242, ../sass/components/_form.scss */
 #oa-discussion-reply-form .form-item {
   margin: 0;
 }
-/* line 244, ../sass/components/_form.scss */
+/* line 245, ../sass/components/_form.scss */
 #oa-discussion-reply-form input#edit-subject {
   width: 75%;
 }
-/* line 247, ../sass/components/_form.scss */
+/* line 248, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media {
   position: relative;
 }
-/* line 249, ../sass/components/_form.scss */
+/* line 250, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .tabledrag-toggle-weight-wrapper {
   position: absolute;
   top: 0;
   right: 0;
   margin: 10px;
 }
-/* line 256, ../sass/components/_form.scss */
+/* line 257, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .media-item img {
   display: block;
   margin: auto;
   width: auto;
 }
-/* line 261, ../sass/components/_form.scss */
+/* line 262, ../sass/components/_form.scss */
 #oa-discussion-reply-form .field-name-field-oa-discussion-media .media-item .file a {
   display: none;
 }
-/* line 266, ../sass/components/_form.scss */
+/* line 267, ../sass/components/_form.scss */
 #oa-discussion-reply-form #edit-submit {
   position: absolute;
   bottom: 2px;
   right: 0;
 }
 
-/* line 274, ../sass/components/_form.scss */
+/* line 275, ../sass/components/_form.scss */
 .checkbox-table .center {
   text-align: center;
 }
-/* line 278, ../sass/components/_form.scss */
+/* line 279, ../sass/components/_form.scss */
 .checkbox-table .form-type-checkbox,
 .checkbox-table .space-label {
   margin: 0.4em 0;
 }
 
-/* line 283, ../sass/components/_form.scss */
+/* line 284, ../sass/components/_form.scss */
 .chosen-container {
   height: auto;
   border: 0;
@@ -14385,21 +14385,21 @@ a.mceButton {
   max-width: 100%;
 }
 
-/* line 292, ../sass/components/_form.scss */
+/* line 293, ../sass/components/_form.scss */
 #oa-users-settings-form .container-fluid {
   border-bottom: 2px solid #dedede;
   margin: 5px auto;
   padding-right: 0;
   padding-left: 0;
 }
-/* line 293, ../sass/components/_form.scss */
+/* line 294, ../sass/components/_form.scss */
 #oa-users-settings-form .container-fluid.header {
   background-color: #dedede;
   clear: both;
   height: 25px;
   padding: 3px 0;
 }
-/* line 305, ../sass/components/_form.scss */
+/* line 306, ../sass/components/_form.scss */
 #oa-users-settings-form .col-sm-6 .panel-heading {
   display: block;
   float: none;
@@ -14407,56 +14407,56 @@ a.mceButton {
   background: none;
   padding: 0;
 }
-/* line 313, ../sass/components/_form.scss */
+/* line 314, ../sass/components/_form.scss */
 #oa-users-settings-form div.column3 div.form-type-checkboxes {
   margin-left: -54%;
 }
-/* line 317, ../sass/components/_form.scss */
+/* line 318, ../sass/components/_form.scss */
 #oa-users-settings-form .collapsible.form-wrapper {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 318, ../sass/components/_form.scss */
+/* line 319, ../sass/components/_form.scss */
 #oa-users-settings-form .collapsible.form-wrapper .fieldset-wrapper {
   overflow: visible !important;
   padding: 0;
 }
-/* line 326, ../sass/components/_form.scss */
+/* line 327, ../sass/components/_form.scss */
 #oa-users-settings-form input[type="text"] {
   width: auto;
 }
-/* line 329, ../sass/components/_form.scss */
+/* line 330, ../sass/components/_form.scss */
 #oa-users-settings-form .panel-title > a {
   color: #0071B3;
   font-size: 18px;
 }
-/* line 333, ../sass/components/_form.scss */
+/* line 334, ../sass/components/_form.scss */
 #oa-users-settings-form div.column2 div.chosen-container {
   margin: 8px 0;
   padding: 0;
 }
 
-/* line 340, ../sass/components/_form.scss */
+/* line 341, ../sass/components/_form.scss */
 .oa-vertical-tabs {
   background: #eee;
   padding: 10px 10px;
 }
-/* line 343, ../sass/components/_form.scss */
+/* line 344, ../sass/components/_form.scss */
 .oa-vertical-tabs div.vertical-tabs {
   margin-top: 0;
   margin-bottom: 0;
   background-color: white;
 }
-/* line 347, ../sass/components/_form.scss */
+/* line 348, ../sass/components/_form.scss */
 .oa-vertical-tabs div.vertical-tabs .vertical-tabs-panes {
   padding: 0;
 }
-/* line 350, ../sass/components/_form.scss */
+/* line 351, ../sass/components/_form.scss */
 .oa-vertical-tabs div.vertical-tabs ul.vertical-tabs-list {
   margin-top: 0;
 }
-/* line 351, ../sass/components/_form.scss */
+/* line 352, ../sass/components/_form.scss */
 .oa-vertical-tabs div.vertical-tabs ul.vertical-tabs-list li {
   margin-top: -1px;
 }

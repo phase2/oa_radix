@@ -25,6 +25,12 @@
   color: white;
   background-color: #0081c2;
 }
+li.dropdown > ul.dropdown-menu {
+  // attempts to provide vertical scrolling menus messes up submenus
+  //overflow-y: auto;
+  //height: auto;
+  //max-height: 500px;
+}
 ul.dropdown-menu {
   margin: 0;
   > li {
