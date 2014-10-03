@@ -451,6 +451,10 @@ body.admin-menu #oa-navbar {
   }
   #oa-navbar-spaces{
     padding:0;
+    ul.dropdown-menu a:hover{
+      background-color: #333333 !important;
+      background-image: none !important;
+    }
   }
   #oa_breadcrumb{
     li{

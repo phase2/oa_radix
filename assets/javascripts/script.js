@@ -37,7 +37,6 @@
 
       function setMenu(){
         if(isMobile){
-          console.log(isMobile,'is mobile change');
           //wire the mobile admin
           if($('#toolbar-menu-button').html()){
             $('#navbar-tray .navbar-menu-administration').attr('menu-desktop', tracker).children('ul').attr('menu-item', tracker).appendTo("#oa-navbar-admin");
@@ -50,13 +49,6 @@
           $.each(mobileMenus, function(i, val){
             $("."+val+"-mobile-menu").find('>ul, form, >div>ul, .dropdown-menu>ul').appendTo("#oa-navbar-"+val);
           });
-
-          //$('#oa-navbar-admin .expanded').each(function(){
-          //  var self = this;
-          //  $('button', this).click(function(){
-          //    $('.menu', this).slideToggle();
-          //  })
-          //})
         }
       }
 
