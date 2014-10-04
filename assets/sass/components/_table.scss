@@ -5,3 +5,6 @@
 table th.checkbox, table td.checkbox {
   display: table-cell;
 }
+table td > div.form-type-checkbox {
+  text-align: center;
+}
