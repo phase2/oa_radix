@@ -3,6 +3,10 @@
 // Styles for Forms
 // --------------------------------------------------
 
+//Fix Bootstrap 3 checkboxes
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+  position: relative;
+}
 // General form styles
 // --------------------------------------------------
 form {
