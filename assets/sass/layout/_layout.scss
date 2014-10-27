@@ -36,7 +36,7 @@ body {
     background-color: #003853;
     border-top: 1px solid #e5e5e5;
     > .container {
-      height: 100px;
+      min-height: 100px;
       padding: 18px 0;
       @include box-sizing("border-box");
     }
