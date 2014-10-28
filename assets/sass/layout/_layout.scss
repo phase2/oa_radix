@@ -7,17 +7,13 @@ html, body {
 }
 
 body {
-  padding-top: 60px;
   @include breakpoint('md') {
-    padding-top: 90px;
   }
   @include breakpoint('sm') {
-    padding-top: 90px;
     padding-left: 0;
     padding-right: 0;
   }
   @include breakpoint('xs') {
-    padding-top: 0;
   }
   #main-wrapper {
     min-height: 100%;

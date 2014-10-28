@@ -12597,7 +12597,7 @@ fieldset .panel-body {
 
 /* line 73, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-3.0.13/stylesheets/compass_radix/_form.scss */
 html.js input.form-autocomplete {
-  background: url('../images/throbber.gif?1413914210') no-repeat right 8px white !important;
+  background: url('../images/throbber.gif?1414502271') no-repeat right 8px white !important;
 }
 /* line 76, ../../../../../../../../../../var/lib/gems/1.9.1/gems/compass_radix-3.0.13/stylesheets/compass_radix/_form.scss */
 html.js input.throbbing {
@@ -12917,42 +12917,25 @@ html, body {
   height: 100%;
 }
 
-/* line 9, ../sass/layout/_layout.scss */
-body {
-  padding-top: 60px;
-}
-@media (min-width: 980px) and (max-width: 1200px -1) {
-  /* line 9, ../sass/layout/_layout.scss */
-  body {
-    padding-top: 90px;
-  }
-}
 @media (max-width: 980px -1) {
   /* line 9, ../sass/layout/_layout.scss */
   body {
-    padding-top: 90px;
     padding-left: 0;
     padding-right: 0;
   }
 }
-@media (max-width: 768px -1) {
-  /* line 9, ../sass/layout/_layout.scss */
-  body {
-    padding-top: 0;
-  }
-}
-/* line 22, ../sass/layout/_layout.scss */
+/* line 18, ../sass/layout/_layout.scss */
 body #main-wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 20px -100px;
 }
-/* line 28, ../sass/layout/_layout.scss */
+/* line 24, ../sass/layout/_layout.scss */
 body #push {
   height: 100px;
 }
-/* line 31, ../sass/layout/_layout.scss */
+/* line 27, ../sass/layout/_layout.scss */
 body #footer {
   margin: 36px 0 0 0;
   font-size: 12px;
@@ -12961,7 +12944,7 @@ body #footer {
   background-color: #003853;
   border-top: 1px solid #e5e5e5;
 }
-/* line 38, ../sass/layout/_layout.scss */
+/* line 34, ../sass/layout/_layout.scss */
 body #footer > .container {
   min-height: 100px;
   padding: 18px 0;
@@ -12970,14 +12953,14 @@ body #footer > .container {
   box-sizing: "border-box";
 }
 
-/* line 46, ../sass/layout/_layout.scss */
+/* line 42, ../sass/layout/_layout.scss */
 ol, ul {
   list-style: none;
   padding: 0;
   margin: 0 0 10px 25px;
 }
 
-/* line 52, ../sass/layout/_layout.scss */
+/* line 48, ../sass/layout/_layout.scss */
 .display-block {
   display: block;
 }
