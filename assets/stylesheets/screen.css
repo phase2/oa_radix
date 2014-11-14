@@ -14146,7 +14146,7 @@ ul.dropdown-menu ul li .flag-wrapper .flag,
 }
 
 /* line 17, ../sass/components/_form.scss */
-fieldset .fieldset-wrapper.panel-body {
+fieldset .chosen-fieldset-wrapper {
   overflow: visible !important;
 }
 
