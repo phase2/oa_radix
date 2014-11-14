@@ -25,6 +25,10 @@
         $(this).addClass('chosen-fieldset-wrapper');
         }
       );
+      $('.chosen-container', context).parents('.form-item.form-type-select').each(function( index, element ) {
+        $(this).addClass('chosen-fieldset-wrapper');
+        }
+      );
     }
   };
 
