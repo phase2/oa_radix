@@ -20,12 +20,8 @@
 
   Drupal.behaviors.fieldset_collapse = {
     attach: function(context) {
-      console.log('In Chosen collapse');
       // allow chosen dropdowns within fieldsets to be visible
-      console.log($('.chosen-container', context));
-      console.log($('.chosen-container', context).parents('.panel-body.fieldset-wrapper'));
       $('.chosen-container', context).parents('.panel-body.fieldset-wrapper').each(function( index, element ) {
-          console.log($(this));
         $(this).addClass('chosen-fieldset-wrapper');
         }
       );
