@@ -26,7 +26,7 @@
         $(selector, context)
           .not('#field-ui-field-overview-form select, #field-ui-display-overview-form select, .wysiwyg, .draggable select[name$="[weight]"], .draggable select[name$="[position]"]') //disable chosen on field ui
           .each(function () {
-            $(this).closest('.panel-body.fieldset-wrapper, .form-item.form-type-select').each(function( index, element ) {
+            $(this).parents('.panel-body.fieldset-wrapper, .form-item.form-type-select').each(function( index, element ) {
               $(this).addClass('chosen-fieldset-wrapper');
           });
         });
