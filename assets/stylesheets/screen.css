@@ -15288,6 +15288,11 @@ table td > div.form-type-checkbox {
   text-align: center;
 }
 
+/* line 13, ../sass/components/_table.scss */
+table.sticky-header {
+  z-index: 1001;
+}
+
 /* line 7, ../sass/components/_apps.scss */
 #app-wrapper .app-description {
   font-size: 16px;
