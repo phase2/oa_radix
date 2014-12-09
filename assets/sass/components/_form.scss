@@ -20,6 +20,10 @@ fieldset .chosen-fieldset-wrapper {
 
 // General form styles
 // --------------------------------------------------
+.form-control {
+  height: auto;
+  min-height: 34px;
+}
 form {
   .form-item {
     margin-top: 0.5em;
