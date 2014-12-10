@@ -12970,7 +12970,7 @@ ol, ul {
 }
 
 /* line 53, ../sass/layout/_layout.scss */
-.container-fluid {
+#main .container-fluid:first-of-type {
   padding-left: 0;
   padding-right: 0;
 }
