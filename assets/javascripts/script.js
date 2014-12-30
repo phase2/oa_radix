@@ -20,15 +20,17 @@
     // fixes missing Close button in jQuery UI dialogs
     // caused by jQuery being loaded before bootstrap, which is hard to change
     // http://stackoverflow.com/questions/17367736/jquery-ui-dialog-missing-close-icon
-    $.widget( "ui.dialog", $.ui.dialog, {
-      open: function() {
-        var result = this._super();
-        if ('uiDialogTitlebarClose' in this) {
-          this.uiDialogTitlebarClose.html("<span class='ui-button-icon-primary ui-icon ui-icon-closethick'></span>");
+    if ($.ui.dialog !== undefined) {
+      $.widget( "ui.dialog", $.ui.dialog, {
+        open: function() {
+          var result = this._super();
+          if ('uiDialogTitlebarClose' in this) {
+            this.uiDialogTitlebarClose.html("<span class='ui-button-icon-primary ui-icon ui-icon-closethick'></span>");
+          }
+          return result;
         }
-        return result;
-      }
-    });
+      });
+    }
   });
 
   Drupal.behaviors.fieldset_collapse = {
