@@ -151,7 +151,8 @@ background-image: -webkit-linear-gradient(top, @sidebartopbg, @sidebarbottombg);
 background-image: -o-linear-gradient(top, @sidebartopbg, @sidebarbottombg);
 background-image: linear-gradient(to bottom, @sidebartopbg, @sidebarbottombg);
 }
-.oa-pane .panel-pane {
+.oa-pane .panel-pane,
+.oa-callout {
 color: @sidebartext;
 background-color: @sidebar;
 border-color: @sidebarborders;
